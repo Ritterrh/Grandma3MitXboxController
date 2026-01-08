@@ -135,15 +135,15 @@ async def scrape_detail_page(session, url, sem):
 
         # --- 5. MEDIEN (Plakat, Video, Audio, Galerie) ---
         
-        # A) PLAKATMOTIV (Das Cover-Bild) - NEU HINZUGEFÜGT
-        # Wir fügen es als ERSTES in die Liste ein, damit die App es als Cover nimmt.
+# A) PLAKATMOTIV (Der neue Typ "plakat")
         plakat_div = soup.find('div', class_='detail-plakatmotiv')
         if plakat_div:
             plakat_a = plakat_div.find('a', href=True)
             if plakat_a:
                 cover_url = urljoin(BASE_URL, plakat_a['href'])
-                data["medien"].append({"typ": "bild", "url": cover_url, "is_cover": True})
-
+                # HIER IST DIE ÄNDERUNG: typ="plakat"
+                data["medien"].append({"typ": "plakat", "url": cover_url})
+                
         # B) Youtube Video
         if soup.find('div', attrs={'data-plyr-provider': 'youtube'}):
             data["flags"]["video"] = True

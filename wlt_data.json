@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-08 20:23:49",
+        "generiert": "2026-01-08 20:27:26",
         "anzahl": 43
     },
     "daten": [
@@ -402,9 +402,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_alice_web_gestaltung_timo_hummel_motiv_stefan_sombetzki.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_alice_web_gestaltung_timo_hummel_motiv_stefan_sombetzki.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -653,9 +652,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plaktamotiv_am_ende_des_schweigens_web_gestaltung_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plaktamotiv_am_ende_des_schweigens_web_gestaltung_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -1019,9 +1017,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_lupin_timo_hummel_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_lupin_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -1283,9 +1280,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_a5_time_goes_by_az_rgb_1.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_a5_time_goes_by_az_rgb_1.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -1541,9 +1537,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_ausser_kontrolle_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_ausser_kontrolle_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -2135,9 +2130,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_cabaret_timo_hummel_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_cabaret_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -2422,9 +2416,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_courage_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_courage_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -2506,9 +2499,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_das_kalendermaedchen_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_das_kalendermaedchen_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -2863,9 +2855,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_buchspazierer_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_buchspazierer_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -2951,9 +2942,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_theatermacher_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_theatermacher_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "bild",
@@ -3142,9 +3132,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_vorleser_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_vorleser_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -3803,9 +3792,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_zerbrochne_krug_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_zerbrochne_krug_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -4180,9 +4168,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_die_zertrennlichen_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_die_zertrennlichen_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -4697,9 +4684,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_die_drei_fragezeichen_kids_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_die_drei_fragezeichen_kids_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -4899,9 +4885,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_drei_fragezeichen_kids_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_drei_fragezeichen_kids_web.jpg"
                 }
             ],
             "presse": [],
@@ -5026,9 +5011,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotive_fettes_schwein_timo_hummel_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotive_fettes_schwein_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -5312,9 +5296,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_frankenstein_web_gestaltung_timo_hummel_motiv_stefan_sombetzki_2.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_frankenstein_web_gestaltung_timo_hummel_motiv_stefan_sombetzki_2.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -5464,9 +5447,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_harold_und_maude_web_gestaltung_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_harold_und_maude_web_gestaltung_timo_hummel.jpg"
                 },
                 {
                     "typ": "bild",
@@ -5578,9 +5560,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_heimsuchung_web_timo_hummel-.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_heimsuchung_web_timo_hummel-.jpg"
                 }
             ],
             "presse": [],
@@ -5743,9 +5724,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_herkules_web_motiv_stefan_sombetzski_gestaltung_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_herkules_web_motiv_stefan_sombetzski_gestaltung_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -5969,9 +5949,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_nemo_web_timo_hummel_motiv_stefan_sombetzki.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_nemo_web_timo_hummel_motiv_stefan_sombetzki.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -6332,9 +6311,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_lotta_kkann_fast_alles_web_motiv_stefan_sombetzki_gestaltung_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_lotta_kkann_fast_alles_web_motiv_stefan_sombetzki_gestaltung_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -6438,9 +6416,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_man_kann_auch_in_die_hoehe_fallen_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_man_kann_auch_in_die_hoehe_fallen_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -6639,9 +6616,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_man_muss_fuer_werte_eintreten_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_man_muss_fuer_werte_eintreten_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -7050,9 +7026,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_panda_pand_web_gestaltung_timo_hummel_motiv_stefan_sombetzki.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_panda_pand_web_gestaltung_timo_hummel_motiv_stefan_sombetzki.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -7323,9 +7298,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_pension_schoeller_timo_hummel_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_pension_schoeller_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -7511,9 +7485,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_janosch_post_fuer_den_tiger_web_timo_hummel_1.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_janosch_post_fuer_den_tiger_web_timo_hummel_1.jpg"
                 }
             ],
             "presse": [],
@@ -7651,9 +7624,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_prima_facie_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_prima_facie_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -7887,9 +7859,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_respect_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_respect_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -8406,9 +8377,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_robin_hood_web_motiv_stefan_sombetzski_gestaltung_timo_hummel_1.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_robin_hood_web_motiv_stefan_sombetzski_gestaltung_timo_hummel_1.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -8684,9 +8654,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_sommerfest_timo_hummel_web.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_sommerfest_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -8816,9 +8785,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_songs_for_an_oscar_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_songs_for_an_oscar_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -8868,9 +8836,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_sophie_scholl_die_letzten_tage_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_sophie_scholl_die_letzten_tage_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -9001,9 +8968,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_was_willst_du_welt_web_motiv_stefan_sombetzski_gestaltung_timo_hummel_1.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_was_willst_du_welt_web_motiv_stefan_sombetzski_gestaltung_timo_hummel_1.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -9208,9 +9174,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wildbestand_plakatmotiv_timo_hummel_web_1.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wildbestand_plakatmotiv_timo_hummel_web_1.jpg"
                 },
                 {
                     "typ": "youtube",
@@ -9405,9 +9370,8 @@
             ],
             "medien": [
                 {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/windspiel_plakatmotiv_web_timo_hummel.jpg",
-                    "is_cover": true
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/windspiel_plakatmotiv_web_timo_hummel.jpg"
                 },
                 {
                     "typ": "youtube",
