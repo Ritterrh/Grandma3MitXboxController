@@ -1,0 +1,29 @@
+{
+    "osc": {
+        "host": "127.0.0.1",
+        "port": 8000,
+        "target_page": 1,
+        "fader_pan": 201,
+        "fader_tilt": 202,
+        "fader_dimmer": 203,
+        "fader_fine_pan": 204,
+        "fader_fine_tilt": 205
+    },
+    "controller": {
+        "deadzone": 0.15,
+        "sensitivity": 1.0,
+        "fine_sensitivity": 0.3,
+        "update_rate": 50,
+        "smoothing": 0.3
+    },
+    "features": {
+        "use_right_stick_fine_control": true,
+        "show_debug_info": false,
+        "auto_reconnect": true
+    },
+    "ui": {
+        "window_width": 800,
+        "window_height": 600,
+        "theme": "dark"
+    }
+}
