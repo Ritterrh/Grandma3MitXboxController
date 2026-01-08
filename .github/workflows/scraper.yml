@@ -1,0 +1,35 @@
+name: WLT Async Scraper
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Täglich 04:00 Uhr
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: Install Dependencies
+        # Wir brauchen aiohttp für Async Requests
+        run: pip install aiohttp beautifulsoup4
+      
+      - name: Run Scraper
+        run: python scraper.py
+      
+      - name: Commit & Push
+        run: |
+          git config user.name "WLT-Bot"
+          git config user.email "bot@github.actions"
+          git add wlt_data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Data Update $(date +'%Y-%m-%d')" && git push)
