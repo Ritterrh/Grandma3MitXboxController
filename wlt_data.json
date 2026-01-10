@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-09 04:46:41",
+        "generiert": "2026-01-10 04:38:40",
         "anzahl": 43
     },
     "daten": [
@@ -8221,20 +8221,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-01-11",
-                    "datum_anzeige": "11.01.2026",
-                    "uhrzeit": "16.00 Uhr",
-                    "ort": "Nienburg Theater auf dem Hornwerk",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-01-12",
-                    "datum_anzeige": "12.01.2026",
-                    "uhrzeit": "10.00 Uhr",
-                    "ort": "Nienburg Theater auf dem Hornwerk",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-01-15",
                     "datum_anzeige": "15.01.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -8475,7 +8461,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-11"
+            "naechster_termin_iso": "2026-01-15"
         },
         {
             "id": "13657",
