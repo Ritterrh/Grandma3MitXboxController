@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-12 04:55:22",
+        "generiert": "2026-01-13 04:47:06",
         "anzahl": 43
     },
     "daten": [
@@ -4605,6 +4605,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-01-15",
+                    "datum_anzeige": "15.01.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Witten Saalbau",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-02-19",
                     "datum_anzeige": "19.02.2026",
                     "uhrzeit": "11.00 Uhr",
@@ -4759,7 +4766,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-19"
+            "naechster_termin_iso": "2026-01-15"
         },
         {
             "id": "13718",
@@ -8221,13 +8228,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-01-15",
-                    "datum_anzeige": "15.01.2026",
-                    "uhrzeit": "16.00 Uhr",
-                    "ort": "Witten Saalbau",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-01-18",
                     "datum_anzeige": "18.01.2026",
                     "uhrzeit": "15.00 Uhr",
@@ -8461,7 +8461,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-15"
+            "naechster_termin_iso": "2026-01-18"
         },
         {
             "id": "13657",
