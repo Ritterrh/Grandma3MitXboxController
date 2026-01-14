@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-13 04:47:06",
+        "generiert": "2026-01-14 04:50:55",
         "anzahl": 43
     },
     "daten": [
@@ -2495,6 +2495,13 @@
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-22",
+                    "datum_anzeige": "22.01.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -2843,6 +2850,13 @@
                     "datum_anzeige": "27.01.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Erkrath Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-19",
+                    "datum_anzeige": "19.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Marl Theater",
                     "ticket_url": null
                 },
                 {
@@ -3872,7 +3886,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-13"
+            "naechster_termin_iso": "2026-01-19"
         },
         {
             "id": "13645",
@@ -5544,6 +5558,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-20",
+                    "datum_anzeige": "20.11.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-20",
+                    "datum_anzeige": "20.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-26",
                     "datum_anzeige": "26.11.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -7125,7 +7153,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-13"
+            "naechster_termin_iso": null
         },
         {
             "id": "13659",
@@ -7619,6 +7647,13 @@
                     "datum_anzeige": "28.11.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Nettetal Aula der Realschule Kaldenkirchen",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-12",
+                    "datum_anzeige": "12.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Marl Theater",
                     "ticket_url": null
                 },
                 {
