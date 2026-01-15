@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-14 04:50:55",
+        "generiert": "2026-01-15 04:47:57",
         "anzahl": 43
     },
     "daten": [
@@ -2663,41 +2663,41 @@
                     "datum_iso": "2026-02-23",
                     "datum_anzeige": "23.02.2026",
                     "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Schulen",
+                    "ort": "Recklinghausen Käthe-Kollwitz-Gesamtschule",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-02-23",
                     "datum_anzeige": "23.02.2026",
                     "uhrzeit": "11.00 Uhr",
-                    "ort": "Castrop-Rauxel Schulen",
+                    "ort": "Recklinghausen Käthe-Kollwitz-Gesamtschule",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-02-24",
                     "datum_anzeige": "24.02.2026",
                     "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Schulen",
+                    "ort": "Recklinghausen Käthe-Kollwitz-Gesamtschule",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-02-24",
                     "datum_anzeige": "24.02.2026",
                     "uhrzeit": "11.00 Uhr",
-                    "ort": "Castrop-Rauxel Schulen",
+                    "ort": "Recklinghausen Käthe-Kollwitz-Gesamtschule",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-03-05",
                     "datum_anzeige": "05.03.2026",
-                    "uhrzeit": "9.00 Uhr",
+                    "uhrzeit": "10.00 Uhr",
                     "ort": "Castrop-Rauxel Adalbert-Stifter-Gymnasium-Klassenraum",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-03-05",
                     "datum_anzeige": "05.03.2026",
-                    "uhrzeit": "11.30 Uhr",
+                    "uhrzeit": "12.00 Uhr",
                     "ort": "Castrop-Rauxel Adalbert-Stifter-Gymnasium-Klassenraum",
                     "ticket_url": null
                 },
@@ -2818,6 +2818,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-13",
+                    "datum_anzeige": "13.01.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Lingen Theater an der Wilhelmshöhe",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-14",
                     "datum_anzeige": "14.01.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -2864,6 +2871,13 @@
                     "datum_anzeige": "01.03.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Dorsten Realschule",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-17",
+                    "datum_anzeige": "17.03.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Kamp-Lintfort Stadthalle",
                     "ticket_url": null
                 }
             ],
@@ -4166,6 +4180,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-11",
+                    "datum_anzeige": "11.11.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-05-05",
                     "datum_anzeige": "05.05.2027",
                     "uhrzeit": "9.00 Uhr",
@@ -4897,6 +4918,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-03-07",
+                    "datum_anzeige": "07.03.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-08",
+                    "datum_anzeige": "08.03.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-05-02",
                     "datum_anzeige": "02.05.2027",
                     "uhrzeit": "14.30 Uhr",
@@ -5586,6 +5621,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-29",
+                    "datum_anzeige": "29.01.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Lingen Theater an der Wilhelmshöhe",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-03-15",
                     "datum_anzeige": "15.03.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -6077,6 +6119,20 @@
                     "datum_anzeige": "26.11.2026",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Castrop-Rauxel Kindergarten",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-20",
+                    "datum_anzeige": "20.02.2027",
+                    "uhrzeit": "14.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-20",
+                    "datum_anzeige": "20.02.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Marl Theater",
                     "ticket_url": null
                 }
             ],
@@ -7497,6 +7553,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-14",
+                    "datum_anzeige": "14.02.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-03-17",
                     "datum_anzeige": "17.03.2027",
                     "uhrzeit": "10.00 Uhr",
@@ -8801,6 +8864,13 @@
                     "datum_anzeige": "20.04.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Geldern Lise-Meitner-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-04",
+                    "datum_anzeige": "04.05.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Kamp-Lintfort Stadthalle",
                     "ticket_url": null
                 }
             ],
