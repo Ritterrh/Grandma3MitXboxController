@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-15 04:47:57",
+        "generiert": "2026-01-16 04:45:38",
         "anzahl": 43
     },
     "daten": [
@@ -779,7 +779,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-15"
+            "naechster_termin_iso": "2026-01-21"
         },
         {
             "id": "13658",
@@ -1833,6 +1833,10 @@
                 }
             ],
             "medien": [
+                {
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_wlt_krull_web_timo_hummel_1.jpg"
+                },
                 {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_felix_krull_1_volker_beushausen.jpg"
@@ -4801,7 +4805,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-15"
+            "naechster_termin_iso": "2026-02-19"
         },
         {
             "id": "13718",
