@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-16 04:45:38",
+        "generiert": "2026-01-17 04:37:15",
         "anzahl": 43
     },
     "daten": [
@@ -4915,6 +4915,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-14",
+                    "datum_anzeige": "14.01.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Borken Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-14",
+                    "datum_anzeige": "14.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Borken Stadthalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-28",
                     "datum_anzeige": "28.01.2027",
                     "uhrzeit": "10.00 Uhr",
@@ -7692,8 +7706,8 @@
                     "datum_iso": "2026-01-16",
                     "datum_anzeige": "16.01.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471417&eventID=2368933"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-03-06",
@@ -7796,11 +7810,11 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": true,
+                "tickets": false,
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-16"
+            "naechster_termin_iso": "2026-03-06"
         },
         {
             "id": "13687",
