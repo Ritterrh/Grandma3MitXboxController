@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-18 04:47:33",
+        "generiert": "2026-01-19 04:56:58",
         "anzahl": 43
     },
     "daten": [
@@ -3243,7 +3243,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-18"
+            "naechster_termin_iso": "2026-01-31"
         },
         {
             "id": "13697",
@@ -8347,8 +8347,8 @@
                     "datum_iso": "2026-01-18",
                     "datum_anzeige": "18.01.2026",
                     "uhrzeit": "15.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471048&eventID=2468056"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-01-29",
@@ -8573,11 +8573,11 @@
                 "schulklasse": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse"
             },
             "flags": {
-                "tickets": true,
+                "tickets": false,
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-18"
+            "naechster_termin_iso": "2026-01-29"
         },
         {
             "id": "13657",
