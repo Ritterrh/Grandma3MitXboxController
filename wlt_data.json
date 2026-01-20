@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-19 04:56:58",
+        "generiert": "2026-01-20 04:52:19",
         "anzahl": 43
     },
     "daten": [
@@ -3820,6 +3820,13 @@
                     "uhrzeit": "10.30 Uhr",
                     "ort": "Rödermark Kulturhalle",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-18",
+                    "datum_anzeige": "18.11.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Borken Stadthalle",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -3904,7 +3911,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-19"
+            "naechster_termin_iso": "2026-01-20"
         },
         {
             "id": "13645",
@@ -5466,7 +5473,52 @@
                 "Abendtheater"
             ],
             "is_kjt": false,
-            "besetzung": [],
+            "besetzung": [
+                {
+                    "rolle": "Harold",
+                    "darsteller": "Vincent John"
+                },
+                {
+                    "rolle": "Maude",
+                    "darsteller": "Hella-Birgit Mascus"
+                },
+                {
+                    "rolle": "Mrs. Chasen",
+                    "darsteller": "Arikia Orbán"
+                },
+                {
+                    "rolle": "Doktor Mathews / Inspektor Bernard",
+                    "darsteller": "Jan-Hendrik Kroll"
+                },
+                {
+                    "rolle": "Butler Mariano / Pater Finnegan",
+                    "darsteller": "Marvin Moers"
+                },
+                {
+                    "rolle": "Sylvie Gazel / Nancy Mersch / Sunshine Doré / Double Harold",
+                    "darsteller": "Lesley-Ann Eisenhardt"
+                },
+                {
+                    "rolle": "Inszenierung",
+                    "darsteller": "Kristoffer Keudel"
+                },
+                {
+                    "rolle": "Musikalische Leitung",
+                    "darsteller": "Tankred Schleinschock"
+                },
+                {
+                    "rolle": "Ausstattung",
+                    "darsteller": "Marc Mahn"
+                },
+                {
+                    "rolle": "Dramaturgie",
+                    "darsteller": "Sabrina Klose"
+                },
+                {
+                    "rolle": "Regieassistenz / Abendspielleitung",
+                    "darsteller": "Carolin Leweling"
+                }
+            ],
             "inhalt": "Der etwa 20-jährige Harold hat zwei Hobbys, die – um es vorsichtig zu formulieren – bei seiner Umgebung Befremden hervorrufen: Er täuscht gerne Selbstmorde vor und er liebt Beerdigungen. Seine Mutter sieht angesichts dieser beunruhigenden Vorlieben nur eine Rettung: Harold muss heiraten. Doch sämtliche Kandidatinnen flüchten panisch, wenn Harold begeistert das nächste Suizid-Szenario inszeniert. Und so braust er mit seinem zu einem Leichenwagen umgebauten Cadillac fröhlich zu den nächsten Beerdigungen. Dort trifft er immer wieder die 79-jährige Maude, die vor Lebenslust, Energie und Abenteuerfreude nur so sprüht. Fortan ziehen sie gemeinsam ihre Runden und verunsichern mit unkonventionellen Aktionen die halbe Stadt. Harold erfährt durch Maudes unbändige Kreativität eine nicht gekannte Lebensfreude und emanzipiert sich immer mehr von seiner dominanten Mutter. Doch seine Hoffnung, Maude an ihrem 80. Geburtstag zu heiraten, steht im direkten Gegensatz zu dem, was sie für diesen Tag geplant hat.\n\n„Harold und Maude“ ist einer der Kultfilme der Filmgeschichte. Ursprünglich entstand das Drehbuch von Colin Higgins während eines Seminars für Nachwuchsautoren. Der entstandene Film entwickelte sich mit den Jahren zu einem weltweiten Dauerbrenner. Kurz nach Veröffentlichung des Films schrieb Higgins das Drehbuch in einen Roman und ein Theaterstück um.",
             "termine": [
                 {
@@ -6476,7 +6528,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-19"
+            "naechster_termin_iso": "2026-02-03"
         },
         {
             "id": "13714",
