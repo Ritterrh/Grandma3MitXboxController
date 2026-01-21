@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-20 04:52:19",
+        "generiert": "2026-01-21 04:51:32",
         "anzahl": 43
     },
     "daten": [
@@ -3540,7 +3540,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-20"
+            "naechster_termin_iso": "2026-01-21"
         },
         {
             "id": "13685",
@@ -3911,7 +3911,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-20"
+            "naechster_termin_iso": "2026-01-27"
         },
         {
             "id": "13645",
@@ -4863,6 +4863,13 @@
                     "datum_anzeige": "04.10.2026",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Gladbeck Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-07",
+                    "datum_anzeige": "07.10.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Soest Stadthalle",
                     "ticket_url": null
                 },
                 {
