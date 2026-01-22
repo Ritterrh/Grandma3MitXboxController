@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-21 04:51:32",
+        "generiert": "2026-01-22 04:53:32",
         "anzahl": 43
     },
     "daten": [
@@ -779,7 +779,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-21"
+            "naechster_termin_iso": "2026-01-23"
         },
         {
             "id": "13658",
@@ -1848,6 +1848,30 @@
                 {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_felix_krull_3_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_1_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_2_volker_beushausen_2.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_3_volker_beushausen_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_4_volker_beushausen_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_5_volker_beushausen_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_6_volker_beushausen_2.jpg"
                 }
             ],
             "presse": [],
@@ -3540,7 +3564,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-21"
+            "naechster_termin_iso": "2026-01-22"
         },
         {
             "id": "13685",
@@ -4969,6 +4993,20 @@
                     "uhrzeit": "14.30 Uhr",
                     "ort": "Gifhorn Stadthalle",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-30",
+                    "datum_anzeige": "30.05.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Stade Stadeum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-31",
+                    "datum_anzeige": "31.05.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Stade Stadeum",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -6173,7 +6211,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-21"
+            "naechster_termin_iso": "2026-01-22"
         },
         {
             "id": "13721",
@@ -8029,6 +8067,20 @@
                     "datum_anzeige": "21.06.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-31",
+                    "datum_anzeige": "31.12.2026",
+                    "uhrzeit": "17.30 Uhr",
+                    "ort": "Siegen Apollo-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-31",
+                    "datum_anzeige": "31.12.2026",
+                    "uhrzeit": "21.15 Uhr",
+                    "ort": "Siegen Apollo-Theater",
                     "ticket_url": null
                 },
                 {
