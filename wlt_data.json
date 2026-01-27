@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-26 04:59:08",
+        "generiert": "2026-01-27 04:52:25",
         "anzahl": 43
     },
     "daten": [
@@ -1663,7 +1663,7 @@
             "besetzung": [
                 {
                     "rolle": "Felix Krull",
-                    "darsteller": "Mario Brutschin"
+                    "darsteller": "Mario Rolf Brutschin"
                 },
                 {
                     "rolle": "Inszenierung/ Ausstattung",
@@ -2529,6 +2529,13 @@
                     "datum_anzeige": "22.01.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-25",
+                    "datum_anzeige": "25.04.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Herford Stadttheater",
                     "ticket_url": null
                 }
             ],
@@ -5736,6 +5743,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-19",
+                    "datum_anzeige": "19.01.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Herford Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-29",
                     "datum_anzeige": "29.01.2027",
                     "uhrzeit": "20.00 Uhr",
@@ -7840,6 +7854,13 @@
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Unna Erich-Göpfert-Stadthalle",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-13",
+                    "datum_anzeige": "13.04.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Herford Stadttheater",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -8088,6 +8109,13 @@
                     "datum_anzeige": "09.04.2027",
                     "uhrzeit": "19.00 Uhr",
                     "ort": "Gifhorn Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-11",
+                    "datum_anzeige": "11.04.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Herford Stadttheater",
                     "ticket_url": null
                 }
             ],
@@ -8585,6 +8613,13 @@
                     "datum_anzeige": "17.06.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-03",
+                    "datum_anzeige": "03.02.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Herford Stadttheater",
                     "ticket_url": null
                 }
             ],
