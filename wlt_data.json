@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-27 04:52:25",
+        "generiert": "2026-01-28 04:50:22",
         "anzahl": 43
     },
     "daten": [
@@ -2492,7 +2492,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-27"
+            "naechster_termin_iso": "2026-10-14"
         },
         {
             "id": "13712",
@@ -3942,7 +3942,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-01-27"
+            "naechster_termin_iso": "2026-03-08"
         },
         {
             "id": "13645",
@@ -5621,6 +5621,13 @@
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Castrop-Rauxel Parkbad SüdEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
                     "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471050&eventID=2432805"
+                },
+                {
+                    "datum_iso": "2027-01-24",
+                    "datum_anzeige": "24.01.2027",
+                    "uhrzeit": "17.00 Uhr",
+                    "ort": "Witten Saalbau",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -6225,7 +6232,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-01-27"
+            "naechster_termin_iso": "2026-02-22"
         },
         {
             "id": "13721",
@@ -7513,6 +7520,13 @@
                     "datum_anzeige": "21.05.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Lünen Heinz-Hilpert-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-14",
+                    "datum_anzeige": "14.03.2027",
+                    "uhrzeit": "17.00 Uhr",
+                    "ort": "Witten Saalbau",
                     "ticket_url": null
                 }
             ],
