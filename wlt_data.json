@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-01-28 04:50:22",
+        "generiert": "2026-01-29 05:09:10",
         "anzahl": 43
     },
     "daten": [
@@ -2525,6 +2525,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-12-10",
+                    "datum_anzeige": "10.12.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Recklinghausen Ruhrfestspielhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-22",
                     "datum_anzeige": "22.01.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -4904,6 +4911,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-07",
+                    "datum_anzeige": "07.11.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Coesfeld Konzert Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-12-01",
                     "datum_anzeige": "01.12.2026",
                     "uhrzeit": "10.00 Uhr",
@@ -5623,6 +5637,13 @@
                     "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471050&eventID=2432805"
                 },
                 {
+                    "datum_iso": "2026-09-17",
+                    "datum_anzeige": "17.09.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Recklinghausen Ruhrfestspielhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-24",
                     "datum_anzeige": "24.01.2027",
                     "uhrzeit": "17.00 Uhr",
@@ -5698,6 +5719,13 @@
                     "datum_anzeige": "13.09.2026",
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-15",
+                    "datum_anzeige": "15.09.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Recklinghausen Ruhrfestspielhaus",
                     "ticket_url": null
                 },
                 {
@@ -7839,6 +7867,13 @@
                     "datum_anzeige": "06.03.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Recklinghausen Ruhrfestspielhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-03-28",
+                    "datum_anzeige": "28.03.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Quedlinburg Neue Bühne",
                     "ticket_url": null
                 },
                 {
