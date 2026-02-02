@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-01 05:24:19",
+        "generiert": "2026-02-02 05:27:00",
         "anzahl": 43
     },
     "daten": [
@@ -8772,7 +8772,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-01"
+            "naechster_termin_iso": "2026-02-05"
         },
         {
             "id": "13657",
