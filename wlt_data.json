@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-02 05:27:00",
+        "generiert": "2026-02-03 05:17:40",
         "anzahl": 43
     },
     "daten": [
@@ -1838,6 +1838,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_wlt_krull_web_timo_hummel_1.jpg"
                 },
                 {
+                    "typ": "audio",
+                    "url": "https://westfaelisches-landestheater.de/media/audio-trailer_felix_krull.mp3"
+                },
+                {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_felix_krull_1_volker_beushausen.jpg"
                 },
@@ -1884,7 +1888,7 @@
             "flags": {
                 "tickets": true,
                 "video": false,
-                "audio": false
+                "audio": true
             },
             "naechster_termin_iso": "2026-02-05"
         },
