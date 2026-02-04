@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-03 05:17:40",
+        "generiert": "2026-02-04 05:12:53",
         "anzahl": 43
     },
     "daten": [
@@ -779,7 +779,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-03"
+            "naechster_termin_iso": "2026-02-04"
         },
         {
             "id": "13658",
@@ -2256,6 +2256,10 @@
                 {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/cabaret_21_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/cabaret_22_volker_beushausen.jpg"
                 }
             ],
             "presse": [
@@ -4915,6 +4919,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-10-08",
+                    "datum_anzeige": "08.10.2026",
+                    "uhrzeit": "17.30 Uhr",
+                    "ort": "Minden Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-07",
                     "datum_anzeige": "07.11.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -4975,6 +4986,13 @@
                     "datum_anzeige": "21.12.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-02",
+                    "datum_anzeige": "02.01.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Reken Forum",
                     "ticket_url": null
                 },
                 {
@@ -5661,6 +5679,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_harold_und_maude_web_gestaltung_timo_hummel.jpg"
                 },
                 {
+                    "typ": "audio",
+                    "url": "https://westfaelisches-landestheater.de/media/audiotrailer_harold_und_maude.mp3"
+                },
+                {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_1_volker_beushausen.jpg"
                 },
@@ -5691,7 +5713,7 @@
             "flags": {
                 "tickets": true,
                 "video": false,
-                "audio": false
+                "audio": true
             },
             "naechster_termin_iso": "2026-02-14"
         },
@@ -5751,6 +5773,20 @@
                     "datum_anzeige": "07.10.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Bad Oeynhausen Theater im Park",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-13",
+                    "datum_anzeige": "13.10.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Minden Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-14",
+                    "datum_anzeige": "14.10.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Minden Stadttheater",
                     "ticket_url": null
                 },
                 {
@@ -6626,7 +6662,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-03"
+            "naechster_termin_iso": "2026-03-08"
         },
         {
             "id": "13714",
@@ -7690,6 +7726,20 @@
                     "datum_anzeige": "31.10.2026",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-03",
+                    "datum_anzeige": "03.11.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Minden Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-03",
+                    "datum_anzeige": "03.11.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Minden Stadttheater",
                     "ticket_url": null
                 },
                 {
