@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-05 05:19:31",
+        "generiert": "2026-02-06 05:17:57",
         "anzahl": 43
     },
     "daten": [
@@ -1843,6 +1843,46 @@
                 },
                 {
                     "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_1_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_2_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_3_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_4_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_5_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_6_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_7_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_8_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_9_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_des_hochstaplers_felix_krull_10_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bekenntnisse_felix_krull_1_volker_beushausen.jpg"
                 },
                 {
@@ -1890,7 +1930,7 @@
                 "video": false,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-05"
+            "naechster_termin_iso": "2026-02-25"
         },
         {
             "id": "13663",
@@ -2858,6 +2898,13 @@
                     "datum_anzeige": "05.12.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-11",
+                    "datum_anzeige": "11.12.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Leverkusen KulturStadtLev - Forum",
                     "ticket_url": null
                 },
                 {
@@ -3939,6 +3986,30 @@
                 {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_13.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_14_volker_beushause_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_15_volker_beushause_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_16_volker_beushause_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_17_volker_beushause_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_18_volker_beushause_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/der_zerbrochne_krug_19_volker_beushause_1.jpg"
                 }
             ],
             "presse": [
@@ -5031,6 +5102,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-04-15",
+                    "datum_anzeige": "15.04.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Lünen Heinz-Hilpert-Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-05-02",
                     "datum_anzeige": "02.05.2027",
                     "uhrzeit": "14.30 Uhr",
@@ -5801,6 +5879,13 @@
                     "datum_anzeige": "20.11.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-25",
+                    "datum_anzeige": "25.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Lünen Heinz-Hilpert-Theater",
                     "ticket_url": null
                 },
                 {
@@ -6699,6 +6784,13 @@
                     "datum_anzeige": "06.03.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-21",
+                    "datum_anzeige": "21.04.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Lünen Heinz-Hilpert-Theater",
                     "ticket_url": null
                 },
                 {
@@ -8826,7 +8918,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-05"
+            "naechster_termin_iso": "2026-03-03"
         },
         {
             "id": "13657",
