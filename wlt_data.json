@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-06 05:17:57",
+        "generiert": "2026-02-07 05:08:55",
         "anzahl": 43
     },
     "daten": [
@@ -3336,7 +3336,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-06"
+            "naechster_termin_iso": "2026-05-08"
         },
         {
             "id": "13697",
@@ -5022,6 +5022,20 @@
                     "datum_anzeige": "02.12.2026",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Wesel Städtisches Bühnenhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-08",
+                    "datum_anzeige": "08.12.2026",
+                    "uhrzeit": "9.30 Uhr",
+                    "ort": "Leverkusen KulturStadtLev - Forum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-08",
+                    "datum_anzeige": "08.12.2026",
+                    "uhrzeit": "11.30 Uhr",
+                    "ort": "Leverkusen KulturStadtLev - Forum",
                     "ticket_url": null
                 },
                 {
