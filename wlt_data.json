@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-11 05:39:17",
+        "generiert": "2026-02-12 05:36:30",
         "anzahl": 43
     },
     "daten": [
@@ -464,7 +464,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-11"
+            "naechster_termin_iso": "2026-05-12"
         },
         {
             "id": "13684",
@@ -2573,6 +2573,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-11",
+                    "datum_anzeige": "11.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Radevormwald Bürgerhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-12-10",
                     "datum_anzeige": "10.12.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -2905,6 +2912,13 @@
                     "datum_anzeige": "11.12.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Leverkusen KulturStadtLev - Forum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-16",
+                    "datum_anzeige": "16.12.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Radevormwald Bürgerhaus",
                     "ticket_url": null
                 },
                 {
@@ -4289,7 +4303,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-11"
+            "naechster_termin_iso": "2026-03-17"
         },
         {
             "id": "13716",
@@ -5011,6 +5025,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-16",
+                    "datum_anzeige": "16.11.2026",
+                    "uhrzeit": "17.00 Uhr",
+                    "ort": "Kamen Konzertaula",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-12-01",
                     "datum_anzeige": "01.12.2026",
                     "uhrzeit": "10.00 Uhr",
@@ -5046,36 +5067,36 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-12-17",
-                    "datum_anzeige": "17.12.2026",
+                    "datum_iso": "2026-12-16",
+                    "datum_anzeige": "16.12.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-12-18",
-                    "datum_anzeige": "18.12.2026",
+                    "datum_iso": "2026-12-17",
+                    "datum_anzeige": "17.12.2026",
                     "uhrzeit": "9.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-12-18",
-                    "datum_anzeige": "18.12.2026",
+                    "datum_iso": "2026-12-17",
+                    "datum_anzeige": "17.12.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-12-21",
-                    "datum_anzeige": "21.12.2026",
+                    "datum_iso": "2026-12-18",
+                    "datum_anzeige": "18.12.2026",
                     "uhrzeit": "9.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-12-21",
-                    "datum_anzeige": "21.12.2026",
+                    "datum_iso": "2026-12-18",
+                    "datum_anzeige": "18.12.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
@@ -6808,6 +6829,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-03-10",
+                    "datum_anzeige": "10.03.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Radevormwald Bürgerhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-04-21",
                     "datum_anzeige": "21.04.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -8048,6 +8076,13 @@
                     "datum_anzeige": "20.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Warendorf Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-27",
+                    "datum_anzeige": "27.11.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Delbrück Stadthalle",
                     "ticket_url": null
                 },
                 {
