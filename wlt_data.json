@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-12 05:36:30",
+        "generiert": "2026-02-13 05:24:06",
         "anzahl": 43
     },
     "daten": [
@@ -5910,6 +5910,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-03",
+                    "datum_anzeige": "03.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Gütersloh Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-04",
+                    "datum_anzeige": "04.11.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Gütersloh Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-20",
                     "datum_anzeige": "20.11.2026",
                     "uhrzeit": "10.00 Uhr",
@@ -6000,7 +6014,52 @@
                 "KJT"
             ],
             "is_kjt": true,
-            "besetzung": [],
+            "besetzung": [
+                {
+                    "rolle": "Spielerin 1",
+                    "darsteller": "Jamila Boukhers"
+                },
+                {
+                    "rolle": "Spieler 2",
+                    "darsteller": "David Kiefer"
+                },
+                {
+                    "rolle": "Spielerin 3",
+                    "darsteller": "Nele Reins"
+                },
+                {
+                    "rolle": "Spieler 4",
+                    "darsteller": "Alexander Maria Wolff"
+                },
+                {
+                    "rolle": "Spieler 5",
+                    "darsteller": "Christian Zell"
+                },
+                {
+                    "rolle": "Bühnenregie/Ausstattung",
+                    "darsteller": "Nina Maria Stemberger"
+                },
+                {
+                    "rolle": "Audiovisuelle Regie/ Sound Design",
+                    "darsteller": "Birk Schmithüsen"
+                },
+                {
+                    "rolle": "Creative Coding",
+                    "darsteller": "Meredith Thomas"
+                },
+                {
+                    "rolle": "Theaterpädagogik",
+                    "darsteller": "Michaela Cordes"
+                },
+                {
+                    "rolle": "Interviews",
+                    "darsteller": "Michaela Cordes"
+                },
+                {
+                    "rolle": "Regieassistenz / Abendspielleitung",
+                    "darsteller": "Sophie Charlotte Dittmer"
+                }
+            ],
             "inhalt": "Das interaktive Theaterstück verortet die klassische Heldenreise in der digitalen Lebenswelt von Jugendlichen und stellt die Frage: Wer sind die Held*innen von heute, und welche Werte und Eigenschaften zeichnen sie aus? Im Mittelpunkt steht eine moderne Hauptfigur, die symbolisch »zwölf Prüfungen« durchläuft – jede davon verknüpft mit zentralen Themen und Herausforderungen der Jugend. Die Inszenierung thema- tisiert unter anderem: Medienkompetenz, digitale Identität, Freundschaft und Zugehörigkeit. Ein zentrales Motiv ist die Täuschung, inspiriert von den Irrwegen des antiken Herkules. In der heutigen digitalen Welt spiegeln sich diese Themen in Phänomenen wie Deepfake-Technologien wider, die Realitäten manipulieren und die Identitätsfindung der Jugendlichen beeinflussen. Durch partizipative Elemente kann das Publikum die Handlung aktiv mitgestalten und eigene Perspektiven einbringen. »Herkules« ist eine Einladung, klassische Heldenbilder zu hinterfragen, neue Vorbilder zu entdecken und gemeinsam die Herausforderungen einer digitalisierten Welt zu bewältigen.",
             "termine": [
                 {
@@ -6345,6 +6404,13 @@
                     "datum_anzeige": "28.05.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-28",
+                    "datum_anzeige": "28.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Gütersloh Theater",
                     "ticket_url": null
                 },
                 {
@@ -8864,6 +8930,13 @@
                     "datum_anzeige": "17.06.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-11",
+                    "datum_anzeige": "11.10.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Gütersloh Theater",
                     "ticket_url": null
                 },
                 {
