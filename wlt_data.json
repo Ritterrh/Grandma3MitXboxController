@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-14 05:12:06",
+        "generiert": "2026-02-16 05:39:44",
         "anzahl": 43
     },
     "daten": [
@@ -5733,8 +5733,8 @@
                     "datum_iso": "2026-02-14",
                     "datum_anzeige": "14.02.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471050&eventID=2268174"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-02-27",
@@ -5804,23 +5804,67 @@
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_1_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_1_volker_beushausen_.jpg"
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_2_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_2_volker_beushausen.jpg"
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_3_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_3_volker_beushausen_.jpg"
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_4_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_4_volker_beushausen_.jpg"
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_leseprobe_5_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_5_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_6_volker_beushausen_.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_7_volker_beushausen_.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_8_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_9_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_10_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_11_volker_beushausen_.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_13_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_14_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_12_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_15_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_16_volker_beushausen.jpg"
                 }
             ],
             "presse": [],
@@ -5835,7 +5879,7 @@
                 "video": false,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-14"
+            "naechster_termin_iso": "2026-02-27"
         },
         {
             "id": "13711",
