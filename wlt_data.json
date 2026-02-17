@@ -1,7 +1,7 @@
 {
     "meta": {
-        "generiert": "2026-02-16 05:39:44",
-        "anzahl": 43
+        "generiert": "2026-02-17 05:24:36",
+        "anzahl": 46
     },
     "daten": [
         {
@@ -2543,6 +2543,101 @@
             "naechster_termin_iso": "2026-10-14"
         },
         {
+            "id": "13740",
+            "titel": "Das Geheimnis der Tiere",
+            "subtitel": "Stückentwicklung",
+            "genre_liste": "Premiere: 25.04.2026",
+            "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13740/",
+            "spielzeiten": [
+                "2025/2026"
+            ],
+            "kategorien": [
+                "KJT"
+            ],
+            "is_kjt": true,
+            "besetzung": [],
+            "inhalt": "Spielleitung Nadine Mittelstädt\n\nNach den Ferien erwartet eine vierte Klasse eine Überraschung: Eine neue, geheimnisvolle Mitschülerin behauptet, sie besitze magische Kräfte. Doch die Klasse ist zerstritten – drei Gruppen stehen sich gegenüber. Als die Lehrerin drei rätselhafte Stofftiere im Schulturm entdeckt und daraus eine Refe-ratsaufgabe macht, beginnen merkwürdige Dinge zu geschehen. Schnell wird klar: Mit den Tieren stimmt etwas nicht! Nur gemeinsam können die Kinder das Geheimnis lüften – und lernen dabei, was wahre Gemeinschaft, Zusammenhalt und gegenseitige Akzeptanz wirklich bedeuten.",
+            "termine": [
+                {
+                    "datum_iso": "2026-04-25",
+                    "datum_anzeige": "25.04.2026",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                }
+            ],
+            "medien": [
+                {
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakat_12-02-_final_wlt_buehnensturm_2026_a3_rz_-_bild_4.jpg"
+                }
+            ],
+            "presse": [],
+            "meta_details": {
+                "dauer_minuten": null,
+                "hat_pause": false,
+                "altersempfehlung": null,
+                "schulklasse": null
+            },
+            "flags": {
+                "tickets": false,
+                "video": false,
+                "audio": false
+            },
+            "naechster_termin_iso": "2026-04-25"
+        },
+        {
+            "id": "13737",
+            "titel": "Das Gewicht der Ameisen (Le poids des fourmis)",
+            "subtitel": "David Paquet, Deutsch von Frank Weigand",
+            "genre_liste": "Premiere: 24.04.2026",
+            "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13737/",
+            "spielzeiten": [
+                "2025/2026"
+            ],
+            "kategorien": [
+                "KJT"
+            ],
+            "is_kjt": true,
+            "besetzung": [],
+            "inhalt": "Spielleitung Michi Cordes\n\nStell dir vor, du bist 15 Jahre alt. Stell dir vor, die Welt begegnet dir mit Chaos und Gewalt, mit ungleicher Verteilung von Macht und Ressourcen, mit Katastrophen und Umweltzerstörung. Aber wie begegnest du der Welt? Mit Wut & Aufbegehren? Mit Rückzug & Depression? Mit Sarkasmus & Ignoranz? Oder versuchst du es immer noch mit Optimismus? Ist das nicht naiv?\n\n„Wusstest du, dass alle Ameisen auf der Welt zusammengerechnet schwerer sind als alle Menschen!?“ – „Sie sind zwar klein und leicht zu zerquetschen, aber so zahlreich, dass, wenn sie sich einmal zusammentun – sie viel schwerer sind, als wir jemals…“\n\nGibt es einen Umgang mit dieser „Verderbenskugel“, die dich nicht kaputt macht?\n\n„Und vergiss nicht, die Welt zu retten! Bitte. Rette die Welt.“",
+            "termine": [
+                {
+                    "datum_iso": "2026-04-24",
+                    "datum_anzeige": "24.04.2026",
+                    "uhrzeit": "19.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-05-15",
+                    "datum_anzeige": "15.05.2026",
+                    "uhrzeit": "14.30 Uhr",
+                    "ort": "Oberhausen Theater",
+                    "ticket_url": null
+                }
+            ],
+            "medien": [
+                {
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakat_12-02-_final_wlt_buehnensturm_2026_a3_rz_-_bild_4.jpg"
+                }
+            ],
+            "presse": [],
+            "meta_details": {
+                "dauer_minuten": null,
+                "hat_pause": false,
+                "altersempfehlung": null,
+                "schulklasse": null
+            },
+            "flags": {
+                "tickets": false,
+                "video": false,
+                "audio": false
+            },
+            "naechster_termin_iso": "2026-04-24"
+        },
+        {
             "id": "13712",
             "titel": "Das Kalendermädchen",
             "subtitel": "Sebastian Fitzek",
@@ -3026,7 +3121,40 @@
                 "Abendtheater"
             ],
             "is_kjt": false,
-            "besetzung": [],
+            "besetzung": [
+                {
+                    "rolle": "Bruscon, Theatermacher",
+                    "darsteller": "Mike Kühne"
+                },
+                {
+                    "rolle": "Frau Bruscon, Theatermacherin",
+                    "darsteller": "Lesley-Ann Eisenhardt"
+                },
+                {
+                    "rolle": "Ferruccio, deren Sohn",
+                    "darsteller": "Vincent John"
+                },
+                {
+                    "rolle": "Sarah, deren Tochter",
+                    "darsteller": "Arikia Orbán"
+                },
+                {
+                    "rolle": "Der Wirt",
+                    "darsteller": "Jan-Hendrik Kroll"
+                },
+                {
+                    "rolle": "Inszenierung",
+                    "darsteller": "Dalila Niksic"
+                },
+                {
+                    "rolle": "Bühne und Kostüme",
+                    "darsteller": "Clara Eigeldinger"
+                },
+                {
+                    "rolle": "Bühne und Kostüme",
+                    "darsteller": "Rabea Stadthaus"
+                }
+            ],
             "inhalt": "Da ist er. Der Staatsschauspieler(!) Bruscon. Mit seiner Komödie »Das Rad der Geschichte«, die die gesamte Weltliteratur in sich vereint. In Utzbach. Spielort ist der Tanzsaal im Gasthaus »Schwarzer Hirsch«. Ein Unort. Nicht mal »zum Wasserlassen habe ich diese Art von Gasthäusern betreten«, »eine Kunstfalle«! Insgesamt ist die 280-Seelen-Gemeinde auf den bevorstehenden Welterfolg nur äußerst ungenügend vorbereitet. Der Bühnenboden droht durchzubrechen, die Luft ist zu schwül, die Feuerwehr wird wahrscheinlich nicht in der Lage sein, das Notlicht auszuschalten, selbst »in der Frittatensuppe feiert die Provinz ihre Triumphe«. Außerdem ist Blutwursttag. Da kommt sowieso niemand. Sagt die Wirtin. Noch so eine geistige Nebenerscheinung. Das Ensemble besteht aus Bruscons Familie, der angeblich erkälteten Ehefrau und den beiden talentlosen Kindern. Allesamt Enttäuschungen. Gigantischer Antitalentismus! In endlosen Tiraden, die letztlich nur seine eigene Unsicherheit, Einsamkeit und Liebesbedürftigkeit zum Ausdruck bringen, nähert sich Bruscon unaufhaltsam dem Vorstellungsbeginn. Wider Erwarten füllt sich der Saal, die Hoffnung, doch gehört und angebetet zu werden, bahnt sich ihren Weg.\n\n»Wenn wir ehrlich sind, ist das Theater an sich eine Absurdität. Wenn wir ehrlich sind, können wir überhaupt nichts mehr tun. Außer uns umbringen. Und da wir uns aber nicht umbringen, umbringen wollen, wenigstens bis heute und bis jetzt nicht, da wir uns also bis heute und bis jetzt nicht umgebracht haben, versuchen wir es immer wieder mit dem Theater.«\n\nThomas Bernhards bekanntestes Stück, ein Klassiker des 20. Jahrhunderts, ist eine komödiantische Liebeserklärung an das Theater. In seiner unnachahmlichen sprachlichen Meisterschaft gelingt es ihm, die ganze Faszination, die das Theater mit all seinen Widersprüchen und Verzauberungen mit sich bringt, deutlich werden zu lassen. Uraufgeführt 1985 bei den Salzburger Festspielen hat das Stück nichts von seiner komischen und tragischen Kraft verloren.",
             "termine": [
                 {
@@ -7342,6 +7470,57 @@
                 "audio": false
             },
             "naechster_termin_iso": "2027-03-18"
+        },
+        {
+            "id": "13739",
+            "titel": "Night of the Greeks",
+            "subtitel": "Elisa de Matteis und Judith Freise-de Matteis",
+            "genre_liste": "Premiere: 02.05.2026",
+            "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13739/",
+            "spielzeiten": [
+                "2025/2026"
+            ],
+            "kategorien": [
+                "KJT"
+            ],
+            "is_kjt": true,
+            "besetzung": [],
+            "inhalt": "Spielleitung Judith Freise-de Matteis\n\n„Heute wieder lecker beim Griechen gegessen“\n\nDas schreibt Zeus um 23:37 Uhr noch in seinen GodsApp-Status. Die Nacht, die darauf folgt, hat es in sich. Poseidon hat sich mit Medusa verbündet, um die Herrschaft über den Olymp an sich zu reißen. Das lässt sich nur verhindert, wenn das Haupt der Medusa in die Unterwelt gebracht wird. Ein klarer Job für Hermes, aber mit „Paket hab ich bei Nachbar“ ist es diesmal nicht getan. Beim Nektarkränzchen sind sich Hera, Athene und Europa einig, dass die Welt ganz anders aussähe, wenn die GöttINNEN mehr zu sagen hätten. Zeus hatte jetzt lange genug Zeit, sein Können zu beweisen. Gelangt Medusas Kopf noch rechtzeitig in die Unterwelt? Wissen die Orakel-Katzen mehr als sie zugeben? Und wo zum Hades steckt eigentlich Odysseus? Jetzt aber erstmal einen Ouzo…",
+            "termine": [
+                {
+                    "datum_iso": "2026-05-02",
+                    "datum_anzeige": "02.05.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-05-03",
+                    "datum_anzeige": "03.05.2026",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                }
+            ],
+            "medien": [
+                {
+                    "typ": "plakat",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakat_12-02-_final_wlt_buehnensturm_2026_a3_rz_-_bild_4.jpg"
+                }
+            ],
+            "presse": [],
+            "meta_details": {
+                "dauer_minuten": null,
+                "hat_pause": false,
+                "altersempfehlung": null,
+                "schulklasse": null
+            },
+            "flags": {
+                "tickets": false,
+                "video": false,
+                "audio": false
+            },
+            "naechster_termin_iso": "2026-05-02"
         },
         {
             "id": "13722",
