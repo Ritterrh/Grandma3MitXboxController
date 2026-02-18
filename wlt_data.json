@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-17 05:24:36",
+        "generiert": "2026-02-18 05:25:50",
         "anzahl": 46
     },
     "daten": [
@@ -5976,6 +5976,10 @@
                 },
                 {
                     "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_12_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_13_volker_beushausen.jpg"
                 },
                 {
@@ -5984,15 +5988,7 @@
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_12_volker_beushausen.jpg"
-                },
-                {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_15_volker_beushausen.jpg"
-                },
-                {
-                    "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_16_volker_beushausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_15_volker_beushausen_1.jpg"
                 }
             ],
             "presse": [],
