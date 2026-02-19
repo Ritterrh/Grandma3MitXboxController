@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-18 05:25:50",
+        "generiert": "2026-02-19 05:24:35",
         "anzahl": 46
     },
     "daten": [
@@ -1379,7 +1379,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-18"
+            "naechster_termin_iso": "2026-03-02"
         },
         {
             "id": "13637",
@@ -1521,13 +1521,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-02-20",
-                    "datum_anzeige": "20.02.2026",
-                    "uhrzeit": "20.00 Uhr",
-                    "ort": "Cuxhaven Stadttheater",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-03-25",
                     "datum_anzeige": "25.03.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -1644,7 +1637,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-20"
+            "naechster_termin_iso": "2026-03-25"
         },
         {
             "id": "13698",
@@ -2661,6 +2654,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-10-22",
+                    "datum_anzeige": "22.10.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Solingen Theater und Konzerthaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-07",
                     "datum_anzeige": "07.11.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -3084,6 +3084,13 @@
                     "datum_anzeige": "17.03.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Kamp-Lintfort Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-22",
+                    "datum_anzeige": "22.06.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Solingen Theater und Konzerthaus",
                     "ticket_url": null
                 }
             ],
@@ -8396,6 +8403,13 @@
                     "datum_anzeige": "13.04.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Herford Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-15",
+                    "datum_anzeige": "15.04.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Solingen Theater und Konzerthaus",
                     "ticket_url": null
                 }
             ],
