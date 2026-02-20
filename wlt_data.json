@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-19 05:24:35",
+        "generiert": "2026-02-20 05:18:57",
         "anzahl": 46
     },
     "daten": [
@@ -5085,7 +5085,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-19"
+            "naechster_termin_iso": "2026-02-24"
         },
         {
             "id": "13718",
@@ -5234,6 +5234,13 @@
                     "datum_anzeige": "18.12.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-31",
+                    "datum_anzeige": "31.12.2026",
+                    "uhrzeit": "15.30 Uhr",
+                    "ort": "Solingen Theater und Konzerthaus",
                     "ticket_url": null
                 },
                 {
@@ -6096,6 +6103,13 @@
                     "datum_anzeige": "04.11.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Gütersloh Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-05",
+                    "datum_anzeige": "05.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Rheine Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -6969,6 +6983,13 @@
                     "datum_anzeige": "19.11.2026",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Oelde Thomas-Morus-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-23",
+                    "datum_anzeige": "23.05.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Düren Theater",
                     "ticket_url": null
                 }
             ],
@@ -8021,6 +8042,13 @@
                     "datum_anzeige": "21.05.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Lünen Heinz-Hilpert-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-25",
+                    "datum_anzeige": "25.09.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Erkelenz Stadthalle",
                     "ticket_url": null
                 },
                 {
