@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-20 05:18:57",
+        "generiert": "2026-02-21 05:08:59",
         "anzahl": 46
     },
     "daten": [
@@ -3789,7 +3789,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-02-20"
+            "naechster_termin_iso": "2026-02-28"
         },
         {
             "id": "13685",
@@ -9613,6 +9613,13 @@
                     "datum_anzeige": "20.04.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Geldern Lise-Meitner-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-30",
+                    "datum_anzeige": "30.04.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Düren Theater",
                     "ticket_url": null
                 },
                 {
