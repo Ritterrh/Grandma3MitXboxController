@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-02-27 05:17:13",
+        "generiert": "2026-02-28 04:58:38",
         "anzahl": 46
     },
     "daten": [
@@ -2556,7 +2556,7 @@
                     "datum_anzeige": "25.04.2026",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ticket_url": " https://www.reservix.de/p/reservix/event/2532198"
                 }
             ],
             "medien": [
@@ -2573,7 +2573,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -2600,7 +2600,7 @@
                     "datum_anzeige": "24.04.2026",
                     "uhrzeit": "19.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2532204"
                 },
                 {
                     "datum_iso": "2026-05-15",
@@ -2624,7 +2624,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -2672,6 +2672,13 @@
                     "datum_anzeige": "11.11.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Radevormwald Bürgerhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-16",
+                    "datum_anzeige": "16.11.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Nordhorn Konzert und Theatersaal",
                     "ticket_url": null
                 },
                 {
@@ -5827,7 +5834,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-27"
+            "naechster_termin_iso": "2026-04-22"
         },
         {
             "id": "13693",
@@ -6029,7 +6036,13 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/harold_und_maude_15_volker_beushausen_1.jpg"
                 }
             ],
-            "presse": [],
+            "presse": [
+                "„Komödie begeisterte im Westfälischen Landestheater […] Die Premiere im Studio am Samstag fand zumindest für Lesley-Ann Eisenhardt unter erschwerten Bedingungen statt. […] Zum Teil auf Krücken gab sie überzeugend die drei recht unterschiedlichen Heirats-Kandidatinnen. […] Hella-Birgit Mascus verkörpert wunderbar diese Pippi-Langstrumpf-Figur, allerdings mit Holocaust-Erfahrung. Doch dieses düstere Thema klingt nur einmal kurz an. Denn die Regie setzt vor allen auf Lacher – und das funktioniert bestens durch das gut getimte Spiel der Mimen. […]",
+                "Nur die schwarzen Vorhänge müssen aufgezogen werden, dann fällt der Blick auf Maudes kunterbuntes Heim oder in die Kirche vom kauzigen Pfarrer des Marvin Moers, der auch als Butler auftritt. Ebenso souverän meistert Jan Hendrik-Kroll seine Doppelrolle als Polizist und Arzt. Ein unterhaltsamer Theaterabend, den das Publikum ausgiebig feierte.“ Ruhr Nachrichten, Britta Helmbold",
+                "„‘Harold und Maude‘ begeistert mit schwarzer Komik, Lebensweisheiten und Musik. Das Westfälische Landestheater inszeniert die Kultkomödie nuanciert und unterhaltsam. Die Premiere wurde vom Publikum mit stürmischem Applaus gefeiert.",
+                "Großartig ist Hella-Birgit Mascus als Maude, die neugierig, klug und herzenswarm eine Gegenwelt verkörpert, die zum Sehnsuchtsort für Harold wird. […] alles macht Sinn und Freude, wenn Hella-Birgit Mascus spricht, auftritt und mit einem Gongschlag ein bisschen Märchenfee spielt. Das ist spirituell spürbar und gutes Timing. Herrlich![…]",
+                "Musikintros bieten den Popsound der 60er/70er Jahre, und Cat Stevens’ Song „If you want to sing out, sing out“ wird als Höhepunkt der Romanze wirkungsvoll gesetzt (Musik: Tankred Schleinschock). […] Auch das Premierenpublikum fühlte sich hier wohl und applaudierte stürmisch.“ Achim Lettmann, Westfälischer Anzeiger"
+            ],
             "meta_details": {
                 "dauer_minuten": null,
                 "hat_pause": false,
@@ -6041,7 +6054,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-02-27"
+            "naechster_termin_iso": "2026-02-28"
         },
         {
             "id": "13711",
@@ -6986,7 +6999,7 @@
                     "datum_anzeige": "24.04.2026",
                     "uhrzeit": "17.00 Uhr",
                     "ort": "Kamen Konzertaula",
-                    "ticket_url": null
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2532204"
                 },
                 {
                     "datum_iso": "2026-05-10",
@@ -7133,6 +7146,13 @@
                     "datum_anzeige": "28.04.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Hameln-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-10",
+                    "datum_anzeige": "10.05.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Rheinberg Stadthalle",
                     "ticket_url": null
                 }
             ],
@@ -7540,14 +7560,14 @@
                     "datum_anzeige": "02.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ticket_url": " https://www.reservix.de/p/reservix/event/2532207"
                 },
                 {
                     "datum_iso": "2026-05-03",
                     "datum_anzeige": "03.05.2026",
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ticket_url": " https://www.reservix.de/p/reservix/event/2532247"
                 }
             ],
             "medien": [
@@ -7564,7 +7584,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -8267,6 +8287,20 @@
                     "datum_anzeige": "14.02.2027",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-23",
+                    "datum_anzeige": "23.02.2027",
+                    "uhrzeit": "15.30 Uhr",
+                    "ort": "Witten Saalbau",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-11",
+                    "datum_anzeige": "11.03.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Rheinberg Stadthalle",
                     "ticket_url": null
                 },
                 {
