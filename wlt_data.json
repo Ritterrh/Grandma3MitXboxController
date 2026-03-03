@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-02 05:17:31",
+        "generiert": "2026-03-03 05:16:56",
         "anzahl": 46
     },
     "daten": [
@@ -1379,7 +1379,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-02"
+            "naechster_termin_iso": "2026-04-27"
         },
         {
             "id": "13637",
@@ -5138,6 +5138,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-13",
+                    "datum_anzeige": "13.09.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Rüsselsheim Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-14",
+                    "datum_anzeige": "14.09.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Rüsselsheim Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-09-20",
                     "datum_anzeige": "20.09.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -5275,6 +5289,13 @@
                     "datum_anzeige": "02.01.2027",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Reken Forum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-03",
+                    "datum_anzeige": "03.01.2027",
+                    "uhrzeit": "15.30 Uhr",
+                    "ort": "Rheda-Wiedenbrück Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -6084,6 +6105,13 @@
                     "datum_anzeige": "13.09.2026",
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-14",
+                    "datum_anzeige": "14.09.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Rheda-Wiedenbrück Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -9711,7 +9739,7 @@
         {
             "id": "13717",
             "titel": "Sophie Scholl - Die letzten Tage",
-            "subtitel": "nach Fred Breinersdorfer",
+            "subtitel": "von Betty Hensel & Fred Breinersdorfer",
             "genre_liste": "Jugendstück für alle ab 14 Jahren, ab 9. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13717/",
             "spielzeiten": [
