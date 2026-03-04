@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-03 05:16:56",
+        "generiert": "2026-03-04 05:11:27",
         "anzahl": 46
     },
     "daten": [
@@ -4986,6 +4986,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-03-03",
+                    "datum_anzeige": "03.03.2026",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Nettetal Seerosensaal",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-03-25",
                     "datum_anzeige": "25.03.2026",
                     "uhrzeit": "10.00 Uhr",
@@ -9189,13 +9196,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-03-03",
-                    "datum_anzeige": "03.03.2026",
-                    "uhrzeit": "15.00 Uhr",
-                    "ort": "Nettetal Seerosensaal",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-03-06",
                     "datum_anzeige": "06.03.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -9394,7 +9394,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-03"
+            "naechster_termin_iso": "2026-03-06"
         },
         {
             "id": "13657",
