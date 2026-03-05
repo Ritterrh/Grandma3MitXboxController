@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-04 05:11:27",
+        "generiert": "2026-03-05 05:14:36",
         "anzahl": 46
     },
     "daten": [
@@ -3816,7 +3816,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-04"
+            "naechster_termin_iso": "2026-03-08"
         },
         {
             "id": "13685",
@@ -6082,7 +6082,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-04"
+            "naechster_termin_iso": "2026-03-24"
         },
         {
             "id": "13711",
@@ -6419,6 +6419,34 @@
                     "datum_anzeige": "22.05.2026",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Herne Kulturzentrum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-29",
+                    "datum_anzeige": "29.09.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-29",
+                    "datum_anzeige": "29.09.2026",
+                    "uhrzeit": "11.30 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-30",
+                    "datum_anzeige": "30.09.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-30",
+                    "datum_anzeige": "30.09.2026",
+                    "uhrzeit": "11.30 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
                     "ticket_url": null
                 },
                 {
@@ -9756,13 +9784,6 @@
                     "datum_iso": "2027-02-21",
                     "datum_anzeige": "21.02.2027",
                     "uhrzeit": "18.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2027-05-26",
-                    "datum_anzeige": "26.05.2027",
-                    "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
                     "ticket_url": null
                 }
