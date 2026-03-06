@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-05 05:14:36",
+        "generiert": "2026-03-06 05:12:27",
         "anzahl": 46
     },
     "daten": [
@@ -1911,7 +1911,9 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/leseprobe_bekenntnisse_felix_krull_karin_epplers_100_inszenierung_6_volker_beushausen_2.jpg"
                 }
             ],
-            "presse": [],
+            "presse": [
+                "„Hoppla, jetzt komm‘ ich: Mario Rolf Brutschin brilliert in der Titelrolle der Adaption des Thomas-Mann-Romans „Bekenntnisse des Hochstaplers Felix Krull“ am WLT. Sie konzentriert sich dabei auf die erste Hälfte des 370-seitigen Romans, in dem sie eine überraschend gegenwärtige Geschichte entdeckt und von „Match!“ bis „Next Level“ behutsam sprachlich aktualisiert hat [:]. Virtuoses Solo Mario Rolf Brutschin zieht gut fünfzig Minuten lang alle Register, verkörpert das achtjährige „Felix Wunderkind“ im Matrosenanzug ebenso virtuos wie den scheinbaren Epileptiker bei der Musterung im Unterhemd oder den gefälligen Liftboy in der Uniform der Pariser Nobelherberge. Der bei der Premiere am 5. Februar 2026 in der Recklinghäuser Käthe Kollwitz Gesamtschule heftig umjubelte WLT-Debütant schlüpft darüberhinaus rastellihaft in mehr als ein Dutzend Rollen.“ Pitt Herrmann, Halloherne.de"
+            ],
             "meta_details": {
                 "dauer_minuten": null,
                 "hat_pause": false,
@@ -2696,6 +2698,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-26",
+                    "datum_anzeige": "26.02.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Lippstadt Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-04-25",
                     "datum_anzeige": "25.04.2027",
                     "uhrzeit": "18.00 Uhr",
@@ -2984,7 +2993,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-05"
+            "naechster_termin_iso": "2027-01-18"
         },
         {
             "id": "13713",
@@ -3142,7 +3151,7 @@
                 },
                 {
                     "rolle": "Frau Bruscon, Theatermacherin",
-                    "darsteller": "Lesley-Ann Eisenhardt"
+                    "darsteller": "Carolin Leweling"
                 },
                 {
                     "rolle": "Ferruccio, deren Sohn",
@@ -5159,6 +5168,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-19",
+                    "datum_anzeige": "19.09.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Meschede Stadthalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-09-20",
                     "datum_anzeige": "20.09.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -5233,6 +5249,20 @@
                     "datum_anzeige": "02.12.2026",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Wesel Städtisches Bühnenhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-04",
+                    "datum_anzeige": "04.12.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Viersen Festhalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-04",
+                    "datum_anzeige": "04.12.2026",
+                    "uhrzeit": "12.00 Uhr",
+                    "ort": "Viersen Festhalle",
                     "ticket_url": null
                 },
                 {
@@ -6199,6 +6229,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-24",
+                    "datum_anzeige": "24.11.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Viersen Festhalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-25",
                     "datum_anzeige": "25.11.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -6217,6 +6254,13 @@
                     "datum_anzeige": "08.12.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Lennestadt Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-07",
+                    "datum_anzeige": "07.01.2027",
+                    "uhrzeit": "19.00 Uhr",
+                    "ort": "Meschede Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -6321,7 +6365,7 @@
                     "darsteller": "Sophie Charlotte Dittmer"
                 }
             ],
-            "inhalt": "Das interaktive Theaterstück verortet die klassische Heldenreise in der digitalen Lebenswelt von Jugendlichen und stellt die Frage: Wer sind die Held*innen von heute, und welche Werte und Eigenschaften zeichnen sie aus? Im Mittelpunkt steht eine moderne Hauptfigur, die symbolisch »zwölf Prüfungen« durchläuft – jede davon verknüpft mit zentralen Themen und Herausforderungen der Jugend. Die Inszenierung thema- tisiert unter anderem: Medienkompetenz, digitale Identität, Freundschaft und Zugehörigkeit. Ein zentrales Motiv ist die Täuschung, inspiriert von den Irrwegen des antiken Herkules. In der heutigen digitalen Welt spiegeln sich diese Themen in Phänomenen wie Deepfake-Technologien wider, die Realitäten manipulieren und die Identitätsfindung der Jugendlichen beeinflussen. Durch partizipative Elemente kann das Publikum die Handlung aktiv mitgestalten und eigene Perspektiven einbringen. »Herkules« ist eine Einladung, klassische Heldenbilder zu hinterfragen, neue Vorbilder zu entdecken und gemeinsam die Herausforderungen einer digitalisierten Welt zu bewältigen.",
+            "inhalt": "Was ist mit Max passiert? Früher war er einer von uns – jetzt ist er weg. Er ist immer mehr abgetaucht: Schule schwänzen, Treffen absagen, nur noch zocken. Dann dieser „Unfall“. Alle sagen: Pech. Seine Clique sagt: komisch. Fünf Freund:innen machen sich auf Spurensuche – und landen bei einem Game: Herkules.exe. Echt und direkt: Dieses Stück entstand mit euch. Herkules.exe wurde nicht einfach ausgedacht – es ist aus echten Stimmen gewachsen. Mehr als 100 Jugendliche haben mit uns gesprochen: über Held:innen, Games, Songs und Social Media. Ihre Erfahrungen, Wörter und Ängste sind in die Figuren und Szenen eingeflossen. Darum klingt das Stück so nah: Die Dialoge, die Konflikte, die kleinen Ausreden und großen Entscheidungen sind von Jugendlichen erzählt – und für Jugendliche gedacht.\n\nWorum’s geht – kurz und klar Das Game wirkt zuerst wie ein cooler Zeitvertreib: krasse Level, heldenhafte Aufgaben. Doch Herkules.exe liest mehr als Highscores – es kennt heimliche Wünsche und spürt eure Ängste. Level für Level verschwimmt die Grenze zwischen Spiel und Realität. Schlaf? Weg. Freunde außerhalb? Scheint plötzlich nicht mehr so wichtig. Nur eines kann sie retten: ihre Freundschaft. Aber reicht Vertrauen gegen eine Welt, die dich fesselt?\n\nBühne & Technik – Game-Feeling live Auf der Bühne verschmelzen reale Räume und Game-Levels: Projektionen, Sounddesign und Live-Action mixen sich zu schnellen, intensiven Szenen. Wir nutzen neueste Technik – inklusive Echtzeit-KI-Videogenerierung. Das heißt: Bilder und Spielwelten werden live erzeugt und reagieren in Echtzeit auf das Spiel der Schauspieler:innen. So werden innere Welten sichtbar und die Grenze zwischen Bildschirm und Bühne verschwimmt vor euren Augen.\n\nTon & Stil Das Stück ist kein Moralvortrag. Es ist ein Thriller übers Erwachsenwerden mit Controller in der Hand – direkt, manchmal witzig, manchmal richtig unheimlich. Sprache und Situationen sind nah an der Lebenswelt von 10- bis 14-Jährigen.",
             "termine": [
                 {
                     "datum_iso": "2026-04-19",
@@ -6482,6 +6526,30 @@
                 {
                     "typ": "plakat",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_herkules_web_motiv_stefan_sombetzski_gestaltung_timo_hummel.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_1_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_2_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_3_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_4_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_5_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_leseprobe_6_volker_beushausen.jpg"
                 }
             ],
             "presse": [],
@@ -7086,6 +7154,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-04-13",
+                    "datum_anzeige": "13.04.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Lippstadt Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-14",
+                    "datum_anzeige": "14.04.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Lippstadt Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-05-23",
                     "datum_anzeige": "23.05.2027",
                     "uhrzeit": "16.00 Uhr",
@@ -7181,6 +7263,13 @@
                     "datum_anzeige": "22.02.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Melle Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-05",
+                    "datum_anzeige": "05.03.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Brilon Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -7616,7 +7705,7 @@
             ],
             "is_kjt": true,
             "besetzung": [],
-            "inhalt": "Spielleitung Judith Freise-de Matteis\n\n„Heute wieder lecker beim Griechen gegessen“\n\nDas schreibt Zeus um 23:37 Uhr noch in seinen GodsApp-Status. Die Nacht, die darauf folgt, hat es in sich. Poseidon hat sich mit Medusa verbündet, um die Herrschaft über den Olymp an sich zu reißen. Das lässt sich nur verhindert, wenn das Haupt der Medusa in die Unterwelt gebracht wird. Ein klarer Job für Hermes, aber mit „Paket hab ich bei Nachbar“ ist es diesmal nicht getan. Beim Nektarkränzchen sind sich Hera, Athene und Europa einig, dass die Welt ganz anders aussähe, wenn die GöttINNEN mehr zu sagen hätten. Zeus hatte jetzt lange genug Zeit, sein Können zu beweisen. Gelangt Medusas Kopf noch rechtzeitig in die Unterwelt? Wissen die Orakel-Katzen mehr als sie zugeben? Und wo zum Hades steckt eigentlich Odysseus? Jetzt aber erstmal einen Ouzo…",
+            "inhalt": "Spielleitung Judith Freise-de Matteis\n\n„Heute wieder lecker beim Griechen gegessen“\n\nDas schreibt Zeus um 23:37 Uhr noch in seinen GodsApp-Status. Die Nacht, die darauf folgt, hat es in sich. Poseidon hat sich mit Medusa verbündet, um die Herrschaft über den Olymp an sich zu reißen. Das lässt sich nur verhindert, wenn das Haupt der Medusa in die Unterwelt gebracht wird. Ein klarer Job für Hermes, aber mit „Paket hab ich bei Nachbar“ ist es diesmal nicht getan. Beim Nektarkränzchen sind sich Hera, Athene und Europa einig, dass die Welt ganz anders aussähe, wenn die GöttINNEN mehr zu sagen hätten. Zeus hatte jetzt lange genug Zeit, sein Können zu beweisen. Gelangt Medusas Kopf noch rechtzeitig in die Unterwelt? Wissen die Orakel-Katzen mehr als sie zugeben? Und wo zum Hades steckt eigentlich Odysseus? Jetzt aber erstmal einen Ouzo…\n\nCollage: Judith Freise-de Matteis",
             "termine": [
                 {
                     "datum_iso": "2026-05-02",
@@ -7637,6 +7726,10 @@
                 {
                     "typ": "plakat",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakat_12-02-_final_wlt_buehnensturm_2026_a3_rz_-_bild_4.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/night_of_the_greeks_1.png"
                 }
             ],
             "presse": [],
@@ -8152,6 +8245,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-08-28",
+                    "datum_anzeige": "28.08.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Castrop-Rauxel Ickern",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-09-25",
                     "datum_anzeige": "25.09.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -8336,6 +8436,13 @@
                     "datum_anzeige": "11.12.2026",
                     "uhrzeit": "9.30 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-09",
+                    "datum_anzeige": "09.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Meschede Stadthalle",
                     "ticket_url": null
                 },
                 {
