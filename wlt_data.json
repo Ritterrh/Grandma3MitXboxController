@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-09 05:22:04",
+        "generiert": "2026-03-10 05:12:44",
         "anzahl": 46
     },
     "daten": [
@@ -3712,20 +3712,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-03-08",
-                    "datum_anzeige": "08.03.2026",
-                    "uhrzeit": "16.00 Uhr",
-                    "ort": "Ibbenbüren Saal des Kulturhauses",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-03-09",
-                    "datum_anzeige": "09.03.2026",
-                    "uhrzeit": "10.30 Uhr",
-                    "ort": "Castrop-Rauxel Kindertagesstätte Kinderland",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-05-11",
                     "datum_anzeige": "11.05.2026",
                     "uhrzeit": "15.00 Uhr",
@@ -3825,7 +3811,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-09"
+            "naechster_termin_iso": "2026-05-11"
         },
         {
             "id": "13685",
@@ -4220,7 +4206,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-09"
+            "naechster_termin_iso": "2026-03-10"
         },
         {
             "id": "13645",
@@ -4504,6 +4490,13 @@
                     "datum_anzeige": "11.11.2026",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-21",
+                    "datum_anzeige": "21.01.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Wolfenbüttel Lessingtheater",
                     "ticket_url": null
                 },
                 {
@@ -5228,6 +5221,13 @@
                     "datum_anzeige": "16.11.2026",
                     "uhrzeit": "17.00 Uhr",
                     "ort": "Kamen Konzertaula",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-24",
+                    "datum_anzeige": "24.11.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Wolfenbüttel Lessingtheater",
                     "ticket_url": null
                 },
                 {
@@ -7284,6 +7284,13 @@
                     "datum_anzeige": "10.03.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Radevormwald Bürgerhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-12",
+                    "datum_anzeige": "12.03.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Steinhagen Realschule",
                     "ticket_url": null
                 },
                 {
