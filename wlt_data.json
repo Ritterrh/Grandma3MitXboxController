@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-10 05:12:44",
+        "generiert": "2026-03-11 05:14:21",
         "anzahl": 46
     },
     "daten": [
@@ -2698,6 +2698,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-20",
+                    "datum_anzeige": "20.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Lüdenscheid Kulturhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-02-26",
                     "datum_anzeige": "26.02.2027",
                     "uhrzeit": "20.00 Uhr",
@@ -4206,7 +4213,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-10"
+            "naechster_termin_iso": "2026-03-12"
         },
         {
             "id": "13645",
@@ -5217,6 +5224,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-12",
+                    "datum_anzeige": "12.11.2026",
+                    "uhrzeit": "17.00 Uhr",
+                    "ort": "Lüdenscheid Kulturhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-16",
                     "datum_anzeige": "16.11.2026",
                     "uhrzeit": "17.00 Uhr",
@@ -5354,6 +5368,13 @@
                     "datum_anzeige": "28.01.2027",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Hameln-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-30",
+                    "datum_anzeige": "30.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Buxtehude Halepaghen-Bühne",
                     "ticket_url": null
                 },
                 {
@@ -6268,6 +6289,13 @@
                     "datum_anzeige": "19.01.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Herford Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-21",
+                    "datum_anzeige": "21.01.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Lüdenscheid Kulturhaus",
                     "ticket_url": null
                 },
                 {
@@ -7615,7 +7643,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-10"
+            "naechster_termin_iso": "2026-03-11"
         },
         {
             "id": "13720",
@@ -8499,6 +8527,13 @@
                     "datum_anzeige": "18.04.2027",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Gladbeck Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-13",
+                    "datum_anzeige": "13.05.2027",
+                    "uhrzeit": "15.30 Uhr",
+                    "ort": "Lüdenscheid Kulturhaus",
                     "ticket_url": null
                 }
             ],
@@ -9536,7 +9571,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-10"
+            "naechster_termin_iso": "2026-03-11"
         },
         {
             "id": "13657",
@@ -9899,6 +9934,13 @@
                     "datum_anzeige": "21.02.2027",
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-29",
+                    "datum_anzeige": "29.04.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Lüdenscheid Kulturhaus",
                     "ticket_url": null
                 }
             ],
