@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-11 05:14:21",
+        "generiert": "2026-03-12 05:18:16",
         "anzahl": 46
     },
     "daten": [
@@ -5203,6 +5203,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-10-06",
+                    "datum_anzeige": "06.10.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Witten Saalbau",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-10-07",
                     "datum_anzeige": "07.10.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -7643,7 +7650,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-11"
+            "naechster_termin_iso": "2026-05-08"
         },
         {
             "id": "13720",
@@ -9571,7 +9578,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-11"
+            "naechster_termin_iso": "2026-03-12"
         },
         {
             "id": "13657",
