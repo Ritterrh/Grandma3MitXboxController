@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-16 05:52:10",
+        "generiert": "2026-03-17 05:23:53",
         "anzahl": 46
     },
     "daten": [
@@ -2684,6 +2684,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-14",
+                    "datum_anzeige": "14.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Bottrop Josef-Albers-Gymnasium",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-16",
                     "datum_anzeige": "16.11.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -4195,6 +4202,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-23",
+                    "datum_anzeige": "23.09.2026",
+                    "uhrzeit": "12.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-18",
                     "datum_anzeige": "18.11.2026",
                     "uhrzeit": "20.00 Uhr",
@@ -5340,6 +5354,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-17",
+                    "datum_anzeige": "17.11.2026",
+                    "uhrzeit": "16.30 Uhr",
+                    "ort": "Bottrop Josef-Albers-Gymnasium",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-24",
                     "datum_anzeige": "24.11.2026",
                     "uhrzeit": "9.00 Uhr",
@@ -5491,6 +5512,20 @@
                     "datum_anzeige": "08.03.2027",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-14",
+                    "datum_anzeige": "14.03.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Warendorf Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-15",
+                    "datum_anzeige": "15.03.2027",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Warendorf Theater",
                     "ticket_url": null
                 },
                 {
@@ -7396,6 +7431,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-27",
+                    "datum_anzeige": "27.02.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Warendorf Theater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-03-05",
                     "datum_anzeige": "05.03.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -8587,6 +8629,20 @@
                     "datum_anzeige": "17.01.2027",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Geldern Lise-Meitner-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-19",
+                    "datum_anzeige": "19.01.2027",
+                    "uhrzeit": "16.30 Uhr",
+                    "ort": "Bottrop Josef-Albers-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-24",
+                    "datum_anzeige": "24.01.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Warendorf Theater",
                     "ticket_url": null
                 },
                 {
