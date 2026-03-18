@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-17 05:23:53",
+        "generiert": "2026-03-18 05:37:43",
         "anzahl": 46
     },
     "daten": [
@@ -1124,7 +1124,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-17"
+            "naechster_termin_iso": "2026-05-07"
         },
         {
             "id": "13664",
@@ -3075,6 +3075,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-15",
+                    "datum_anzeige": "15.01.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Hamm Kurhaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-16",
                     "datum_anzeige": "16.01.2027",
                     "uhrzeit": "20.00 Uhr",
@@ -4576,7 +4583,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-17"
+            "naechster_termin_iso": "2026-05-07"
         },
         {
             "id": "13716",
@@ -5470,6 +5477,13 @@
                     "datum_anzeige": "03.01.2027",
                     "uhrzeit": "15.30 Uhr",
                     "ort": "Rheda-Wiedenbrück Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-10",
+                    "datum_anzeige": "10.01.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Hamm Kurhaus",
                     "ticket_url": null
                 },
                 {
@@ -6370,6 +6384,13 @@
                     "datum_anzeige": "05.11.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Rheine Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-12",
+                    "datum_anzeige": "12.11.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Hamm Kurhaus",
                     "ticket_url": null
                 },
                 {
@@ -7470,6 +7491,13 @@
                     "datum_anzeige": "21.04.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Lünen Heinz-Hilpert-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-23",
+                    "datum_anzeige": "23.04.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Hamm Kurhaus",
                     "ticket_url": null
                 },
                 {
@@ -10027,6 +10055,13 @@
                     "datum_anzeige": "04.04.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-17",
+                    "datum_anzeige": "17.04.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Hamm Kurhaus",
                     "ticket_url": null
                 },
                 {
