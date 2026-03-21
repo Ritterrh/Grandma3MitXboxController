@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-20 05:18:07",
+        "generiert": "2026-03-21 05:09:30",
         "anzahl": 46
     },
     "daten": [
@@ -1519,13 +1519,6 @@
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Gifhorn Stadthalle",
                     "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-03-25",
-                    "datum_anzeige": "25.03.2026",
-                    "uhrzeit": "20.00 Uhr",
-                    "ort": "Erkrath Stadthalle",
-                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -1637,7 +1630,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-25"
+            "naechster_termin_iso": null
         },
         {
             "id": "13698",
@@ -4195,6 +4188,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-03-25",
+                    "datum_anzeige": "25.03.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Erkrath Stadthalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-05-12",
                     "datum_anzeige": "12.05.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -4329,7 +4329,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-12"
+            "naechster_termin_iso": "2026-03-25"
         },
         {
             "id": "13645",
