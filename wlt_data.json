@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-23 05:42:51",
+        "generiert": "2026-03-24 05:25:33",
         "anzahl": 46
     },
     "daten": [
@@ -2724,6 +2724,13 @@
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Herford Stadttheater",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-19",
+                    "datum_anzeige": "19.05.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Versmold Kulturbühne",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -3197,6 +3204,10 @@
                 {
                     "rolle": "Bühne und Kostüme",
                     "darsteller": "Rabea Stadthaus"
+                },
+                {
+                    "rolle": "Abendspielleitung",
+                    "darsteller": "Carolin Leweling"
                 }
             ],
             "inhalt": "Da ist er. Der Staatsschauspieler(!) Bruscon. Mit seiner Komödie »Das Rad der Geschichte«, die die gesamte Weltliteratur in sich vereint. In Utzbach. Spielort ist der Tanzsaal im Gasthaus »Schwarzer Hirsch«. Ein Unort. Nicht mal »zum Wasserlassen habe ich diese Art von Gasthäusern betreten«, »eine Kunstfalle«! Insgesamt ist die 280-Seelen-Gemeinde auf den bevorstehenden Welterfolg nur äußerst ungenügend vorbereitet. Der Bühnenboden droht durchzubrechen, die Luft ist zu schwül, die Feuerwehr wird wahrscheinlich nicht in der Lage sein, das Notlicht auszuschalten, selbst »in der Frittatensuppe feiert die Provinz ihre Triumphe«. Außerdem ist Blutwursttag. Da kommt sowieso niemand. Sagt die Wirtin. Noch so eine geistige Nebenerscheinung. Das Ensemble besteht aus Bruscons Familie, der angeblich erkälteten Ehefrau und den beiden talentlosen Kindern. Allesamt Enttäuschungen. Gigantischer Antitalentismus! In endlosen Tiraden, die letztlich nur seine eigene Unsicherheit, Einsamkeit und Liebesbedürftigkeit zum Ausdruck bringen, nähert sich Bruscon unaufhaltsam dem Vorstellungsbeginn. Wider Erwarten füllt sich der Saal, die Hoffnung, doch gehört und angebetet zu werden, bahnt sich ihren Weg.\n\n»Wenn wir ehrlich sind, ist das Theater an sich eine Absurdität. Wenn wir ehrlich sind, können wir überhaupt nichts mehr tun. Außer uns umbringen. Und da wir uns aber nicht umbringen, umbringen wollen, wenigstens bis heute und bis jetzt nicht, da wir uns also bis heute und bis jetzt nicht umgebracht haben, versuchen wir es immer wieder mit dem Theater.«\n\nThomas Bernhards bekanntestes Stück, ein Klassiker des 20. Jahrhunderts, ist eine komödiantische Liebeserklärung an das Theater. In seiner unnachahmlichen sprachlichen Meisterschaft gelingt es ihm, die ganze Faszination, die das Theater mit all seinen Widersprüchen und Verzauberungen mit sich bringt, deutlich werden zu lassen. Uraufgeführt 1985 bei den Salzburger Festspielen hat das Stück nichts von seiner komischen und tragischen Kraft verloren.",
@@ -3920,7 +3931,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-23"
+            "naechster_termin_iso": "2026-05-11"
         },
         {
             "id": "13685",
@@ -5480,6 +5491,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-01-08",
+                    "datum_anzeige": "08.01.2027",
+                    "uhrzeit": "10.30 Uhr",
+                    "ort": "Versmold Kulturbühne",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-10",
                     "datum_anzeige": "10.01.2027",
                     "uhrzeit": "15.00 Uhr",
@@ -5498,6 +5516,13 @@
                     "datum_anzeige": "14.01.2027",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Borken Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-16",
+                    "datum_anzeige": "16.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Remscheid Teo Otto Theater",
                     "ticket_url": null
                 },
                 {
@@ -7419,7 +7444,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-23"
+            "naechster_termin_iso": "2026-04-24"
         },
         {
             "id": "13714",
@@ -8895,6 +8920,13 @@
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Solingen Theater und Konzerthaus",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-22",
+                    "datum_anzeige": "22.04.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Remscheid Teo Otto Theater",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -10134,6 +10166,13 @@
                     "datum_anzeige": "29.04.2027",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Lüdenscheid Kulturhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-25",
+                    "datum_anzeige": "25.05.2027",
+                    "uhrzeit": "10.30 Uhr",
+                    "ort": "Versmold Kulturbühne",
                     "ticket_url": null
                 }
             ],
