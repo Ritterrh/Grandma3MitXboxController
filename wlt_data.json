@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-24 05:25:33",
+        "generiert": "2026-03-25 05:25:44",
         "anzahl": 46
     },
     "daten": [
@@ -5129,13 +5129,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-03-25",
-                    "datum_anzeige": "25.03.2026",
-                    "uhrzeit": "10.00 Uhr",
-                    "ort": "Kevelaer Konzerthaus",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-04-04",
                     "datum_anzeige": "04.04.2026",
                     "uhrzeit": "18.00 Uhr",
@@ -5255,7 +5248,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-03-25"
+            "naechster_termin_iso": "2026-04-04"
         },
         {
             "id": "13718",
@@ -6309,7 +6302,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-03-24"
+            "naechster_termin_iso": "2026-06-12"
         },
         {
             "id": "13711",
@@ -6486,6 +6479,13 @@
                     "datum_anzeige": "29.01.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Lingen Theater an der Wilhelmshöhe",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-24",
+                    "datum_anzeige": "24.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Siegen Apollo-Theater",
                     "ticket_url": null
                 },
                 {
@@ -9640,6 +9640,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-03-25",
+                    "datum_anzeige": "25.03.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Kevelaer Konzerthaus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-04-26",
                     "datum_anzeige": "26.04.2026",
                     "uhrzeit": "15.00 Uhr",
@@ -9679,6 +9686,13 @@
                     "datum_anzeige": "11.10.2026",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Gütersloh Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-13",
+                    "datum_anzeige": "13.10.2026",
+                    "uhrzeit": "9.30 Uhr",
+                    "ort": "Delbrück Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -9789,7 +9803,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-26"
+            "naechster_termin_iso": "2026-03-25"
         },
         {
             "id": "13657",
