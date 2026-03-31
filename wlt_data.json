@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-30 06:02:22",
+        "generiert": "2026-03-31 05:46:56",
         "anzahl": 46
     },
     "daten": [
@@ -10225,6 +10225,62 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-25",
+                    "datum_anzeige": "25.02.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-03",
+                    "datum_anzeige": "03.03.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Radevormwald Bürgerhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-10",
+                    "datum_anzeige": "10.03.2027",
+                    "uhrzeit": "9.30 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-10",
+                    "datum_anzeige": "10.03.2027",
+                    "uhrzeit": "12.00 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-06",
+                    "datum_anzeige": "06.04.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Buxtehude Halepaghen-Bühne",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-25",
+                    "datum_anzeige": "25.04.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-26",
+                    "datum_anzeige": "26.04.2027",
+                    "uhrzeit": "9.30 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-26",
+                    "datum_anzeige": "26.04.2027",
+                    "uhrzeit": "12.00 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-04-29",
                     "datum_anzeige": "29.04.2027",
                     "uhrzeit": "11.00 Uhr",
@@ -10236,6 +10292,20 @@
                     "datum_anzeige": "25.05.2027",
                     "uhrzeit": "10.30 Uhr",
                     "ort": "Versmold Kulturbühne",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-26",
+                    "datum_anzeige": "26.05.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-02",
+                    "datum_anzeige": "02.06.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Delbrück Stadthalle",
                     "ticket_url": null
                 }
             ],
