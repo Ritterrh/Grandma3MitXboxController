@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-03-31 05:46:56",
+        "generiert": "2026-04-01 05:59:42",
         "anzahl": 46
     },
     "daten": [
@@ -2656,6 +2656,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-10-20",
+                    "datum_anzeige": "20.10.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Herne Kulturzentrum",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-10-22",
                     "datum_anzeige": "22.10.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -3044,6 +3051,13 @@
                     "datum_anzeige": "11.12.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Leverkusen KulturStadtLev - Forum",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-15",
+                    "datum_anzeige": "15.12.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Herne Kulturzentrum",
                     "ticket_url": null
                 },
                 {
@@ -5568,6 +5582,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-09",
+                    "datum_anzeige": "09.02.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Herne Kulturzentrum",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-03-06",
                     "datum_anzeige": "06.03.2027",
                     "uhrzeit": "16.00 Uhr",
@@ -5635,6 +5656,13 @@
                     "datum_anzeige": "05.06.2027",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Siegen Apollo-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-24",
+                    "datum_anzeige": "24.06.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Gummersbach Halle 32",
                     "ticket_url": null
                 }
             ],
@@ -6412,6 +6440,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-24",
+                    "datum_anzeige": "24.09.2026",
+                    "uhrzeit": "19.00 Uhr",
+                    "ort": "Lippstadt Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-10-07",
                     "datum_anzeige": "07.10.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -6500,6 +6535,13 @@
                     "datum_anzeige": "08.12.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Lennestadt Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-09",
+                    "datum_anzeige": "09.12.2026",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Gummersbach Halle 32",
                     "ticket_url": null
                 },
                 {
@@ -6751,6 +6793,20 @@
                     "datum_anzeige": "30.09.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-21",
+                    "datum_anzeige": "21.04.2027",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Itzehoe Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-21",
+                    "datum_anzeige": "21.04.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Itzehoe Theater",
                     "ticket_url": null
                 },
                 {
@@ -7519,6 +7575,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-16",
+                    "datum_anzeige": "16.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Herne Kulturzentrum",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-02-22",
                     "datum_anzeige": "22.02.2027",
                     "uhrzeit": "20.00 Uhr",
@@ -8076,6 +8139,13 @@
                     "datum_anzeige": "29.09.2026",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Castrop-Rauxel Schulen",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-30",
+                    "datum_anzeige": "30.09.2026",
+                    "uhrzeit": "10.45 Uhr",
+                    "ort": "Radevormwald Sekundarschule",
                     "ticket_url": null
                 },
                 {
@@ -8724,6 +8794,13 @@
                     "datum_anzeige": "09.01.2027",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Meschede Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-12",
+                    "datum_anzeige": "12.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Herne Kulturzentrum",
                     "ticket_url": null
                 },
                 {
