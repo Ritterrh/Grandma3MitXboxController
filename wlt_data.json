@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-02 05:44:30",
+        "generiert": "2026-04-03 05:45:01",
         "anzahl": 46
     },
     "daten": [
@@ -3145,6 +3145,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-04-18",
+                    "datum_anzeige": "18.04.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Ratingen Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-06-22",
                     "datum_anzeige": "22.06.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -4252,6 +4259,13 @@
                     "datum_anzeige": "23.09.2026",
                     "uhrzeit": "12.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-10-06",
+                    "datum_anzeige": "06.10.2026",
+                    "uhrzeit": "13.45 Uhr",
+                    "ort": "Ostbevern Aula des Gymnasiums",
                     "ticket_url": null
                 },
                 {
@@ -6573,6 +6587,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-15",
+                    "datum_anzeige": "15.02.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Ratingen Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-02-24",
                     "datum_anzeige": "24.02.2027",
                     "uhrzeit": "19.30 Uhr",
@@ -6807,6 +6828,13 @@
                     "datum_anzeige": "21.04.2027",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Itzehoe Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-27",
+                    "datum_anzeige": "27.04.2027",
+                    "uhrzeit": "13.45 Uhr",
+                    "ort": "Ostbevern Aula des Gymnasiums",
                     "ticket_url": null
                 },
                 {
@@ -7203,6 +7231,13 @@
                     "datum_anzeige": "20.02.2027",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-16",
+                    "datum_anzeige": "16.04.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Bocholt Aula des August-Vetter-Berufskollegs",
                     "ticket_url": null
                 }
             ],
@@ -9309,6 +9344,13 @@
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Herford Stadttheater",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-09",
+                    "datum_anzeige": "09.05.2027",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Ratingen Stadttheater",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -9827,6 +9869,13 @@
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Herford Stadttheater",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-19",
+                    "datum_anzeige": "19.05.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Ratingen Stadttheater",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -10255,6 +10304,13 @@
                     "datum_anzeige": "04.05.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Kamp-Lintfort Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-25",
+                    "datum_anzeige": "25.06.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Bocholt Drosselsaal",
                     "ticket_url": null
                 }
             ],
