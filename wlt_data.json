@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-08 05:50:48",
+        "generiert": "2026-04-09 05:52:18",
         "anzahl": 46
     },
     "daten": [
@@ -3225,6 +3225,10 @@
                 {
                     "rolle": "Bühne und Kostüme",
                     "darsteller": "Rabea Stadthaus"
+                },
+                {
+                    "rolle": "Regieassistenz",
+                    "darsteller": "Lisa Boehnke"
                 },
                 {
                     "rolle": "Abendspielleitung",
