@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-12 05:58:28",
+        "generiert": "2026-04-13 06:21:51",
         "anzahl": 46
     },
     "daten": [
@@ -3241,8 +3241,8 @@
                     "datum_iso": "2026-04-12",
                     "datum_anzeige": "12.04.2026",
                     "uhrzeit": "18.00 Uhr",
-                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471072&eventID=2268266"
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-04-14",
@@ -3333,7 +3333,7 @@
                 "video": false,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-12"
+            "naechster_termin_iso": "2026-04-14"
         },
         {
             "id": "13623",
