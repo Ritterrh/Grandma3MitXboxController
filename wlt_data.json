@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-14 06:04:53",
+        "generiert": "2026-04-15 06:04:39",
         "anzahl": 46
     },
     "daten": [
@@ -1731,35 +1731,35 @@
                     "datum_anzeige": "13.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=493716&eventID=2368935"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368935"
                 },
                 {
                     "datum_iso": "2026-05-14",
                     "datum_anzeige": "14.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=493716&eventID=2368936"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368936"
                 },
                 {
                     "datum_iso": "2026-05-15",
                     "datum_anzeige": "15.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=493716&eventID=2368937"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368937"
                 },
                 {
                     "datum_iso": "2026-05-16",
                     "datum_anzeige": "16.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=493716&eventID=2368938"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368938"
                 },
                 {
                     "datum_iso": "2026-05-17",
                     "datum_anzeige": "17.05.2026",
                     "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=493716&eventID=2368939"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368939"
                 },
                 {
                     "datum_iso": "2026-10-05",
@@ -3277,7 +3277,7 @@
                     "datum_anzeige": "22.05.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471072&eventID=2368934"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368934"
                 },
                 {
                     "datum_iso": "2026-05-28",
@@ -3373,7 +3373,7 @@
                 "video": false,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-14"
+            "naechster_termin_iso": "2026-04-23"
         },
         {
             "id": "13623",
@@ -5254,7 +5254,7 @@
                     "datum_anzeige": "14.06.2026",
                     "uhrzeit": "14.00 Uhr",
                     "ort": "Castrop-Rauxel Parkbad SüdEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=429087&eventID=2432806"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2432806"
                 }
             ],
             "medien": [
@@ -6328,7 +6328,7 @@
                     "datum_anzeige": "13.06.2026",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Castrop-Rauxel Parkbad SüdEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471050&eventID=2432805"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2432805"
                 },
                 {
                     "datum_iso": "2026-09-17",
@@ -6739,7 +6739,7 @@
                     "datum_anzeige": "19.04.2026",
                     "uhrzeit": "15.00 Uhr",
                     "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://shop.reservix.de/off/login_check.php?id=c6ec16e8cf3cd5077514ebef590a1f763d4616b372ef8900411779bf6bedf213&eventGrpID=471052&eventID=2268176"
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2268176"
                 },
                 {
                     "datum_iso": "2026-04-21",
