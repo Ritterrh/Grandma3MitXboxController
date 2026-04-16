@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-15 06:04:39",
+        "generiert": "2026-04-16 06:07:25",
         "anzahl": 46
     },
     "daten": [
@@ -3293,6 +3293,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_theatermacher_web_timo_hummel.jpg"
                 },
                 {
+                    "typ": "youtube",
+                    "url": "https://www.youtube.com/watch?v=CogK9E6cs2A"
+                },
+                {
                     "typ": "audio",
                     "url": "https://westfaelisches-landestheater.de/media/audiotrailer-der-theatermacher.mp3"
                 },
@@ -3370,7 +3374,7 @@
             },
             "flags": {
                 "tickets": true,
-                "video": false,
+                "video": true,
                 "audio": true
             },
             "naechster_termin_iso": "2026-04-23"
@@ -10297,7 +10301,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-15"
+            "naechster_termin_iso": "2026-04-24"
         },
         {
             "id": "13723",
