@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-19 06:03:31",
+        "generiert": "2026-04-20 06:22:02",
         "anzahl": 46
     },
     "daten": [
@@ -6742,8 +6742,8 @@
                     "datum_iso": "2026-04-19",
                     "datum_anzeige": "19.04.2026",
                     "uhrzeit": "15.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://www.reservix.de/p/reservix/event/2268176"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-04-21",
@@ -6952,11 +6952,11 @@
                 "schulklasse": "Kinderstück für alle ab 10 Jahren, ab 5. Klasse"
             },
             "flags": {
-                "tickets": true,
+                "tickets": false,
                 "video": false,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-04-19"
+            "naechster_termin_iso": "2026-04-21"
         },
         {
             "id": "13655",
