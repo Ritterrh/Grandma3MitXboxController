@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-20 06:22:02",
+        "generiert": "2026-04-21 06:07:28",
         "anzahl": 46
     },
     "daten": [
@@ -6456,7 +6456,48 @@
                 "Abendtheater"
             ],
             "is_kjt": false,
-            "besetzung": [],
+            "besetzung": [
+                {
+                    "rolle": "Klara, Doris, Die Besucherin",
+                    "darsteller": "Lesley-Ann Eisenhardt"
+                },
+                {
+                    "rolle": "Hedwig, Anna, Die Schriftstellerin, Die Frau des Unterpächters, Kundin 2",
+                    "darsteller": "Gabriele Brüning"
+                },
+                {
+                    "rolle": "Fischer, Dachdecker, Tuchmacher Arthur, Der Rotarmist, Der Kinderfreund",
+                    "darsteller": "Vincent John"
+                },
+                {
+                    "rolle": "Grete, Die Frau des Architekten, Frau des Tuchmachers Hermine, Köchin, Die unberechtigte Eigenbesitzerin",
+                    "darsteller": "Arikia Orbán"
+                },
+                {
+                    "rolle": "Knecht, Dachdecker, Ludwig, Soldat, Der Unterpächter",
+                    "darsteller": "Jan-Hendrik Kroll"
+                },
+                {
+                    "rolle": "Emma, Mutter von Doris - Elisabeth, Tochter Ludwig, Enkelin der Besucherin, Freundin am Telefon, Kundin 1",
+                    "darsteller": "Carolin Leweling"
+                },
+                {
+                    "rolle": "Inszenierung",
+                    "darsteller": "Nico Dietrich"
+                },
+                {
+                    "rolle": "Ausstattung",
+                    "darsteller": "Tobias Sosinka"
+                },
+                {
+                    "rolle": "Textfassung",
+                    "darsteller": "Nico Dietrich"
+                },
+                {
+                    "rolle": "Regieassistenz / Abendspielleitung",
+                    "darsteller": "Marvin Moers"
+                }
+            ],
             "inhalt": "Mit diesem Jahrhundertroman gelang Jenny Erpenbeck der internationale Durchbruch. Die teils autobiographischen Geschichten ereignen sich generationsübergreifend in einem Haus an einem Brandenburger See und strecken sich zeitlich von 1906 bis 2002. Von der Weimarer Republik, über den Nationalsozialismus, über den Aufbau der DDR bis hin zur Wiedervereinigung beleuchtet und verknüpft Erpenbeck die Schicksale einzelner Menschen: Sie suchen in ihrer jeweiligen Epoche auf diesem Grundstück ein Heim. Die Figuren lassen uns eintauchen in die Widersprüche ihrer Zeit und ihres Lebens. Jede Erzählung ein einzelnes Schicksal, jeder Mensch mit ganz eigenen privaten Perspektiven auf die Welt, geprägt und gezeichnet von den jeweiligen gesellschaftlichen Zwängen. So entfaltet sich eine tiefgründige, literarische Erzählweise mit sehr unterschiedlichen Sichtweisen auf die ambivalente deutsche Geschichte.\n\nJenny Erpenbeck wurde 1967 in Ost-Berlin geboren. Sie gewann u.a. den Hans-Fallada-Preis (2014), den Thomas-Mann-Preis (2016) und den Uwe-Johnson-Preis (2022). 2024 erhielt sie als erste Deutsche den International Booker Prize. Sie ist Trägerin des Bundesverdienstkreuzes am Bande.",
             "termine": [
                 {
@@ -6736,7 +6777,7 @@
                     "darsteller": "Sophie Charlotte Dittmer"
                 }
             ],
-            "inhalt": "Was ist mit Max passiert? Früher war er einer von uns – jetzt ist er weg. Er ist immer mehr abgetaucht: Schule schwänzen, Treffen absagen, nur noch zocken. Dann dieser „Unfall“. Alle sagen: Pech. Seine Clique sagt: komisch. Fünf Freund:innen machen sich auf Spurensuche – und landen bei einem Game: Herkules.exe. Echt und direkt: Dieses Stück entstand mit euch. Herkules.exe wurde nicht einfach ausgedacht – es ist aus echten Stimmen gewachsen. Mehr als 100 Jugendliche haben mit uns gesprochen: über Held:innen, Games, Songs und Social Media. Ihre Erfahrungen, Wörter und Ängste sind in die Figuren und Szenen eingeflossen. Darum klingt das Stück so nah: Die Dialoge, die Konflikte, die kleinen Ausreden und großen Entscheidungen sind von Jugendlichen erzählt – und für Jugendliche gedacht.\n\nWorum’s geht – kurz und klar Das Game wirkt zuerst wie ein cooler Zeitvertreib: krasse Level, heldenhafte Aufgaben. Doch Herkules.exe liest mehr als Highscores – es kennt heimliche Wünsche und spürt eure Ängste. Level für Level verschwimmt die Grenze zwischen Spiel und Realität. Schlaf? Weg. Freunde außerhalb? Scheint plötzlich nicht mehr so wichtig. Nur eines kann sie retten: ihre Freundschaft. Aber reicht Vertrauen gegen eine Welt, die dich fesselt?\n\nBühne & Technik – Game-Feeling live Auf der Bühne verschmelzen reale Räume und Game-Levels: Projektionen, Sounddesign und Live-Action mixen sich zu schnellen, intensiven Szenen. Wir nutzen neueste Technik – inklusive Echtzeit-KI-Videogenerierung. Das heißt: Bilder und Spielwelten werden live erzeugt und reagieren in Echtzeit auf das Spiel der Schauspieler:innen. So werden innere Welten sichtbar und die Grenze zwischen Bildschirm und Bühne verschwimmt vor euren Augen.\n\nTon & Stil Das Stück ist kein Moralvortrag. Es ist ein Thriller übers Erwachsenwerden mit Controller in der Hand – direkt, manchmal witzig, manchmal richtig unheimlich. Sprache und Situationen sind nah an der Lebenswelt von 10- bis 14-Jährigen.\n\nFotos: Volker Beushausen",
+            "inhalt": "Was ist mit Max passiert? Früher war er einer von uns – jetzt ist er weg. Er ist immer mehr abgetaucht: Schule schwänzen, Treffen absagen, nur noch zocken. Dann dieser „Unfall“. Alle sagen: Pech. Seine Clique sagt: komisch. Fünf Freund:innen machen sich auf Spurensuche – und landen bei einem Game: Herkules.exe. Echt und direkt: Dieses Stück entstand mit euch. Herkules.exe wurde nicht einfach ausgedacht – es ist aus echten Stimmen gewachsen. Mehr als 100 Jugendliche haben mit uns gesprochen: über Held:innen, Games, Songs und Social Media. Ihre Erfahrungen, Wörter und Ängste sind in die Figuren und Szenen eingeflossen. Darum klingt das Stück so nah: Die Dialoge, die Konflikte, die kleinen Ausreden und großen Entscheidungen sind von Jugendlichen erzählt – und für Jugendliche gedacht.\n\nWorum’s geht – kurz und klar Das Game wirkt zuerst wie ein cooler Zeitvertreib: krasse Level, heldenhafte Aufgaben. Doch Herkules.exe liest mehr als Highscores – es kennt heimliche Wünsche und spürt eure Ängste. Level für Level verschwimmt die Grenze zwischen Spiel und Realität. Schlaf? Weg. Freunde außerhalb? Scheint plötzlich nicht mehr so wichtig. Nur eines kann sie retten: ihre Freundschaft. Aber reicht Vertrauen gegen eine Welt, die dich fesselt?\n\nBühne & Technik – Game-Feeling live Auf der Bühne verschmelzen reale Räume und Game-Levels: Projektionen, Sounddesign und Live-Action mixen sich zu schnellen, intensiven Szenen. Wir nutzen neueste Technik – inklusive Echtzeit-KI-Videogenerierung. Das heißt: Bilder und Spielwelten werden live erzeugt und reagieren in Echtzeit auf das Spiel der Schauspieler:innen. So werden innere Welten sichtbar und die Grenze zwischen Bildschirm und Bühne verschwimmt vor euren Augen.\n\nTon & Stil Das Stück ist kein Moralvortrag. Es ist ein Thriller übers Erwachsenwerden mit Controller in der Hand – direkt, manchmal witzig, manchmal richtig unheimlich. Sprache und Situationen sind nah an der Lebenswelt von 10- bis 14-Jährigen.\n\nFotos: Volker Beushausen\n\nStückdauer: 80 Minuten",
             "termine": [
                 {
                     "datum_iso": "2026-04-19",
@@ -6921,11 +6962,59 @@
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_2_volker_beuhausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_1_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_2_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_3_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_4_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_5_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_6_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_7_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_8_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_9_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_10_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_11_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_12_volker_beushausen.jpg"
                 },
                 {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_1_volker_beuhausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_2_volker_beuhausen.jpg"
                 },
                 {
                     "typ": "bild",
@@ -6937,16 +7026,16 @@
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_6_volker_beuhausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_5_volker_beuhausen.jpg"
                 },
                 {
                     "typ": "bild",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_5_volker_beuhausen.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_programmm_6_volker_beuhausen.jpg"
                 }
             ],
             "presse": [],
             "meta_details": {
-                "dauer_minuten": null,
+                "dauer_minuten": 80,
                 "hat_pause": false,
                 "altersempfehlung": "Kinderstück für alle ab 10 Jahren, ab 5. Klasse",
                 "schulklasse": "Kinderstück für alle ab 10 Jahren, ab 5. Klasse"
@@ -7932,6 +8021,13 @@
                     "datum_anzeige": "12.01.2027",
                     "uhrzeit": "13.30 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-02",
+                    "datum_anzeige": "02.06.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Siegen Apollo-Theater",
                     "ticket_url": null
                 }
             ],
@@ -9909,6 +10005,13 @@
                     "datum_anzeige": "13.10.2026",
                     "uhrzeit": "9.30 Uhr",
                     "ort": "Delbrück Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-26",
+                    "datum_anzeige": "26.01.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Witten Saalbau",
                     "ticket_url": null
                 },
                 {
