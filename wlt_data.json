@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-21 06:07:28",
+        "generiert": "2026-04-22 06:04:41",
         "anzahl": 46
     },
     "daten": [
@@ -5539,6 +5539,41 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-12-13",
+                    "datum_anzeige": "13.12.2026",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-14",
+                    "datum_anzeige": "14.12.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-14",
+                    "datum_anzeige": "14.12.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-15",
+                    "datum_anzeige": "15.12.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-15",
+                    "datum_anzeige": "15.12.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-12-16",
                     "datum_anzeige": "16.12.2026",
                     "uhrzeit": "11.00 Uhr",
@@ -6342,6 +6377,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-12-29",
+                    "datum_anzeige": "29.12.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-24",
                     "datum_anzeige": "24.01.2027",
                     "uhrzeit": "17.00 Uhr",
@@ -6673,6 +6715,13 @@
                     "datum_anzeige": "29.01.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Lingen Theater an der Wilhelmshöhe",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-13",
+                    "datum_anzeige": "13.02.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Sögel Aula des Hümmling Gymnasiums",
                     "ticket_url": null
                 },
                 {
@@ -7045,7 +7094,7 @@
                 "video": false,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-04-21"
+            "naechster_termin_iso": "2026-04-28"
         },
         {
             "id": "13655",
@@ -9018,6 +9067,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-28",
+                    "datum_anzeige": "28.02.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Nienburg Theater auf dem Hornwerk",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-01",
+                    "datum_anzeige": "01.03.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Nienburg Theater auf dem Hornwerk",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-03-11",
                     "datum_anzeige": "11.03.2027",
                     "uhrzeit": "16.00 Uhr",
@@ -10019,6 +10082,20 @@
                     "datum_anzeige": "03.02.2027",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Herford Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-11",
+                    "datum_anzeige": "11.04.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Nienburg Theater auf dem Hornwerk",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-12",
+                    "datum_anzeige": "12.04.2027",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Nienburg Theater auf dem Hornwerk",
                     "ticket_url": null
                 },
                 {
