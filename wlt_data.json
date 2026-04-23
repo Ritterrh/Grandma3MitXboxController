@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-22 06:04:41",
+        "generiert": "2026-04-23 06:11:18",
         "anzahl": 46
     },
     "daten": [
@@ -779,7 +779,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-22"
+            "naechster_termin_iso": null
         },
         {
             "id": "13658",
@@ -871,7 +871,7 @@
                     "datum_iso": "2024-10-12",
                     "datum_anzeige": "12.10.2024",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -1232,7 +1232,7 @@
                     "datum_iso": "2025-05-11",
                     "datum_anzeige": "11.05.2025",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -5208,7 +5208,7 @@
                     "datum_iso": "2026-03-01",
                     "datum_anzeige": "01.03.2026",
                     "uhrzeit": "16.00 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -5438,6 +5438,20 @@
                     "datum_anzeige": "07.11.2026",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Coesfeld Konzert Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-08",
+                    "datum_anzeige": "08.11.2026",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-11-09",
+                    "datum_anzeige": "09.11.2026",
+                    "uhrzeit": "10.30 Uhr",
+                    "ort": "Iserlohn Parktheater",
                     "ticket_url": null
                 },
                 {
@@ -5760,6 +5774,13 @@
                     "datum_anzeige": "24.06.2027",
                     "uhrzeit": "16.00 Uhr",
                     "ort": "Gummersbach Halle 32",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-27",
+                    "datum_anzeige": "27.06.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 }
             ],
@@ -6256,7 +6277,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-22"
+            "naechster_termin_iso": "2026-06-18"
         },
         {
             "id": "13693",
@@ -7820,7 +7841,7 @@
                     "datum_iso": "2027-03-05",
                     "datum_anzeige": "05.03.2027",
                     "uhrzeit": "19.30 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -8052,6 +8073,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-23",
+                    "datum_anzeige": "23.09.2026",
+                    "uhrzeit": "19.00 Uhr",
+                    "ort": "Bad Wildungen Wandelhalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-09-24",
+                    "datum_anzeige": "24.09.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Bad Wildungen Wandelhalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-11",
                     "datum_anzeige": "11.01.2027",
                     "uhrzeit": "13.30 Uhr",
@@ -8245,6 +8280,20 @@
                     "datum_anzeige": "21.04.2027",
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Castrop-Rauxel Schulen",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-26",
+                    "datum_anzeige": "26.04.2027",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-04-26",
+                    "datum_anzeige": "26.04.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
                     "ticket_url": null
                 }
             ],
@@ -9053,6 +9102,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-02-07",
+                    "datum_anzeige": "07.02.2027",
+                    "uhrzeit": "15.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-02-14",
                     "datum_anzeige": "14.02.2027",
                     "uhrzeit": "15.00 Uhr",
@@ -9493,7 +9549,7 @@
                     "datum_iso": "2025-10-01",
                     "datum_anzeige": "01.10.2025",
                     "uhrzeit": "19.30 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -10309,7 +10365,7 @@
                     "datum_iso": "2025-02-13",
                     "datum_anzeige": "13.02.2025",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Brilon Kolpinghaus",
+                    "ort": "Brilon Bürgerzentzrum Kolpinghaus",
                     "ticket_url": null
                 },
                 {
@@ -10590,6 +10646,13 @@
                     "datum_anzeige": "25.02.2027",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Marl Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-02",
+                    "datum_anzeige": "02.03.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
                     "ticket_url": null
                 },
                 {
