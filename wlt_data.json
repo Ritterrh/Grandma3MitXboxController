@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-23 06:11:18",
+        "generiert": "2026-04-24 06:15:04",
         "anzahl": 46
     },
     "daten": [
@@ -3377,7 +3377,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-23"
+            "naechster_termin_iso": "2026-04-29"
         },
         {
             "id": "13623",
@@ -6757,6 +6757,20 @@
                     "datum_anzeige": "24.02.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Siegen Apollo-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-07",
+                    "datum_anzeige": "07.03.2027",
+                    "uhrzeit": "19.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-08",
+                    "datum_anzeige": "08.03.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Iserlohn Parktheater",
                     "ticket_url": null
                 },
                 {
