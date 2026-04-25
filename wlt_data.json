@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-24 06:15:04",
+        "generiert": "2026-04-25 05:52:23",
         "anzahl": 46
     },
     "daten": [
@@ -2623,7 +2623,7 @@
                 "video": false,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-04-24"
+            "naechster_termin_iso": "2026-05-15"
         },
         {
             "id": "13712",
@@ -7045,6 +7045,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_herkules_web_motiv_stefan_sombetzski_gestaltung_timo_hummel.jpg"
                 },
                 {
+                    "typ": "audio",
+                    "url": "https://westfaelisches-landestheater.de/media/audiotrailer_herkules_1.mp3"
+                },
+                {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_1_volker_beushausen.jpg"
                 },
@@ -7127,7 +7131,7 @@
             "flags": {
                 "tickets": false,
                 "video": false,
-                "audio": false
+                "audio": true
             },
             "naechster_termin_iso": "2026-04-28"
         },
@@ -7805,7 +7809,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-04-24"
+            "naechster_termin_iso": "2026-05-10"
         },
         {
             "id": "13714",
@@ -10551,7 +10555,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-24"
+            "naechster_termin_iso": null
         },
         {
             "id": "13723",
