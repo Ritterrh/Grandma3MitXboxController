@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-27 06:34:28",
+        "generiert": "2026-04-28 06:35:30",
         "anzahl": 46
     },
     "daten": [
@@ -1379,7 +1379,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-04-27"
+            "naechster_termin_iso": "2026-06-19"
         },
         {
             "id": "13637",
@@ -2947,15 +2947,15 @@
                 {
                     "datum_iso": "2027-01-19",
                     "datum_anzeige": "19.01.2027",
-                    "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Castrop-Rauxel ASG",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2027-01-19",
                     "datum_anzeige": "19.01.2027",
-                    "uhrzeit": "11.30 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
+                    "uhrzeit": "12.00 Uhr",
+                    "ort": "Castrop-Rauxel ASG",
                     "ticket_url": null
                 },
                 {
@@ -4448,7 +4448,7 @@
             "besetzung": [
                 {
                     "rolle": "Wanze Muldoon",
-                    "darsteller": "Maximilian Ferrari von Ulardt"
+                    "darsteller": "Maximilian von Ulardt"
                 },
                 {
                     "rolle": "Inszenierung/ Ausstattung",
@@ -4798,7 +4798,7 @@
                 },
                 {
                     "rolle": "Inszenierung",
-                    "darsteller": "Maximilian Ferrari von Ulardt"
+                    "darsteller": "Maximilian von Ulardt"
                 },
                 {
                     "rolle": "Ausstattung",
@@ -6927,13 +6927,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-05-08",
-                    "datum_anzeige": "08.05.2026",
-                    "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-05-20",
                     "datum_anzeige": "20.05.2026",
                     "uhrzeit": "11.30 Uhr",
@@ -7423,7 +7416,7 @@
         },
         {
             "id": "13721",
-            "titel": "Kuckuck, wo bist Du?",
+            "titel": "Kuckuck, wo bist du?",
             "subtitel": "Stückentwicklung",
             "genre_liste": "Kindergartenstück für alle ab 3 Jahren",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13721/",
