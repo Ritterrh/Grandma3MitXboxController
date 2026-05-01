@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-04-30 06:33:09",
+        "generiert": "2026-05-01 06:41:23",
         "anzahl": 46
     },
     "daten": [
@@ -6892,13 +6892,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-04-30",
-                    "datum_anzeige": "30.04.2026",
-                    "uhrzeit": "10.00 Uhr",
-                    "ort": "Marl Theater",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-05-05",
                     "datum_anzeige": "05.05.2026",
                     "uhrzeit": "11.00 Uhr",
@@ -7038,6 +7031,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/herkules_plakat_neu_web_timo_hummel.jpg"
                 },
                 {
+                    "typ": "youtube",
+                    "url": "https://www.youtube.com/watch?v=IdDX6CxLwIk"
+                },
+                {
                     "typ": "audio",
                     "url": "https://westfaelisches-landestheater.de/media/audiotrailer_herkules_1.mp3"
                 },
@@ -7123,10 +7120,10 @@
             },
             "flags": {
                 "tickets": false,
-                "video": false,
+                "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-04-30"
+            "naechster_termin_iso": "2026-05-05"
         },
         {
             "id": "13655",
