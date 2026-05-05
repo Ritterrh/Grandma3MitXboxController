@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-04 06:46:21",
+        "generiert": "2026-05-05 06:23:48",
         "anzahl": 46
     },
     "daten": [
@@ -5749,6 +5749,27 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2027-05-09",
+                    "datum_anzeige": "09.05.2027",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Aschaffenburg Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-10",
+                    "datum_anzeige": "10.05.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Aschaffenburg Stadttheater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-10",
+                    "datum_anzeige": "10.05.2027",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Aschaffenburg Stadttheater",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-05-30",
                     "datum_anzeige": "30.05.2027",
                     "uhrzeit": "15.00 Uhr",
@@ -7709,6 +7730,13 @@
                     "datum_iso": "2026-05-31",
                     "datum_anzeige": "31.05.2026",
                     "uhrzeit": "15.00 Uhr",
+                    "ort": "Siegen Apollo-Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-01",
+                    "datum_anzeige": "01.06.2026",
+                    "uhrzeit": "10.00 Uhr",
                     "ort": "Siegen Apollo-Theater",
                     "ticket_url": null
                 },
