@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-05 06:23:48",
+        "generiert": "2026-05-06 06:36:48",
         "anzahl": 46
     },
     "daten": [
@@ -1965,7 +1965,7 @@
                 },
                 {
                     "rolle": "Zwei Ladies/ Telefongirls",
-                    "darsteller": "Lesley-Ann Eisenhardt"
+                    "darsteller": "Carolin Leweling"
                 },
                 {
                     "rolle": "",
@@ -1977,7 +1977,7 @@
                 },
                 {
                     "rolle": "Matrosen",
-                    "darsteller": "Lesley-Ann Eisenhardt"
+                    "darsteller": "Carolin Leweling"
                 },
                 {
                     "rolle": "",
@@ -3121,6 +3121,13 @@
                     "datum_anzeige": "27.01.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Erkrath Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-18",
+                    "datum_anzeige": "18.02.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Lüdinghausen Aula der Realschule",
                     "ticket_url": null
                 },
                 {
@@ -4615,13 +4622,6 @@
                     "uhrzeit": "11.00 Uhr",
                     "ort": "Wolfsburg Hallenbad - Kultur am Schachtweg",
                     "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-05-07",
-                    "datum_anzeige": "07.05.2026",
-                    "uhrzeit": "11.00 Uhr",
-                    "ort": "Ahaus Stadthalle im Kulturquadrat",
-                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -4684,7 +4684,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-07"
+            "naechster_termin_iso": null
         },
         {
             "id": "13716",
@@ -7144,7 +7144,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-05"
+            "naechster_termin_iso": "2026-05-06"
         },
         {
             "id": "13655",
@@ -9035,7 +9035,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-05"
+            "naechster_termin_iso": "2026-05-21"
         },
         {
             "id": "13715",
