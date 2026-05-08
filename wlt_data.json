@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-07 06:44:09",
+        "generiert": "2026-05-08 06:03:30",
         "anzahl": 46
     },
     "daten": [
@@ -1124,7 +1124,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-07"
+            "naechster_termin_iso": "2026-06-28"
         },
         {
             "id": "13664",
@@ -5480,6 +5480,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-11-21",
+                    "datum_anzeige": "21.11.2026",
+                    "uhrzeit": "16.00 Uhr",
+                    "ort": "Sulingen Stadttheater im Gymnasium",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-24",
                     "datum_anzeige": "24.11.2026",
                     "uhrzeit": "9.00 Uhr",
@@ -6659,6 +6666,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-10-29",
+                    "datum_anzeige": "29.10.2026",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Sulingen Stadttheater im Gymnasium",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-11-03",
                     "datum_anzeige": "03.11.2026",
                     "uhrzeit": "19.30 Uhr",
@@ -6809,7 +6823,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_heimsuchung_web_timo_hummel-.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plakatmotiv_heimsuchung_timo_hummel_web.jpg"
                 },
                 {
                     "typ": "bild",
@@ -7156,7 +7170,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-07"
+            "naechster_termin_iso": "2026-05-20"
         },
         {
             "id": "13655",
@@ -7945,7 +7959,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_man_kann_auch_in_die_hoehe_fallen_web_timo_hummel.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plakatmotiv_man_kann_auch_in_die_hoehe_fallen_timo_hummel_web.jpg"
                 }
             ],
             "presse": [],
@@ -8002,8 +8016,8 @@
                     "darsteller": "Anja Müller"
                 },
                 {
-                    "rolle": "Regieassistenz / Abendspielleitung",
-                    "darsteller": "Alina Mathiak"
+                    "rolle": "Abendspielleitung",
+                    "darsteller": "Vanessa Meiritz"
                 }
             ],
             "inhalt": "“Ich würde sagen, es lohnt sich, in unserem Land zu leben. Da muss man für Werte eintreten. Und wer diese Werte nicht vertritt, der kann jederzeit dieses Land verlassen, wenn er nicht einverstanden ist.” Walter Lübcke\n\nAm 14. Oktober 2015 sprach der damalige Kasseler Regierungspräsident Walter Lübcke auf einer Veranstaltung in Lohfelden. Der Politiker informierte über ein Flüchtlingsheim, das in Kürze eröffnet werden sollte. Lübcke drückte mit seinen Worten nicht nur seine tiefe Überzeugung aus, sondern formulierte auch das gesellschaftliche Grundverständnis von Rechtsstaat und Demokratie. Während ein großer Teil des Publikums aufmerksam zuhörte, versuchte eine Gruppe Rechtsextremer die Veranstaltung zu stören und Lübcke zu provozieren. Seine Antwort sorgte in rechten Foren für eine Spirale des Hasses. Vier Jahre später ist Walter Lübcke tot. Erschossen auf seiner heimischen Terrasse.\n\nDer Täter, Stephan Ernst, war bei der Veranstaltung in Lohfelden zugegen. Er ist den Behörden bereits seit den 1990er Jahren bekannt. In den Jahren von 2015 bis 2019 radikalisiert er sich und wird schließlich zum Mörder. Er ist ein Beispiel für eine sich verändernde Gesellschaft und die zunehmende Gewalt- und Mordbereitschaft in der rechtsradikalen Szene.\n\nDas Westfälische Landestheater entwickelt anhand der Tragödie um den politischen Mord an Walter Lübcke eine Produktion über die Entwicklung der rechtsradikalen Strömungen in Deutschland. Dabei fokussiert sie die Gefährdung unserer Demokratie, die sich unter anderem in der Situation von Politiker*innen zeigt, die schlimmsten Beleidigungen und Bedrohungen ausgesetzt sind.\n\nDas Stück wird gefördert von der Landeszentrale für politische Bildung NRW. In Kooperation mit der Auslandsgesellschaft.de e.V. Dortmund.\n\nStückdauer: 90 Minuten ohne Pause",
@@ -10643,6 +10657,13 @@
                     "datum_anzeige": "25.06.2027",
                     "uhrzeit": "19.30 Uhr",
                     "ort": "Bocholt Drosselsaal",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-27",
+                    "datum_anzeige": "27.06.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Duisburg Theater - großes Haus",
                     "ticket_url": null
                 }
             ],
