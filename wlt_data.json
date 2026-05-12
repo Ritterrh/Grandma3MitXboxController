@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-11 07:50:09",
+        "generiert": "2026-05-12 06:41:31",
         "anzahl": 46
     },
     "daten": [
@@ -4025,7 +4025,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-11"
+            "naechster_termin_iso": "2026-06-02"
         },
         {
             "id": "13685",
@@ -5357,7 +5357,48 @@
                 "KJT"
             ],
             "is_kjt": true,
-            "besetzung": [],
+            "besetzung": [
+                {
+                    "rolle": "Justus Jonas",
+                    "darsteller": "Nina Holtvoeth"
+                },
+                {
+                    "rolle": "Peter Shaw",
+                    "darsteller": "Nele Reins"
+                },
+                {
+                    "rolle": "Bob Andrews",
+                    "darsteller": "David Kiefer"
+                },
+                {
+                    "rolle": "Onkel Titus / Clown / Victor Hugenay",
+                    "darsteller": "Alexander Maria Wolff"
+                },
+                {
+                    "rolle": "Tante Mathilda / Zirkusdirektor",
+                    "darsteller": "Jamila Boukhers"
+                },
+                {
+                    "rolle": "Inszenierung",
+                    "darsteller": "Maximilian von Ulardt"
+                },
+                {
+                    "rolle": "Ausstattung",
+                    "darsteller": "Marc Mahn"
+                },
+                {
+                    "rolle": "Dramaturgie",
+                    "darsteller": "Sabrina Klose"
+                },
+                {
+                    "rolle": "Theaterpädagogik",
+                    "darsteller": "Michi Cordes"
+                },
+                {
+                    "rolle": "Regieassistenz / Abendspielleitung",
+                    "darsteller": "Sophie Charlotte Dittmer"
+                }
+            ],
             "inhalt": "Justus, Peter und Bob brauchen deine Hilfe: Ein Fall und 1.000 Spuren – welche davon ist wichtig, welche führt in die Irre?\n\nEin neuer Fall für Die drei ??? Kids: Das knifflige Rätsel um den Wanderzirkus können die Kultdetektive nur mit Hilfe ihres Publikums lösen. An jedem wichtigen Wendepunkt entscheidet es, wie und wo es weitergeht.\n\nEin neuer aufregender Fall für die drei ??? Kids – natürlich mit deiner Hilfe.\n\n»Zirkus der Rätsel« ist der 17. Fall der drei ??? Kids und du. Er wurde von Boris Pfeiffer und Ulf Blanck geschrieben und 2019 veröffentlicht.\n\nUlf Blanck ist als Autor und Radiomoderator für verschiedene Rundfunksender tätig. Er hat zahlreiche Kinder- und Jugendbücher veröffentlicht und gehört seit Start der Reihe »Die drei ??? Kids« zum Autorenteam. Außer Kinderbüchern schreibt Ulf Blanck auch Drehbücher und Theaterstücke.\n\nBoris Pfeiffer arbeitete als Regieassistent und Regisseur an verschiedenen Theatern. 1994 wurde sein erstes Theaterstück für Kinder am Berliner GRIPS Theater uraufgeführt. 2003 erschien sein erstes Kinderbuch: »Kira und Buttermilch«. Inzwischen hat er über 80 Theaterstücke und Bücher geschrieben und über vierzig Bände der Kult-Reihe »Die drei ??? Kids« verfasst",
             "termine": [
                 {
@@ -6441,6 +6482,13 @@
                     "datum_anzeige": "24.01.2027",
                     "uhrzeit": "17.00 Uhr",
                     "ort": "Witten Saalbau",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-05-13",
+                    "datum_anzeige": "13.05.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Peine Stadttheater",
                     "ticket_url": null
                 }
             ],
@@ -8946,6 +8994,13 @@
                     "datum_anzeige": "25.09.2026",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Erkelenz Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-01-09",
+                    "datum_anzeige": "09.01.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Espelkamp Neues Theater",
                     "ticket_url": null
                 },
                 {
