@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-13 06:52:21",
+        "generiert": "2026-05-14 06:49:51",
         "anzahl": 46
     },
     "daten": [
@@ -1730,8 +1730,8 @@
                     "datum_iso": "2026-05-13",
                     "datum_anzeige": "13.05.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368935"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-05-14",
@@ -1922,7 +1922,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-13"
+            "naechster_termin_iso": "2026-05-14"
         },
         {
             "id": "13663",
@@ -2991,6 +2991,34 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-06-23",
+                    "datum_anzeige": "23.06.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Kempen Luise-von-Duesberg-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-23",
+                    "datum_anzeige": "23.06.2026",
+                    "uhrzeit": "11.40 Uhr",
+                    "ort": "Kempen Luise-von-Duesberg-Gymnasium",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-24",
+                    "datum_anzeige": "24.06.2026",
+                    "uhrzeit": "10.00 Uhr",
+                    "ort": "Kempen Gesamtschule",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-24",
+                    "datum_anzeige": "24.06.2026",
+                    "uhrzeit": "11.40 Uhr",
+                    "ort": "Kempen Gesamtschule",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2027-01-18",
                     "datum_anzeige": "18.01.2027",
                     "uhrzeit": "11.30 Uhr",
@@ -3074,7 +3102,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2027-01-18"
+            "naechster_termin_iso": "2026-06-23"
         },
         {
             "id": "13713",
@@ -4490,7 +4518,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-13"
+            "naechster_termin_iso": "2026-09-23"
         },
         {
             "id": "13645",
