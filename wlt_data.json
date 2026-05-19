@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-18 08:10:19",
+        "generiert": "2026-05-19 07:52:38",
         "anzahl": 46
     },
     "daten": [
@@ -2796,7 +2796,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_das_kalendermaedchen_web_timo_hummel.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/mah-xii-logo_claim_1_.png"
                 }
             ],
             "presse": [],
@@ -3250,7 +3250,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_buchspazierer_web_timo_hummel.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_der_buchspazierer_web_timo_hummel_1.jpg"
                 }
             ],
             "presse": [],
@@ -3714,7 +3714,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-18"
+            "naechster_termin_iso": "2026-05-19"
         },
         {
             "id": "13697",
@@ -4822,7 +4822,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_die_zertrennlichen_web_timo_hummel.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plakatmotiv_die_zertrennlichen_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
@@ -5419,7 +5419,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-18"
+            "naechster_termin_iso": "2026-06-14"
         },
         {
             "id": "13718",
@@ -7145,6 +7145,13 @@
                     "datum_anzeige": "30.09.2026",
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-02-05",
+                    "datum_anzeige": "05.02.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Rheda-Wiedenbrück Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -10802,7 +10809,7 @@
             "medien": [
                 {
                     "typ": "plakat",
-                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_songs_for_an_oscar_web_timo_hummel.jpg"
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plakatmotiv_songs_for_an_oscar_web_timo_hummel.jpg"
                 }
             ],
             "presse": [],
