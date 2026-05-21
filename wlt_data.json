@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-20 07:51:48",
+        "generiert": "2026-05-21 07:58:57",
         "anzahl": 46
     },
     "daten": [
@@ -2685,13 +2685,13 @@
             ],
             "is_kjt": false,
             "besetzung": [],
-            "inhalt": "Vor elf Jahren wurde Alma unter mysteriösen Umständen zur Adoption freigegeben. Eine Bedingung für die Adoption war, dass die Identität der Eltern unter keinen Umständen bekannt gegeben werden darf. Doch nun ist sie lebensgefährlich erkrankt, sie braucht dringend einen Knochenmarkspender. In ihrer Verzweiflung macht sich ihre Mutter Olivia auf die Suche nach den biologischen Eltern, ohne zu ahnen, welche grauenerregenden Abgründe auf sie warten. Sie stößt auf die Legende vom »Kalendermädchen«: einer jungen Frau, die sich vor Jahren in der Weihnachtszeit in ein abgelegenes Häuschen zurückgezogen hat, um Ruhe zu finden. Doch dort wurde sie von einem Psychopathen heimgesucht, der sie zwang, einen Adventskalender des Grauens zu öffnen. Olivia begreift, dass sie in eben jene traumatisierte Stadt fahren, in jenes Häuschen gehen und den Psychopathen finden muss, um ihre Tochter retten zu können.\n\nSeit Jahren ist Sebastian Fitzek der Großmeister für deutschsprachige Psychothriller. Die Gesamtauflage seiner Werke geht in die Millionen. Zahlreiche seiner Romane wurden verfilmt. Seine Lesungen werden immer wieder zu Events, weil er sehr gerne neue Formate oder ungewöhnliche Veranstaltungsorte ausprobiert. Seine Fantasie für Stoffe, mit denen er seine noch immer wachsende Fangemeinde beglückt und in Atem hält, scheint grenzenlos zu sein. Dabei thematisiert er häufig die Lebensbedingungen von benachteiligten oder missbrauchten Kindern. Seit 2013 ist er Schirmherr des Bundesverbandes »Das frühgeborene Kind«, der die Sensibilisierung für die größte kindliche Patientengruppe in Deutschland steigern möchte.",
+            "inhalt": "Vor elf Jahren wurde Alma unter mysteriösen Umständen zur Adoption freigegeben. Eine Bedingung für die Adoption war, dass die Identität der Eltern unter keinen Umständen bekannt gegeben werden darf. Doch nun ist sie lebensgefährlich erkrankt, sie braucht dringend einen Knochenmarkspender. In ihrer Verzweiflung macht sich ihre Mutter Olivia auf die Suche nach den biologischen Eltern, ohne zu ahnen, welche grauenerregenden Abgründe auf sie warten. Sie stößt auf die Legende vom »Kalendermädchen«: einer jungen Frau, die sich vor Jahren in der Weihnachtszeit in ein abgelegenes Häuschen zurückgezogen hat, um Ruhe zu finden. Doch dort wurde sie von einem Psychopathen heimgesucht, der sie zwang, einen Adventskalender des Grauens zu öffnen. Olivia begreift, dass sie in eben jene traumatisierte Stadt fahren, in jenes Häuschen gehen und den Psychopathen finden muss, um ihre Tochter retten zu können.\n\nSeit Jahren ist Sebastian Fitzek der Großmeister für deutschsprachige Psychothriller. Die Gesamtauflage seiner Werke geht in die Millionen. Zahlreiche seiner Romane wurden verfilmt. Seine Lesungen werden immer wieder zu Events, weil er sehr gerne neue Formate oder ungewöhnliche Veranstaltungsorte ausprobiert. Seine Fantasie für Stoffe, mit denen er seine noch immer wachsende Fangemeinde beglückt und in Atem hält, scheint grenzenlos zu sein. Dabei thematisiert er häufig die Lebensbedingungen von benachteiligten oder missbrauchten Kindern. Seit 2013 ist er Schirmherr des Bundesverbandes »Das frühgeborene Kind«, der die Sensibilisierung für die größte kindliche Patientengruppe in Deutschland steigern möchte.\n\nAm 4. Oktober 2026 findet eine öffentliche Generalprobe in Castrop-Rauxel statt. Die Premiere folgt am 10. Oktober 2026 beim internationalen Krimifestival Mord am Hellweg in Hamm.",
             "termine": [
                 {
                     "datum_iso": "2026-10-04",
                     "datum_anzeige": "04.10.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ort": "Castrop-Rauxel StadthalleÖffentliche Generalprobe",
                     "ticket_url": null
                 },
                 {
@@ -3037,20 +3037,6 @@
                     "datum_anzeige": "19.01.2027",
                     "uhrzeit": "12.00 Uhr",
                     "ort": "Castrop-Rauxel ASG",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2027-01-20",
-                    "datum_anzeige": "20.01.2027",
-                    "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2027-01-20",
-                    "datum_anzeige": "20.01.2027",
-                    "uhrzeit": "11.30 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
                     "ticket_url": null
                 }
             ],
@@ -3453,7 +3439,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/bildzeilen_der_theatermacher_1.pdf"
                 }
             ],
-            "presse": [],
+            "presse": [
+                "„Ausgerechnet in Utzbach ist er gelandet, der großartige Schauspieler, Regisseur und Autor Bruscon. Einem Kaff, dessen Namen er sich natürlich nicht merken kann, weshalb ihm der Wirt […] immer wieder auf die Sprünge helfen muss. Und sich nun einen Spaß daraus zu ma-chen, auf jede ,Utzbach‘ Nennung mit Bruscons geknechteter Familie anzustoßen. Es sind solche Details, mit denen Regisseurin Dalila Niksic den berühmten Theatermacher von Thomas Bernhard belebt. Für das Westfälische Landestheater hat sie eine Inszenierung erarbeitet, die […] außerordentlich muntere Reaktionen des Premierenpublikums bewirkte.“ Ruhr Nachrichten, Harald Suerland",
+                "„Die 1999 in Siegen geborene Regisseurin Dalila Niksic setzt zeitgemäße Akzente, ohne die sprachmächtigen Wortschöpfungen des Autors zu beschädigen: In nonverbalen szenischen Miniaturen verbünden sich nicht nur die Mutter und die Kinder gegen den tyrannischen Vater, sondern diese sich auch mit dem von Jan-Hendrik Kroll verkörperten Wirt. … Mike Kühne zeigt nun eindrucksvoll, dass es auch ohne Traugott Buhre geht: Sein Bruscon legt sich mit Verve ins Zeug für die aus seiner Sicht einzig wahre Kunst, kennt auch gegen die Seinen kein Pardon – und ist sich letztlich doch des eigenen Scheiterns bewusst.“ Halloherne.de, Pitt Herrmann"
+            ],
             "meta_details": {
                 "dauer_minuten": 105,
                 "hat_pause": true,
@@ -6728,6 +6717,13 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-09-10",
+                    "datum_anzeige": "10.09.2026",
+                    "uhrzeit": "18.00 Uhr",
+                    "ort": "Olpe Stadthalle",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-09-13",
                     "datum_anzeige": "13.09.2026",
                     "uhrzeit": "18.00 Uhr",
@@ -7099,20 +7095,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-05-21",
-                    "datum_anzeige": "21.05.2026",
-                    "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-05-21",
-                    "datum_anzeige": "21.05.2026",
-                    "uhrzeit": "11.30 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-05-22",
                     "datum_anzeige": "22.05.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -7302,7 +7284,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-20"
+            "naechster_termin_iso": "2026-05-22"
         },
         {
             "id": "13655",
@@ -8029,6 +8011,13 @@
                     "datum_anzeige": "27.02.2027",
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Warendorf Theater",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-03-04",
+                    "datum_anzeige": "04.03.2027",
+                    "uhrzeit": "20.00 Uhr",
+                    "ort": "Olpe Stadthalle",
                     "ticket_url": null
                 },
                 {
@@ -9070,7 +9059,7 @@
                     "datum_iso": "2026-08-28",
                     "datum_anzeige": "28.08.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Ickern",
+                    "ort": "Castrop-Rauxel IckernIm Rahmen des Bürgerpicknicks Ickern 2026",
                     "ticket_url": null
                 },
                 {
@@ -9623,7 +9612,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-20"
+            "naechster_termin_iso": "2026-11-27"
         },
         {
             "id": "13687",
@@ -9715,7 +9704,7 @@
                     "datum_iso": "2025-06-06",
                     "datum_anzeige": "06.06.2025",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ort": "Castrop-Rauxel StadthalleÖffentliche Generalprobe",
                     "ticket_url": "https://shop.reservix.de/?id=a148cf4882863a93ccdb55a062530e38e77c299812a554faccd0a709e9f20ed6353f37e8576deb1442fcfbfa75ee6016&vID=3504&eventGrpID=471045&eventID=2415351"
                 },
                 {
@@ -11048,7 +11037,7 @@
                     "datum_iso": "2025-03-18",
                     "datum_anzeige": "18.03.2025",
                     "uhrzeit": "19.00 Uhr",
-                    "ort": "Meschede Bürgerzentrum \"Alte Synagoge\"",
+                    "ort": "Meschede Bürgerzentrum \"Alte Synagoge\"eine Veranstaltung von aufbrüche – literaturfestival [lilawe:] 2025",
                     "ticket_url": null
                 },
                 {
@@ -11062,14 +11051,14 @@
                     "datum_iso": "2025-04-05",
                     "datum_anzeige": "05.04.2025",
                     "uhrzeit": "18.30 Uhr",
-                    "ort": "Oelde Kulturgut Haus Nottbeck",
+                    "ort": "Oelde Kulturgut Haus Nottbeckeine Veranstaltung von aufbrüche – literaturfestival [lilawe:] 2025",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2025-05-15",
                     "datum_anzeige": "15.05.2025",
                     "uhrzeit": "11.00 Uhr",
-                    "ort": "Hamm Kulturbahnhof",
+                    "ort": "Hamm Kulturbahnhofeine Veranstaltung von aufbrüche – literaturfestival [lilawe:] 2025",
                     "ticket_url": null
                 }
             ],
