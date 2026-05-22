@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-21 07:58:57",
+        "generiert": "2026-05-22 07:50:17",
         "anzahl": 46
     },
     "daten": [
@@ -2690,7 +2690,7 @@
                 {
                     "datum_iso": "2026-10-04",
                     "datum_anzeige": "04.10.2026",
-                    "uhrzeit": "20.00 Uhr",
+                    "uhrzeit": "18.00 Uhr",
                     "ort": "Castrop-Rauxel StadthalleÖffentliche Generalprobe",
                     "ticket_url": null
                 },
@@ -7102,6 +7102,20 @@
                     "ticket_url": null
                 },
                 {
+                    "datum_iso": "2026-06-03",
+                    "datum_anzeige": "03.06.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-03",
+                    "datum_anzeige": "03.06.2026",
+                    "uhrzeit": "11.30 Uhr",
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
+                },
+                {
                     "datum_iso": "2026-09-29",
                     "datum_anzeige": "29.09.2026",
                     "uhrzeit": "9.00 Uhr",
@@ -8567,8 +8581,8 @@
             "inhalt": "Der vermeintliche Polizist Dominik Stein scheint zunächst Aufklärungsunterricht über die Gefahren des Internets zu geben. Schnell wird jedoch klar, dass es sich um eine persönliche Geschichte handelt: Dominik erzählt von seiner Schwester Vicky, die Opfer von Cybermobbing wurde. Nach dem Hochladen kompromittierender Bilder und Videos von einer Party verbreiten sich diese rasch im Netz, und Vicky sieht sich einer Welle von Demütigungen und Ausgrenzung ausgesetzt.\n\nDas Stück zeigt eindrücklich die Dynamik von Cybermobbing und die Hilflosigkeit der Betroffenen.\n\n»OUT! – Gefangen im Netz« ist ein interaktives Klassenzimmerstück, bei dem die Schüler*innen aktiv in das Geschehen einbezogen werden. Durch diese Nähe sollen die Jugendlichen für die Gefahren von Cybermobbing sensibilisiert und zur Reflexion des eigenen Verhaltens im Netz angeregt werden. Im Anschluss an die Aufführung findet eine Nachbereitung statt, in der die Erfahrungen und Eindrücke gemeinsam besprochen werden.\n\nKnut Winkmann, geboren 1975 in Wetzlar, ist ein deutscher Autor und Dramatiker. Mit »OUT! – Gefangen im Netz« hat er ein packendes Stück geschaffen, das die Herausforderungen und Gefahren der digitalen Welt thematisiert und die Bedeutung von Zivilcourage im realen Leben hervorhebt.",
             "termine": [
                 {
-                    "datum_iso": "2026-09-24",
-                    "datum_anzeige": "24.09.2026",
+                    "datum_iso": "2026-09-18",
+                    "datum_anzeige": "18.09.2026",
                     "uhrzeit": "10.00 Uhr",
                     "ort": "Castrop-Rauxel Schulen",
                     "ticket_url": null
@@ -8650,7 +8664,7 @@
                 "video": false,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-09-24"
+            "naechster_termin_iso": "2026-09-18"
         },
         {
             "id": "13653",
@@ -9189,7 +9203,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-21"
+            "naechster_termin_iso": "2026-08-28"
         },
         {
             "id": "13715",
