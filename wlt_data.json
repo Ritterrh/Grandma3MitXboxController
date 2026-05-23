@@ -1,7 +1,7 @@
 {
     "meta": {
-        "generiert": "2026-05-22 07:50:17",
-        "anzahl": 46
+        "generiert": "2026-05-23 06:39:25",
+        "anzahl": 48
     },
     "daten": [
         {
@@ -3350,8 +3350,8 @@
                     "datum_iso": "2026-05-22",
                     "datum_anzeige": "22.05.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://www.reservix.de/p/reservix/event/2368934"
+                    "ort": "Castrop-Rauxel Studio",
+                    "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-05-28",
@@ -3450,11 +3450,11 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": true,
+                "tickets": false,
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-22"
+            "naechster_termin_iso": "2026-05-28"
         },
         {
             "id": "13623",
@@ -5944,6 +5944,45 @@
             "naechster_termin_iso": "2026-09-06"
         },
         {
+            "id": "13743",
+            "titel": "Die kleine Meerjungfrau",
+            "subtitel": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
+            "genre_liste": "Premiere: 13.06.2027",
+            "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13743/",
+            "spielzeiten": [
+                "2026/2027"
+            ],
+            "kategorien": [
+                "KJT"
+            ],
+            "is_kjt": true,
+            "besetzung": [],
+            "inhalt": "Undine, die Tochter des Meerkönigs, träumt von der Welt der Menschen. Sie sammelt Geschichten über das Unbekannte, bis sie eines Tages selbst eingreift: Sie rettet dem jungen Prinzen Hans das Leben – und verliert dabei ihr Herz an ihn. Getrieben von dieser Liebe wagt sie den Schritt in eine fremde Existenz. Sie verlässt das Meer und betritt die Menschenwelt, in der alles anders ist: die Regeln, die Körper, die Gefühle. Auf dem Schloss des Prinzen begegnet Undine einer Welt, die sie zugleich fasziniert und überfordert. Mit ihrer Unbefangenheit stellt sie Gewohntes in Frage und bringt Bewegung in starre Ordnungen. Doch ihre Hoffnung auf ein gemeinsames Leben gerät ins Wanken, als der Prinz eine andere heiraten soll.\n\nZwischen Traum und Wirklichkeit, zwischen Selbstaufgabe und Selbstbehauptung entfaltet sich eine berührende Geschichte über Identität, Liebe und die Sehnsucht nach Zugehörigkeit. „Die kleine Meerjungfrau“ erzählt davon, was es kostet, sich zu verwandeln – und davon, wer wir sind, wenn wir alles aufs Spiel setzen.\n\nFranziska Steiof war Regisseurin und Autorin, vor allem im Kinder- und Jugendtheater. Zusammen mit dem Komponisten Thomas Zaufke entstanden zahlreiche Stücke. „Undine, die kleine Meerjungfrau“ wurde sowohl für den Deutschen Kindertheaterpreis als auch für den Mülheimer Kinderstückepreis nominiert.",
+            "termine": [
+                {
+                    "datum_iso": "2027-06-13",
+                    "datum_anzeige": "13.06.2027",
+                    "uhrzeit": "14.00 Uhr",
+                    "ort": "Castrop-Rauxel Parkbad Süd",
+                    "ticket_url": null
+                }
+            ],
+            "medien": [],
+            "presse": [],
+            "meta_details": {
+                "dauer_minuten": null,
+                "hat_pause": false,
+                "altersempfehlung": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
+                "schulklasse": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse"
+            },
+            "flags": {
+                "tickets": false,
+                "video": false,
+                "audio": false
+            },
+            "naechster_termin_iso": "2027-06-13"
+        },
+        {
             "id": "13662",
             "titel": "Fettes Schwein",
             "subtitel": "Neil LaBute",
@@ -7298,7 +7337,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-22"
+            "naechster_termin_iso": "2026-06-03"
         },
         {
             "id": "13655",
@@ -10963,6 +11002,45 @@
                 "audio": false
             },
             "naechster_termin_iso": "2027-02-21"
+        },
+        {
+            "id": "13748",
+            "titel": "Vermisst! Was geschah mit Agatha Christie? (The Missing Days Of Agatha Christie)",
+            "subtitel": "Schauspiel mit Musik",
+            "genre_liste": "Premiere: 11.06.2027",
+            "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13748/",
+            "spielzeiten": [
+                "2026/2027"
+            ],
+            "kategorien": [
+                "Abendtheater"
+            ],
+            "is_kjt": false,
+            "besetzung": [],
+            "inhalt": "Es ist einer der spektakulärsten Kriminalfälle der Literaturgeschichte – und die Hauptfigur ist die „Queen of Crime“ selbst. Am 3. Dezember 1926 verschwindet Agatha Christie spurlos. Während hunderte Freiwillige und Kollegen wie Sir Arthur Conan Doyle ganz England absuchen, deutet ihr verlassener Wagen auf eine Tragödie hin. Doch elf Tage später taucht sie wohlbehalten in einem Luxushotel auf, registriert unter dem Namen der Geliebten ihres untreuen Ehemannes. Über dieses Rätsel – ob Nervenzusammenbruch oder genialer Racheplan – schwieg sie bis zu ihrem Tod. In diesem packenden Schauspiel verschmelzen Fakt und Fiktion zu einem Fest für die Sinne, bei dem Krimi auf Live-Musik trifft. Die atmosphärische Zeitreise lässt die Grenzen zwischen der Schöpferin und ihren Werken verschwimmen. Die Musik von Paul Graham Brown bildet dabei das pulsierende Herzstück der Inszenierung und macht diesen Abend zu einer unverzichtbaren, sinnlichen Spurensuche.\n\nJames Edward Lyons (Buch): Der US-Amerikaner ist eine feste Größe in der Theaterlandschaft und bekannt für seine präzisen biografischen Musikabende (u. a. über Édith Piaf und Janis Joplin). Paul Graham Brown (Musik): Einer der produktivsten Musical-Komponisten im deutschsprachigen Raum, bekannt durch Erfolge wie „Bonnie und Clyde“ oder „King Kong“.",
+            "termine": [
+                {
+                    "datum_iso": "2027-06-11",
+                    "datum_anzeige": "11.06.2027",
+                    "uhrzeit": "19.30 Uhr",
+                    "ort": "Castrop-Rauxel Parkbad Süd",
+                    "ticket_url": null
+                }
+            ],
+            "medien": [],
+            "presse": [],
+            "meta_details": {
+                "dauer_minuten": null,
+                "hat_pause": false,
+                "altersempfehlung": null,
+                "schulklasse": null
+            },
+            "flags": {
+                "tickets": false,
+                "video": false,
+                "audio": false
+            },
+            "naechster_termin_iso": "2027-06-11"
         },
         {
             "id": "13702",
