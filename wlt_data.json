@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-27 08:08:13",
+        "generiert": "2026-05-28 08:06:07",
         "anzahl": 48
     },
     "daten": [
@@ -5471,8 +5471,8 @@
                     "datum_iso": "2026-09-06",
                     "datum_anzeige": "06.09.2026",
                     "uhrzeit": "15.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2440009"
                 },
                 {
                     "datum_iso": "2026-09-13",
@@ -5944,7 +5944,7 @@
                 "schulklasse": "Kinderstück für alle ab 6 Jahren, ab 1. Klasse, als Freilichaufführung geeignet"
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -5953,8 +5953,8 @@
         {
             "id": "13743",
             "titel": "Die kleine Meerjungfrau",
-            "subtitel": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
-            "genre_liste": "Premiere: 13.06.2027",
+            "subtitel": "Franziska Steiof",
+            "genre_liste": "Familienstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13743/",
             "spielzeiten": [
                 "2026/2027"
@@ -5979,8 +5979,8 @@
             "meta_details": {
                 "dauer_minuten": null,
                 "hat_pause": false,
-                "altersempfehlung": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
-                "schulklasse": "Kinderstück mit Musik für alle ab 6 Jahren, ab 1. Klasse"
+                "altersempfehlung": "Familienstück mit Musik für alle ab 6 Jahren, ab 1. Klasse",
+                "schulklasse": "Familienstück mit Musik für alle ab 6 Jahren, ab 1. Klasse"
             },
             "flags": {
                 "tickets": false,
@@ -6712,6 +6712,14 @@
             ],
             "is_kjt": false,
             "besetzung": [
+                {
+                    "rolle": "Der Gärtner",
+                    "darsteller": "Mike Kühne"
+                },
+                {
+                    "rolle": "Der Großbauer, Der Architekt, Schriftsteller, Makler",
+                    "darsteller": "Guido Thurk"
+                },
                 {
                     "rolle": "Klara, Doris, Die Besucherin",
                     "darsteller": "Lesley-Ann Eisenhardt"
@@ -11013,8 +11021,8 @@
         {
             "id": "13748",
             "titel": "Vermisst! Was geschah mit Agatha Christie? (The Missing Days Of Agatha Christie)",
-            "subtitel": "Schauspiel mit Musik",
-            "genre_liste": "Premiere: 11.06.2027",
+            "subtitel": "Krimi-Musical von Paul Graham Brown",
+            "genre_liste": "Krimi-Musical",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13748/",
             "spielzeiten": [
                 "2026/2027"
