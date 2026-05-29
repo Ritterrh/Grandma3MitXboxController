@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-05-28 08:06:07",
+        "generiert": "2026-05-29 08:03:04",
         "anzahl": 48
     },
     "daten": [
@@ -1635,7 +1635,7 @@
         {
             "id": "13698",
             "titel": "Bekenntnisse des Hochstaplers Felix Krull",
-            "subtitel": "nach Thomas Mann, von Karin Eppler",
+            "subtitel": "nach Thomas Mann",
             "genre_liste": "Klassenzimmerstück für alle ab 15 Jahren, ab 10. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13698/",
             "spielzeiten": [
@@ -3093,7 +3093,7 @@
         {
             "id": "13713",
             "titel": "Der Buchspazierer",
-            "subtitel": "nach Carsten Henn",
+            "subtitel": "Carsten Henn",
             "genre_liste": "Unterhaltungsstück",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13713/",
             "spielzeiten": [
@@ -3454,7 +3454,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-05-28"
+            "naechster_termin_iso": null
         },
         {
             "id": "13623",
@@ -4759,7 +4759,7 @@
         {
             "id": "13716",
             "titel": "Die Zertrennlichen (Les Séparables)",
-            "subtitel": "von Fabrice Melquiot, Deutsch von Leyla-Claire Rabih und Frank Weigand",
+            "subtitel": "Fabrice Melquiot",
             "genre_liste": "Jugendstück für alle ab 10 Jahre, ab 5. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13716/",
             "spielzeiten": [
@@ -6467,7 +6467,7 @@
         {
             "id": "13693",
             "titel": "Harold und Maude",
-            "subtitel": "von Colin Higgins, Deutsch von Udo Birckholz",
+            "subtitel": "Colin Higgins",
             "genre_liste": "Komödie",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13693/",
             "spielzeiten": [
@@ -7026,7 +7026,7 @@
         {
             "id": "13696",
             "titel": "Herkules",
-            "subtitel": "ArtesMobiles - Nina Maria Stemberger, Birk Schmithüsen",
+            "subtitel": "ArtesMobiles",
             "genre_liste": "Kinderstück für alle ab 10 Jahren, ab 5. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13696/",
             "spielzeiten": [
@@ -7638,7 +7638,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-05-28"
+            "naechster_termin_iso": "2026-11-28"
         },
         {
             "id": "13721",
