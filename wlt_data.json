@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-03 08:59:18",
+        "generiert": "2026-06-04 08:23:50",
         "anzahl": 48
     },
     "daten": [
@@ -4420,6 +4420,13 @@
                     "uhrzeit": "20.00 Uhr",
                     "ort": "Borken Stadthalle",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-12-14",
+                    "datum_anzeige": "14.12.2026",
+                    "uhrzeit": "13.30 Uhr",
+                    "ort": "Castrop-Rauxel Stadthalle",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -7280,6 +7287,13 @@
                     "uhrzeit": "11.30 Uhr",
                     "ort": "Castrop-Rauxel Studio",
                     "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-30",
+                    "datum_anzeige": "30.06.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -7380,7 +7394,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-06-03"
+            "naechster_termin_iso": "2026-09-29"
         },
         {
             "id": "13655",
@@ -9455,6 +9469,20 @@
                     "datum_anzeige": "13.05.2027",
                     "uhrzeit": "15.30 Uhr",
                     "ort": "Lüdenscheid Kulturhaus",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-23",
+                    "datum_anzeige": "23.06.2027",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2027-06-23",
+                    "datum_anzeige": "23.06.2027",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Troisdorf Stadthalle",
                     "ticket_url": null
                 }
             ],
