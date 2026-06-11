@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-10 08:11:58",
+        "generiert": "2026-06-11 08:50:05",
         "anzahl": 48
     },
     "daten": [
@@ -4105,7 +4105,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-10"
+            "naechster_termin_iso": "2026-06-17"
         },
         {
             "id": "13685",
@@ -5962,6 +5962,34 @@
                 {
                     "typ": "plakat",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_drei_fragezeichen_kids_web.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_1.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_2.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_3.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_4.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_5.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_6.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_7.jpg"
                 }
             ],
             "presse": [],
@@ -8673,7 +8701,7 @@
                     "datum_iso": "2026-09-18",
                     "datum_anzeige": "18.09.2026",
                     "uhrzeit": "10.00 Uhr",
-                    "ort": "Castrop-Rauxel Schulen",
+                    "ort": "Castrop-Rauxel Fridtjof-Nansen-Realschule",
                     "ticket_url": null
                 },
                 {
