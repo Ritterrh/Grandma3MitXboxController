@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-14 08:18:18",
+        "generiert": "2026-06-15 10:28:07",
         "anzahl": 48
     },
     "daten": [
@@ -5348,8 +5348,22 @@
                     "datum_iso": "2026-06-14",
                     "datum_anzeige": "14.06.2026",
                     "uhrzeit": "14.00 Uhr",
-                    "ort": "Castrop-Rauxel Parkbad SüdEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
-                    "ticket_url": "https://www.reservix.de/p/reservix/event/2432806"
+                    "ort": "Castrop-Rauxel Parkbad Süd",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-17",
+                    "datum_anzeige": "17.06.2026",
+                    "uhrzeit": "9.00 Uhr",
+                    "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
+                },
+                {
+                    "datum_iso": "2026-06-17",
+                    "datum_anzeige": "17.06.2026",
+                    "uhrzeit": "11.00 Uhr",
+                    "ort": "Troisdorf Stadthalle",
+                    "ticket_url": null
                 }
             ],
             "medien": [
@@ -5425,11 +5439,11 @@
                 "schulklasse": "für alle ab 6 Jahren, ab 1. Klasse"
             },
             "flags": {
-                "tickets": true,
+                "tickets": false,
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-14"
+            "naechster_termin_iso": "2026-06-17"
         },
         {
             "id": "13718",
@@ -10434,20 +10448,6 @@
                     "ticket_url": null
                 },
                 {
-                    "datum_iso": "2026-06-17",
-                    "datum_anzeige": "17.06.2026",
-                    "uhrzeit": "9.00 Uhr",
-                    "ort": "Troisdorf Stadthalle",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-06-17",
-                    "datum_anzeige": "17.06.2026",
-                    "uhrzeit": "11.00 Uhr",
-                    "ort": "Troisdorf Stadthalle",
-                    "ticket_url": null
-                },
-                {
                     "datum_iso": "2026-10-11",
                     "datum_anzeige": "11.10.2026",
                     "uhrzeit": "16.00 Uhr",
@@ -10597,7 +10597,7 @@
                 "video": true,
                 "audio": true
             },
-            "naechster_termin_iso": "2026-06-17"
+            "naechster_termin_iso": "2026-10-11"
         },
         {
             "id": "13657",
