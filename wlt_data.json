@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-17 09:05:58",
+        "generiert": "2026-06-18 08:50:11",
         "anzahl": 48
     },
     "daten": [
@@ -4105,7 +4105,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-17"
+            "naechster_termin_iso": "2026-11-09"
         },
         {
             "id": "13685",
@@ -5450,7 +5450,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-17"
+            "naechster_termin_iso": null
         },
         {
             "id": "13718",
@@ -6872,13 +6872,6 @@
                     "datum_iso": "2026-09-22",
                     "datum_anzeige": "22.09.2026",
                     "uhrzeit": "9.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
-                },
-                {
-                    "datum_iso": "2026-09-22",
-                    "datum_anzeige": "22.09.2026",
-                    "uhrzeit": "12.00 Uhr",
                     "ort": "Castrop-Rauxel Stadthalle",
                     "ticket_url": null
                 },
