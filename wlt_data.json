@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-18 08:50:11",
+        "generiert": "2026-06-19 09:08:03",
         "anzahl": 48
     },
     "daten": [
@@ -3007,14 +3007,14 @@
                 {
                     "datum_iso": "2026-06-24",
                     "datum_anzeige": "24.06.2026",
-                    "uhrzeit": "10.00 Uhr",
+                    "uhrzeit": "9.50 Uhr",
                     "ort": "Kempen Gesamtschule",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-06-24",
                     "datum_anzeige": "24.06.2026",
-                    "uhrzeit": "11.40 Uhr",
+                    "uhrzeit": "11.50 Uhr",
                     "ort": "Kempen Gesamtschule",
                     "ticket_url": null
                 },
@@ -4782,7 +4782,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-18"
+            "naechster_termin_iso": null
         },
         {
             "id": "13716",
