@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-19 09:08:03",
+        "generiert": "2026-06-20 07:54:17",
         "anzahl": 48
     },
     "daten": [
@@ -1379,7 +1379,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-19"
+            "naechster_termin_iso": null
         },
         {
             "id": "13637",
@@ -2574,7 +2574,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-19"
+            "naechster_termin_iso": "2026-10-14"
         },
         {
             "id": "13740",
@@ -6047,8 +6047,8 @@
                     "datum_iso": "2027-06-13",
                     "datum_anzeige": "13.06.2027",
                     "uhrzeit": "14.00 Uhr",
-                    "ort": "Castrop-Rauxel Parkbad Süd",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel Parkbad SüdEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2575340"
                 }
             ],
             "medien": [],
@@ -6060,7 +6060,7 @@
                 "schulklasse": "Familienstück mit Musik für alle ab 6 Jahren, ab 1. Klasse"
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -6831,7 +6831,7 @@
                     "darsteller": "Marvin Moers"
                 }
             ],
-            "inhalt": "Mit diesem Jahrhundertroman gelang Jenny Erpenbeck der internationale Durchbruch. Die teils autobiographischen Geschichten ereignen sich generationsübergreifend in einem Haus an einem Brandenburger See und strecken sich zeitlich von 1906 bis 2002. Von der Weimarer Republik, über den Nationalsozialismus, über den Aufbau der DDR bis hin zur Wiedervereinigung beleuchtet und verknüpft Erpenbeck die Schicksale einzelner Menschen: Sie suchen in ihrer jeweiligen Epoche auf diesem Grundstück ein Heim. Die Figuren lassen uns eintauchen in die Widersprüche ihrer Zeit und ihres Lebens. Jede Erzählung ein einzelnes Schicksal, jeder Mensch mit ganz eigenen privaten Perspektiven auf die Welt, geprägt und gezeichnet von den jeweiligen gesellschaftlichen Zwängen. So entfaltet sich eine tiefgründige, literarische Erzählweise mit sehr unterschiedlichen Sichtweisen auf die ambivalente deutsche Geschichte.\n\nJenny Erpenbeck wurde 1967 in Ost-Berlin geboren. Sie gewann u.a. den Hans-Fallada-Preis (2014), den Thomas-Mann-Preis (2016) und den Uwe-Johnson-Preis (2022). 2024 erhielt sie als erste Deutsche den International Booker Prize. Sie ist Trägerin des Bundesverdienstkreuzes am Bande.\n\nBild 1 von links: Guido Thurk, Sabrina Klose, Gabriele Brüning, Lesley-Ann Eisenhardt, Mike Kühne, Nico Dietrich, Carolin Leweling, Tankred Schleinschock, Marvin Moers, Jan-Hendrik Kroll, Vincent John, Tobias Sosinka\n\nBild 2 von links: Tobias Sosinka, Nico Dietrich\n\nFotos: Volker Beushausen",
+            "inhalt": "Mit diesem Jahrhundertroman gelang Jenny Erpenbeck der internationale Durchbruch. Die teils autobiographischen Geschichten ereignen sich generationsübergreifend in einem Haus an einem Brandenburger See und strecken sich zeitlich von 1906 bis 2002. Von der Weimarer Republik, über den Nationalsozialismus, über den Aufbau der DDR bis hin zur Wiedervereinigung beleuchtet und verknüpft Erpenbeck die Schicksale einzelner Menschen: Sie suchen in ihrer jeweiligen Epoche auf diesem Grundstück ein Heim. Die Figuren lassen uns eintauchen in die Widersprüche ihrer Zeit und ihres Lebens. Jede Erzählung ein einzelnes Schicksal, jeder Mensch mit ganz eigenen privaten Perspektiven auf die Welt, geprägt und gezeichnet von den jeweiligen gesellschaftlichen Zwängen. So entfaltet sich eine tiefgründige, literarische Erzählweise mit sehr unterschiedlichen Sichtweisen auf die ambivalente deutsche Geschichte.\n\nJenny Erpenbeck wurde 1967 in Ost-Berlin geboren. Sie gewann u.a. den Hans-Fallada-Preis (2014), den Thomas-Mann-Preis (2016) und den Uwe-Johnson-Preis (2022). 2024 erhielt sie als erste Deutsche den International Booker Prize. Sie ist Trägerin des Bundesverdienstkreuzes am Bande.\n\nProbenfotos Fotos: Volker Beushausen",
             "termine": [
                 {
                     "datum_iso": "2026-08-22",
@@ -7062,6 +7062,58 @@
                 {
                     "typ": "plakat",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/wlt_plakatmotiv_heimsuchung_timo_hummel_web.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_1_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_2_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_3_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_4_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_5_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_6_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_7_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_8_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_9_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_10_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_11_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_12_volker_beushausen.jpg"
+                },
+                {
+                    "typ": "bild",
+                    "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/heimsuchung_13_volker_beushausen.jpg"
                 },
                 {
                     "typ": "bild",
