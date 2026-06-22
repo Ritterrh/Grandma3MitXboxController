@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-21 08:37:53",
+        "generiert": "2026-06-22 09:51:14",
         "anzahl": 48
     },
     "daten": [
@@ -2726,8 +2726,8 @@
                     "datum_iso": "2026-11-07",
                     "datum_anzeige": "07.11.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2500183"
                 },
                 {
                     "datum_iso": "2026-11-11",
@@ -2807,7 +2807,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -2993,21 +2993,21 @@
                 {
                     "datum_iso": "2026-06-23",
                     "datum_anzeige": "23.06.2026",
-                    "uhrzeit": "10.00 Uhr",
+                    "uhrzeit": "9.00 Uhr",
                     "ort": "Kempen Luise-von-Duesberg-Gymnasium",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-06-23",
                     "datum_anzeige": "23.06.2026",
-                    "uhrzeit": "11.40 Uhr",
+                    "uhrzeit": "10.30 Uhr",
                     "ort": "Kempen Luise-von-Duesberg-Gymnasium",
                     "ticket_url": null
                 },
                 {
                     "datum_iso": "2026-06-24",
                     "datum_anzeige": "24.06.2026",
-                    "uhrzeit": "9.50 Uhr",
+                    "uhrzeit": "9.00 Uhr",
                     "ort": "Kempen Gesamtschule",
                     "ticket_url": null
                 },
@@ -10105,7 +10105,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-21"
+            "naechster_termin_iso": "2026-12-31"
         },
         {
             "id": "13695",
