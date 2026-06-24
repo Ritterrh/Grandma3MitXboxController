@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-23 07:54:06",
+        "generiert": "2026-06-24 07:49:09",
         "anzahl": 48
     },
     "daten": [
@@ -3014,7 +3014,7 @@
                 {
                     "datum_iso": "2026-06-24",
                     "datum_anzeige": "24.06.2026",
-                    "uhrzeit": "11.50 Uhr",
+                    "uhrzeit": "10.30 Uhr",
                     "ort": "Kempen Gesamtschule",
                     "ticket_url": null
                 },
@@ -3088,7 +3088,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-23"
+            "naechster_termin_iso": "2026-06-24"
         },
         {
             "id": "13713",
@@ -5985,6 +5985,10 @@
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/plakatmotiv_drei_fragezeichen_kids_web.jpg"
                 },
                 {
+                    "typ": "audio",
+                    "url": "https://westfaelisches-landestheater.de/media/audiotrailer_zirkus_der_raetsel.mp3"
+                },
+                {
                     "typ": "bild",
                     "url": "https://westfaelisches-landestheater.de/media/prod_det_zoom/die_drei_fragezeichen_kids-_zirkus_der_raetsel_probenfotos_volker_beushausen_1.jpg"
                 },
@@ -6023,7 +6027,7 @@
             "flags": {
                 "tickets": true,
                 "video": false,
-                "audio": false
+                "audio": true
             },
             "naechster_termin_iso": "2026-09-06"
         },
