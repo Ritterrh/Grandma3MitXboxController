@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generiert": "2026-06-24 07:49:09",
+        "generiert": "2026-06-25 07:50:38",
         "anzahl": 48
     },
     "daten": [
@@ -1635,7 +1635,7 @@
         {
             "id": "13698",
             "titel": "Bekenntnisse des Hochstaplers Felix Krull",
-            "subtitel": "nach Thomas Mann",
+            "subtitel": "Thomas Mann",
             "genre_liste": "Klassenzimmerstück für alle ab 15 Jahren, ab 10. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13698/",
             "spielzeiten": [
@@ -3088,7 +3088,7 @@
                 "video": true,
                 "audio": false
             },
-            "naechster_termin_iso": "2026-06-24"
+            "naechster_termin_iso": "2027-01-18"
         },
         {
             "id": "13713",
@@ -3110,8 +3110,8 @@
                     "datum_iso": "2026-12-05",
                     "datum_anzeige": "05.12.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2440012"
                 },
                 {
                     "datum_iso": "2026-12-11",
@@ -3138,8 +3138,8 @@
                     "datum_iso": "2026-12-18",
                     "datum_anzeige": "18.12.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2500182"
                 },
                 {
                     "datum_iso": "2027-01-13",
@@ -3247,7 +3247,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -4786,7 +4786,7 @@
         },
         {
             "id": "13716",
-            "titel": "Die Zertrennlichen (Les Séparables)",
+            "titel": "Die Zertrennlichen",
             "subtitel": "Fabrice Melquiot",
             "genre_liste": "Jugendstück für alle ab 10 Jahre, ab 5. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13716/",
@@ -6775,7 +6775,7 @@
         {
             "id": "13711",
             "titel": "Heimsuchung",
-            "subtitel": "nach Jenny Erpenbeck",
+            "subtitel": "Jenny Erpenbeck",
             "genre_liste": "Zeitgenössisches Stück im Zentralabitur 2027",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13711/",
             "spielzeiten": [
@@ -6841,8 +6841,8 @@
                     "datum_iso": "2026-08-22",
                     "datum_anzeige": "22.08.2026",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2440008"
                 },
                 {
                     "datum_iso": "2026-09-10",
@@ -6855,8 +6855,8 @@
                     "datum_iso": "2026-09-13",
                     "datum_anzeige": "13.09.2026",
                     "uhrzeit": "18.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2500180"
                 },
                 {
                     "datum_iso": "2026-09-14",
@@ -7136,7 +7136,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -8183,8 +8183,8 @@
                     "datum_iso": "2027-02-06",
                     "datum_anzeige": "06.02.2027",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2440013"
                 },
                 {
                     "datum_iso": "2027-02-16",
@@ -8225,8 +8225,8 @@
                     "datum_iso": "2027-03-06",
                     "datum_anzeige": "06.03.2027",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Studio",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StudioEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2500184"
                 },
                 {
                     "datum_iso": "2027-03-10",
@@ -8285,7 +8285,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -8597,7 +8597,7 @@
         {
             "id": "13720",
             "titel": "Mädchenschrift",
-            "subtitel": "von Özlem Özgül Dündar",
+            "subtitel": "Özlem Özgül Dündar",
             "genre_liste": "Klassenzimmerstück für alle ab 12 Jahren, ab 7. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13720/",
             "spielzeiten": [
@@ -8747,7 +8747,7 @@
         {
             "id": "13722",
             "titel": "OUT! - Gefangen im Netz",
-            "subtitel": "von Knut Winkmann",
+            "subtitel": "Knut Winkmann",
             "genre_liste": "Klassenzimmerstück - max. 40 Beuscher*innen für alle ab 12 Jahren, ab 7. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13722/",
             "spielzeiten": [
@@ -10943,8 +10943,8 @@
                     "datum_iso": "2027-04-04",
                     "datum_anzeige": "04.04.2027",
                     "uhrzeit": "20.00 Uhr",
-                    "ort": "Castrop-Rauxel Stadthalle",
-                    "ticket_url": null
+                    "ort": "Castrop-Rauxel StadthalleEs öffnet sich ein externer Ticketshop in einem neuen Fenster",
+                    "ticket_url": "https://www.reservix.de/p/reservix/event/2440015"
                 },
                 {
                     "datum_iso": "2027-04-17",
@@ -11003,7 +11003,7 @@
                 "schulklasse": null
             },
             "flags": {
-                "tickets": false,
+                "tickets": true,
                 "video": false,
                 "audio": false
             },
@@ -11012,7 +11012,7 @@
         {
             "id": "13717",
             "titel": "Sophie Scholl - Die letzten Tage",
-            "subtitel": "von Betty Hensel & Fred Breinersdorfer",
+            "subtitel": "Betty Hensel & Fred Breinersdorfer",
             "genre_liste": "Jugendstück für alle ab 14 Jahren, ab 9. Klasse",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13717/",
             "spielzeiten": [
@@ -11146,7 +11146,7 @@
         },
         {
             "id": "13748",
-            "titel": "Vermisst! Was geschah mit Agatha Christie? (The Missing Days Of Agatha Christie)",
+            "titel": "Vermisst! Was geschah mit Agatha Christie?",
             "subtitel": "Krimi-Musical von Paul Graham Brown",
             "genre_liste": "Krimi-Musical",
             "url": "https://westfaelisches-landestheater.de/repertoire/__/produktion_id/13748/",
