@@ -1,0 +1,130 @@
+name: npmplus-crowdsec-anubis
+
+services:
+  npmplus:
+    image: ${NPMPLUS_IMAGE:-docker.io/zoeyvid/npmplus:latest}
+    container_name: npmplus
+    restart: unless-stopped
+    pull_policy: always
+    network_mode: host
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+      - SETGID
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ${NPMPLUS_DATA_DIR:-/opt/npmplus}:/data
+    environment:
+      - TZ=${TZ:-Etc/UTC}
+      - LOGROTATE=true
+      - AUTH_REQUEST_ANUBIS_UPSTREAM=http://127.0.0.1:${ANUBIS_PORT:-8923}
+      - NPM_PORT=${NPM_PORT:-81}
+      - GOA_PORT=${GOA_PORT:-91}
+      - HTTP_PORT=${HTTP_PORT:-80}
+      - HTTPS_PORT=${HTTPS_PORT:-443}
+      - INITIAL_ADMIN_EMAIL=${INITIAL_ADMIN_EMAIL:-admin@example.com}
+      - INITIAL_ADMIN_PASSWORD=${INITIAL_ADMIN_PASSWORD:-change-me}
+      - COOKIE_SECRET=${COOKIE_SECRET:-change-me}
+
+  crowdsec:
+    image: ${CROWDSEC_IMAGE:-docker.io/crowdsecurity/crowdsec:latest}
+    container_name: crowdsec
+    restart: unless-stopped
+    pull_policy: always
+    network_mode: bridge
+    ports:
+      - "127.0.0.1:${CROWDSEC_APPSEC_PORT:-7422}:7422"
+      - "127.0.0.1:${CROWDSEC_LAPI_PORT:-8080}:8080"
+    environment:
+      - TZ=${TZ:-Etc/UTC}
+      - USE_WAL=true
+      - COLLECTIONS=ZoeyVid/npmplus
+    volumes:
+      - ${CROWDSEC_CONFIG_DIR:-/opt/crowdsec/conf}:/etc/crowdsec
+      - ${CROWDSEC_DATA_DIR:-/opt/crowdsec/data}:/var/lib/crowdsec/data
+      - ${NPMPLUS_DATA_DIR:-/opt/npmplus}/nginx/logs:/opt/npmplus/nginx/logs:ro
+    configs:
+      - source: crowdsec_npmplus_acquis
+        target: /etc/crowdsec/acquis.d/npmplus.yaml
+
+  anubis:
+    image: ${ANUBIS_IMAGE:-ghcr.io/techarohq/anubis:latest}
+    container_name: npmplus-anubis
+    restart: unless-stopped
+    pull_policy: always
+    network_mode: bridge
+    ports:
+      - "127.0.0.1:${ANUBIS_PORT:-8923}:8923"
+      - "127.0.0.1:${ANUBIS_METRICS_PORT:-9090}:9090"
+    environment:
+      - TZ=${TZ:-Etc/UTC}
+      - TARGET= 
+      - BIND=:8923
+      - METRICS_BIND=:9090
+      - POLICY_FNAME=/etc/anubis/botPolicies.yaml
+      - SLOG_LEVEL=${ANUBIS_LOG_LEVEL:-INFO}
+    configs:
+      - source: anubis_bot_policy
+        target: /etc/anubis/botPolicies.yaml
+    healthcheck:
+      test: ["CMD", "anubis", "--healthcheck"]
+      interval: 10s
+      timeout: 30s
+      retries: 5
+      start_period: 10s
+
+configs:
+  crowdsec_npmplus_acquis:
+    content: |
+      filenames:
+        - /opt/npmplus/nginx/logs/*.log
+      labels:
+        type: npmplus
+      ---
+      listen_addr: 0.0.0.0:7422
+      appsec_config: crowdsecurity/appsec-default
+      name: appsec
+      source: appsec
+      labels:
+        type: appsec
+
+  anubis_bot_policy:
+    content: |
+      status_codes:
+        CHALLENGE: 401
+        DENY: 403
+
+      bots:
+        - import: (data)/bots/_deny-pathological.yaml
+        - import: (data)/bots/aggressive-brazilian-scrapers.yaml
+        - import: (data)/meta/ai-block-aggressive.yaml
+        - import: (data)/crawlers/_allow-good.yaml
+        - import: (data)/common/keep-internet-working.yaml
+
+        - name: generic-browser
+          user_agent_regex: >-
+            Mozilla|Opera
+          action: WEIGH
+          weight:
+            adjust: 10
+
+        - name: moderate-suspicion
+          expression:
+            all:
+              - weight >= 10
+              - weight < 20
+          action: CHALLENGE
+          challenge:
+            algorithm: fast
+            difficulty: 2
+            report_as: 2
+
+        - name: extreme-suspicion
+          expression: weight >= 20
+          action: CHALLENGE
+          challenge:
+            algorithm: fast
+            difficulty: 4
+            report_as: 4

@@ -4,7 +4,7 @@
   "description": "Arcane-compatible registry generated from Portainer app templates.",
   "author": "Ritterrh",
   "url": "https://github.com/Ritterrh/Grandma3MitXboxController",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "templates": [
     {
       "id": "activepieces",
@@ -1154,6 +1154,22 @@
       ]
     },
     {
+      "id": "cloudbeaver",
+      "name": "CloudBeaver",
+      "description": "Cloud database manager providing a web interface for working with various databases",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/cloudbeaver/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/cloudbeaver/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/cloudbeaver",
+      "content_hash": "6c247370121244b9ce3ce4deb18e63c0232f6c29add9efb40a539c18400edad5",
+      "tags": [
+        "portainer",
+        "database",
+        "tools"
+      ]
+    },
+    {
       "id": "cloudcmd",
       "name": "Cloud Commander",
       "description": "Cloud Commander a file manager for the web with console and editor.",
@@ -1167,22 +1183,6 @@
         "portainer",
         "documents",
         "network-other",
-        "tools"
-      ]
-    },
-    {
-      "id": "cloudbeaver",
-      "name": "CloudBeaver",
-      "description": "Cloud database manager providing a web interface for working with various databases",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/cloudbeaver/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/cloudbeaver/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/cloudbeaver",
-      "content_hash": "6c247370121244b9ce3ce4deb18e63c0232f6c29add9efb40a539c18400edad5",
-      "tags": [
-        "portainer",
-        "database",
         "tools"
       ]
     },
@@ -1771,21 +1771,6 @@
       ]
     },
     {
-      "id": "dockercomposemaker",
-      "name": "Docker Compose maker",
-      "description": "DCM (Docker Compose Maker) is a simple yet powerful tool that helps you create docker-compose.yaml files for your self-hosted applications.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/dockercomposemaker/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/dockercomposemaker/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/dockercomposemaker",
-      "content_hash": "0ad5106a011af0ff9dfb9f51e70230f5146fe4e811f4133e5f284cac66122e6c",
-      "tags": [
-        "portainer",
-        "tools"
-      ]
-    },
-    {
       "id": "docker-container-stats",
       "name": "Docker Container Stats",
       "description": "Docker Container Stats is a web interface for viewing historical and current statistics per docker container (cpu, mem, net i/o, block i/o) - in a docker container.",
@@ -1798,6 +1783,21 @@
       "tags": [
         "portainer",
         "docker"
+      ]
+    },
+    {
+      "id": "dockercomposemaker",
+      "name": "Docker Compose maker",
+      "description": "DCM (Docker Compose Maker) is a simple yet powerful tool that helps you create docker-compose.yaml files for your self-hosted applications.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/dockercomposemaker/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/dockercomposemaker/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/dockercomposemaker",
+      "content_hash": "0ad5106a011af0ff9dfb9f51e70230f5146fe4e811f4133e5f284cac66122e6c",
+      "tags": [
+        "portainer",
+        "tools"
       ]
     },
     {
@@ -2434,22 +2434,6 @@
       ]
     },
     {
-      "id": "filebrowser-latest",
-      "name": "FileBrowser latest",
-      "description": "Web File Browser which can be used as a middleware or standalone app.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/filebrowser-latest/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/filebrowser-latest/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/filebrowser-latest",
-      "content_hash": "c15c00b0a9fdbd55b0117403c7c9cf4e7e4d2f8e3f5d508617156e0bd1eb4adc",
-      "tags": [
-        "portainer",
-        "other",
-        "tools"
-      ]
-    },
-    {
       "id": "filebrowser-161",
       "name": "FileBrowser S6",
       "description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
@@ -2459,6 +2443,22 @@
       "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/filebrowser-161/.env.example",
       "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/filebrowser-161",
       "content_hash": "a5f96267f982f12c9fa6a5531cd2f23ea8dea7c6fa61dd9b5b18085d37f12f32",
+      "tags": [
+        "portainer",
+        "other",
+        "tools"
+      ]
+    },
+    {
+      "id": "filebrowser-latest",
+      "name": "FileBrowser latest",
+      "description": "Web File Browser which can be used as a middleware or standalone app.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/filebrowser-latest/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/filebrowser-latest/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/filebrowser-latest",
+      "content_hash": "c15c00b0a9fdbd55b0117403c7c9cf4e7e4d2f8e3f5d508617156e0bd1eb4adc",
       "tags": [
         "portainer",
         "other",
@@ -3101,21 +3101,6 @@
       "tags": [
         "portainer",
         "monitoring"
-      ]
-    },
-    {
-      "id": "socks5-proxy",
-      "name": "Go-Socks5-Proxy",
-      "description": "Simple socks5 server using go-socks5 with authentication options",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/socks5-proxy/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/socks5-proxy/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/socks5-proxy",
-      "content_hash": "e632d4465da95ffab48ee75d8af86b48aaceb58f41f9362e8fadc0f58b5b2f24",
-      "tags": [
-        "portainer",
-        "proxy"
       ]
     },
     {
@@ -3787,18 +3772,18 @@
       ]
     },
     {
-      "id": "influxdb2",
-      "name": "Influxdb",
-      "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+      "id": "influxdb-for-edge",
+      "name": "InfluxDB for Edge",
+      "description": "InfluxDB Time Series Data Platformm - Single Server deployment",
       "version": "1.0.0",
       "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb2/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb2/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/influxdb2",
-      "content_hash": "5055e511f718c1b21ca2dbc149eb1f2dcdb653b6302967a6a86800b0c67a6af4",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb-for-edge/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb-for-edge/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/influxdb-for-edge",
+      "content_hash": "039331bb4e75acd3f5f6cbb53878686f8239861649f56b6c1007bd673710d693",
       "tags": [
         "portainer",
-        "database"
+        "edge"
       ]
     },
     {
@@ -3834,18 +3819,18 @@
       ]
     },
     {
-      "id": "influxdb-for-edge",
-      "name": "InfluxDB for Edge",
-      "description": "InfluxDB Time Series Data Platformm - Single Server deployment",
+      "id": "influxdb2",
+      "name": "Influxdb",
+      "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
       "version": "1.0.0",
       "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb-for-edge/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb-for-edge/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/influxdb-for-edge",
-      "content_hash": "039331bb4e75acd3f5f6cbb53878686f8239861649f56b6c1007bd673710d693",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb2/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/influxdb2/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/influxdb2",
+      "content_hash": "5055e511f718c1b21ca2dbc149eb1f2dcdb653b6302967a6a86800b0c67a6af4",
       "tags": [
         "portainer",
-        "edge"
+        "database"
       ]
     },
     {
@@ -4056,24 +4041,6 @@
       ]
     },
     {
-      "id": "jfa-go",
-      "name": "Jellyfin-Accounts",
-      "description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/jfa-go/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/jfa-go/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/jfa-go",
-      "content_hash": "8ba11cee55692af19ee0d92ce373d797cbe0581cc2fdd3c960685a67c9ef88a1",
-      "tags": [
-        "portainer",
-        "video",
-        "music",
-        "photos",
-        "management"
-      ]
-    },
-    {
       "id": "jellyseer",
       "name": "Jellyseer",
       "description": "Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Jellyfin!",
@@ -4117,6 +4084,24 @@
       "tags": [
         "portainer",
         "continuous-integration"
+      ]
+    },
+    {
+      "id": "jfa-go",
+      "name": "Jellyfin-Accounts",
+      "description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/jfa-go/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/jfa-go/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/jfa-go",
+      "content_hash": "8ba11cee55692af19ee0d92ce373d797cbe0581cc2fdd3c960685a67c9ef88a1",
+      "tags": [
+        "portainer",
+        "video",
+        "music",
+        "photos",
+        "management"
       ]
     },
     {
@@ -5100,21 +5085,6 @@
       ]
     },
     {
-      "id": "mautic-container",
-      "name": "Mautic (container)",
-      "description": "Open-source marketing automation platform",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/mautic-container/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/mautic-container/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/mautic-container",
-      "content_hash": "9d6a889ca8aa79e31e6f5d4382bcc708beaec240a7bec2a0fd0826a1de6e4d72",
-      "tags": [
-        "portainer",
-        "marketing"
-      ]
-    },
-    {
       "id": "mautic",
       "name": "Mautic (stack)",
       "description": "Mautic provides free and open source marketing automation software available to everyone. ",
@@ -5124,6 +5094,21 @@
       "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/mautic/.env.example",
       "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/mautic",
       "content_hash": "341cb2a16543cb2ed03ca473dd2c648b05fc4c13cf1c96c9ac073689abd796e1",
+      "tags": [
+        "portainer",
+        "marketing"
+      ]
+    },
+    {
+      "id": "mautic-container",
+      "name": "Mautic (container)",
+      "description": "Open-source marketing automation platform",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/mautic-container/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/mautic-container/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/mautic-container",
+      "content_hash": "9d6a889ca8aa79e31e6f5d4382bcc708beaec240a7bec2a0fd0826a1de6e4d72",
       "tags": [
         "portainer",
         "marketing"
@@ -5450,21 +5435,6 @@
       ]
     },
     {
-      "id": "syncserver",
-      "name": "Mozilla Syncserver",
-      "description": "Run-Your-Own Firefox Sync Server",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/syncserver/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/syncserver/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/syncserver",
-      "content_hash": "ac41dc68f25df21df09c4cfe5c0811cf9ea3fd881104155ddd529eb72971e9ab",
-      "tags": [
-        "portainer",
-        "tools"
-      ]
-    },
-    {
       "id": "msedge",
       "name": "Msedge",
       "description": "[Microsoft Edge](https://www.microsoft.com/edge) is a cross-platform web browser developed by Microsoft and based on Chromium.",
@@ -5703,6 +5673,21 @@
       ]
     },
     {
+      "id": "netboot-xyz",
+      "name": "Netboot.xyz (stack)",
+      "description": "netboot.xyz is a convenient place to boot into any type of operating system or utility disk without the need of having to go spend time retrieving the ISO just to run it",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/netboot-xyz/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/netboot-xyz/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/netboot-xyz",
+      "content_hash": "372d3a1fb881c8083906a35cd696d19908c82ef910406668507e2327f55496e6",
+      "tags": [
+        "portainer",
+        "development"
+      ]
+    },
+    {
       "id": "netbootxyz",
       "name": "Netboot.xyz (container)",
       "description": "Netbootxyz is a way to PXE boot various operating system installers or utilities from one place within the BIOS without the need of having to go retrieve the media to run the tool",
@@ -5717,21 +5702,6 @@
         "downloaders",
         "network-other",
         "tools"
-      ]
-    },
-    {
-      "id": "netboot-xyz",
-      "name": "Netboot.xyz (stack)",
-      "description": "netboot.xyz is a convenient place to boot into any type of operating system or utility disk without the need of having to go spend time retrieving the ISO just to run it",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/netboot-xyz/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/netboot-xyz/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/netboot-xyz",
-      "content_hash": "372d3a1fb881c8083906a35cd696d19908c82ef910406668507e2327f55496e6",
-      "tags": [
-        "portainer",
-        "development"
       ]
     },
     {
@@ -5882,20 +5852,19 @@
       ]
     },
     {
-      "id": "npm",
-      "name": "Nginx Proxy Manager (stack)",
-      "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
+      "id": "nginx-proxy-manager-sqlite",
+      "name": "Nginx Proxy Manager v2 with Sqllite",
+      "description": "Nginx Proxy Manager v2 with Sqlite enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
       "version": "1.0.0",
       "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npm/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npm/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/npm",
-      "content_hash": "f1291ab4f06cebe0aca3ca931c97c93bef653aab663e202df1b54fe46ed64e63",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/nginx-proxy-manager-sqlite/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/nginx-proxy-manager-sqlite/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/nginx-proxy-manager-sqlite",
+      "content_hash": "13767accc500e42f544dd174abb7a7369b5b04d344ef006166fe785caaf58b35",
       "tags": [
         "portainer",
         "proxy",
-        "tools",
-        "network"
+        "tools"
       ]
     },
     {
@@ -5908,22 +5877,6 @@
       "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/nginx-proxy-manager-sqllite-goaccess/.env.example",
       "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/nginx-proxy-manager-sqllite-goaccess",
       "content_hash": "a524aa9c336443b0898d99f23acdc7cb9e84ea09ffd3035493660a498216699f",
-      "tags": [
-        "portainer",
-        "proxy",
-        "tools"
-      ]
-    },
-    {
-      "id": "nginx-proxy-manager-sqlite",
-      "name": "Nginx Proxy Manager v2 with Sqllite",
-      "description": "Nginx Proxy Manager v2 with Sqlite enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/nginx-proxy-manager-sqlite/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/nginx-proxy-manager-sqlite/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/nginx-proxy-manager-sqlite",
-      "content_hash": "13767accc500e42f544dd174abb7a7369b5b04d344ef006166fe785caaf58b35",
       "tags": [
         "portainer",
         "proxy",
@@ -6040,6 +5993,41 @@
       "tags": [
         "portainer",
         "other"
+      ]
+    },
+    {
+      "id": "npm",
+      "name": "Nginx Proxy Manager (stack)",
+      "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npm/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npm/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/npm",
+      "content_hash": "f1291ab4f06cebe0aca3ca931c97c93bef653aab663e202df1b54fe46ed64e63",
+      "tags": [
+        "portainer",
+        "proxy",
+        "tools",
+        "network"
+      ]
+    },
+    {
+      "id": "npmplus-crowdsec-anubis",
+      "name": "NPMplus with CrowdSec and Anubis",
+      "description": "Enhanced Nginx Proxy Manager fork with CrowdSec AppSec protection and Anubis bot challenges.",
+      "version": "1.0.0",
+      "author": "Ritterrh",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npmplus-crowdsec-anubis/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/npmplus-crowdsec-anubis/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/npmplus-crowdsec-anubis",
+      "content_hash": "6a1c11b16fcf34e282bd1d3270aa109180d547a02f368fa481365144365117d7",
+      "tags": [
+        "proxy",
+        "security",
+        "crowdsec",
+        "anubis",
+        "nginx"
       ]
     },
     {
@@ -6178,6 +6166,22 @@
       "tags": [
         "portainer",
         "project-management"
+      ]
+    },
+    {
+      "id": "oled-stats",
+      "name": "System Stats OLED display",
+      "description": "A quick way to display system stats on a 128x64 I2C OLED display.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/oled-stats/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/oled-stats/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/oled-stats",
+      "content_hash": "b6f2753c78ee53248bcff533128680f6d2f3124f2344c681c1dbba54f15d75c4",
+      "tags": [
+        "portainer",
+        "monitor",
+        "other"
       ]
     },
     {
@@ -6714,6 +6718,37 @@
       ]
     },
     {
+      "id": "pi-alert",
+      "name": "Pi.alert",
+      "description": "WIFI / LAN intruder detector",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pi-alert/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pi-alert/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/pi-alert",
+      "content_hash": "a811fa1ff61bb163af6a5b56b6301ab26d6196d193d764ac708e53464e70f536",
+      "tags": [
+        "portainer",
+        "network"
+      ]
+    },
+    {
+      "id": "pidgin",
+      "name": "Pidgin",
+      "description": "[Pidgin](https://pidgin.im/) is a chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pidgin/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pidgin/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/pidgin",
+      "content_hash": "2052a41a40c018ec9b36caa4dfb52a8a3f16237797eab35e824a1b5f0c6a8adb",
+      "tags": [
+        "portainer",
+        "irc",
+        "chat"
+      ]
+    },
+    {
       "id": "pihole",
       "name": "Pi-Hole",
       "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
@@ -6759,37 +6794,6 @@
         "portainer",
         "other",
         "tools"
-      ]
-    },
-    {
-      "id": "pi-alert",
-      "name": "Pi.alert",
-      "description": "WIFI / LAN intruder detector",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pi-alert/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pi-alert/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/pi-alert",
-      "content_hash": "a811fa1ff61bb163af6a5b56b6301ab26d6196d193d764ac708e53464e70f536",
-      "tags": [
-        "portainer",
-        "network"
-      ]
-    },
-    {
-      "id": "pidgin",
-      "name": "Pidgin",
-      "description": "[Pidgin](https://pidgin.im/) is a chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pidgin/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/pidgin/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/pidgin",
-      "content_hash": "2052a41a40c018ec9b36caa4dfb52a8a3f16237797eab35e824a1b5f0c6a8adb",
-      "tags": [
-        "portainer",
-        "irc",
-        "chat"
       ]
     },
     {
@@ -8211,6 +8215,21 @@
       ]
     },
     {
+      "id": "socks5-proxy",
+      "name": "Go-Socks5-Proxy",
+      "description": "Simple socks5 server using go-socks5 with authentication options",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/socks5-proxy/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/socks5-proxy/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/socks5-proxy",
+      "content_hash": "e632d4465da95ffab48ee75d8af86b48aaceb58f41f9362e8fadc0f58b5b2f24",
+      "tags": [
+        "portainer",
+        "proxy"
+      ]
+    },
+    {
       "id": "softing-edgeconnector-840d",
       "name": "Softing EdgeConnector 840D",
       "description": "Access Siemens SINUMERIK 840D sl/pl controllers and provide data via OPC UA and MQTT",
@@ -8607,6 +8626,21 @@
       ]
     },
     {
+      "id": "syncserver",
+      "name": "Mozilla Syncserver",
+      "description": "Run-Your-Own Firefox Sync Server",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/syncserver/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/syncserver/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/syncserver",
+      "content_hash": "ac41dc68f25df21df09c4cfe5c0811cf9ea3fd881104155ddd529eb72971e9ab",
+      "tags": [
+        "portainer",
+        "tools"
+      ]
+    },
+    {
       "id": "syncthing",
       "name": "Syncthing (container)",
       "description": "[Syncthing](https://syncthing.net) replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it's transmitted over the Internet.",
@@ -8652,22 +8686,6 @@
       "tags": [
         "portainer",
         "monitoring"
-      ]
-    },
-    {
-      "id": "oled-stats",
-      "name": "System Stats OLED display",
-      "description": "A quick way to display system stats on a 128x64 I2C OLED display.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/oled-stats/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/oled-stats/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/oled-stats",
-      "content_hash": "b6f2753c78ee53248bcff533128680f6d2f3124f2344c681c1dbba54f15d75c4",
-      "tags": [
-        "portainer",
-        "monitor",
-        "other"
       ]
     },
     {
@@ -8935,21 +8953,6 @@
       ]
     },
     {
-      "id": "tt-rss",
-      "name": "Tiny Tiny RSS",
-      "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/tt-rss/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/tt-rss/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/tt-rss",
-      "content_hash": "7b1910fcae83e5a3cbbcfe873a60cd849b5d7f5ae505413124fb223ff5c1eb2f",
-      "tags": [
-        "portainer",
-        "other"
-      ]
-    },
-    {
       "id": "tinymediamanager",
       "name": "TinyMediaManager",
       "description": "TinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server.",
@@ -9060,23 +9063,6 @@
       ]
     },
     {
-      "id": "transmission-openvpn-latest",
-      "name": "Transmission OpenVPN Latest",
-      "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/transmission-openvpn-latest/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/transmission-openvpn-latest/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/transmission-openvpn-latest",
-      "content_hash": "4c2755c61e8501ce8ba01d38e625d0681bff7ad5059a672e14b13be4aa528f7f",
-      "tags": [
-        "portainer",
-        "other",
-        "vpn",
-        "tools"
-      ]
-    },
-    {
       "id": "transmission-openvpn",
       "name": "Transmission OpenVPN v3",
       "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
@@ -9103,6 +9089,23 @@
       "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/transmission-openvpn-607/.env.example",
       "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/transmission-openvpn-607",
       "content_hash": "569de2e762e0b9c7796cad62ca772cf024b109ce0153e7f71453baf09e1fe2ac",
+      "tags": [
+        "portainer",
+        "other",
+        "vpn",
+        "tools"
+      ]
+    },
+    {
+      "id": "transmission-openvpn-latest",
+      "name": "Transmission OpenVPN Latest",
+      "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/transmission-openvpn-latest/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/transmission-openvpn-latest/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/transmission-openvpn-latest",
+      "content_hash": "4c2755c61e8501ce8ba01d38e625d0681bff7ad5059a672e14b13be4aa528f7f",
       "tags": [
         "portainer",
         "other",
@@ -9153,6 +9156,21 @@
       "tags": [
         "portainer",
         "productivity"
+      ]
+    },
+    {
+      "id": "tt-rss",
+      "name": "Tiny Tiny RSS",
+      "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/tt-rss/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/tt-rss/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/tt-rss",
+      "content_hash": "7b1910fcae83e5a3cbbcfe873a60cd849b5d7f5ae505413124fb223ff5c1eb2f",
+      "tags": [
+        "portainer",
+        "other"
       ]
     },
     {
@@ -9278,21 +9296,6 @@
       ]
     },
     {
-      "id": "unifi-video",
-      "name": "UniFi Video",
-      "description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/unifi-video/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/unifi-video/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/unifi-video",
-      "content_hash": "613ac5a6670d228327a5a372951ee02b5ae4c7ae8869cc0da062f405058e06af",
-      "tags": [
-        "portainer",
-        "cctv"
-      ]
-    },
-    {
       "id": "unifi-network-application",
       "name": "Unifi-network-application",
       "description": "The [Unifi-network-application](https://ui.com/) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
@@ -9305,6 +9308,21 @@
       "tags": [
         "portainer",
         "network"
+      ]
+    },
+    {
+      "id": "unifi-video",
+      "name": "UniFi Video",
+      "description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/unifi-video/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/unifi-video/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/unifi-video",
+      "content_hash": "613ac5a6670d228327a5a372951ee02b5ae4c7ae8869cc0da062f405058e06af",
+      "tags": [
+        "portainer",
+        "cctv"
       ]
     },
     {
@@ -9707,6 +9725,22 @@
       ]
     },
     {
+      "id": "wg-easy",
+      "name": "Wireguard Server",
+      "description": "Fast VPN Server with easy to use User Interface",
+      "version": "1.0.0",
+      "author": "Portainer community",
+      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/wg-easy/compose.yaml",
+      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/wg-easy/.env.example",
+      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/wg-easy",
+      "content_hash": "1a2176a4e7e5e2966d8dc477546193249c3af4d21be9267111e6bc7b2053d07d",
+      "tags": [
+        "portainer",
+        "other",
+        "vpn"
+      ]
+    },
+    {
       "id": "wger",
       "name": "Wger",
       "description": "Self hosted FLOSS fitness/workout, nutrition and weight tracker written with Django",
@@ -9796,22 +9830,6 @@
       "tags": [
         "portainer",
         "network",
-        "vpn"
-      ]
-    },
-    {
-      "id": "wg-easy",
-      "name": "Wireguard Server",
-      "description": "Fast VPN Server with easy to use User Interface",
-      "version": "1.0.0",
-      "author": "Portainer community",
-      "compose_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/wg-easy/compose.yaml",
-      "env_url": "https://raw.githubusercontent.com/Ritterrh/Grandma3MitXboxController/refs/heads/main/arcane-portainer/templates/wg-easy/.env.example",
-      "documentation_url": "https://github.com/Ritterrh/Grandma3MitXboxController/tree/main/arcane-portainer/templates/wg-easy",
-      "content_hash": "1a2176a4e7e5e2966d8dc477546193249c3af4d21be9267111e6bc7b2053d07d",
-      "tags": [
-        "portainer",
-        "other",
         "vpn"
       ]
     },
