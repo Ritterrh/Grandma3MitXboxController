@@ -1,0 +1,12 @@
+services:
+  solr:
+    image: "solr:latest"
+    container_name: ${CONTAINER_NAME:-solr}
+    restart: "unless-stopped"
+    ports:
+      - "8983/tcp"
+    volumes:
+      - "opt-solr-mydata:/opt/solr/mydata"
+
+volumes:
+  opt-solr-mydata:

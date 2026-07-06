@@ -1,0 +1,15 @@
+services:
+  readarr:
+    image: lscr.io/linuxserver/readarr:develop
+    container_name: readarr
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+    volumes:
+      - /portainer/Files/AppData/Config/readarr/data:/config
+      - /portainer/Files/AppData/Config/readarr/books:/books #optional
+      - /portainer/Files/AppData/Config/readarr/downloads:/downloads #optional
+    ports:
+      - 8787:8787
+    restart: unless-stopped

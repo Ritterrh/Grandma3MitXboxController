@@ -1,0 +1,51 @@
+services:
+  moodle-db:
+    image: linuxserver/mariadb
+    container_name: Moodle-DB
+    hostname: moodle-db
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: out=$$(mysqladmin ping -h localhost -P 3306 -u root --password=rootpass 2>&1); echo $$out | grep 'mysqld is alive' || { echo $$out; exit 1; }
+    environment:
+      - PUID=${PUID:-1026}
+      - PGID=${PGID:-100}
+      - TZ=${TZ:-Europe/Athens}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-moodle}
+      - MYSQL_USER=${MYSQL_USER:-moodleuser}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/moodle/db:/config
+    restart: always
+
+  moodle:
+    image: bitnami/moodle:latest
+    container_name: Moodle
+    hostname: moodle
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - 9490:8080
+    environment:
+      - MOODLE_DATABASE_HOST=${MOODLE_DATABASE_HOST:-moodle-db}
+      - MOODLE_DATABASE_PORT_NUMBER=${MOODLE_DATABASE_PORT_NUMBER:-3306}
+      - MOODLE_DATABASE_NAME=${MOODLE_DATABASE_NAME:-moodle}
+      - MOODLE_DATABASE_USER=${MOODLE_DATABASE_USER:-moodleuser}
+      - MOODLE_DATABASE_PASSWORD=${MOODLE_DATABASE_PASSWORD:-change-me}
+      - PHP_MEMORY_LIMIT=${PHP_MEMORY_LIMIT:-512M}
+      - MOODLE_USERNAME=${MOODLE_USERNAME:-marius}
+      - MOODLE_PASSWORD=${MOODLE_PASSWORD:-change-me}
+      - MOODLE_SITE_NAME=${MOODLE_SITE_NAME:-Learn With Marius}
+     #- MOODLE_SMTP_HOST=SMTPhost
+     #- MOODLE_SMTP_PORT=SMTPport
+     #- MOODLE_SMTP_USER=SMTPaccountuser
+     #- MOODLE_SMTP_PASSWORD=SMTPaccountpassword
+     #- MOODLE_SMTP_PROTOCOL=SMTPprotocol
+    volumes:
+      - /portainer/Files/AppData/Config/moodle/data1:/bitnami/moodle
+      - /portainer/Files/AppData/Config/moodle/data2:/bitnami/moodledata
+    restart: always
+    depends_on:
+      moodle-db:
+        condition: service_healthy

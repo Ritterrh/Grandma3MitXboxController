@@ -1,0 +1,14 @@
+services:
+  homebridge:
+    image: "homebridge/homebridge:latest"
+    container_name: ${CONTAINER_NAME:-homebridge}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "PGID=${PGID:-1000}"
+      - "PUID=${PUID:-1000}"
+      - "HOMEBRIDGE_CONFIG_UI=${HOMEBRIDGE_CONFIG_UI:-1}"
+      - "HOMEBRIDGE_CONFIG_UI_PORT=${HOMEBRIDGE_CONFIG_UI_PORT:-8581}"
+      - "TZ=${TZ:-America/New_York}"
+    volumes:
+      - "/portainer/Files/AppData/Config/homebridge:/homebridge"

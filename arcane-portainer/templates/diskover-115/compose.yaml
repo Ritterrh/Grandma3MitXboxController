@@ -1,0 +1,35 @@
+#PREREQUISITES
+#Run below commands BEFORE DEPLOYING
+#sudo chown -R 1000:1000 /portainer/Files/AppData/Config/diskover/es_data
+#sudo sysctl -w vm.max_map_count=262144
+#----------#
+#Run initial crawl after deploy with: python3 /app/diskover/diskover.py /data
+
+services:
+  elasticsearch:
+    image: elasticsearch:7.17.10
+    container_name: elasticsearch    # Must be this!
+    user: "1000:1000"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - /portainer/Files/AppData/Config/diskover/es_data:/usr/share/elasticsearch/data
+    restart: unless-stopped
+
+  diskover:
+    image: linuxserver/diskover:latest
+    container_name: diskover
+    ports:
+      - "8884:80"
+    volumes:
+      - /mnt/MYSMBMOUNT:/data:ro
+      - /portainer/Files/AppData/Config/diskover/data:/config
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped

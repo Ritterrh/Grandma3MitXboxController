@@ -1,0 +1,9 @@
+services:
+    actual-server:
+        container_name: actual
+        ports:
+            - 5007:5006
+        volumes:
+            - /portainer/Files/AppData/Config/actual:/data
+        image: 'actualbudget/actual-server:latest'
+        restart: unless-stopped

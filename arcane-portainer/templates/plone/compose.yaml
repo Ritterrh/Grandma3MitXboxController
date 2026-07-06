@@ -1,0 +1,12 @@
+services:
+  plone:
+    image: "plone:latest"
+    container_name: ${CONTAINER_NAME:-plone}
+    restart: "unless-stopped"
+    ports:
+      - "8080/tcp"
+    volumes:
+      - "data:/data"
+
+volumes:
+  data:

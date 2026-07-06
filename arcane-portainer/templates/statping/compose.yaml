@@ -1,0 +1,9 @@
+services:
+  statping:
+    image: "statping/statping:latest"
+    container_name: ${CONTAINER_NAME:-statping}
+    restart: "always"
+    ports:
+      - "4040:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/statping:/app"

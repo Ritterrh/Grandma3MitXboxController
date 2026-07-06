@@ -1,0 +1,33 @@
+services:
+  healthchecks:
+    image: "linuxserver/healthchecks:latest"
+    container_name: ${CONTAINER_NAME:-healthchecks}
+    restart: "unless-stopped"
+    ports:
+      - "8000:8000/tcp"
+      - "2525:2525/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "SECRET_KEY=${SECRET_KEY:-change-me}"
+      - "SITE_ROOT=${SITE_ROOT:-}"
+      - "SITE_NAME=${SITE_NAME:-}"
+      - "SUPERUSER_EMAIL=${SUPERUSER_EMAIL:-}"
+      - "SUPERUSER_PASSWORD=${SUPERUSER_PASSWORD:-change-me}"
+      - "ALLOWED_HOSTS=${ALLOWED_HOSTS:-}"
+      - "APPRISE_ENABLED=${APPRISE_ENABLED:-False}"
+      - "CSRF_TRUSTED_ORIGINS=${CSRF_TRUSTED_ORIGINS:-}"
+      - "DEBUG=${DEBUG:-True}"
+      - "DEFAULT_FROM_EMAIL=${DEFAULT_FROM_EMAIL:-}"
+      - "EMAIL_HOST=${EMAIL_HOST:-localhost}"
+      - "EMAIL_PORT=${EMAIL_PORT:-8080}"
+      - "EMAIL_HOST_USER=${EMAIL_HOST_USER:-user}"
+      - "EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD:-change-me}"
+      - "EMAIL_USE_TLS=${EMAIL_USE_TLS:-}"
+      - "INTEGRATIONS_ALLOW_PRIVATE_IPS=${INTEGRATIONS_ALLOW_PRIVATE_IPS:-}"
+      - "PING_EMAIL_DOMAIN=${PING_EMAIL_DOMAIN:-}"
+      - "RP_ID=${RP_ID:-}"
+      - "SITE_LOGO_URL=${SITE_LOGO_URL:-}"
+    volumes:
+      - "/srv/lsio/healthchecks/config:/config"

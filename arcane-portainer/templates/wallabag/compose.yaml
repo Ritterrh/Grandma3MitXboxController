@@ -1,0 +1,46 @@
+services:
+  wallabag:
+    image: wallabag/wallabag
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+      - SYMFONY__ENV__DATABASE_DRIVER=${SYMFONY__ENV__DATABASE_DRIVER:-pdo_mysql}
+      - SYMFONY__ENV__DATABASE_HOST=${SYMFONY__ENV__DATABASE_HOST:-db}
+      - SYMFONY__ENV__DATABASE_PORT=${SYMFONY__ENV__DATABASE_PORT:-3306}
+      - SYMFONY__ENV__DATABASE_NAME=${SYMFONY__ENV__DATABASE_NAME:-wallabag}
+      - SYMFONY__ENV__DATABASE_USER=${SYMFONY__ENV__DATABASE_USER:-wallabag}
+      - SYMFONY__ENV__DATABASE_PASSWORD=${SYMFONY__ENV__DATABASE_PASSWORD:-change-me}
+      - SYMFONY__ENV__DATABASE_CHARSET=${SYMFONY__ENV__DATABASE_CHARSET:-utf8mb4}
+      - SYMFONY__ENV__DATABASE_TABLE_PREFIX=${SYMFONY__ENV__DATABASE_TABLE_PREFIX:-wallabag_}
+      - SYMFONY__ENV__MAILER_HOST=${SYMFONY__ENV__MAILER_HOST:-127.0.0.1}
+      - SYMFONY__ENV__MAILER_USER=${SYMFONY__ENV__MAILER_USER:-~}
+      - SYMFONY__ENV__MAILER_PASSWORD=${SYMFONY__ENV__MAILER_PASSWORD:-change-me}
+      - SYMFONY__ENV__FROM_EMAIL=${SYMFONY__ENV__FROM_EMAIL:-wallabag@example.com}
+      - SYMFONY__ENV__DOMAIN_NAME=${SYMFONY__ENV__DOMAIN_NAME:-https://your-wallabag-url-instance.com}
+      - SYMFONY__ENV__SERVER_NAME=${SYMFONY__ENV__SERVER_NAME:-Your wallabag instance}
+    ports:
+      - "1180"
+    volumes:
+      - /portainer/Files/AppData/Config/wallabag/images:/var/www/wallabag/web/assets/images
+    healthcheck:
+      test: ["CMD", "wget" ,"--no-verbose", "--tries=1", "--spider", "http://localhost"]
+      interval: 1m
+      timeout: 3s
+    depends_on:
+      - wallabag-db
+      - wallabag-redis
+  wallabag-db:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/wallabag/data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 20s
+      timeout: 3s
+  wallabag-redis:
+    image: redis:alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 20s
+      timeout: 3s

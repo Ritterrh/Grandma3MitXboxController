@@ -1,0 +1,40 @@
+#& type: 3
+#& title: Apprise API
+#& description: Send notifications to more then 70+ services.
+#& note: Website: <a href='https://github.com/caronc/apprise-api' target='_blank' rel='noopener'>Github.com</a>
+#& categories: SelfHosted
+#& platform: linux
+#& logo: https://warehouse-camo.ingress.cmh1.psfhosted.org/a22d9206f80dfbb10748b6764fee932ff0ae1a8f/687474703a2f2f7265706f2e6e75787265662e636f6d2f7075622f696d672f6c6f676f2d617070726973652e706e67
+
+#% SERVICE: Name of the service (No spaces or points) [apprise-api]
+#% DATA_LOCATION: Data location (Example: /apps/service) [/portainer/Files/AppData/Config/apprise]
+#% URL: Service URL (Example: service.com)
+#% NETWORK: Your Traefik network (Example: proxy) [proxy]
+
+# Work with Portainer
+services:
+  apprise-api:
+    image: lscr.io/linuxserver/apprise-api
+    container_name: ${SERVICE:-app}
+    volumes:
+      - ${DATA_LOCATION:-./data}/${SERVICE:-app}/config:/config
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 5<>/dev/tcp/127.0.0.1/8036 && echo -e 'GET /healthz HTTP/1.1\n\n' >&5 && cat <&5 | head -n 1 | grep 200"]
+      interval: 1m
+      timeout: 30s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${SERVICE:-app}.entrypoints=https"
+      - "traefik.http.routers.${SERVICE:-app}.rule=Host(`${URL:-}`)"
+      - "traefik.http.routers.${SERVICE:-app}.tls=true"
+      - "traefik.http.routers.${SERVICE:-app}.tls.certresolver=http"
+      - "traefik.http.services.${SERVICE:-app}.loadbalancer.server.port=8036"
+      - "traefik.docker.network=${NETWORK:-default}"
+networks:
+  default:
+    external:
+      name: ${NETWORK:-default}

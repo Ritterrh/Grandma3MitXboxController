@@ -1,0 +1,16 @@
+services:
+  diskover:
+    image: "linuxserver/diskover:latest"
+    container_name: ${CONTAINER_NAME:-diskover}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "ES_HOST=${ES_HOST:-elasticsearch}"
+      - "ES_PORT=${ES_PORT:-9200}"
+    volumes:
+      - "/srv/lsio/diskover/config:/config"
+      - "/srv/lsio/diskover/data:/data"

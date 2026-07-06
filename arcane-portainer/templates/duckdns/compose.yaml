@@ -1,0 +1,18 @@
+services:
+  duckdns:
+    image: "linuxserver/duckdns:latest"
+    container_name: ${CONTAINER_NAME:-duckdns}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "SUBDOMAINS=${SUBDOMAINS:-subdomain1,subdomain2}"
+      - "TOKEN=${TOKEN:-change-me}"
+      - "UPDATE_IP=${UPDATE_IP:-ipv4}"
+      - "LOG_FILE=${LOG_FILE:-false}"
+    volumes:
+      - "/srv/lsio/duckdns/config:/config"
+      - "/srv/lsio/duckdns/config:/config"

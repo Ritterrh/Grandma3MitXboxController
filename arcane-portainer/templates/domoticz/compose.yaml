@@ -1,0 +1,14 @@
+services:
+  domoticz:
+    image: "linuxserver/domoticz:latest"
+    container_name: ${CONTAINER_NAME:-domoticz}
+    restart: "unless-stopped"
+    ports:
+      - "1443:1443/tcp"
+      - "6144:6144/tcp"
+      - "8080:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Domoticz:/config"

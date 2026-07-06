@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  aurral-backend:
+    image: ghcr.io/lklynet/aurral-backend:latest
+    container_name: aurral-backend
+    restart: unless-stopped
+    ports:
+      - ${BACKEND_PORT:-3001}:3001
+    environment:
+      - PORT=${PORT:-3001}
+      - LIDARR_URL=${LIDARR_URL:-http://lidarr:8686}
+      - LIDARR_API_KEY=${LIDARR_API_KEY:-change-me}
+      - LASTFM_API_KEY=${LASTFM_API_KEY:-change-me}
+      - CONTACT_EMAIL=${CONTACT_EMAIL:-user@example.com}
+      - DEBUG=${DEBUG:-false}
+      - AUTH_PASSWORD=${AUTH_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/aurral/backend-data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETUID
+      - SETGID
+      - CHOWN
+    networks:
+      - aurral-network
+
+  aurral-frontend:
+    image: ghcr.io/lklynet/aurral-frontend:latest
+    container_name: aurral-frontend
+    restart: unless-stopped
+    ports:
+      - ${FRONTEND_PORT:-3000}:80
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+    depends_on:
+      - aurral-backend
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - NET_BIND_SERVICE
+    networks:
+      - aurral-network
+
+networks:
+  aurral-network:
+    driver: bridge

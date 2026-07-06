@@ -1,0 +1,18 @@
+services:
+  odoo:
+    image: "odoo:latest"
+    container_name: ${CONTAINER_NAME:-odoo}
+    restart: "unless-stopped"
+    ports:
+      - "8069/tcp"
+    environment:
+      - "HOST=${HOST:-localhost}"
+      - "USER=${USER:-user}"
+      - "PASSWORD=${PASSWORD:-change-me}"
+    volumes:
+      - "var-lib-odoo:/var/lib/odoo"
+      - "mnt-extra-addons:/mnt/extra-addons"
+
+volumes:
+  var-lib-odoo:
+  mnt-extra-addons:

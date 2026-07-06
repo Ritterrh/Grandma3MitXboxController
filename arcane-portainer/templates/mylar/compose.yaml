@@ -1,0 +1,14 @@
+services:
+  mylar:
+    image: "linuxserver/mylar:latest"
+    container_name: ${CONTAINER_NAME:-mylar}
+    restart: "unless-stopped"
+    ports:
+      - "8090:8090/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Mylar:/config"
+      - "/portainer/Downloads:/downloads"
+      - "/portainer/Comics:/comics"

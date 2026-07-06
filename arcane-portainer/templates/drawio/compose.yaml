@@ -1,0 +1,18 @@
+#This compose file adds draw.io to your stack
+services:
+  drawio:
+    image: fjudith/draw.io
+    container_name: drawio
+    restart: unless-stopped
+    ports:
+      - 28181:8080
+      - 28443:8443
+    environment:
+      PUBLIC_DNS: "${PUBLIC_DNS:-domain}"
+      ORGANISATION_UNIT: "${ORGANISATION_UNIT:-unit}"
+      ORGANISATION: "${ORGANISATION:-org}"
+      CITY: "${CITY:-Athens}"
+      STATE: "${STATE:-Attica}"
+      COUNTRY_CODE: "${COUNTRY_CODE:-Greece}"
+      DRAWIO_GITLAB_URL: "${DRAWIO_GITLAB_URL:-http://mygitlab.net}"
+      DRAWIO_GITLAB_ID: "${DRAWIO_GITLAB_ID:-change_to_your_app_id}"

@@ -1,0 +1,14 @@
+services:
+  netalertx:
+    container_name: netalertx
+    # use the below line if you want to test the latest dev image
+    # image: "jokobsk/netalertx-dev:latest" 
+    image: "jokobsk/netalertx:latest"      
+    network_mode: "host"        
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/netalertx/config:/app/config 
+      - /portainer/Files/AppData/Config/netalertx/db:/app/db  
+    environment:
+      - TZ=${TZ:-Europe/Athens}
+      - PORT=${PORT:-20211}

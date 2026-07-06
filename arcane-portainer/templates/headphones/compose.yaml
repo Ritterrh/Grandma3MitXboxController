@@ -1,0 +1,14 @@
+services:
+  headphones:
+    image: "linuxserver/headphones:latest"
+    container_name: ${CONTAINER_NAME:-headphones}
+    restart: "unless-stopped"
+    ports:
+      - "8181:8181/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Headphones:/config"
+      - "/portainer/Downloads:/Downloads"
+      - "/portainer/Music:/music"

@@ -1,0 +1,10 @@
+services:
+  dokemon:
+    image: productiveops/dokemon:latest
+    container_name: dokemon
+    restart: unless-stopped
+    ports:
+      - 9090:9090
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer/Files/AppData/Config/dokemon/data:/data

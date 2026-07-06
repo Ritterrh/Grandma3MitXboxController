@@ -1,0 +1,18 @@
+services:
+  ubooquity:
+    image: "linuxserver/ubooquity:latest"
+    container_name: ${CONTAINER_NAME:-ubooquity}
+    restart: "unless-stopped"
+    ports:
+      - "2202:2202/tcp"
+      - "2203:2203/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "MAXMEM=${MAXMEM:-}"
+    volumes:
+      - "/srv/lsio/ubooquity/config:/config"
+      - "/srv/lsio/ubooquity/books:/books"
+      - "/srv/lsio/ubooquity/comics:/comics"
+      - "/srv/lsio/ubooquity/files:/files"

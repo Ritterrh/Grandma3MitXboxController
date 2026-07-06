@@ -1,0 +1,9 @@
+services:
+  libreddit:
+    image: "libreddit/libreddit:armv7"
+    container_name: ${CONTAINER_NAME:-libreddit}
+    restart: "unless-stopped"
+    ports:
+      - "8088:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/libreddit:/config"

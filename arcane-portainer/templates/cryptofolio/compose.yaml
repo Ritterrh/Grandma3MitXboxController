@@ -1,0 +1,7 @@
+services:
+  cryptofolio:
+    image: "xtrendence/cryptofolio:latest"
+    container_name: ${CONTAINER_NAME:-cryptofolio}
+    restart: "always"
+    ports:
+      - "7280:80/tcp"

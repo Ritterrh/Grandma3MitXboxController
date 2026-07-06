@@ -1,0 +1,43 @@
+services:
+  db:
+    image: linuxserver/mariadb
+    container_name: Mautic-DB
+    hostname: mautic-db
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: out=$$(mysqladmin ping -h localhost -P 3306 -u root --password=rootpass 2>&1); echo $$out | grep 'mysqld is alive' || { echo $$out; exit 1; }
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-mautic}
+      - MYSQL_USER=${MYSQL_USER:-mauticuser}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/mautic/db:/config
+    restart: always
+
+  mautic:
+    image: mautic/mautic:v4
+    container_name: Mautic
+    hostname: mautic
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:80/ || exit 1
+    ports:
+      - 9855:80
+    environment:
+      - MAUTIC_DB_HOST=${MAUTIC_DB_HOST:-mautic-db}
+      - MAUTIC_DB_USER=${MAUTIC_DB_USER:-mauticuser}
+      - MAUTIC_DB_PASSWORD=${MAUTIC_DB_PASSWORD:-change-me}
+      - MAUTIC_DB_NAME=${MAUTIC_DB_NAME:-mautic}
+      - MAUTIC_RUN_CRON_JOBS=${MAUTIC_RUN_CRON_JOBS:-true}
+    volumes:
+      - /portainer/Files/AppData/Config/mautic/data:/var/www/html
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy

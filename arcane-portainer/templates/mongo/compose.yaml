@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: "mongo:latest"
+    container_name: ${CONTAINER_NAME:-mongo}
+    restart: "unless-stopped"
+    ports:
+      - "27017/tcp"
+    volumes:
+      - "data-db:/data/db"
+
+volumes:
+  data-db:

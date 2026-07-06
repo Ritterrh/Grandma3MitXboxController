@@ -1,0 +1,12 @@
+services:
+  jellyseerr:
+    image: "fallenbagel/jellyseerr:latest"
+    container_name: ${CONTAINER_NAME:-jellyseerr}
+    restart: "unless-stopped"
+    ports:
+      - "5055:5055/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Jellyseerr:/app/config"

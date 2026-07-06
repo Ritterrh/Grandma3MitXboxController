@@ -1,0 +1,15 @@
+services:
+  booksonic:
+    image: "linuxserver/booksonic:latest"
+    container_name: ${CONTAINER_NAME:-booksonic}
+    restart: "unless-stopped"
+    ports:
+      - "4040:4040/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+      - "CONTEXT_PATH=${CONTEXT_PATH:-booksonic}"
+    volumes:
+      - "/portainer/Books:/books"
+      - "/portainer/Files/Podcasts:/podcast"
+      - "/portainer/Files/AppData/Config/Booksonic:/config"

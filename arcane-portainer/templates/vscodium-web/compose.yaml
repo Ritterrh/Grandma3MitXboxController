@@ -1,0 +1,18 @@
+services:
+  vscodium-web:
+    image: "linuxserver/vscodium-web:latest"
+    container_name: ${CONTAINER_NAME:-vscodium-web}
+    restart: "unless-stopped"
+    ports:
+      - "8000:8000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "CONNECTION_TOKEN=${CONNECTION_TOKEN:-change-me}"
+      - "CONNECTION_TOKEN_FILE=${CONNECTION_TOKEN_FILE:-change-me}"
+      - "SUDO_PASSWORD=${SUDO_PASSWORD:-change-me}"
+      - "SUDO_PASSWORD_HASH=${SUDO_PASSWORD_HASH:-change-me}"
+      - "CODE_ARGS=${CODE_ARGS:-}"
+    volumes:
+      - "/srv/lsio/vscodium-web/config:/config"

@@ -1,0 +1,15 @@
+services:
+  heimdall:
+    image: "linuxserver/heimdall:latest"
+    container_name: ${CONTAINER_NAME:-heimdall}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "ALLOW_INTERNAL_REQUESTS=${ALLOW_INTERNAL_REQUESTS:-false}"
+    volumes:
+      - "/srv/lsio/heimdall/config:/config"

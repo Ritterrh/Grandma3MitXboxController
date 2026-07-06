@@ -1,0 +1,18 @@
+services:
+  wowza:
+    image: "sameersbn/wowza:4.1.2-8"
+    container_name: ${CONTAINER_NAME:-wowza}
+    restart: "unless-stopped"
+    ports:
+      - "1935/tcp"
+      - "8086/tcp"
+      - "8087/tcp"
+      - "8088/tcp"
+    environment:
+      - "WOWZA_ACCEPT_LICENSE=${WOWZA_ACCEPT_LICENSE:-yes}"
+      - "WOWZA_KEY=${WOWZA_KEY:-}"
+    volumes:
+      - "var-lib-wowza:/var/lib/wowza"
+
+volumes:
+  var-lib-wowza:

@@ -1,0 +1,15 @@
+services:
+  vivaldi:
+    image: "linuxserver/vivaldi:latest"
+    container_name: ${CONTAINER_NAME:-vivaldi}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "VIVALDI_CLI=${VIVALDI_CLI:-https://www.linuxserver.io/}"
+    volumes:
+      - "/srv/lsio/vivaldi/config:/config"

@@ -1,0 +1,116 @@
+services:
+  plane-web:
+    container_name: plane-web
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile.web
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: /usr/local/bin/start.sh web/server.js web
+    depends_on:
+      - plane-api
+      - plane-worker
+
+  plane-space:
+    container_name: plane-space
+    build:
+      context: .
+      dockerfile: ./space/Dockerfile.space
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: /usr/local/bin/start.sh space/server.js space
+    depends_on:
+      - plane-api
+      - plane-worker
+      - plane-web
+
+  plane-api:
+    container_name: plane-api
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/takeoff
+    # env_file removed for Arcane template portability
+      # - ./apiserver/.env
+    depends_on:
+      - plane-db
+      - plane-redis
+
+  plane-worker:
+    container_name: plane-bgworker
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/worker
+    # env_file removed for Arcane template portability
+      # - ./apiserver/.env
+    depends_on:
+      - plane-api
+      - plane-db
+      - plane-redis
+
+  plane-beat-worker:
+    container_name: plane-beatworker
+    build:
+      context: ./apiserver
+      dockerfile: Dockerfile.api
+      args:
+        DOCKER_BUILDKIT: 1
+    restart: always
+    command: ./bin/beat
+    # env_file removed for Arcane template portability
+      # - ./apiserver/.env
+    depends_on:
+      - plane-api
+      - plane-db
+      - plane-redis
+
+  plane-db:
+    container_name: plane-db
+    image: postgres:15.2-alpine
+    restart: always
+    command: postgres -c 'max_connections=1000'
+    volumes:
+      - /portainer/Files/AppData/Config/plane/pgdata:/var/lib/postgresql/data
+    # env_file removed for Arcane template portability
+      # - .env
+    environment:
+      POSTGRES_USER: ${PGUSER:-user}
+      POSTGRES_DB: ${PGDATABASE:-app}
+      POSTGRES_PASSWORD: ${PGPASSWORD:-change-me}
+      PGDATA: "${PGDATA:-/var/lib/postgresql/data}"
+
+  plane-redis:
+    container_name: plane-redis
+    image: redis:6.2.7-alpine
+    restart: always
+    volumes:
+      - /portainer/Files/AppData/Config/plane/redisdata:/data
+
+  plane-minio:
+    container_name: plane-minio
+    image: minio/minio
+    restart: always
+    command: server /export --console-address ":9090"
+    volumes:
+      - /portainer/Files/AppData/Config/plane/uploads:/export
+    environment:
+      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID:-}
+      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY:-change-me}
+
+  createbuckets:
+    image: minio/mc
+    entrypoint: >
+      /bin/sh -c " /usr/bin/mc config host add plane-minio http://plane-minio:9000 \${AWS_ACCESS_KEY_ID:-} \${AWS_SECRET_ACCESS_KEY:-change-me}; /usr/bin/mc mb plane-minio/\${AWS_S3_BUCKET_NAME:-}; /usr/bin/mc anonymous set download plane-minio/\${AWS_S3_BUCKET_NAME:-}; exit 0; "
+    # env_file removed for Arcane template portability
+      # - .env
+    depends_on:
+      - plane-minio

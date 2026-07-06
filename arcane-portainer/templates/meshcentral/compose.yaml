@@ -1,0 +1,29 @@
+services:
+    meshcentral-mongodb:
+        container_name: meshcentral_db
+        restart: always
+        image: mongo:latest
+        expose:
+            - 27017
+        volumes:
+            - /portainer/Files/AppData/Config/meshcentral/database:/data/db
+    meshcentral:
+        restart: always
+        container_name: meshcentral
+        depends_on:
+            - 'meshcentral-mongodb'
+        image: typhonragewind/meshcentral
+        ports:
+            - 8086:443
+            - 8087:800
+        environment:
+            - HOSTNAME=${HOSTNAME:-my.domain.com}
+            - REVERSE_PROXY=${REVERSE_PROXY:-false}
+            - REVERSE_PROXY_TLS_PORT=${REVERSE_PROXY_TLS_PORT:-443}
+            - IFRAME=${IFRAME:-false}
+            - ALLOW_NEW_ACCOUNTS=${ALLOW_NEW_ACCOUNTS:-true}
+            - WEBRTC=${WEBRTC:-false}
+            - NODE_ENV=${NODE_ENV:-production}
+        volumes:
+            - /portainer/Files/AppData/Config/meshcentral/data:/opt/meshcentral/meshcentral-data
+            - /portainer/Files/AppData/Config/meshcentral/user_files:/opt/meshcentral/meshcentral-files

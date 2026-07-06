@@ -1,0 +1,9 @@
+services:
+  embystat:
+    image: "linuxserver/embystat:latest"
+    container_name: ${CONTAINER_NAME:-embystat}
+    restart: "unless-stopped"
+    ports:
+      - "6555:6555/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/EmbyStat:/config"

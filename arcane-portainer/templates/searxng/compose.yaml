@@ -1,0 +1,12 @@
+services:
+  searxng:
+    image: "searxng/searxng:latest"
+    container_name: ${CONTAINER_NAME:-searxng}
+    restart: "unless-stopped"
+    ports:
+      - "9017:8080/tcp"
+    environment:
+      - "BASE_URL=${BASE_URL:-http://localhost:9017}"
+      - "INSTANCE_NAME=${INSTANCE_NAME:-my-instance}"
+    volumes:
+      - "/portainer/Files/AppData/Config/searxng:/etc/searxng"

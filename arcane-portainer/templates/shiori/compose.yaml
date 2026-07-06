@@ -1,0 +1,9 @@
+services:
+  shiori:
+    image: "nicholaswilde/shiori:latest"
+    container_name: ${CONTAINER_NAME:-shiori}
+    restart: "unless-stopped"
+    ports:
+      - "7564:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Shiori:/srv/shiori"

@@ -1,0 +1,13 @@
+services:
+  n8n:
+    image: "n8nio/n8n:latest"
+    container_name: ${CONTAINER_NAME:-n8n}
+    restart: "unless-stopped"
+    ports:
+      - "5678:5678/tcp"
+    environment:
+      - "N8N_BASIC_AUTH_ACTIVE=${N8N_BASIC_AUTH_ACTIVE:-true}"
+      - "N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}"
+      - "N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/n8n:/home/node/.n8n"

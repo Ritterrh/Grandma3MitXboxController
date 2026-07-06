@@ -1,0 +1,21 @@
+services:
+
+  midarr:
+    container_name: midarr
+    build: .
+    ports:
+      - 4000:4000
+    volumes:
+      - /portainer/Files/AppData/Config/midarr/:/app
+      - /portainer/Files/AppData/Config/midarr/movies:/movies
+      - /portainer/Files/AppData/Config/midarr/series:/series
+    environment:
+      - APP_URL=${APP_URL:-http://midarr:4000}
+      - SETUP_ADMIN_EMAIL=${SETUP_ADMIN_EMAIL:-admin@email.com}
+      - SETUP_ADMIN_NAME=${SETUP_ADMIN_NAME:-admin}
+      - SETUP_ADMIN_PASSWORD=${SETUP_ADMIN_PASSWORD:-change-me}
+      - RADARR_BASE_URL=${RADARR_BASE_URL:-http://radarr:7878}
+      - RADARR_API_KEY=${RADARR_API_KEY:-change-me}
+      - SONARR_BASE_URL=${SONARR_BASE_URL:-http://sonarr:8989}
+      - SONARR_API_KEY=${SONARR_API_KEY:-change-me}
+    command: bash -c "chmod u+x misc/entry-point-local.sh && ./misc/entry-point-local.sh"

@@ -1,0 +1,7 @@
+services:
+  remotely:
+    image: immybot/remotely:latest
+    ports:
+      - 5009:5000
+    volumes:
+      - /portainer/Files/AppData/Config/remotely:/remotely-data

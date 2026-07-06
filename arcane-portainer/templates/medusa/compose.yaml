@@ -1,0 +1,15 @@
+services:
+  medusa:
+    image: "linuxserver/medusa:latest"
+    container_name: ${CONTAINER_NAME:-medusa}
+    restart: "unless-stopped"
+    ports:
+      - "8081:8081/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/medusa/config:/config"
+      - "/srv/lsio/medusa/downloads:/downloads"
+      - "/srv/lsio/medusa/tv:/tv"

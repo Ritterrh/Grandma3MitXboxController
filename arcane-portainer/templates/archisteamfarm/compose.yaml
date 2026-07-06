@@ -1,0 +1,14 @@
+services:
+  archisteamfarm:
+    image: "justarchi/archisteamfarm:latest"
+    container_name: ${CONTAINER_NAME:-archisteamfarm}
+    restart: "unless-stopped"
+    ports:
+      - "1242:1242/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/portainer/Files/AppData/Config/ArchiSteamFarm/config:/app/config"
+      - "/portainer/Files/AppData/Config/ArchiSteamFarm/plugins:/app/plugins"
+      - "/portainer/Files/AppData/Config/ArchiSteamFarm/logs:/app/logs"

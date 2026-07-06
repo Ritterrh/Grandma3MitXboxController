@@ -1,0 +1,11 @@
+services:
+  authelia:
+    image: "authelia/authelia:latest"
+    container_name: ${CONTAINER_NAME:-authelia}
+    restart: "unless-stopped"
+    ports:
+      - "9091:9091/tcp"
+    environment:
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Authelia:/etc/authelia/"

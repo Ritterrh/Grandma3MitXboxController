@@ -1,0 +1,10 @@
+services:
+  vaultwarden:
+    image: "vaultwarden/server:latest"
+    container_name: ${CONTAINER_NAME:-vaultwarden}
+    restart: "unless-stopped"
+    ports:
+      - "8010:80/tcp"
+      - "3012:3012/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Bitwarden:/data"

@@ -1,0 +1,20 @@
+services:
+  code-server:
+    image: "linuxserver/code-server:latest"
+    container_name: ${CONTAINER_NAME:-code-server}
+    restart: "unless-stopped"
+    ports:
+      - "8443:8443/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "PASSWORD=${PASSWORD:-change-me}"
+      - "HASHED_PASSWORD=${HASHED_PASSWORD:-change-me}"
+      - "SUDO_PASSWORD=${SUDO_PASSWORD:-change-me}"
+      - "SUDO_PASSWORD_HASH=${SUDO_PASSWORD_HASH:-change-me}"
+      - "PROXY_DOMAIN=${PROXY_DOMAIN:-code-server.my.domain}"
+      - "DEFAULT_WORKSPACE=${DEFAULT_WORKSPACE:-/config/workspace}"
+      - "PWA_APPNAME=${PWA_APPNAME:-code-server}"
+    volumes:
+      - "/srv/lsio/code-server/config:/config"

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  trip:
+    image: ghcr.io/itskovacs/trip:1
+    container_name: trip
+    restart: unless-stopped
+    ports:
+      - ${PORT:-8080}:8000
+    environment:
+      - TRIP_SECRET_KEY=${TRIP_SECRET_KEY:-change-me}
+      - TRIP_OIDC_ISSUER=${TRIP_OIDC_ISSUER:-}
+      - TRIP_OIDC_CLIENT_ID=${TRIP_OIDC_CLIENT_ID:-}
+      - TRIP_OIDC_CLIENT_SECRET=${TRIP_OIDC_CLIENT_SECRET:-change-me}
+      - TRIP_OIDC_REDIRECT_URI=${TRIP_OIDC_REDIRECT_URI:-http://localhost:8080/auth/callback}
+      - TRIP_OIDC_SCOPES=${TRIP_OIDC_SCOPES:-openid profile email}
+    volumes:
+      - /portainer/Files/AppData/Config/trip/storage:/app/storage
+    networks:
+      - trip-network
+
+networks:
+  trip-network:
+    driver: bridge

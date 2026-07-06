@@ -1,0 +1,15 @@
+services:
+  ungoogled-chromium:
+    image: "linuxserver/ungoogled-chromium:latest"
+    container_name: ${CONTAINER_NAME:-ungoogled-chromium}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "CHROME_CLI=${CHROME_CLI:-https://www.linuxserver.io/}"
+    volumes:
+      - "/srv/lsio/ungoogled-chromium/config:/config"

@@ -1,0 +1,14 @@
+services:
+  foundryvtt:
+    image: "felddy/foundryvtt:release"
+    container_name: ${CONTAINER_NAME:-foundryvtt}
+    restart: "unless-stopped"
+    ports:
+      - "30000:30000/tcp"
+    environment:
+      - "FOUNDRY_USERNAME=${FOUNDRY_USERNAME:-John}"
+      - "FOUNDRY_PASSWORD=${FOUNDRY_PASSWORD:-change-me}"
+      - "FOUNDRY_ADMIN_KEY=${FOUNDRY_ADMIN_KEY:-changeme}"
+      - "CONTAINER_PRESERVE_CONFIG=${CONTAINER_PRESERVE_CONFIG:-true}"
+    volumes:
+      - "/portainer/Files/AppData/Config/foundryvtt:/data"

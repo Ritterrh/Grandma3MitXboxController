@@ -1,0 +1,28 @@
+services:
+  droppy:
+    image: "silverwind/droppy:latest"
+    container_name: ${CONTAINER_NAME:-droppy}
+    restart: "unless-stopped"
+    ports:
+      - "8989/tcp"
+    environment:
+      - "GID=${GID:-15000}"
+      - "UID=${UID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+    volumes:
+      - "/media/storage/tvshows:/files/tvshows"
+      - "/media/storage/movies:/files/movies"
+      - "/media/storage/music:/files/music"
+      - "/media/storage/photos:/files/photos"
+      - "/media/storage/ebooks:/files/ebooks"
+      - "/media/storage/documents:/files/documents"
+      - "/media/storage/software:/files/software"
+      - "/media/storage/downloads:/files/downloads"
+      - "/media/temp/blackhole:/files/blackhole"
+      - "/media/temp/processing:/files/processing"
+      - "/opt/mediadepot/apps/droppy:/config"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.droppy.loadbalancer.server.port=8989"
+      - "traefik.http.routers.droppy.entrypoints=websecure"
+      - "traefik.http.routers.droppy.tls.certresolver=mydnschallenge"

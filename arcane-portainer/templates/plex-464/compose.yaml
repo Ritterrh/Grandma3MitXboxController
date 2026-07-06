@@ -1,0 +1,23 @@
+services:
+  plex-464:
+    image: "linuxserver/plex:latest"
+    container_name: ${CONTAINER_NAME:-plex-464}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "PGID=${PGID:-15000}"
+      - "PUID=${PUID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+      - "VERSION=${VERSION:-latest}"
+    volumes:
+      - "/opt/mediadepot/apps/plex:/config"
+      - "/media/storage/tvshows:/data/tvshows"
+      - "/media/storage/movies:/data/movies"
+      - "/media/storage/music:/data/music"
+      - "transcode:/transcode"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.plex.loadbalancer.server.port=32400"
+
+volumes:
+  transcode:

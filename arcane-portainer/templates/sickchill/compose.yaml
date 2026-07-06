@@ -1,0 +1,14 @@
+services:
+  sickchill:
+    image: "linuxserver/sickchill:latest"
+    container_name: ${CONTAINER_NAME:-sickchill}
+    restart: "unless-stopped"
+    ports:
+      - "8081:8081/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/SickChill:/config"
+      - "/portainer/Downloads:/downloads"
+      - "/portainer/TV:/tv"

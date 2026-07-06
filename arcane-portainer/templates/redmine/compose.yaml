@@ -1,0 +1,12 @@
+services:
+  redmine:
+    image: "redmine:latest"
+    container_name: ${CONTAINER_NAME:-redmine}
+    restart: "unless-stopped"
+    ports:
+      - "3000/tcp"
+    volumes:
+      - "usr-src-redmine-files:/usr/src/redmine/files"
+
+volumes:
+  usr-src-redmine-files:

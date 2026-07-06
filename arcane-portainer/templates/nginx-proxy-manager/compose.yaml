@@ -1,0 +1,14 @@
+services:
+  nginx-proxy-manager:
+    image: "jc21/nginx-proxy-manager"
+    container_name: ${CONTAINER_NAME:-nginx-proxy-manager}
+    restart: "unless-stopped"
+    ports:
+      - "80:8080/tcp"
+      - "81:8181/tcp"
+      - "443:4443/tcp"
+    environment:
+      - "DB_SQLITE_FILE=${DB_SQLITE_FILE:-/data/database.sqlite}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Nginx-Proxy/data:/data"
+      - "/portainer/Files/AppData/Config/Nginx-Proxy/letsencrypt:/etc/letsencrypt"

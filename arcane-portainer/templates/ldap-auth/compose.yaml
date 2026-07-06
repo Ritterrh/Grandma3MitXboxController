@@ -1,0 +1,17 @@
+services:
+  ldap-auth:
+    image: "linuxserver/ldap-auth:latest"
+    container_name: ${CONTAINER_NAME:-ldap-auth}
+    restart: "unless-stopped"
+    ports:
+      - "8888:8888/tcp"
+      - "9000:9000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "FERNETKEY=${FERNETKEY:-}"
+      - "CERTFILE=${CERTFILE:-}"
+      - "KEYFILE=${KEYFILE:-}"
+    volumes:
+      - "/srv/lsio/ldap-auth/config:/config"

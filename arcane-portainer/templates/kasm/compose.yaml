@@ -1,0 +1,19 @@
+services:
+  kasm:
+    image: "linuxserver/kasm:latest"
+    container_name: ${CONTAINER_NAME:-kasm}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "443:443/tcp"
+    environment:
+      - "KASM_PORT=${KASM_PORT:-443}"
+      - "DOCKER_HUB_USERNAME=${DOCKER_HUB_USERNAME:-USER}"
+      - "DOCKER_HUB_PASSWORD=${DOCKER_HUB_PASSWORD:-change-me}"
+      - "DOCKER_MTU=${DOCKER_MTU:-1500}"
+    volumes:
+      - "/srv/lsio/kasm/opt:/opt"
+      - "/srv/lsio/kasm/profiles:/profiles"
+      - "/dev/input:/dev/input"
+      - "/run/udev/data:/run/udev/data"

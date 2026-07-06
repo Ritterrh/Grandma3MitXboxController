@@ -1,0 +1,162 @@
+version: '3.8'
+
+services:
+  solidtime:
+    image: solidtime/solidtime:latest
+    container_name: solidtime
+    restart: unless-stopped
+    ports:
+      - ${PORT:-8000}:8000
+    environment:
+      - CONTAINER_MODE=${CONTAINER_MODE:-http}
+      - AUTO_DB_MIGRATE=${AUTO_DB_MIGRATE:-true}
+      - APP_URL=${APP_URL:-}
+      - APP_KEY=${APP_KEY:-}
+      - APP_ENV=${APP_ENV:-production}
+      - APP_DEBUG=${APP_DEBUG:-false}
+      - APP_ENABLE_REGISTRATION=${APP_ENABLE_REGISTRATION:-false}
+      - SUPER_ADMINS=${SUPER_ADMINS:-}
+      - DB_CONNECTION=${DB_CONNECTION:-pgsql}
+      - DB_HOST=${DB_HOST:-solidtime-postgres}
+      - DB_PORT=${DB_PORT:-5432}
+      - DB_DATABASE=${DB_DATABASE:-solidtime}
+      - DB_USERNAME=${DB_USERNAME:-solidtime}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - QUEUE_CONNECTION=${QUEUE_CONNECTION:-database}
+      - CACHE_STORE=${CACHE_STORE:-redis}
+      - SESSION_DRIVER=${SESSION_DRIVER:-redis}
+      - REDIS_HOST=${REDIS_HOST:-solidtime-redis}
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - MAIL_MAILER=${MAIL_MAILER:-smtp}
+      - MAIL_HOST=${MAIL_HOST:-localhost}
+      - MAIL_PORT=${MAIL_PORT:-587}
+      - MAIL_USERNAME=${MAIL_USERNAME:-user}
+      - MAIL_PASSWORD=${MAIL_PASSWORD:-change-me}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-tls}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-noreply@localhost}
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME:-solidtime}
+      - PASSPORT_PRIVATE_KEY=${PASSPORT_PRIVATE_KEY:-change-me}
+      - PASSPORT_PUBLIC_KEY=${PASSPORT_PUBLIC_KEY:-change-me}
+      - S3_ACCESS_KEY_ID=${S3_ACCESS_KEY_ID:-}
+      - S3_SECRET_ACCESS_KEY=${S3_SECRET_ACCESS_KEY:-change-me}
+      - S3_BUCKET=${S3_BUCKET:-}
+      - S3_ENDPOINT=${S3_ENDPOINT:-}
+      - S3_REGION=${S3_REGION:-us-east-1}
+      - S3_USE_PATH_STYLE_ENDPOINT=${S3_USE_PATH_STYLE_ENDPOINT:-false}
+    volumes:
+      - /portainer/Files/AppData/Config/solidtime/storage:/var/www/html/storage
+      - /portainer/Files/AppData/Config/solidtime/bootstrap-cache:/var/www/html/bootstrap/cache
+    depends_on:
+      solidtime-postgres:
+        condition: service_healthy
+      solidtime-redis:
+        condition: service_started
+    networks:
+      - solidtime-network
+
+  solidtime-scheduler:
+    image: solidtime/solidtime:latest
+    container_name: solidtime-scheduler
+    restart: unless-stopped
+    environment:
+      - CONTAINER_MODE=${CONTAINER_MODE:-scheduler}
+      - APP_URL=${APP_URL:-}
+      - APP_KEY=${APP_KEY:-}
+      - APP_ENV=${APP_ENV:-production}
+      - DB_CONNECTION=${DB_CONNECTION:-pgsql}
+      - DB_HOST=${DB_HOST:-solidtime-postgres}
+      - DB_PORT=${DB_PORT:-5432}
+      - DB_DATABASE=${DB_DATABASE:-solidtime}
+      - DB_USERNAME=${DB_USERNAME:-solidtime}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - QUEUE_CONNECTION=${QUEUE_CONNECTION:-database}
+      - CACHE_STORE=${CACHE_STORE:-redis}
+      - SESSION_DRIVER=${SESSION_DRIVER:-redis}
+      - REDIS_HOST=${REDIS_HOST:-solidtime-redis}
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - MAIL_MAILER=${MAIL_MAILER:-smtp}
+      - MAIL_HOST=${MAIL_HOST:-localhost}
+      - MAIL_PORT=${MAIL_PORT:-587}
+      - MAIL_USERNAME=${MAIL_USERNAME:-user}
+      - MAIL_PASSWORD=${MAIL_PASSWORD:-change-me}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-tls}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-noreply@localhost}
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME:-solidtime}
+      - PASSPORT_PRIVATE_KEY=${PASSPORT_PRIVATE_KEY:-change-me}
+      - PASSPORT_PUBLIC_KEY=${PASSPORT_PUBLIC_KEY:-change-me}
+    depends_on:
+      solidtime-postgres:
+        condition: service_healthy
+      solidtime-redis:
+        condition: service_started
+    networks:
+      - solidtime-network
+
+  solidtime-worker:
+    image: solidtime/solidtime:latest
+    container_name: solidtime-worker
+    restart: unless-stopped
+    environment:
+      - CONTAINER_MODE=${CONTAINER_MODE:-worker}
+      - APP_URL=${APP_URL:-}
+      - APP_KEY=${APP_KEY:-}
+      - APP_ENV=${APP_ENV:-production}
+      - DB_CONNECTION=${DB_CONNECTION:-pgsql}
+      - DB_HOST=${DB_HOST:-solidtime-postgres}
+      - DB_PORT=${DB_PORT:-5432}
+      - DB_DATABASE=${DB_DATABASE:-solidtime}
+      - DB_USERNAME=${DB_USERNAME:-solidtime}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - QUEUE_CONNECTION=${QUEUE_CONNECTION:-database}
+      - CACHE_STORE=${CACHE_STORE:-redis}
+      - SESSION_DRIVER=${SESSION_DRIVER:-redis}
+      - REDIS_HOST=${REDIS_HOST:-solidtime-redis}
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - MAIL_MAILER=${MAIL_MAILER:-smtp}
+      - MAIL_HOST=${MAIL_HOST:-localhost}
+      - MAIL_PORT=${MAIL_PORT:-587}
+      - MAIL_USERNAME=${MAIL_USERNAME:-user}
+      - MAIL_PASSWORD=${MAIL_PASSWORD:-change-me}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-tls}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-noreply@localhost}
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME:-solidtime}
+      - PASSPORT_PRIVATE_KEY=${PASSPORT_PRIVATE_KEY:-change-me}
+      - PASSPORT_PUBLIC_KEY=${PASSPORT_PUBLIC_KEY:-change-me}
+    depends_on:
+      solidtime-postgres:
+        condition: service_healthy
+      solidtime-redis:
+        condition: service_started
+    networks:
+      - solidtime-network
+
+  solidtime-postgres:
+    image: postgres:15-alpine
+    container_name: solidtime-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${DB_DATABASE:-solidtime}
+      - POSTGRES_USER=${DB_USERNAME:-solidtime}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/solidtime/postgres:/var/lib/postgresql/data
+    networks:
+      - solidtime-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-solidtime} -d ${DB_DATABASE:-solidtime}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  solidtime-redis:
+    image: redis:7-alpine
+    container_name: solidtime-redis
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/solidtime/redis:/data
+    networks:
+      - solidtime-network
+
+networks:
+  solidtime-network:
+    driver: bridge

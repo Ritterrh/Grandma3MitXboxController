@@ -1,0 +1,13 @@
+services:
+  ngircd:
+    image: "linuxserver/ngircd:latest"
+    container_name: ${CONTAINER_NAME:-ngircd}
+    restart: "unless-stopped"
+    ports:
+      - "6667:6667/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/ngircd/config:/config"

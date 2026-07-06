@@ -1,0 +1,27 @@
+services:
+
+  mailserver:
+    image: analogic/poste.io
+    container_name: poste
+    restart: always
+    ports:
+      - "82:80"
+      - "445:443"
+      - "25:25"
+      - "110:110"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+      - "995:995"
+      - "4190:4190"
+    environment:
+      - TZ=${TZ:-Europe/Athens}
+      - h=${h:-mail.[some-domain].com}
+      - HTTP_PORT=${HTTP_PORT:-82}
+      - HTTPS_PORT=${HTTPS_PORT:-445}
+      - DISABLE_CLAMAV=${DISABLE_CLAMAV:-TRUE}
+      - DISABLE_RSPAMD=${DISABLE_RSPAMD:-TRUE}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /portainer/Files/AppData/Config/poste/data/nginx/html/.well-known:/opt/www/.well-known
+      - /portainer/Files/AppData/Config/poste/data/mailserver:/dataroot

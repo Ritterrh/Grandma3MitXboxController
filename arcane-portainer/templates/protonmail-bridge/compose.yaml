@@ -1,0 +1,10 @@
+services:
+  protonmail-bridge:
+    image: "shenxn/protonmail-bridge:latest"
+    container_name: ${CONTAINER_NAME:-protonmail-bridge}
+    restart: "unless-stopped"
+    ports:
+      - "143/tcp"
+      - "25/tcp"
+    volumes:
+      - "/portainer/Files/AppData/ProtonMail-Bridge:/root"

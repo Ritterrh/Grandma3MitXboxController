@@ -1,0 +1,17 @@
+services:
+  smokeping:
+    image: "linuxserver/smokeping:latest"
+    container_name: ${CONTAINER_NAME:-smokeping}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "MASTER_URL=${MASTER_URL:-http://<master-host-ip>:80/smokeping/}"
+      - "SHARED_SECRET=${SHARED_SECRET:-change-me}"
+      - "CACHE_DIR=${CACHE_DIR:-/tmp}"
+    volumes:
+      - "/srv/lsio/smokeping/config:/config"
+      - "/srv/lsio/smokeping/data:/data"

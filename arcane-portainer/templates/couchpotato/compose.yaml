@@ -1,0 +1,21 @@
+services:
+  couchpotato:
+    image: "linuxserver/couchpotato:latest"
+    container_name: ${CONTAINER_NAME:-couchpotato}
+    restart: "unless-stopped"
+    ports:
+      - "5050/tcp"
+    environment:
+      - "PGID=${PGID:-15000}"
+      - "PUID=${PUID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+    volumes:
+      - "/opt/mediadepot/apps/couchpotato:/config"
+      - "/media/storage/downloads/movies:/downloads"
+      - "/media/storage/movies:/movies"
+      - "/media/temp/blackhole/movies:/blackhole"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.couchpotato.loadbalancer.server.port=5050"
+      - "traefik.http.routers.couchpotato.entrypoints=websecure"
+      - "traefik.http.routers.couchpotato.tls.certresolver=mydnschallenge"

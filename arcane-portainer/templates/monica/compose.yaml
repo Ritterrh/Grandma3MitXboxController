@@ -1,0 +1,31 @@
+services:
+  monica-app:
+    image: monica:apache
+    depends_on:
+      - monica-db
+    ports:
+      - 818:80
+    environment:
+      - DB_HOST=${DB_HOST:-db}
+      - DB_USERNAME=${DB_USERNAME:-monica}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/monica:/var/www/html/storage
+    restart: always
+
+  monica-db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=${MYSQL_RANDOM_ROOT_PASSWORD:-change-me}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-monica}
+      - MYSQL_USER=${MYSQL_USER:-monica}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/monica/mysql:/var/lib/mysql
+    restart: always
+
+volumes:
+  data:
+    name: data
+  mysql:
+    name: mysql    

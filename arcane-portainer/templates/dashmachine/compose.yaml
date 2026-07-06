@@ -1,0 +1,9 @@
+services:
+  dashmachine:
+    image: "failed2run/dashmachine:latest"
+    container_name: ${CONTAINER_NAME:-dashmachine}
+    restart: "unless-stopped"
+    ports:
+      - "5100:5000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Dashmachine:/dashmachine/dashmachine/user_data"

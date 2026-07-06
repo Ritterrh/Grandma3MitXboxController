@@ -1,0 +1,17 @@
+services:
+  emby:
+    image: "linuxserver/emby:latest"
+    container_name: ${CONTAINER_NAME:-emby}
+    restart: "unless-stopped"
+    ports:
+      - "8096:8096/tcp"
+      - "8920:8920/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/emby/config:/config"
+      - "/srv/lsio/emby/data/tvshows:/data/tvshows"
+      - "/srv/lsio/emby/data/movies:/data/movies"
+      - "/opt/vc/lib:/opt/vc/lib"

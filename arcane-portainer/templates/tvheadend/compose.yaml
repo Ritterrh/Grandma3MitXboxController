@@ -1,0 +1,16 @@
+services:
+  tvheadend:
+    image: "linuxserver/tvheadend:latest"
+    container_name: ${CONTAINER_NAME:-tvheadend}
+    restart: "unless-stopped"
+    ports:
+      - "9981:9981/tcp"
+      - "9982:9982/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "RUN_OPTS=${RUN_OPTS:-}"
+    volumes:
+      - "/srv/lsio/tvheadend/config:/config"
+      - "/srv/lsio/tvheadend/recordings:/recordings"

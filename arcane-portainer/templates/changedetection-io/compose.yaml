@@ -1,0 +1,15 @@
+services:
+  changedetection-io:
+    image: "linuxserver/changedetection.io:latest"
+    container_name: ${CONTAINER_NAME:-changedetection-io}
+    restart: "unless-stopped"
+    ports:
+      - "5000:5000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "BASE_URL=${BASE_URL:-}"
+      - "PLAYWRIGHT_DRIVER_URL=${PLAYWRIGHT_DRIVER_URL:-}"
+    volumes:
+      - "/srv/lsio/changedetection.io/config:/config"

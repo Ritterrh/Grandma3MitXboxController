@@ -1,0 +1,21 @@
+services:
+  upsnap:
+    image: ghcr.io/seriousm4x/upsnap:3
+    network_mode: host
+    restart: always
+    ports:
+      - 8290:80
+    volumes:
+      - /portainer/Files/AppData/Config/upsnap:/app/pb_data
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:8290/api/health || exit 1
+      interval: 1m
+      timeout: 10s
+      retries: 3
+    environment:
+      - TZ=${TZ:-Europe/Athens}
+    # - UPSNAP_INTERVAL=@every 10s # Sets the interval in which the devices are pinged
+      - UPSNAP_SCAN_RANGE=${UPSNAP_SCAN_RANGE:-192.168.0.0/24}
+      - UPSNAP_WEBSITE_TITLE=${UPSNAP_WEBSITE_TITLE:-Custom name}
+    # # you can change the listen ip:port inside the container or install custom packages for shutdown via a custom entrypoint
+    # entrypoint: /bin/sh -c "apk update && apk add --no-cache ipmitool && rm -rf /var/cache/apk/* && ./upsnap serve --http 0.0.0.0:8290"

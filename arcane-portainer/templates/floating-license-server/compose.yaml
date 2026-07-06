@@ -1,0 +1,12 @@
+services:
+  floating-license-server:
+    image: "softingindustrial/floating-license-server:latest"
+    container_name: ${CONTAINER_NAME:-floating-license-server}
+    restart: "unless-stopped"
+    ports:
+      - "6200/tcp"
+    volumes:
+      - "licsrv-licenses:/licsrv/licenses"
+
+volumes:
+  licsrv-licenses:

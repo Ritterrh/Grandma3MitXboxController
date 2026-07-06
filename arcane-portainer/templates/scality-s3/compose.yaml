@@ -1,0 +1,17 @@
+services:
+  scality-s3:
+    image: "scality/s3server"
+    container_name: ${CONTAINER_NAME:-scality-s3}
+    restart: "unless-stopped"
+    ports:
+      - "8000/tcp"
+    environment:
+      - "SCALITY_ACCESS_KEY=${SCALITY_ACCESS_KEY:-}"
+      - "SCALITY_SECRET_KEY=${SCALITY_SECRET_KEY:-change-me}"
+    volumes:
+      - "usr-src-app-localdata:/usr/src/app/localData"
+      - "usr-src-app-localmetadata:/usr/src/app/localMetadata"
+
+volumes:
+  usr-src-app-localdata:
+  usr-src-app-localmetadata:

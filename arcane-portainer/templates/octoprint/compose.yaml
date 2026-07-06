@@ -1,0 +1,14 @@
+services:
+  octoprint:
+    image: "octoprint/octoprint:latest"
+    container_name: ${CONTAINER_NAME:-octoprint}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "8051:80/tcp"
+    environment:
+      - "NODE_ENV=${NODE_ENV:-development}"
+      - "ENABLE_MJPG_STREAMER=${ENABLE_MJPG_STREAMER:-true}"
+    volumes:
+      - "/portainer/Files/AppData/Config/OctoPrint:/octoprint"
+      - "/dev:/dev"

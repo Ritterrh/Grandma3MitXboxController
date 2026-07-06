@@ -1,0 +1,59 @@
+version: '2'
+# https://docs.filerun.com/docker
+services:
+  db:
+    image: mariadb:10.1
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-change-me}"
+      MYSQL_USER: "${MYSQL_USER:-filerun}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:-change-me}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE:-filerun}"
+    volumes:
+      - /opt/mediadepot/apps/filerun/db:/var/lib/mysql
+    networks:
+      - filerun
+
+  app:
+    restart: always
+    image: afian/filerun
+    ports:
+     - "80"
+    volumes:
+    - /media/storage/tvshows:/user-files/depot/tvshows
+    - /media/storage/movies:/user-files/depot/movies
+    - /media/storage/music:/user-files/depot/music
+    - /media/storage/photos:/user-files/depot/photos
+    - /media/storage/ebooks:/user-files/depot/ebooks
+    - /media/storage/documents:/user-files/depot/documents
+    - /media/storage/downloads:/user-files/depot/downloads
+    - /media/storage/software:/user-files/depot/software
+    - /media/temp/blackhole:/user-files/depot/blackhole
+    - /media/temp/processing:/user-files/depot/processing
+    - /opt/mediadepot/apps/filerun/web:/var/www/html
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.filerun.loadbalancer.server.port=80"
+      - "traefik.http.routers.filerun.rule=Host(`filerun.${DEPOT_DOMAIN_NAME:-}`)"
+      - 'traefik.http.routers.filerun.entrypoints=websecure'
+      - 'traefik.http.routers.filerun.tls.certresolver=mydnschallenge'
+    environment:
+      - FR_DB_HOST=${FR_DB_HOST:-db}
+      - FR_DB_PORT=${FR_DB_PORT:-3306}
+      - FR_DB_NAME=${FR_DB_NAME:-filerun}
+      - FR_DB_USER=${FR_DB_USER:-filerun}
+      - FR_DB_PASS=${FR_DB_PASS:-change-me}
+      - APACHE_RUN_USER=${APACHE_RUN_USER:-www-data}
+      - APACHE_RUN_USER_ID=${APACHE_RUN_USER_ID:-15000}
+      - APACHE_RUN_GROUP=${APACHE_RUN_GROUP:-www-data}
+      - APACHE_RUN_GROUP_ID=${APACHE_RUN_GROUP_ID:-15000}
+    depends_on:
+      - db
+    links:
+      - db:db
+    networks:
+      - traefik
+      - filerun
+networks:
+  traefik:
+    external: true
+  filerun:

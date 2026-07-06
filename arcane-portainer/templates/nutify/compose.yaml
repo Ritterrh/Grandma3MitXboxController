@@ -1,0 +1,52 @@
+services:
+  nut:
+    image: dartsteven/nutify:amd64-0.1.0                # Official Nutify image for AMD64 architecture (supported architectures: amd64, arm64, armv7)
+    # build: . # Or build from source                   # Uncomment to build from source instead of using pre-built image
+    container_name: Nutify-Server                       # Name of the container in Docker
+    privileged: true                                    # Grants extended privileges to the container for hardware access
+    cap_add:                                            # Additional Linux capabilities for the container
+      - SYS_ADMIN                                       # Allows administrative operations
+      - SYS_RAWIO                                       # Allows direct I/O access
+      - MKNOD                                           # Allows creation of special files
+    devices:                                            # Device mapping from host to container
+      - /dev/bus/usb:/dev/bus/usb:rwm                   # Maps USB devices for UPS detection (read-write-mknod)
+    device_cgroup_rules:                                # Control group rules for device access
+      - 'c 189:* rwm'                                   # USB device access rule (character device 189)
+    environment:                                        # Environment variables for container configuration
+      # ===== SERVER CONFIGURATION =====
+      - SERVER_NAME=${SERVER_NAME:-}
+      - SERVER_PORT=${SERVER_PORT:-5050}
+      - SERVER_HOST=${SERVER_HOST:-0.0.0.0}
+      - TIMEZONE=${TIMEZONE:-}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY:-change-me}
+      
+      # ===== UPS CONNECTION SETTINGS =====
+      - UPS_HOST=${UPS_HOST:-localhost}
+      - UPS_NAME=${UPS_NAME:-ups}
+      - UPS_DRIVER=${UPS_DRIVER:-usbhid-ups}
+      - UPS_PORT=${UPS_PORT:-auto}
+      - UPS_REALPOWER_NOMINAL=${UPS_REALPOWER_NOMINAL:-1000}
+      
+      # ===== UPS AUTHENTICATION =====
+      - UPS_USER=${UPS_USER:-admin}
+      - UPS_PASSWORD=${UPS_PASSWORD:-change-me}
+      
+      # ===== UPS COMMAND SETTINGS =====
+      - UPSCMD_USER=${UPSCMD_USER:-admin}
+      - UPSCMD_PASSWORD=${UPSCMD_PASSWORD:-change-me}
+      
+      # ===== LOGGING CONFIGURATION =====
+      - LOG=${LOG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-DEBUG}
+      - LOG_WERKZEUG=${LOG_WERKZEUG:-false}
+      - ENABLE_LOG_STARTUP=${ENABLE_LOG_STARTUP:-N}
+      
+    ports:                                              # Port mapping from host to container
+      - 3493:3493                                       # NUT server port
+      - 5050:5050                                       # Web interface port
+    volumes:                                            # Volume mapping for persistent data
+      - /portainer/Files/AppData/Config/nutify/nut_data:/var/run/nut                         # NUT runtime data
+      - /portainer/Files/AppData/Config/nutify/logs/logs:/app/nutify/logs                  # Log files
+      - /portainer/Files/AppData/Config/nutify/instance:/app/nutify/instance          # Application data including SQLite database
+    restart: always                                     # Restart policy (always restart on failure)
+    user: root                                          # Run container as root user for hardware access

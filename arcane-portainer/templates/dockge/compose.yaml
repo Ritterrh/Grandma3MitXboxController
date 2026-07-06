@@ -1,0 +1,17 @@
+services:
+  dockge:
+    image: louislam/dockge:1
+    restart: unless-stopped
+    ports:
+      # Host Port : Container Port
+      - 5001:5001
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer/Files/AppData/Config/dockge/data:/app/data
+      - /portainer/Files/AppData/Config/dockge/stacks:/opt/stacks  
+      # If you want to use private registries, you need to share the auth file with Dockge:
+      # - /root/.docker/:/root/.docker
+     
+    environment:
+      # Tell Dockge where is your stacks directory
+      - DOCKGE_STACKS_DIR=${DOCKGE_STACKS_DIR:-/portainer/Files/AppData/Config/dockge/stacks}

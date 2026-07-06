@@ -1,0 +1,15 @@
+services:
+  phpmyadmin:
+    image: "linuxserver/phpmyadmin:latest"
+    container_name: ${CONTAINER_NAME:-phpmyadmin}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "PMA_ARBITRARY=${PMA_ARBITRARY:-1}"
+      - "PMA_ABSOLUTE_URI=${PMA_ABSOLUTE_URI:-https://phpmyadmin.example.com}"
+    volumes:
+      - "/srv/lsio/phpmyadmin/config:/config"

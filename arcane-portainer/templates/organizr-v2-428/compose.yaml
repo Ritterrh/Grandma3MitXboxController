@@ -1,0 +1,13 @@
+services:
+  organizr:
+    image: linuxserver/organizr
+    container_name: organizr
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+    volumes:
+      - /portainer/Files/AppData/Config/organizr:/config
+    ports:
+      - 9983:80
+    restart: unless-stopped

@@ -1,0 +1,14 @@
+services:
+  ariang:
+    image: "hurlenko/aria2-ariang:latest"
+    container_name: ${CONTAINER_NAME:-ariang}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "ARIA2RPCPORT=${ARIA2RPCPORT:-443}"
+    volumes:
+      - "/portainer/Files/AppData/Config/AriaNG:/aria2/conf"
+      - "/portainer/Downloads:/aria2/data"

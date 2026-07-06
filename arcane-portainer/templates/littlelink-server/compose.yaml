@@ -1,0 +1,71 @@
+services:
+  littlelink-server:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    #image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    environment:
+      - META_TITLE=${META_TITLE:-PUTYOURNAMEHERE}
+      - META_DESCRIPTION=${META_DESCRIPTION:-NAME page}
+      - META_AUTHOR=${META_AUTHOR:-PUTYOURNAMEHERE}
+      - LANG=${LANG:-en}
+      - META_INDEX_STATUS=${META_INDEX_STATUS:-all}
+      - GA_TRACKING_ID=${GA_TRACKING_ID:-G-XXXXXXXXXX}
+      - THEME=${THEME:-Dark}
+      - FAVICON_URL=${FAVICON_URL:-https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg}
+      - AVATAR_URL=${AVATAR_URL:-https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg}
+      - AVATAR_2X_URL=${AVATAR_2X_URL:-https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg}
+      - AVATAR_ALT=${AVATAR_ALT:-PUTYOURNAMEHERE Profile Pic}
+      - NAME=${NAME:-PUTYOURNAMEHERE}
+      - BIO=${BIO:-Hey! Just a place where you can connect with me!}
+      - FOOTER=${FOOTER:-Thanks for stopping by!}
+      - GITHUB=${GITHUB:-https://github.com/}
+      - TWITTER=${TWITTER:-https://twitter.com/}
+      - INSTAGRAM=${INSTAGRAM:-https://www.instagram.com/}
+      - YOUTUBE=${YOUTUBE:-https://www.youtube.com/}
+      - TWITCH=${TWITCH:-https://www.twitch.tv}
+      - DISCORD=${DISCORD:-https://discord.gg/}
+      - TIKTOK=${TIKTOK:-https://www.tiktok.com/}
+      - KIT=${KIT:-https://kit.co/}
+      - FACEBOOK=${FACEBOOK:-https://facebook.com}
+      - FACEBOOK_MESSENGER=${FACEBOOK_MESSENGER:-https://facebook.com}
+      - LINKED_IN=${LINKED_IN:-https://linkedin.com}
+      - PRODUCT_HUNT=${PRODUCT_HUNT:-https://www.producthunt.com/}
+      - SNAPCHAT=${SNAPCHAT:-https://www.snapchat.com/}
+      - SPOTIFY=${SPOTIFY:-https://www.spotify.com/}
+      - REDDIT=${REDDIT:-https://www.reddit.com/}
+      - MEDIUM=${MEDIUM:-https://medium.com}
+      - PINTEREST=${PINTEREST:-https://www.pinterest.com/}
+      - EMAIL=${EMAIL:-you@example.com}
+      - EMAIL_TEXT=${EMAIL_TEXT:-Email Me!}
+      - EMAIL_ALT=${EMAIL_ALT:-you@example.com}
+      - EMAIL_ALT_TEXT=${EMAIL_ALT_TEXT:-Email me!}
+      - SOUND_CLOUD=${SOUND_CLOUD:-https://soundcloud.com}
+      - FIGMA=${FIGMA:-https://figma.com}
+      - TELEGRAM=${TELEGRAM:-https://telegram.org/}
+      - TUMBLR=${TUMBLR:-https://www.tumblr.com/}
+      - STEAM=${STEAM:-https://steamcommunity.com/}
+      - VIMEO=${VIMEO:-https://vimeo.com/}
+      - WORDPRESS=${WORDPRESS:-https://wordpress.com/}
+      - GOODREADS=${GOODREADS:-https://www.goodreads.com/}
+      - SKOOB=${SKOOB:-https://www.skoob.com.br/}
+      - LETTERBOXD=${LETTERBOXD:-https://letterboxd.com/}
+      - MASTODON=${MASTODON:-https://mastodon.social/}
+      - MICRO_BLOG=${MICRO_BLOG:-https://micro.blog/}
+      - WHATSAPP=${WHATSAPP:-https://www.whatsapp.com/}
+      - STRAVA=${STRAVA:-https://www.strava.com/}
+      - BUYMEACOFFEE=${BUYMEACOFFEE:-https://www.buymeacoffee.com/}
+      - GITLAB=${GITLAB:-https://www.gitlab.com/}
+      - PATREON=${PATREON:-https://www.patreon.com/technotim}
+      - DEVTO=${DEVTO:-https://dev.to/}
+      - UMAMI_WEBSITE_ID=${UMAMI_WEBSITE_ID:-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+      - UMAMI_APP_URL=${UMAMI_APP_URL:-https://your-umami-app.com}
+      - BUTTON_ORDER=${BUTTON_ORDER:-YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON}
+      - PAYPAL=${PAYPAL:-https://www.paypal.me/user}
+      - SLACK=${SLACK:-https://slack.com/}
+    ports:
+      - 8480:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+

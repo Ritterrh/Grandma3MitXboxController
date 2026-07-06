@@ -1,0 +1,10 @@
+services:
+  codex:
+      image: docker.io/ajslater/codex
+      container_name: codex
+      volumes:
+          - /portainer/Files/AppData/Config/codex:/config
+          - /portainer/comics:/comics:ro
+      ports:
+          - 9810:9810
+      restart: on-failure

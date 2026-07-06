@@ -1,0 +1,14 @@
+services:
+  cockroachdb-container:
+    image: "cockroachdb/cockroach:latest"
+    container_name: ${CONTAINER_NAME:-cockroachdb-container}
+    command: "start --insecure"
+    restart: "unless-stopped"
+    ports:
+      - "26257/tcp"
+      - "8080/tcp"
+    volumes:
+      - "cockroach-cockroach-data:/cockroach/cockroach-data"
+
+volumes:
+  cockroach-cockroach-data:

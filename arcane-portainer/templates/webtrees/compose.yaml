@@ -1,0 +1,54 @@
+services:
+  webtrees_db:
+    image: postgres:16
+    container_name: webtrees_db
+    hostname: webtrees_db
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "webtrees", "-U", "webtreesusr"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+      - /portainer/Files/AppData/Config/webtrees/db:/var/lib/postgresql/data:rw
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB:-webtrees}"
+      POSTGRES_USER: "${POSTGRES_USER:-webtreesuser}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-change-me}"
+    restart: on-failure:5
+
+  webtrees:
+    image: ghcr.io/nathanvaughn/webtrees:latest
+    container_name: Webtrees
+    hostname: webtrees
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - 5495:80
+    volumes:
+      - /portainer/Files/AppData/Config/webtrees/data:/var/www/webtrees/data:rw
+    environment:
+       TZ: "${TZ:-Europe/Athens}"
+       BASE_URL: "${BASE_URL:-https://webtrees.homelab}"
+       PRETTY_URLS: "${PRETTY_URLS:-TRUE}"
+       WT_USER: "${WT_USER:-xneo1}"
+       WT_PASS: "${WT_PASS:-change-me}"
+       WT_NAME: "${WT_NAME:-Your Name}"
+       WT_EMAIL: "${WT_EMAIL:-me@email.com}"
+       PHP_MEMORY_LIMIT: "${PHP_MEMORY_LIMIT:-8192M}"
+       PHP_MAX_EXECUTION_TIME: "${PHP_MAX_EXECUTION_TIME:-3600}"
+       PHP_POST_MAX_SIZE: "${PHP_POST_MAX_SIZE:-512M}"
+       PHP_UPLOAD_MAX_FILE_SIZE: "${PHP_UPLOAD_MAX_FILE_SIZE:-512M}"
+       DB_HOST: "${DB_HOST:-webtrees_db}"
+       DB_PORT: "${DB_PORT:-5432}"
+       POSTGRES_USER: "${POSTGRES_USER:-webtreesusr}"
+       POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-change-me}"
+       DB_TYPE: "${DB_TYPE:-pgsql}"
+       DB_PREFIX: "${DB_PREFIX:-wt_}"
+       POSTGRES_DB: "${POSTGRES_DB:-webtrees}"
+       HTTPS_REDIRECT: "${HTTPS_REDIRECT:-False}"
+       HTTPS: "${HTTPS:-False}"
+    restart: on-failure:5

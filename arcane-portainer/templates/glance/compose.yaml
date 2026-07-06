@@ -1,0 +1,12 @@
+services:
+  glance:
+    image: "glanceapp/glance:latest"
+    container_name: ${CONTAINER_NAME:-glance}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    volumes:
+      - "app-config:/app/config"
+
+volumes:
+  app-config:

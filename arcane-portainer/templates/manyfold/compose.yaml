@@ -1,0 +1,17 @@
+services:
+  manyfold:
+    image: "linuxserver/manyfold:latest"
+    container_name: ${CONTAINER_NAME:-manyfold}
+    restart: "unless-stopped"
+    ports:
+      - "3214:3214/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "DATABASE_URL=${DATABASE_URL:-}"
+      - "REDIS_URL=${REDIS_URL:-}"
+      - "SECRET_KEY_BASE=${SECRET_KEY_BASE:-change-me}"
+    volumes:
+      - "/srv/lsio/manyfold/config:/config"
+      - "/srv/lsio/manyfold/libraries:/libraries"

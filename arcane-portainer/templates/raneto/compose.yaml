@@ -1,0 +1,13 @@
+services:
+  raneto:
+    image: "linuxserver/raneto:latest"
+    container_name: ${CONTAINER_NAME:-raneto}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/raneto/config:/config"

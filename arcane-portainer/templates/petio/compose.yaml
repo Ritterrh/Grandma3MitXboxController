@@ -1,0 +1,28 @@
+---
+version: "2"
+services:
+  petio:
+    image: hotio/petio
+    container_name: petio
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Etc/UTC}
+    volumes:
+      - /portainer/Files/AppData/Config/petio/Config:/config
+    ports:
+      - ${PORT:-8080}:7777
+    restart: unless-stopped
+    depends_on:
+      - mongo_db
+  mongo_db:
+    image: mongo
+    container_name: mongo_db
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${Timezone:-}
+    volumes:
+      - /portainer/AppData/Config/mongo_db/config:/data/configdb
+      - /portainer/AppData/Config/mongo_db/DB:/data/db
+    restart: unless-stopped

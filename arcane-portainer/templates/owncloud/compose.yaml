@@ -1,0 +1,49 @@
+---
+version: "2"
+services:
+  nextcloud:
+    image: owncloud/server:latest
+    container_name: owncloud
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Etc/UTC}
+      - OWNCLOUD_DOMAIN=${OWNCLOUD_DOMAIN:-}
+      - OWNCLOUD_DB_TYPE=${OWNCLOUD_DB_TYPE:-mysql}
+      - OWNCLOUD_DB_NAME=${OWNCLOUD_DB_NAME:-owncloud}
+      - OWNCLOUD_DB_USERNAME=${OWNCLOUD_DB_USERNAME:-owncloud}
+      - OWNCLOUD_DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - OWNCLOUD_DB_HOST=${OWNCLOUD_DB_HOST:-owncloudmariadb}
+      - OWNCLOUD_ADMIN_USERNAME=${ADMIN_USERNAME:-user}
+      - OWNCLOUD_ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - OWNCLOUD_MYSQL_UTF8MB4=${OWNCLOUD_MYSQL_UTF8MB4:-true}
+      - OWNCLOUD_REDIS_ENABLED=${OWNCLOUD_REDIS_ENABLED:-true}
+      - OWNCLOUD_REDIS_HOST=${OWNCLOUD_REDIS_HOST:-owncloudredis}
+    volumes:
+      - /portainer/Files/AppData/Config/Owncloud/data:/mnt/data
+    ports:
+      - ${PORT:-8080}:8080
+    restart: unless-stopped
+    depends_on:
+      - owncloudmariadb
+      - owncloudredis
+  owncloudmariadb:
+    image: mariadb:10.5
+    container_name: owncloudmariadb
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Etc/UTC}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD:-change-me}
+      - MYSQL_USER=${MYSQL_USER:-owncloud}
+      - MYSQL_PASSWORD=${DB_PASSWORD:-change-me}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-owncloud}
+    volumes:
+      - /portainer/Files/AppData/Config/Owncloud/DB:/var/lib/mysql
+    restart: unless-stopped
+  owncloudredis:
+    image: redis:6
+    container_name: owncloudredis
+    volumes:
+      - /portainer/Files/AppData/Config/Owncloud/redis:/data
+    restart: unless-stopped

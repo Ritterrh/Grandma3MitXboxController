@@ -1,0 +1,15 @@
+services:
+  scrutiny:
+    image: "analogj/scrutiny:latest"
+    container_name: ${CONTAINER_NAME:-scrutiny}
+    restart: "unless-stopped"
+    ports:
+      - "8080/tcp"
+    volumes:
+      - "/opt/mediadepot/apps/scrutiny:/scrutiny/config/"
+      - "/run/udev:/run/udev:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.scrutiny.loadbalancer.server.port=8080"
+      - "traefik.http.routers.scrutiny.entrypoints=websecure"
+      - "traefik.http.routers.scrutiny.tls.certresolver=mydnschallenge"

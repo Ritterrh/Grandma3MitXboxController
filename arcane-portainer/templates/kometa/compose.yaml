@@ -1,0 +1,18 @@
+services:
+  kometa:
+    image: "linuxserver/kometa:latest"
+    container_name: ${CONTAINER_NAME:-kometa}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "KOMETA_CONFIG=${KOMETA_CONFIG:-/config/config.yml}"
+      - "KOMETA_TIMES=${KOMETA_TIMES:-03:00}"
+      - "KOMETA_RUN=${KOMETA_RUN:-False}"
+      - "KOMETA_TESTS=${KOMETA_TESTS:-False}"
+      - "KOMETA_NO_MISSING=${KOMETA_NO_MISSING:-False}"
+    volumes:
+      - "/srv/lsio/kometa/config:/config"

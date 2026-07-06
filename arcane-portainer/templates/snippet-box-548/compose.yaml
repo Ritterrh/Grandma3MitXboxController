@@ -1,0 +1,9 @@
+services:
+  snippet-box-548:
+    image: "pawelmalak/snippet-box:arm"
+    container_name: ${CONTAINER_NAME:-snippet-box-548}
+    restart: "unless-stopped"
+    ports:
+      - "5010:5000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Snippet-box:/app/data"

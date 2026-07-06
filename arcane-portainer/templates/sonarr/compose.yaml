@@ -1,0 +1,15 @@
+services:
+  sonarr:
+    image: "linuxserver/sonarr:latest"
+    container_name: ${CONTAINER_NAME:-sonarr}
+    restart: "unless-stopped"
+    ports:
+      - "8989:8989/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/sonarr/config:/config"
+      - "/srv/lsio/sonarr/tv:/tv"
+      - "/srv/lsio/sonarr/downloads:/downloads"

@@ -1,0 +1,14 @@
+services:
+  photoshow:
+    image: "linuxserver/photoshow:latest"
+    container_name: ${CONTAINER_NAME:-photoshow}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Pictures:/Pictures"
+      - "/portainer/Files/AppData/Photoshow/Thumbs:/Thumbs"
+      - "/portainer/Files/AppData/Config/PhotoShow:/config"

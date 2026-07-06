@@ -1,0 +1,12 @@
+services:
+  pi-alert:
+    image: "jokobsk/pi.alert"
+    container_name: ${CONTAINER_NAME:-pi-alert}
+    restart: "always"
+    ports:
+      - "20211:20211/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/pi.alert:/config"

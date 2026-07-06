@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  crowdsec-web-ui:
+    image: ghcr.io/theduffman85/crowdsec-web-ui:latest
+    container_name: crowdsec-web-ui
+    restart: unless-stopped
+    ports:
+      - ${PORT:-3000}:3000
+    environment:
+      - CROWDSEC_URL=${CROWDSEC_URL:-http://crowdsec:8080}
+      - CROWDSEC_USER=${CROWDSEC_USER:-crowdsec-web-ui}
+      - CROWDSEC_PASSWORD=${CROWDSEC_PASSWORD:-change-me}
+      - CROWDSEC_LOOKBACK_PERIOD=${CROWDSEC_LOOKBACK_PERIOD:-168h}
+      - CROWDSEC_REFRESH_INTERVAL=${CROWDSEC_REFRESH_INTERVAL:-30s}
+      - CROWDSEC_IDLE_REFRESH_INTERVAL=${CROWDSEC_IDLE_REFRESH_INTERVAL:-5m}
+      - CROWDSEC_IDLE_THRESHOLD=${CROWDSEC_IDLE_THRESHOLD:-2m}
+      - CROWDSEC_FULL_REFRESH_INTERVAL=${CROWDSEC_FULL_REFRESH_INTERVAL:-5m}
+      - BASE_PATH=${BASE_PATH:-}
+    volumes:
+      - /portainer/Files/AppData/Config/crowdsec-web-ui/data:/app/data
+    networks:
+      - crowdsec-web-ui-network
+
+networks:
+  crowdsec-web-ui-network:
+    driver: bridge

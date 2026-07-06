@@ -1,0 +1,15 @@
+services:
+  dokku-container:
+    image: "dokku/dokku"
+    container_name: ${CONTAINER_NAME:-dokku-container}
+    restart: "unless-stopped"
+    ports:
+      - "22/tcp"
+      - "80/tcp"
+      - "443/tcp"
+    environment:
+      - "DOKKU_HOSTNAME=${DOKKU_HOSTNAME:-localhost}"
+      - "DOKKU_HOST_ROOT=${DOKKU_HOST_ROOT:-/var/lib/dokku/home/dokku}"
+    volumes:
+      - "/var/lib/dokku:/mnt/dokku"
+      - "/var/run/docker.sock:/var/run/docker.sock"

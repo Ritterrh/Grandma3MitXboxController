@@ -1,0 +1,15 @@
+services:
+  joomla:
+    image: "joomla:latest"
+    container_name: ${CONTAINER_NAME:-joomla}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "JOOMLA_DB_HOST=${JOOMLA_DB_HOST:-localhost}"
+      - "JOOMLA_DB_PASSWORD=${JOOMLA_DB_PASSWORD:-change-me}"
+    volumes:
+      - "var-www-html:/var/www/html"
+
+volumes:
+  var-www-html:

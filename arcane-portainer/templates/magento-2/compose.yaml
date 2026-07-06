@@ -1,0 +1,14 @@
+services:
+  magento-2:
+    image: "alankent/gsd:latest"
+    container_name: ${CONTAINER_NAME:-magento-2}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+      - "3000/tcp"
+      - "3001/tcp"
+    volumes:
+      - "var-www-html:/var/www/html/"
+
+volumes:
+  var-www-html:

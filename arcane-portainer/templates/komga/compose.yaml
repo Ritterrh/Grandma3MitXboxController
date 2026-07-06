@@ -1,0 +1,11 @@
+services:
+  komga:
+    image: "gotson/komga:latest"
+    container_name: ${CONTAINER_NAME:-komga}
+    restart: "unless-stopped"
+    ports:
+      - "8995:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/komga/config:/config"
+      - "/portainer/Files/AppData/Config/komga/data:/data"
+      - "/etc/timezone:/etc/timezone:ro"

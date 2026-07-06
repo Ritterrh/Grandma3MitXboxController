@@ -1,0 +1,49 @@
+services:
+  romm:
+    image: rommapp/romm:latest
+    container_name: romm
+    restart: unless-stopped
+    environment:
+      - DB_HOST=${DB_HOST:-romm-db}
+      - DB_NAME=${DB_NAME:-romm}
+      - DB_USER=${DB_USER:-romm-user}
+      - DB_PASSWD=${DB_PASSWD:-change-me}
+      - ROMM_AUTH_SECRET_KEY=${ROMM_AUTH_SECRET_KEY:-change-me}
+      - IGDB_CLIENT_ID=${IGDB_CLIENT_ID:-}
+      - IGDB_CLIENT_SECRET=${IGDB_CLIENT_SECRET:-change-me}
+      - MOBYGAMES_API_KEY=${MOBYGAMES_API_KEY:-change-me}
+      - STEAMGRIDDB_API_KEY=${STEAMGRIDDB_API_KEY:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/romm/resources:/romm/resources # Resources fetched from IGDB (covers, screenshots, etc.)
+      - /portainer/Files/AppData/Config/romm/redis_data:/redis-data # Cached data for background tasks
+      - /portainer/roms/library:/romm/library # Your game library. Check https://github.com/rommapp/romm?tab=readme-ov-file#folder-structure for more details.
+      - /portainer/roms/assets:/romm/assets # Uploaded saves, states, etc.
+      - /portainer/Files/AppData/Config/romm/config:/romm/config # Path where config.yml is stored
+    ports:
+      - 480:8080
+    depends_on:
+      romm-db:
+        condition: service_healthy
+        restart: true
+  romm-db:
+    image: mariadb:latest
+    container_name: romm-db
+    restart: unless-stopped
+    # env_file removed for Arcane template portability
+      # - romm.env
+    volumes:
+      - /portainer/Files/AppData/Config/romm/maria-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 30s
+      start_interval: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - ${DB_PORT:-8080}:3306
+
+
+
+
+  

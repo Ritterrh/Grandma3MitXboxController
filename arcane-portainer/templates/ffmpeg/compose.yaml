@@ -1,0 +1,13 @@
+services:
+  ffmpeg:
+    image: "linuxserver/ffmpeg:latest"
+    container_name: ${CONTAINER_NAME:-ffmpeg}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/ffmpeg/config:/config"

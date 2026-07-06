@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  lynxprompt:
+    image: drumsergio/lynxprompt:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:-change-me}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - DB_APP_HOST=${DB_APP_HOST:-postgres}
+      - DB_APP_USER=${DB_APP_USER:-lynxprompt}
+      - DB_APP_PASSWORD=${DB_APP_PASSWORD:-change-me}
+      - DB_APP_NAME=${DB_APP_NAME:-lynxprompt}
+      - DB_USERS_HOST=${DB_USERS_HOST:-postgres}
+      - DB_USERS_USER=${DB_USERS_USER:-lynxprompt}
+      - DB_USERS_PASSWORD=${DB_USERS_PASSWORD:-change-me}
+      - DB_USERS_NAME=${DB_USERS_NAME:-lynxprompt}
+      - DB_BLOG_HOST=${DB_BLOG_HOST:-postgres}
+      - DB_BLOG_USER=${DB_BLOG_USER:-lynxprompt}
+      - DB_BLOG_PASSWORD=${DB_BLOG_PASSWORD:-change-me}
+      - DB_BLOG_NAME=${DB_BLOG_NAME:-lynxprompt}
+      - DB_SUPPORT_HOST=${DB_SUPPORT_HOST:-postgres}
+      - DB_SUPPORT_USER=${DB_SUPPORT_USER:-lynxprompt}
+      - DB_SUPPORT_PASSWORD=${DB_SUPPORT_PASSWORD:-change-me}
+      - DB_SUPPORT_NAME=${DB_SUPPORT_NAME:-lynxprompt}
+      - ENABLE_USER_REGISTRATION=${ENABLE_USER_REGISTRATION:-true}
+      - ENABLE_EMAIL_AUTH=${ENABLE_EMAIL_AUTH:-true}
+      - ENABLE_PASSKEYS=${ENABLE_PASSKEYS:-change-me}
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-lynxprompt}
+      - POSTGRES_USER=${POSTGRES_USER:-lynxprompt}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

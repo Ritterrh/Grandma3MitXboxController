@@ -1,0 +1,10 @@
+services:
+  chrony-ntp:
+    image: "cturra/ntp:latest"
+    container_name: ${CONTAINER_NAME:-chrony-ntp}
+    restart: "unless-stopped"
+    ports:
+      - "123:123/udp"
+    environment:
+      - "LOG_LEVEL=${LOG_LEVEL:-0}"
+      - "NTP_SERVERS=${NTP_SERVERS:-time.cloudflare.com}"

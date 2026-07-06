@@ -1,0 +1,21 @@
+services:
+  sickrage:
+    image: "linuxserver/sickrage:latest"
+    container_name: ${CONTAINER_NAME:-sickrage}
+    restart: "unless-stopped"
+    ports:
+      - "8081/tcp"
+    environment:
+      - "PGID=${PGID:-15000}"
+      - "PUID=${PUID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+    volumes:
+      - "/opt/mediadepot/apps/sickrage:/config"
+      - "/media/storage/downloads/tvshows:/downloads"
+      - "/media/storage/tvshows:/tv"
+      - "/media/temp/blackhole/tvshows:/blackhole"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.sickrage.loadbalancer.server.port=8081"
+      - "traefik.http.routers.sickrage.entrypoints=websecure"
+      - "traefik.http.routers.sickrage.tls.certresolver=mydnschallenge"

@@ -1,0 +1,15 @@
+services:
+  linkding:
+    image: "sissbruecker/linkding:latest"
+    container_name: ${CONTAINER_NAME:-linkding}
+    restart: "unless-stopped"
+    ports:
+      - "9090:9090/tcp"
+    environment:
+      - "LD_SUPERUSER_NAME=${LD_SUPERUSER_NAME:-admin}"
+      - "LD_SUPERUSER_PASSWORD=${LD_SUPERUSER_PASSWORD:-change-me}"
+    volumes:
+      - "etc-linkding-data:/etc/linkding/data"
+
+volumes:
+  etc-linkding-data:

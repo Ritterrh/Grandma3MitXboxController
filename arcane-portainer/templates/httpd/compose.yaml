@@ -1,0 +1,12 @@
+services:
+  httpd:
+    image: "httpd:latest"
+    container_name: ${CONTAINER_NAME:-httpd}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    volumes:
+      - "usr-local-apache2-htdocs:/usr/local/apache2/htdocs/"
+
+volumes:
+  usr-local-apache2-htdocs:

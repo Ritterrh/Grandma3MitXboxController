@@ -1,0 +1,57 @@
+services:
+  flowise-db:
+    image: postgres
+    container_name: FlowiseAI-DB
+    hostname: flowise-db
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "flowise", "-U", "flowiseuser"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+      - /portainer/Files/AppData/Config/flowiseai/db:/var/lib/postgresql/data:rw
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB:-flowise}"
+      POSTGRES_USER: "${POSTGRES_USER:-flowiseuser}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-change-me}"
+    restart: on-failure
+
+  flowise:
+    image: flowiseai/flowise:latest
+    command: /bin/sh -c "sleep 3; flowise start"
+    container_name: FlowiseAI
+    hostname: flowise
+    mem_limit: 4g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:3000
+    ports:
+      - 8459:3000
+    volumes:
+      - /portainer/Files/AppData/Config/data:/root/.flowise:rw
+    environment:
+      DEBUG: "${DEBUG:-false}"
+      PORT: "${PORT:-3000}"
+      FLOWISE_USERNAME: "${FLOWISE_USERNAME:-xneo1}"
+      FLOWISE_PASSWORD: "${FLOWISE_PASSWORD:-change-me}"
+      DATABASE_PATH: "${DATABASE_PATH:-/root/.flowise}"
+      APIKEY_PATH: "${APIKEY_PATH:-/root/.flowise}"
+      SECRETKEY_PATH: "${SECRETKEY_PATH:-change-me}"
+      LOG_LEVEL: "${LOG_LEVEL:-info}"
+      LOG_PATH: "${LOG_PATH:-/root/.flowise/logs}"
+      DATABASE_TYPE: "${DATABASE_TYPE:-postgres}"
+      DATABASE_PORT: "${DATABASE_PORT:-5432}"
+      DATABASE_HOST: "${DATABASE_HOST:-flowise-db}"
+      DATABASE_NAME: "${DATABASE_NAME:-flowise}"
+      DATABASE_USER: "${DATABASE_USER:-flowiseuser}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD:-change-me}"
+    restart: on-failure
+    depends_on:
+      flowise-db:
+        condition: service_healthy

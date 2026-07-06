@@ -1,0 +1,17 @@
+services:
+  minio:
+    image: "minio/minio:latest"
+    container_name: ${CONTAINER_NAME:-minio}
+    command: "server --console-address ':9090' /data"
+    restart: "unless-stopped"
+    ports:
+      - "8760:9000/tcp"
+      - "8761:9090/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "MINIO_ROOT_USER=${MINIO_ROOT_USER:-ROOTUSER}"
+      - "MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:-change-me}"
+      - "MINIO_SERVER_URL=${MINIO_SERVER_URL:-}"
+    volumes:
+      - "/portainer/Files/AppData/Config/MinIO:/data"

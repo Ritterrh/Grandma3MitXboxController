@@ -1,0 +1,28 @@
+services:
+  swag:
+    image: "linuxserver/swag:latest"
+    container_name: ${CONTAINER_NAME:-swag}
+    restart: "unless-stopped"
+    ports:
+      - "443:443/tcp"
+      - "80:80/tcp"
+      - "443:443/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "URL=${URL:-example.com}"
+      - "VALIDATION=${VALIDATION:-http}"
+      - "SUBDOMAINS=${SUBDOMAINS:-www,}"
+      - "CERTPROVIDER=${CERTPROVIDER:-}"
+      - "DNSPLUGIN=${DNSPLUGIN:-cloudflare}"
+      - "PROPAGATION=${PROPAGATION:-}"
+      - "EMAIL=${EMAIL:-}"
+      - "ONLY_SUBDOMAINS=${ONLY_SUBDOMAINS:-false}"
+      - "EXTRA_DOMAINS=${EXTRA_DOMAINS:-}"
+      - "STAGING=${STAGING:-false}"
+      - "DISABLE_F2B=${DISABLE_F2B:-}"
+      - "SWAG_AUTORELOAD=${SWAG_AUTORELOAD:-}"
+      - "SWAG_AUTORELOAD_WATCHLIST=${SWAG_AUTORELOAD_WATCHLIST:-}"
+    volumes:
+      - "/srv/lsio/swag/config:/config"

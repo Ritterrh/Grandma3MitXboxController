@@ -1,0 +1,14 @@
+services:
+  filebrowser-161:
+    image: "filebrowser/filebrowser:s6"
+    container_name: ${CONTAINER_NAME:-filebrowser-161}
+    restart: "unless-stopped"
+    ports:
+      - "8082:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/portainer/Downloads:/srv"
+      - "/portainer/Files/AppData/Config/filebrowser/filebrowser.db:/database/filebrowser.db"
+      - "/portainer/Files/AppData/Config/filebrowser/settings.json:/config/settings.json"

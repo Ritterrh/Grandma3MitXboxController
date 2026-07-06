@@ -1,0 +1,11 @@
+services:
+  daapd:
+    image: "linuxserver/daapd:latest"
+    container_name: ${CONTAINER_NAME:-daapd}
+    restart: "unless-stopped"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Daapd:/config"
+      - "/portainer/Music:/music"

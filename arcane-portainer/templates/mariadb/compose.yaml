@@ -1,0 +1,19 @@
+services:
+  mariadb:
+    image: "linuxserver/mariadb:latest"
+    container_name: ${CONTAINER_NAME:-mariadb}
+    restart: "unless-stopped"
+    ports:
+      - "3306:3306/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}"
+      - "MYSQL_DATABASE=${MYSQL_DATABASE:-USER_DB_NAME}"
+      - "MYSQL_USER=${MYSQL_USER:-MYSQL_USER}"
+      - "MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}"
+      - "REMOTE_SQL=${REMOTE_SQL:-http://URL1/your.sql,https://URL2/your.sql}"
+      - "CLI_OPTS=${CLI_OPTS:-}"
+    volumes:
+      - "/srv/lsio/mariadb/config:/config"

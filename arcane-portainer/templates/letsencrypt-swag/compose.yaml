@@ -1,0 +1,20 @@
+services:
+  letsencrypt-swag:
+    image: "linuxserver/swag:latest"
+    container_name: ${CONTAINER_NAME:-letsencrypt-swag}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+      - "443/tcp"
+    environment:
+      - "EMAIL=${EMAIL:--Xms256m -Xmx512m}"
+      - "URL=${URL:--Xms256m -Xmx512m}"
+      - "SUBDOMAINS=${SUBDOMAINS:-www,}"
+      - "ONLY_SUBDOMAINS=${ONLY_SUBDOMAINS:-false}"
+      - "DHLEVEL=${DHLEVEL:-2048}"
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+      - "VALIDATION=${VALIDATION:-http}"
+      - "DNSPLUGIN=${DNSPLUGIN:-http}"
+    volumes:
+      - "/portainer/Files/AppData/Config/LetsEncrypt:/config"

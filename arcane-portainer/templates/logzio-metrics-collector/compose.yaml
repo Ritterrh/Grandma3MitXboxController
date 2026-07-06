@@ -1,0 +1,14 @@
+services:
+  logzio-metrics-collector:
+    image: "logzio/docker-collector-metrics"
+    container_name: ${CONTAINER_NAME:-logzio-metrics-collector}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "LOGZIO_TOKEN=${LOGZIO_TOKEN:-change-me}"
+      - "LOGZIO_MODULES=${LOGZIO_MODULES:-system,docker}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "/sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro"
+      - "/proc:/hostfs/proc:ro"
+      - "/:/hostfs:ro"

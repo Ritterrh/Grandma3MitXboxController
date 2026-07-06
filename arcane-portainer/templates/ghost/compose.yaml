@@ -1,0 +1,12 @@
+services:
+  ghost:
+    image: "ghost:latest"
+    container_name: ${CONTAINER_NAME:-ghost}
+    restart: "unless-stopped"
+    ports:
+      - "2368:2368/tcp"
+    environment:
+      - "NODE_ENV=${NODE_ENV:-development}"
+      - "URL=${URL:-http://localhost/}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Ghost:/var/lib/ghost/content"

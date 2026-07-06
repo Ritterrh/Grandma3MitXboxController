@@ -1,0 +1,19 @@
+services:
+  airsonic-advanced:
+    image: "linuxserver/airsonic-advanced:latest"
+    container_name: ${CONTAINER_NAME:-airsonic-advanced}
+    restart: "unless-stopped"
+    ports:
+      - "4040:4040/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "CONTEXT_PATH=${CONTEXT_PATH:-./data}"
+      - "JAVA_OPTS=${JAVA_OPTS:-}"
+    volumes:
+      - "/srv/lsio/airsonic-advanced/config:/config"
+      - "/srv/lsio/airsonic-advanced/music:/music"
+      - "/srv/lsio/airsonic-advanced/playlists:/playlists"
+      - "/srv/lsio/airsonic-advanced/podcasts:/podcasts"
+      - "/srv/lsio/airsonic-advanced/media:/media"

@@ -1,0 +1,15 @@
+services:
+  hishtory-server:
+    image: "linuxserver/hishtory-server:latest"
+    container_name: ${CONTAINER_NAME:-hishtory-server}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "HISHTORY_POSTGRES_DB=${HISHTORY_POSTGRES_DB:-postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable}"
+      - "HISHTORY_SQLITE_DB=${HISHTORY_SQLITE_DB:-/config/hishtory.db}"
+    volumes:
+      - "/srv/lsio/hishtory-server/config:/config"

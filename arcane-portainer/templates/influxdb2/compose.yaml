@@ -1,0 +1,31 @@
+services:
+  influxdb:
+    image: influxdb:latest
+    volumes:
+      # Mount for influxdb data directory and configuration
+      - /portainer/Files/AppData/Config/influxdb2:/var/lib/influxdb2:rw
+    ports:
+      - "8086:8086"
+  # Use the influx cli to set up an influxdb instance. 
+  influxdb_cli:
+    links:
+      - influxdb
+    image: influxdb:latest
+    volumes:
+      # Mount for influxdb data directory and configuration
+      - /portainer/Files/AppData/Config/influxdb2:/var/lib/influxdb2:rw
+      - /portainer/Files/AppData/Config/influxdb2/ssl/influxdb-selfsigned.crt:/etc/ssl/influxdb-selfsigned.crt:rw
+      - /portainer/Files/AppData/Config/influxdb2/ssl/influxdb-selfsigned.key:/etc/ssl/influxdb-selfsigned.key:rw
+    environment: 
+      - DOCKER_INFLUXDB_INIT_MODE=${DOCKER_INFLUXDB_INIT_MODE:-setup}
+      - DOCKER_INFLUXDB_INIT_USERNAME=${DOCKER_INFLUXDB_INIT_USERNAME:-myusername}
+      - DOCKER_INFLUXDB_INIT_PASSWORD=${DOCKER_INFLUXDB_INIT_PASSWORD:-change-me}
+      - DOCKER_INFLUXDB_INIT_ORG=${DOCKER_INFLUXDB_INIT_ORG:-myorg}
+      - DOCKER_INFLUXDB_INIT_BUCKET=${DOCKER_INFLUXDB_INIT_BUCKET:-mybucket}
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=${DOCKER_INFLUXDB_INIT_ADMIN_TOKEN:-change-me}
+      - INFLUXD_TLS_CERT=${INFLUXD_TLS_CERT:-/etc/ssl/influxdb-selfsigned.crt}
+      - INFLUXD_TLS_KEY=${INFLUXD_TLS_KEY:-/etc/ssl/influxdb-selfsigned.key}
+    entrypoint: ["./entrypoint.sh"]
+    restart: on-failure:10
+    depends_on:
+      - influxdb

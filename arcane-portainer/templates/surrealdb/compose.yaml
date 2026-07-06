@@ -1,0 +1,13 @@
+services:
+  surrealdb:
+    image: "surrealdb/surrealdb:latest"
+    container_name: ${CONTAINER_NAME:-surrealdb}
+    command: "start --user ${SDB_USERNAME} --pass ${SDB_PASSWORD} file:/data/database.db"
+    restart: "unless-stopped"
+    ports:
+      - "8020:8000/tcp"
+    environment:
+      - "SDB_USERNAME=${SDB_USERNAME:-default_username}"
+      - "SDB_PASSWORD=${SDB_PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/surrealdb/data:/data"

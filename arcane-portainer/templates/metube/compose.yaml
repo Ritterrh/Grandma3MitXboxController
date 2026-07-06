@@ -1,0 +1,12 @@
+services:
+  metube:
+    image: "alexta69/metube:latest"
+    container_name: ${CONTAINER_NAME:-metube}
+    restart: "unless-stopped"
+    ports:
+      - "8081:8081/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/portainer/Downloads:/downloads"

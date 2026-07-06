@@ -1,0 +1,17 @@
+services:
+  rustdesk:
+    image: "rustdesk/rustdesk-server-s6:latest"
+    container_name: ${CONTAINER_NAME:-rustdesk}
+    restart: "unless-stopped"
+    ports:
+      - "21115:21115/tcp"
+      - "21116:21116/tcp"
+      - "21116:21116/udp"
+      - "21117:21117/tcp"
+      - "21118:21118/tcp"
+      - "21119:21119/tcp"
+    environment:
+      - "RELAY=${RELAY:-rustdesk.example.com:21117}"
+      - "ENCRYPTED_ONLY=${ENCRYPTED_ONLY:-1}"
+    volumes:
+      - "/portainer/Files/AppData/Config/rustdesk:/data"

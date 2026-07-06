@@ -1,0 +1,19 @@
+services:
+  openvpn-as-422:
+    image: "linuxserver/openvpn-as:latest"
+    container_name: ${CONTAINER_NAME:-openvpn-as-422}
+    restart: "unless-stopped"
+    ports:
+      - "943/tcp"
+      - "9443/tcp"
+      - "1194/udp"
+    environment:
+      - "INTERFACE=${INTERFACE:-eth0}"
+      - "PGID=${PGID:-1000}"
+      - "PUID=${PUID:-1000}"
+      - "TZ=${TZ:-America/Chicago}"
+    volumes:
+      - "config:/config"
+
+volumes:
+  config:

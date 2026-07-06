@@ -1,0 +1,57 @@
+services:
+  proxitok-redis:
+    image: redis
+    command: redis-server --save 60 1 --loglevel warning
+    container_name: ProxiTok-REDIS
+    hostname: proxitok-redis
+    mem_limit: 256m
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    user: 1026:100
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping || exit 1"]
+    restart: on-failure:5
+
+  proxitok-signer:
+    image: ghcr.io/pablouser1/signtok:master
+    container_name: ProxiTok-SIGNER
+    hostname: proxitok-signer
+    mem_limit: 512m
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    user: 1026:100
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:8080/ || exit 1
+    restart: on-failure:5
+
+  proxitok:
+    image: ghcr.io/pablouser1/proxitok:master
+    container_name: ProxiTok
+    hostname: proxitok
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: stat /etc/passwd || exit 1
+    ports:
+      - 9770:80
+    volumes:
+      - /portainer/Files/AppData/Config/proxitok-cache:/cache
+    environment:
+      LATTE_CACHE: "${LATTE_CACHE:-/cache}"
+      API_CACHE: "${API_CACHE:-redis}"
+      REDIS_HOST: "${REDIS_HOST:-proxitok-redis}"
+      REDIS_PORT: "${REDIS_PORT:-6379}"
+      API_SIGNER: "${API_SIGNER:-remote}"
+      API_SIGNER_URL: "${API_SIGNER_URL:-http://proxitok-signer:8080/signature}"
+    restart: on-failure:5
+    depends_on:
+      proxitok-redis:
+        condition: service_healthy
+      proxitok-signer:
+        condition: service_healthy

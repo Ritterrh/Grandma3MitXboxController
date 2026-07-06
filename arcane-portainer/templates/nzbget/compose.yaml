@@ -1,0 +1,16 @@
+services:
+  nzbget:
+    image: "linuxserver/nzbget:latest"
+    container_name: ${CONTAINER_NAME:-nzbget}
+    restart: "unless-stopped"
+    ports:
+      - "6789:6789/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "NZBGET_USER=${NZBGET_USER:-nzbget}"
+      - "NZBGET_PASS=${NZBGET_PASS:-change-me}"
+    volumes:
+      - "/srv/lsio/nzbget/config:/config"
+      - "/srv/lsio/nzbget/downloads:/downloads"

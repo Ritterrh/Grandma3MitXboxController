@@ -1,0 +1,17 @@
+services:
+  syslog-ng:
+    image: "linuxserver/syslog-ng:latest"
+    container_name: ${CONTAINER_NAME:-syslog-ng}
+    restart: "unless-stopped"
+    ports:
+      - "514:5514/udp"
+      - "601:6601/tcp"
+      - "6514:6514/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "LOG_TO_STDOUT=${LOG_TO_STDOUT:-}"
+    volumes:
+      - "/srv/lsio/syslog-ng/config:/config"
+      - "/var/log:/var/log"

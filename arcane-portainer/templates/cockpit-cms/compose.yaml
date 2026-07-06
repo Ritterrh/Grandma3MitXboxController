@@ -1,0 +1,7 @@
+services:
+  cockpit-cms:
+    image: "agentejo/cockpit:latest"
+    container_name: ${CONTAINER_NAME:-cockpit-cms}
+    restart: "unless-stopped"
+    ports:
+      - "8088:80/tcp"

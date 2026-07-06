@@ -1,0 +1,11 @@
+services:
+  minecraft:
+    image: "itzg/minecraft-server:latest"
+    container_name: ${CONTAINER_NAME:-minecraft}
+    restart: "unless-stopped"
+    ports:
+      - "25565:25565/tcp"
+    environment:
+      - "EULA=${EULA:-TRUE}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Minecraft-data:/data"

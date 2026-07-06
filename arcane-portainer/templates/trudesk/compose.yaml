@@ -1,0 +1,48 @@
+services:
+  trudesk:
+    image: polonel/trudesk
+    restart: always
+    ports:
+      - 8118:8118
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    environment:
+      NODE_ENV: "${NODE_ENV:-production}"
+      TRUDESK_DOCKER: "${TRUDESK_DOCKER:-true}"
+      TD_MONGODB_SERVER: "${TD_MONGODB_SERVER:-mongo}"
+      TD_MONGODB_DATABASE: "${TD_MONGODB_DATABASE:-trudesk}"
+      ELATICSEARCH_URI: "${ELATICSEARCH_URI:-http://elasticsearch:9200}"
+      TZ: "${TZ:-Europe/Athens}"
+    volumes:
+      - /portainer/Files/AppData/Config/trudesk/uploads:/usr/src/trudesk/public/uploads
+      - /portainer/Files/AppData/Config/trudesk/backups:/usr/src/trudesk/backups
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - /portainer/Files/AppData/Config/trudesk/mongo:/var/lib/mongo
+      - /portainer/Files/AppData/Config/trudesk/mongo:/data/configdb
+      - /portainer/Files/AppData/Config/trudesk/mongo:/data/db
+
+  elasticsearch:
+    image: elasticsearch:8.0.0
+    restart: always
+    environment:
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - node.name=estrudesk01
+      - cluster.initial_master_nodes=estrudesk01
+      - discovery.seed_hosts=estrudesk01
+      - bootstrap.memory_lock=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - /volume1/docker/trudesk/elasticsearch:/usr/share/elasticsearch/data

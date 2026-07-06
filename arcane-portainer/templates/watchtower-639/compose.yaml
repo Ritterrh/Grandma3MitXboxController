@@ -1,0 +1,9 @@
+services:
+  watchtower-639:
+    image: "containrrr/watchtower"
+    container_name: ${CONTAINER_NAME:-watchtower-639}
+    restart: "always"
+    ports:
+      - "9001/tcp"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"

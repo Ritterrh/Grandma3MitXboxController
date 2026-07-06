@@ -1,0 +1,9 @@
+services:
+  hivekeep:
+    image: "ghcr.io/marlburrow/hivekeep:latest"
+    container_name: ${CONTAINER_NAME:-hivekeep}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+    volumes:
+      - "/var/lib/hivekeep:/app/data"

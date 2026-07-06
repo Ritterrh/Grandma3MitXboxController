@@ -1,0 +1,19 @@
+services:
+  tinymediamanager:
+    image: tinymediamanager/tinymediamanager:latest
+    container_name: tinymediamanager
+    environment:
+      - USER_ID=${USER_ID:-1000}
+      - GROUP_ID=${GROUP_ID:-100}
+      - ALLOW_DIRECT_VNC=${ALLOW_DIRECT_VNC:-true}
+      - LC_ALL=${LC_ALL:-en_US.UTF-8}
+      - LANG=${LANG:-en_US.UTF-8}
+      - PASSWORD=${PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/tinemediamanager/data:/data
+      - /portainer/movies:/media/movies
+      - /portainer/tvshows:/media/tvshows
+    ports:
+      - 5900:5900 # VNC port
+      - 4000:4000 # Webinterface
+    restart: unless-stopped

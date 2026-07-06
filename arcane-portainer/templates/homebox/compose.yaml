@@ -1,0 +1,12 @@
+services:
+  homebox:
+    image: "ghcr.io/sysadminsmedia/homebox:latest"
+    container_name: ${CONTAINER_NAME:-homebox}
+    restart: "unless-stopped"
+    ports:
+      - "7745:7745/tcp"
+    volumes:
+      - "data:/data"
+
+volumes:
+  data:

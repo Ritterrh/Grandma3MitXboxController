@@ -1,0 +1,15 @@
+services:
+  sql-server:
+    image: "microsoft/mssql-server-windows-developer:latest"
+    container_name: ${CONTAINER_NAME:-sql-server}
+    restart: "unless-stopped"
+    ports:
+      - "1433/tcp"
+    environment:
+      - "ACCEPT_EULA=${ACCEPT_EULA:-Y}"
+      - "SA_PASSWORD=${SA_PASSWORD:-change-me}"
+    volumes:
+      - "c-temp:C:/temp/"
+
+volumes:
+  c-temp:

@@ -1,0 +1,28 @@
+services:
+  funkwhale:
+    container_name: funkwhale
+    restart: unless-stopped
+    # change version number here when you want to do an upgrade
+    image: funkwhale/all-in-one:1.2.10
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+        # Replace 'your.funkwhale.example' with your actual domain
+      - FUNKWHALE_HOSTNAME=${FUNKWHALE_HOSTNAME:-your.funkwhale.example}
+        # Protocol may also be: http
+      - FUNKWHALE_PROTOCOL=${FUNKWHALE_PROTOCOL:-https}
+        # This limits the upload size
+      - NGINX_MAX_BODY_SIZE=${NGINX_MAX_BODY_SIZE:-100M}
+        # Bind to localhost
+      - FUNKWHALE_API_IP=${FUNKWHALE_API_IP:-127.0.0.1}
+        # Container port you want to expose on the host
+      - FUNKWHALE_API_PORT=${FUNKWHALE_API_PORT:-5500}
+        # Generate and store a secure secret key for your instance
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY:-change-me}
+        # Remove this if you expose the container directly on ports 80/443
+      - NESTED_PROXY=${NESTED_PROXY:-1}
+    volumes:
+      - /portainer/Files/AppData/Config/funkwhale/data:/data
+      - /portainer/multimedia/music/dir:/music:ro
+    ports:
+      - "5000:80"

@@ -1,0 +1,13 @@
+services:
+  socket-proxy:
+    image: "linuxserver/socket-proxy:latest"
+    container_name: ${CONTAINER_NAME:-socket-proxy}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/socket-proxy/config:/config"

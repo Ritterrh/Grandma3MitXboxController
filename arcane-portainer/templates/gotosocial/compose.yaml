@@ -1,0 +1,14 @@
+services:
+  gotosocial:
+    image: "superseriousbusiness/gotosocial:latest"
+    container_name: ${CONTAINER_NAME:-gotosocial}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    environment:
+      - "GTS_HOST=${GTS_HOST:-localhost}"
+    volumes:
+      - "gotosocial-storage:/gotosocial/storage"
+
+volumes:
+  gotosocial-storage:

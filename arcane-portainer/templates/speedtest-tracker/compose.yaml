@@ -1,0 +1,13 @@
+services:
+  speedtest-tracker:
+    container_name: speedtest-tracker
+    restart: unless-stopped
+    ports:
+      - 8288:80
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - DB_CONNECTION=${DB_CONNECTION:-sqlite}
+    volumes:
+      - /portainer/Files/AppData/Config/speedtest-tracker:/config
+    image: lscr.io/linuxserver/speedtest-tracker:latest

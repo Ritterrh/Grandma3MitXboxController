@@ -1,0 +1,12 @@
+services:
+  codiad:
+    image: "linuxserver/codiad:latest"
+    container_name: ${CONTAINER_NAME:-codiad}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Codiad:/config"

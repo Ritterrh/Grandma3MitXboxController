@@ -1,0 +1,14 @@
+services:
+  stirling-pdf:
+    image: "frooodle/s-pdf:0.18.1"
+    container_name: ${CONTAINER_NAME:-stirling-pdf}
+    restart: "unless-stopped"
+    ports:
+      - "5417:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "DOCKER_ENABLE_SECURITY=${DOCKER_ENABLE_SECURITY:-}"
+    volumes:
+      - "/portainer/Files/AppData/Config/StirlingPDF:/configs"
+      - "/portainer/Files/AppData/Libraries/StirlingPDF/tessdata:/usr/share/tesseract-ocr/5/tessdata"

@@ -1,0 +1,7 @@
+services:
+  dradis:
+    image: "raesene/dradis:latest"
+    container_name: ${CONTAINER_NAME:-dradis}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"

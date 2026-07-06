@@ -1,0 +1,7 @@
+services:
+  sshwifty:
+    image: "niruix/sshwifty:latest"
+    container_name: ${CONTAINER_NAME:-sshwifty}
+    restart: "unless-stopped"
+    ports:
+      - "8182:8182/tcp"

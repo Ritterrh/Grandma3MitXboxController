@@ -1,0 +1,21 @@
+services:
+  calibreweb:
+    image: "linuxserver/calibre-web:latest"
+    container_name: ${CONTAINER_NAME:-calibreweb}
+    restart: "unless-stopped"
+    ports:
+      - "8083/tcp"
+    environment:
+      - "PUID=${PUID:-15000}"
+      - "PGID=${PGID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+      - "DOCKER_MODS=${DOCKER_MODS:-linuxserver/mods:universal-calibre}"
+      - "OAUTHLIB_RELAX_TOKEN_SCOPE=${OAUTHLIB_RELAX_TOKEN_SCOPE:-change-me}"
+    volumes:
+      - "/opt/mediadepot/apps/calibre-web/config:/config"
+      - "/media/storage/ebooks:/books"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.calibreweb.loadbalancer.server.port=8083"
+      - "traefik.http.routers.calibreweb.entrypoints=websecure"
+      - "traefik.http.routers.calibreweb.tls.certresolver=mydnschallenge"

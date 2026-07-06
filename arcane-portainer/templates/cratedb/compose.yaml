@@ -1,0 +1,13 @@
+services:
+  cratedb:
+    image: "crate:latest"
+    container_name: ${CONTAINER_NAME:-cratedb}
+    restart: "unless-stopped"
+    ports:
+      - "4200/tcp"
+      - "4300/tcp"
+    volumes:
+      - "data:/data"
+
+volumes:
+  data:

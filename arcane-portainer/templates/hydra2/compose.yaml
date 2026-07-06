@@ -1,0 +1,18 @@
+services:
+  hydra2:
+    image: "linuxserver/hydra2:latest"
+    container_name: ${CONTAINER_NAME:-hydra2}
+    restart: "unless-stopped"
+    ports:
+      - "5076/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-America/Chicago}"
+    volumes:
+      - "config:/config"
+      - "downloads:/downloads"
+
+volumes:
+  config:
+  downloads:

@@ -1,0 +1,23 @@
+services:
+
+  tabby:
+    image: parksauce/tabby
+    container_name: tabby
+    ports:
+      - 8010:80
+    restart: unless-stopped
+    
+  tabby-db:
+    image: linuxserver/mariadb
+    container_name: tabby-db
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+      - TZ=${TZ:-Europe/Athens}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-tabby}
+      - MYSQL_USER=${MYSQL_USER:-tabby}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/tabby/db:/config
+    restart: unless-stopped

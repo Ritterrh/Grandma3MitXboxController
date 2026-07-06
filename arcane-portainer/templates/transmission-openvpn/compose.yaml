@@ -1,0 +1,21 @@
+services:
+  transmission-openvpn:
+    image: "haugene/transmission-openvpn:3.7.1"
+    container_name: ${CONTAINER_NAME:-transmission-openvpn}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "9091:9091/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "OPENVPN_PROVIDER=${OPENVPN_PROVIDER:-MULLVAD}"
+      - "OPENVPN_CONFIG=${OPENVPN_CONFIG:-}"
+      - "OPENVPN_USERNAME=${OPENVPN_USERNAME:-user}"
+      - "OPENVPN_PASSWORD=${OPENVPN_PASSWORD:-change-me}"
+      - "LOCAL_NETWORK=${LOCAL_NETWORK:-192.168.0.0/24}"
+      - "TRANSMISSION_WATCH_DIR_ENABLED=${TRANSMISSION_WATCH_DIR_ENABLED:-true}"
+    volumes:
+      - "/portainer/Files/AppData/Config/transmission-openvpn:/config"
+      - "/portainer/Downloads:/data"
+      - "/etc/localtime:/etc/localtime"

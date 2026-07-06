@@ -1,0 +1,18 @@
+services:
+  fireshare:
+    container_name: fireshare
+    image: shaneisrael/fireshare:latest
+    restart: unless-stopped
+    ports:
+      - "8888:80"
+    volumes:
+      - /portainer/Files/AppData/Config/fireshare/data:/data
+      - /portainer/Files/AppData/Config/fireshare/processed:/processed
+      - /portainer/Files/AppData/Config/fireshare/videos:/videos
+    environment:
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-fireadmin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - SECRET_KEY=${SECRET_KEY:-change-me}
+      - MINUTES_BETWEEN_VIDEO_SCANS=${MINUTES_BETWEEN_VIDEO_SCANS:-1}
+      - PUID=${PUID:-998}
+      - PGID=${PGID:-100}

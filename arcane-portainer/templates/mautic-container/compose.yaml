@@ -1,0 +1,15 @@
+services:
+  mautic-container:
+    image: "mautic/mautic:latest"
+    container_name: ${CONTAINER_NAME:-mautic-container}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "MAUTIC_DB_HOST=${MAUTIC_DB_HOST:-localhost}"
+      - "MAUTIC_DB_PASSWORD=${MAUTIC_DB_PASSWORD:-change-me}"
+    volumes:
+      - "var-www-html:/var/www/html"
+
+volumes:
+  var-www-html:

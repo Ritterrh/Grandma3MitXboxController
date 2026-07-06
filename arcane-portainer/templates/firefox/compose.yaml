@@ -1,0 +1,15 @@
+services:
+  firefox:
+    image: "linuxserver/firefox:latest"
+    container_name: ${CONTAINER_NAME:-firefox}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "FIREFOX_CLI=${FIREFOX_CLI:-https://www.linuxserver.io/}"
+    volumes:
+      - "/srv/lsio/firefox/config:/config"

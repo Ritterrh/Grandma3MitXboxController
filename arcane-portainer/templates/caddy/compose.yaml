@@ -1,0 +1,13 @@
+services:
+  caddy:
+    image: "caddy:latest"
+    container_name: ${CONTAINER_NAME:-caddy}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+      - "2019:2019/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Caddy/Data:/data"
+      - "/portainer/Files/AppData/Config/Caddy/Config:/config"
+      - "/portainer/Files/AppData/Config/Caddy/Caddyfile:/etc/caddy/Caddyfile"

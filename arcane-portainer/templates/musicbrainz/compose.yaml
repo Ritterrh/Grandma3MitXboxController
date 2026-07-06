@@ -1,0 +1,20 @@
+services:
+  musicbrainz:
+    image: "linuxserver/musicbrainz:latest"
+    container_name: ${CONTAINER_NAME:-musicbrainz}
+    restart: "unless-stopped"
+    ports:
+      - "5000/tcp"
+    environment:
+      - "BRAINZCODE=${BRAINZCODE:-}"
+      - "WEBADDRESS=${WEBADDRESS:-}"
+      - "PGID=${PGID:-1000}"
+      - "PUID=${PUID:-1000}"
+      - "TZ=${TZ:-America/Chicago}"
+    volumes:
+      - "config:/config"
+      - "data:/data"
+
+volumes:
+  config:
+  data:

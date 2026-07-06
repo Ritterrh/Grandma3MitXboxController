@@ -1,0 +1,9 @@
+services:
+  chowdown:
+    image: "gregyankovoy/chowdown:latest"
+    container_name: ${CONTAINER_NAME:-chowdown}
+    restart: "unless-stopped"
+    ports:
+      - "4000:4000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Chowdown:/config"

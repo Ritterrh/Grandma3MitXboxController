@@ -1,0 +1,14 @@
+services:
+  nextcloud:
+    image: "linuxserver/nextcloud:latest"
+    container_name: ${CONTAINER_NAME:-nextcloud}
+    restart: "unless-stopped"
+    ports:
+      - "443:443/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/nextcloud/config:/config"
+      - "/srv/lsio/nextcloud/data:/data"

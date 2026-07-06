@@ -1,0 +1,18 @@
+services:
+  syncthing:
+    image: "linuxserver/syncthing:latest"
+    container_name: ${CONTAINER_NAME:-syncthing}
+    restart: "unless-stopped"
+    ports:
+      - "8384:8384/tcp"
+      - "22000:22000/tcp"
+      - "22000:22000/udp"
+      - "21027:21027/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/syncthing/config:/config"
+      - "/srv/lsio/syncthing/data1:/data1"
+      - "/srv/lsio/syncthing/data2:/data2"

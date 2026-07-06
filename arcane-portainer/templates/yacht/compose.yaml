@@ -1,0 +1,13 @@
+services:
+  yacht:
+    image: "selfhostedpro/yacht:latest"
+    container_name: ${CONTAINER_NAME:-yacht}
+    restart: "unless-stopped"
+    ports:
+      - "8001:8000/tcp"
+    volumes:
+      - "yacht:/config"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+volumes:
+  yacht:

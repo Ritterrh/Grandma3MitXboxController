@@ -1,0 +1,11 @@
+services:
+  tailscale:
+    image: "tailscale/tailscale:stable"
+    container_name: ${CONTAINER_NAME:-tailscale}
+    command: "tailscale up --authkey=$AUTH_KEY"
+    restart: "unless-stopped"
+    environment:
+      - "AUTH_KEY=${AUTH_KEY:-}"
+    volumes:
+      - "/portainer/Files/AppData/Config/tailscale:/var/lib/tailscale"
+      - "/dev/net/tun:/dev/net/tun"

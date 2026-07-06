@@ -1,0 +1,12 @@
+services:
+  twitch-points-miner:
+    image: "rdavidoff/twitch-channel-points-miner-v2:latest"
+    container_name: ${CONTAINER_NAME:-twitch-points-miner}
+    restart: "unless-stopped"
+    ports:
+      - "5000:5000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/TwitchPointsMiner/run.py:/usr/src/app/run.py"
+      - "/portainer/Files/AppData/TwitchPointsMiner/cookies:/usr/src/app/cookies"
+      - "/portainer/Files/AppData/TwitchPointsMiner/logs:/usr/src/app/logs"
+      - "/portainer/Files/AppData/TwitchPointsMiner/analytics:/usr/src/app/analytics"

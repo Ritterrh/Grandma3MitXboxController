@@ -1,0 +1,11 @@
+services:
+  jfa-go:
+    image: "hrfee/jfa-go:latest"
+    container_name: ${CONTAINER_NAME:-jfa-go}
+    restart: "unless-stopped"
+    ports:
+      - "8056:8056/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Jelllyfin:/jf"
+      - "/portainer/Files/AppData/Config/jfago:/data"
+      - "/etc/localtime:/etc/localtime:ro"

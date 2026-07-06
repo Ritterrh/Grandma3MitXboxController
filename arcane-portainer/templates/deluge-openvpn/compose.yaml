@@ -1,0 +1,16 @@
+services:
+  deluge-openvpn:
+    image: "sgtsquiggs/deluge-openvpn:latest"
+    container_name: ${CONTAINER_NAME:-deluge-openvpn}
+    restart: "unless-stopped"
+    ports:
+      - "8112:8112/tcp"
+    environment:
+      - "PUID=${PUID:-1001}"
+      - "OPENVPN_PROVIDER=${OPENVPN_PROVIDER:-MULLVAD}"
+      - "OPENVPN_USERNAME=${OPENVPN_USERNAME:-user}"
+      - "OPENVPN_PASSWORD=${OPENVPN_PASSWORD:-change-me}"
+    volumes:
+      - "/etc/localtime:/etc/localtime"
+      - "/portainer/Downloads:/downloads"
+      - "/portainer/Files/AppData/Config/DelugeOpenVPN/config:/config"

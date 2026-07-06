@@ -1,0 +1,14 @@
+services:
+  dokuwiki:
+    image: "linuxserver/dokuwiki:latest"
+    container_name: ${CONTAINER_NAME:-dokuwiki}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/dokuwiki/config:/config"

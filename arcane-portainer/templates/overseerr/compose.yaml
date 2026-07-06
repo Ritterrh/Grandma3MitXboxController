@@ -1,0 +1,19 @@
+services:
+  overseerr:
+    image: "lscr.io/linuxserver/overseerr:latest"
+    container_name: ${CONTAINER_NAME:-overseerr}
+    restart: "unless-stopped"
+    ports:
+      - "5055/tcp"
+    environment:
+      - "PGID=${PGID:-15000}"
+      - "PUID=${PUID:-15000}"
+      - "TZ=${TZ:-America/Los_Angeles}"
+    volumes:
+      - "/opt/mediadepot/apps/overseerr:/config"
+      - "/etc/localtime:/etc/localtime:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.overseerr.loadbalancer.server.port=5055"
+      - "traefik.http.routers.overseerr.entrypoints=websecure"
+      - "traefik.http.routers.overseerr.tls.certresolver=mydnschallenge"

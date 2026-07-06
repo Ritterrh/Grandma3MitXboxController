@@ -1,0 +1,24 @@
+services:
+  hedgedoc:
+    image: "linuxserver/hedgedoc:latest"
+    container_name: ${CONTAINER_NAME:-hedgedoc}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "DB_HOST=${DB_HOST:-<hostname or ip>}"
+      - "DB_PORT=${DB_PORT:-3306}"
+      - "DB_USER=${DB_USER:-hedgedoc}"
+      - "DB_PASS=${DB_PASS:-change-me}"
+      - "DB_NAME=${DB_NAME:-hedgedoc}"
+      - "CMD_DOMAIN=${CMD_DOMAIN:-localhost}"
+      - "CMD_URL_ADDPORT=${CMD_URL_ADDPORT:-false}"
+      - "CMD_PROTOCOL_USESSL=${CMD_PROTOCOL_USESSL:-false}"
+      - "CMD_PORT=${CMD_PORT:-3000}"
+      - "CMD_ALLOW_ORIGIN=${CMD_ALLOW_ORIGIN:-['localhost']}"
+      - "CMD_DB_DIALECT=${CMD_DB_DIALECT:-}"
+    volumes:
+      - "/srv/lsio/hedgedoc/config:/config"

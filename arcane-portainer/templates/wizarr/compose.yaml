@@ -1,0 +1,17 @@
+services:
+  wizarr:
+    image: "ghcr.io/wizarrrr/wizarr"
+    container_name: ${CONTAINER_NAME:-wizarr}
+    restart: "unless-stopped"
+    ports:
+      - "5690/tcp"
+    environment:
+      - "APP_URL=${APP_URL:-https://wizarr.domain.com}"
+    volumes:
+      - "/opt/mediadepot/apps/wizarr:/data/database"
+      - "/etc/localtime:/etc/localtime:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.wizarr.loadbalancer.server.port=5690"
+      - "traefik.http.routers.wizarr.entrypoints=websecure"
+      - "traefik.http.routers.wizarr.tls.certresolver=mydnschallenge"

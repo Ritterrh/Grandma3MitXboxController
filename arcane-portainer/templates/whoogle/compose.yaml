@@ -1,0 +1,9 @@
+services:
+  whoogle:
+    image: "benbusby/whoogle-search:latest"
+    container_name: ${CONTAINER_NAME:-whoogle}
+    restart: "unless-stopped"
+    ports:
+      - "5001:5000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Whoogle:/config"

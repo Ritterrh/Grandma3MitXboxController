@@ -1,0 +1,48 @@
+services:
+  freescout-db:
+    image: mariadb
+    container_name: Freescout-DB
+    hostname: freescout-db
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -P 3306 -prootpass | grep 'mysqld is alive' || exit 1"]
+    volumes:
+      - /portainer/Files/AppData/Config/freescout/db:/var/lib/mysql:rw
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-change-me}"
+      MYSQL_USER: "${MYSQL_USER:-freescoutuser}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:-change-me}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE:-freescout}"
+    restart: on-failure:5
+
+  freescout:
+    image: tiredofit/freescout:latest
+    container_name: Freescout
+    hostname: freescout
+    mem_limit: 1g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: curl -f http://localhost:80/ || exit 1
+    ports:
+      - 5135:80
+    volumes:
+      - /portainer/Files/AppData/Config/freescout/data:/data:rw
+      - /portainer/Files/AppData/Config/freescout/logs/:/www/logs:rw
+    environment:
+      ADMIN_EMAIL: "${ADMIN_EMAIL:-yourownemail}"
+      ADMIN_PASS: "${ADMIN_PASS:-change-me}"
+      SITE_URL: "${SITE_URL:-https://freescout.yourdomain.com}"
+      ENABLE_SSL_PROXY: "${ENABLE_SSL_PROXY:-true}"
+      DB_HOST: "${DB_HOST:-freescout-db}"
+      DB_NAME: "${DB_NAME:-freescout}"
+      DB_USER: "${DB_USER:-freescoutuser}"
+      DB_PASS: "${DB_PASS:-change-me}"
+    restart: on-failure:5
+    depends_on:
+      freescout-db:
+        condition: service_healthy

@@ -1,0 +1,12 @@
+services:
+  tt-rss:
+    image: "lunik1/tt-rss:latest"
+    container_name: ${CONTAINER_NAME:-tt-rss}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/tt-rss:/config"

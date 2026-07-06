@@ -1,0 +1,15 @@
+services:
+  pyload-ng:
+    image: "linuxserver/pyload-ng:latest"
+    container_name: ${CONTAINER_NAME:-pyload-ng}
+    restart: "unless-stopped"
+    ports:
+      - "8000:8000/tcp"
+      - "9666:9666/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/pyload-ng/config:/config"
+      - "/srv/lsio/pyload-ng/downloads:/downloads"

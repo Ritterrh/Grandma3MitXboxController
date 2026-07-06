@@ -1,0 +1,47 @@
+services:
+  mastodon:
+    image: lscr.io/linuxserver/mastodon:latest
+    container_name: mastodon
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+      - LOCAL_DOMAIN=${LOCAL_DOMAIN:-example.com}
+      - REDIS_HOST=${REDIS_HOST:-redis}
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - DB_HOST=${DB_HOST:-db}
+      - DB_USER=${DB_USER:-mastodon}
+      - DB_NAME=${DB_NAME:-mastodon}
+      - DB_PASS=${DB_PASS:-change-me}
+      - DB_PORT=${DB_PORT:-5432}
+      - ES_ENABLED=${ES_ENABLED:-false}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE:-change-me}
+      - OTP_SECRET=${OTP_SECRET:-change-me}
+      - VAPID_PRIVATE_KEY=${VAPID_PRIVATE_KEY:-change-me}
+      - VAPID_PUBLIC_KEY=${VAPID_PUBLIC_KEY:-}
+      - SMTP_SERVER=${SMTP_SERVER:-mail.example.com}
+      - SMTP_PORT=${SMTP_PORT:-25}
+      - SMTP_LOGIN=${SMTP_LOGIN:-}
+      - SMTP_PASSWORD=${SMTP_PASSWORD:-change-me}
+      - SMTP_FROM_ADDRESS=${SMTP_FROM_ADDRESS:-notifications@example.com}
+      - S3_ENABLED=${S3_ENABLED:-false}
+      - WEB_DOMAIN=${WEB_DOMAIN:-mastodon.example.com}
+      - ES_HOST=${ES_HOST:-es}
+      - ES_PORT=${ES_PORT:-9200}
+      - ES_USER=${ES_USER:-elastic}
+      - ES_PASS=${ES_PASS:-change-me}
+      - S3_BUCKET=${S3_BUCKET:-}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-change-me}
+      - S3_ALIAS_HOST=${S3_ALIAS_HOST:-localhost}
+      - SIDEKIQ_ONLY=${SIDEKIQ_ONLY:-false}
+      - SIDEKIQ_QUEUE=${SIDEKIQ_QUEUE:-}
+      - SIDEKIQ_DEFAULT=${SIDEKIQ_DEFAULT:-false}
+      - SIDEKIQ_THREADS=${SIDEKIQ_THREADS:-5}
+      - DB_POOL=${DB_POOL:-5}
+    volumes:
+      - /portainer/Files/AppData/Config/mastodon:/config
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped

@@ -1,0 +1,11 @@
+services:
+  sematext-agent:
+    image: "sematext/sematext-agent-docker:latest"
+    container_name: ${CONTAINER_NAME:-sematext-agent}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "LOGSENE_TOKEN=${LOGSENE_TOKEN:-change-me}"
+      - "SPM_TOKEN=${SPM_TOKEN:-change-me}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"

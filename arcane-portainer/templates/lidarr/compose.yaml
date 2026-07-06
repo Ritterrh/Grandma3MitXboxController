@@ -1,0 +1,15 @@
+services:
+  lidarr:
+    image: "linuxserver/lidarr:latest"
+    container_name: ${CONTAINER_NAME:-lidarr}
+    restart: "unless-stopped"
+    ports:
+      - "8686:8686/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/lidarr/config:/config"
+      - "/srv/lsio/lidarr/music:/music"
+      - "/srv/lsio/lidarr/downloads:/downloads"

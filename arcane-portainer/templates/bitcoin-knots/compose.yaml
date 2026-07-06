@@ -1,0 +1,15 @@
+services:
+  bitcoin-knots:
+    image: "linuxserver/bitcoin-knots:latest"
+    container_name: ${CONTAINER_NAME:-bitcoin-knots}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+      - "8333:8333/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/bitcoin-knots/config:/config"

@@ -1,0 +1,13 @@
+services:
+  tautulli:
+    image: "linuxserver/tautulli:latest"
+    container_name: ${CONTAINER_NAME:-tautulli}
+    restart: "unless-stopped"
+    ports:
+      - "8181:8181/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/tautulli/config:/config"

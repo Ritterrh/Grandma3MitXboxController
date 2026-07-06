@@ -1,0 +1,14 @@
+services:
+  postgresql:
+    image: "postgres:latest"
+    container_name: ${CONTAINER_NAME:-postgresql}
+    restart: "unless-stopped"
+    ports:
+      - "5432:5432/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}"
+      - "TZ=${TZ:-America/New_York}"
+    volumes:
+      - "/portainer/Files/AppData/Config/PostgreSQL:/var/lib/postgresql/data"

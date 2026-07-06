@@ -1,0 +1,26 @@
+services:
+  opc-router:
+    image: opcrouter/runtime:latest
+    restart: unless-stopped
+    ports:
+      - "49420:49420"
+      - "8080:8080"
+      - "8081:8081"
+    environment:
+      - OR_I_ACCEPT_EULA=${OR_I_ACCEPT_EULA:-}
+      - INITIAL_USERNAME=${INITIAL_USERNAME:-user}
+      - INITIAL_PASSWORD=${INITIAL_PASSWORD:-change-me}
+    volumes:
+      - type: volume
+        source: opcrouter-configdb
+        target: /data/database
+      - type: volume
+        source: opcrouter-inray
+        target: /inray
+      - type: volume
+        source: opcrouter-logs
+        target: /var/log/opcrouter
+volumes:
+  opcrouter-configdb:
+  opcrouter-inray:
+  opcrouter-logs:

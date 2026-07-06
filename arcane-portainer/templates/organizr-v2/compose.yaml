@@ -1,0 +1,12 @@
+services:
+  organizr-v2:
+    image: "organizr/organizr:latest"
+    container_name: ${CONTAINER_NAME:-organizr-v2}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Organizr:/config"

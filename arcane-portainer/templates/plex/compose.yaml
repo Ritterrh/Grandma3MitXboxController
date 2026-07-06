@@ -1,0 +1,17 @@
+services:
+  plex:
+    image: "linuxserver/plex:latest"
+    container_name: ${CONTAINER_NAME:-plex}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "VERSION=${VERSION:-docker}"
+      - "PLEX_CLAIM=${PLEX_CLAIM:-}"
+    volumes:
+      - "/srv/lsio/plex/config:/config"
+      - "/srv/lsio/plex/tv:/tv"
+      - "/srv/lsio/plex/movies:/movies"

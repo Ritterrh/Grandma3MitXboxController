@@ -1,0 +1,14 @@
+services:
+  filestash:
+    container_name: filestash
+    hostname: filestash
+    image: machines/filestash:latest
+    restart: unless-stopped
+    expose:
+      - 8334                                      # Web UI
+    environment:
+      - APPLICATION_URL=${APPLICATION_URL:-MYHOSTIP}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /portainer/Files/AppData/Config/filestash/data:/app/data/state
+      - /mnt/MYSMBMOUNT:/mnt/MYSMBMOUNT:shared    # Your SMB mount

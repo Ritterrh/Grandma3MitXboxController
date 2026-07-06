@@ -1,0 +1,14 @@
+services:
+  homebridge-debian:
+    image: "homebridge/homebridge:ubuntu-arm32v7"
+    container_name: ${CONTAINER_NAME:-homebridge-debian}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "PGID=${PGID:-1000}"
+      - "PUID=${PUID:-1000}"
+      - "HOMEBRIDGE_CONFIG_UI=${HOMEBRIDGE_CONFIG_UI:-1}"
+      - "HOMEBRIDGE_CONFIG_UI_PORT=${HOMEBRIDGE_CONFIG_UI_PORT:-8581}"
+      - "TZ=${TZ:-America/New_York}"
+    volumes:
+      - "/portainer/Files/AppData/Config/debian-homebridge:/homebridge"

@@ -1,0 +1,94 @@
+services:
+  immich-server:
+    container_name: immich_server
+    image: altran1502/immich-server:release
+    entrypoint: ["/bin/sh", "./start-server.sh"]
+    volumes:
+      - /portainer/Files/AppData/Config/immich:/usr/src/app/upload
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      - IMMICH_SERVER_URL=${IMMICH_SERVER_URL:-http://immich-server:3001}
+      #- IMMICH_MACHINE_LEARNING_URL=http://immich-machine-learning:3303
+      - DB_HOSTNAME=${DB_HOSTNAME:-immich_postgres}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - DB_DATABASE_NAME=${DB_DATABASE_NAME:-immich}
+    depends_on:
+      - immich-redis
+      - immich-database
+    restart: always
+
+  immich-microservices:
+    container_name: immich_microservices
+    image: altran1502/immich-server:release
+    entrypoint: ["/bin/sh", "./start-microservices.sh"]
+    volumes:
+      - /portainer/Files/AppData/Config/immich:/usr/src/app/upload
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      - DB_HOSTNAME=${DB_HOSTNAME:-immich_postgres}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - DB_DATABASE_NAME=${DB_DATABASE_NAME:-immich}
+    depends_on:
+      - immich-redis
+      - immich-database
+    restart: always
+
+  immich-machine-learning:
+    container_name: immich_machine_learning
+    image: altran1502/immich-machine-learning:release
+    entrypoint: ["/bin/sh", "./entrypoint.sh"]
+    volumes:
+      - /portainer/Files/AppData/Config/immich:/usr/src/app/upload
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      #- IMMICH_MACHINE_LEARNING_URL=http://immich-machine-learning:3303
+    depends_on:
+      - immich-database
+    restart: always
+
+  immich-web:
+    container_name: immich_web
+    image: altran1502/immich-web:release
+    entrypoint: ["/bin/sh", "./entrypoint.sh"]
+    environment:
+      #- IMMICH_WEB_URL=http://immich-web:3300
+      - VITE_SERVER_ENDPOINT=${VITE_SERVER_ENDPOINT:-http://immich-web:2283/api}
+    restart: always
+
+  immich-redis:
+    container_name: immich_redis
+    image: redis:6.2
+    restart: always
+    environment:
+      - REDIS_HOSTNAME=${REDIS_HOSTNAME:-immich_redis}
+
+  immich-database:
+    container_name: immich_postgres
+    image: postgres:14
+    environment:
+      - DB_HOSTNAME=${DB_HOSTNAME:-immich_postgres}
+      - DB_USERNAME=${DB_USERNAME:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - DB_DATABASE_NAME=${DB_DATABASE_NAME:-immich}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_DB=${POSTGRES_DB:-immich}
+    volumes:
+      - /portainer/Files/AppData/Config/immich/pgdata:/var/lib/postgresql/data
+    restart: always
+
+  immich-proxy:
+    container_name: immich_proxy
+    image: altran1502/immich-proxy:release
+    environment:
+      - IMMICH_SERVER_URL=${IMMICH_SERVER_URL:-http://immich-server:3001}
+      - IMMICH_WEB_URL=${IMMICH_WEB_URL:-http://immich-web:3000}
+    ports:
+      - 2283:8080
+    logging:
+      driver: none
+    depends_on:
+      - immich-server
+    restart: always

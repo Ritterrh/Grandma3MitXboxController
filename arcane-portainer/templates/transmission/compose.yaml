@@ -1,0 +1,23 @@
+services:
+  transmission:
+    image: "linuxserver/transmission:latest"
+    container_name: ${CONTAINER_NAME:-transmission}
+    restart: "unless-stopped"
+    ports:
+      - "9091:9091/tcp"
+      - "51413:51413/tcp"
+      - "51413:51413/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "TRANSMISSION_WEB_HOME=${TRANSMISSION_WEB_HOME:-}"
+      - "USER=${USER:-user}"
+      - "PASS=${PASS:-change-me}"
+      - "WHITELIST=${WHITELIST:-}"
+      - "PEERPORT=${PEERPORT:-8080}"
+      - "HOST_WHITELIST=${HOST_WHITELIST:-}"
+    volumes:
+      - "/srv/lsio/transmission/config:/config"
+      - "/srv/lsio/transmission/downloads:/downloads"
+      - "/srv/lsio/transmission/watch:/watch"

@@ -1,0 +1,16 @@
+services:
+  forgejo:
+    image: "codeberg.org/forgejo/forgejo:14"
+    container_name: ${CONTAINER_NAME:-forgejo}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "222:22/tcp"
+    environment:
+      - "USER_UID=${USER_UID:-1000}"
+      - "USER_GID=${USER_GID:-1000}"
+    volumes:
+      - "data:/data"
+
+volumes:
+  data:

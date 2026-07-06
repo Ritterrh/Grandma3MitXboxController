@@ -1,0 +1,12 @@
+services:
+  clamav:
+    image: "mkodockx/docker-clamav:alpine"
+    container_name: ${CONTAINER_NAME:-clamav}
+    restart: "unless-stopped"
+    ports:
+      - "3310:3310/tcp"
+    volumes:
+      - "/etc/timezone:/etc/timezone"
+      - "/etc/localtime:/etc/localtime"
+      - "/portainer/Files/AppData/Config/clamav/config:/etc/clamav"
+      - "/portainer/Files/AppData/Config/clamav/virus_definitions:/var/lib/clamav"

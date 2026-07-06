@@ -1,0 +1,51 @@
+services:
+    #FPM image
+    koillection:
+        container_name: koillection
+        image: koillection/koillection:dev
+        restart: always
+        ports:
+            - 181:80
+        environment:
+            - APP_ENV=${APP_ENV:-dev}
+            - APP_DEBUG=${APP_DEBUG:-1}
+            - DB_DRIVER=${DB_DRIVER:-pdo_pgsql}
+            - DB_NAME=${DB_NAME:-koillection}
+            - DB_HOST=${DB_HOST:-postgresql}
+            - DB_PORT=${DB_PORT:-25432}
+            - DB_USER=${DB_USER:-postgres}
+            - DB_PASSWORD=${DB_PASSWORD:-change-me}
+            - DB_VERSION=${DB_VERSION:-14}
+            - PHP_TZ=${PHP_TZ:-Europe/Athens}
+            - HTTPS_ENABLED=${HTTPS_ENABLED:-0}
+        depends_on:
+            - koinmysql
+            - postgresql
+        volumes:
+            - /portainer/Files/AppData/Config/koillection/public/uploads:/var/www/koillection/public/uploads
+            - /portainer/Files/AppData/Config/koillection:/var/www/koillection
+
+    postgresql:
+        container_name: postgresql
+        image: postgres:14
+        environment:
+            - POSTGRES_DB=${POSTGRES_DB:-koillection}
+            - POSTGRES_USER=${POSTGRES_USER:-postgres}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+            - POSTGRES_HOST_AUTH_METHOD=${POSTGRES_HOST_AUTH_METHOD:-trust}
+        ports:
+            - 25432:5432
+        volumes:
+            - /portainer/Files/AppData/Config/postgresql:/var/lib/postgresql/data
+
+    koinmysql:
+        container_name: mysql
+        image: mysql:latest
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+            - MYSQL_DATABASE=${MYSQL_DATABASE:-koillection}
+        ports:
+            - 43306:3306
+        volumes:
+            - /portainer/Files/AppData/Config/koillection/koinmysql:/var/lib/mysql

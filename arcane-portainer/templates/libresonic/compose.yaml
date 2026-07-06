@@ -1,0 +1,25 @@
+services:
+  libresonic:
+    image: "linuxserver/libresonic:latest"
+    container_name: ${CONTAINER_NAME:-libresonic}
+    restart: "unless-stopped"
+    ports:
+      - "4040/tcp"
+    environment:
+      - "CONTEXT_PATH=${CONTEXT_PATH:-./data}"
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-America/Chicago}"
+    volumes:
+      - "music:/music"
+      - "playlists:/playlists"
+      - "podcasts:/podcasts"
+      - "media:/media"
+      - "config:/config"
+
+volumes:
+  music:
+  playlists:
+  podcasts:
+  media:
+  config:

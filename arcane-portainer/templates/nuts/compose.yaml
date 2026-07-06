@@ -1,0 +1,9 @@
+services:
+  nuts:
+    image: "upshift/nut-upsd"
+    container_name: ${CONTAINER_NAME:-nuts}
+    restart: "always"
+    ports:
+      - "3493:3493/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/nuts:/app"

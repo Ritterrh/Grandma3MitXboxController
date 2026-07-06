@@ -1,0 +1,14 @@
+services:
+  remmina:
+    image: "linuxserver/remmina:latest"
+    container_name: ${CONTAINER_NAME:-remmina}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/remmina/config:/config"

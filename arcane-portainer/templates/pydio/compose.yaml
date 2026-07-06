@@ -1,0 +1,13 @@
+services:
+  pydio:
+    image: "linuxserver/pydio:latest"
+    container_name: ${CONTAINER_NAME:-pydio}
+    restart: "unless-stopped"
+    ports:
+      - "443/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Pydio:/config"
+      - "/portainer/Files/AppData/Pydio:/data"

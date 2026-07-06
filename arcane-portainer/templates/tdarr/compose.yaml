@@ -1,0 +1,27 @@
+services:
+  tdarr:
+    container_name: tdarr
+    image: ghcr.io/haveagitgat/tdarr:latest
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - 8265:8265 # webUI port
+      - 8266:8266 # server port
+      - 8267:8267 # Internal node port
+      - 8268:8268 # Example extra node port
+    environment:
+      - TZ=${TZ:-Europe/Athens}
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - UMASK_SET=${UMASK_SET:-002}
+      - serverIP=${serverIP:-0.0.0.0}
+      - serverPort=${serverPort:-8266}
+      - webUIPort=${webUIPort:-8265}
+      - internalNode=${internalNode:-true}
+      - nodeID=${nodeID:-MyInternalNode}
+    volumes:
+      - /portainer/Files/AppData/Config/tdarr/server:/app/server
+      - /portainer/Files/AppData/Config/tdarr/configs:/app/configs
+      - /portainer/Files/AppData/Config/logs:/app/logs
+      - /portainer/media:/media
+      - /portainer/transcode_cache:/temp

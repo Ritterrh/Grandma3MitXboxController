@@ -1,0 +1,25 @@
+services:
+  speedtest-tracker-560:
+    image: "linuxserver/speedtest-tracker:latest"
+    container_name: ${CONTAINER_NAME:-speedtest-tracker-560}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "APP_KEY=${APP_KEY:-}"
+      - "APP_URL=${APP_URL:-}"
+      - "DB_CONNECTION=${DB_CONNECTION:-sqlite}"
+      - "SPEEDTEST_SCHEDULE=${SPEEDTEST_SCHEDULE:-}"
+      - "SPEEDTEST_SERVERS=${SPEEDTEST_SERVERS:-}"
+      - "DB_HOST=${DB_HOST:-localhost}"
+      - "DB_PORT=${DB_PORT:-8080}"
+      - "DB_DATABASE=${DB_DATABASE:-app}"
+      - "DB_USERNAME=${DB_USERNAME:-user}"
+      - "DB_PASSWORD=${DB_PASSWORD:-change-me}"
+      - "DISPLAY_TIMEZONE=${DISPLAY_TIMEZONE:-Etc/UTC}"
+      - "PRUNE_RESULTS_OLDER_THAN=${PRUNE_RESULTS_OLDER_THAN:-0}"
+    volumes:
+      - "/srv/lsio/speedtest-tracker/config:/config"

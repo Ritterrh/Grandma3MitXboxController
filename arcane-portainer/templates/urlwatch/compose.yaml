@@ -1,0 +1,15 @@
+services:
+  urlwatch:
+    image: "mediadepot/urlwatch:master"
+    container_name: ${CONTAINER_NAME:-urlwatch}
+    restart: "unless-stopped"
+    ports:
+      - "8081/tcp"
+    volumes:
+      - "/opt/mediadepot/apps/urlwatch:/srv/urlwatch/config"
+      - "/etc/localtime:/etc/localtime:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.urlwatch.loadbalancer.server.port=8081"
+      - "traefik.http.routers.urlwatch.entrypoints=websecure"
+      - "traefik.http.routers.urlwatch.tls.certresolver=mydnschallenge"

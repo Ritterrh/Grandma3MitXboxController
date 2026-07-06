@@ -1,0 +1,18 @@
+services:
+  netdata:
+    image: "netdata/netdata:latest"
+    container_name: ${CONTAINER_NAME:-netdata}
+    restart: "unless-stopped"
+    ports:
+      - "19999:19999/tcp"
+    environment:
+      - "DOCKER_USR=${DOCKER_USR:-1000}"
+      - "DOCKER_GRP=${DOCKER_GRP:-1000}"
+    volumes:
+      - "/portainer/Files/AppData/Config/netdata/netdataconfig:/etc/netdata"
+      - "/portainer/Files/AppData/Config/netdata/netdatalib:/var/lib/netdata"
+      - "/etc/passwd:/host/etc/passwd:ro"
+      - "/etc/group:/host/etc/group:ro"
+      - "/proc:/host/proc:ro"
+      - "/sys:/host/sys:ro"
+      - "/etc/os-release:/host/etc/os-release:ro"

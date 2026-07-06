@@ -1,0 +1,12 @@
+services:
+  oled-stats:
+    image: "mklements/oled_stats:latest"
+    container_name: ${CONTAINER_NAME:-oled-stats}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "START=${START:-8}"
+      - "END=${END:-23}"
+    volumes:
+      - "/etc/timezone:/etc/timezone"
+      - "/etc/localtime:/etc/localtime"

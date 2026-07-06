@@ -1,0 +1,9 @@
+services:
+  guacamole:
+    image: "oznu/guacamole:latest"
+    container_name: ${CONTAINER_NAME:-guacamole}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Guacamole:/config"

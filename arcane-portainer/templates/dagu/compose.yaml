@@ -1,0 +1,15 @@
+services:
+  dagu:
+    image: "ghcr.io/dagu-org/dagu:latest"
+    container_name: ${CONTAINER_NAME:-dagu}
+    command: "dagu start-all"
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    environment:
+      - "DAGU_HOST=${DAGU_HOST:-0.0.0.0}"
+    volumes:
+      - "var-lib-dagu:/var/lib/dagu"
+
+volumes:
+  var-lib-dagu:

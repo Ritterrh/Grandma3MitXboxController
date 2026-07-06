@@ -1,0 +1,12 @@
+services:
+  plesk:
+    image: "plesk/plesk:latest"
+    container_name: ${CONTAINER_NAME:-plesk}
+    restart: "unless-stopped"
+    ports:
+      - "21/tcp"
+      - "80/tcp"
+      - "443/tcp"
+      - "8880/tcp"
+      - "8443/tcp"
+      - "8447/tcp"

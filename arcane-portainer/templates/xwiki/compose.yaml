@@ -1,0 +1,36 @@
+networks:
+  bridge:
+    driver: bridge
+services:
+  web:
+    image: "xwiki:lts-mariadb-tomcat"
+    container_name: xwiki-mariadb-tomcat-web
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER=${DB_USER:-xwiki}
+      - DB_PASSWORD=${DB_PASSWORD:-change-me}
+      - DB_HOST=${DB_HOST:-xwiki-mariadb-db}
+    volumes:
+      - /portainer/Files/AppData/Config/xwiki/data:/usr/local/xwiki
+    networks:
+      - bridge
+  db:
+    image: "mariadb:10.5"
+    container_name: xwiki-mariadb-db
+    volumes:
+      - /portainer/Files/AppData/Config/xwiki/xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
+      - /portainer/Files/AppData/Config/xwiki/mariadb:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change-me}
+      - MYSQL_USER=${MYSQL_USER:-xwiki}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-change-me}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-xwiki}
+    networks:
+      - bridge
+volumes:
+  mariadb-data: {}
+  xwiki-data: {}

@@ -1,0 +1,14 @@
+services:
+  davos:
+    image: "linuxserver/davos:latest"
+    container_name: ${CONTAINER_NAME:-davos}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/davos/config:/config"
+      - "/srv/lsio/davos/download:/download"

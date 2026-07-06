@@ -1,0 +1,15 @@
+services:
+  apprise-api:
+    image: "linuxserver/apprise-api:latest"
+    container_name: ${CONTAINER_NAME:-apprise-api}
+    restart: "unless-stopped"
+    ports:
+      - "8000:8000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "APPRISE_ATTACH_SIZE=${APPRISE_ATTACH_SIZE:-0}"
+    volumes:
+      - "/srv/lsio/apprise-api/config:/config"
+      - "/srv/lsio/apprise-api/attachments:/attachments"

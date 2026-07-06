@@ -1,0 +1,17 @@
+services:
+  foldingathome:
+    image: "linuxserver/foldingathome:latest"
+    container_name: ${CONTAINER_NAME:-foldingathome}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+      - "7396:7396/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "ACCOUNT_TOKEN=${ACCOUNT_TOKEN:-change-me}"
+      - "MACHINE_NAME=${MACHINE_NAME:-}"
+      - "CLI_ARGS=${CLI_ARGS:-}"
+    volumes:
+      - "/srv/lsio/foldingathome/config:/config"

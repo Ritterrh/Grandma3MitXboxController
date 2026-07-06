@@ -1,0 +1,169 @@
+version: '3.9'
+
+services:
+  lidify-backend:
+    image: chevron7locked/lidify:latest
+    container_name: lidify_backend
+    restart: unless-stopped
+    ports:
+      - ${BACKEND_PORT:-3006}:3006
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-lidifydb}:${POSTGRES_PASSWORD:-changeme}@lidify-postgres:5432/${POSTGRES_DB:-lidify}
+      - POSTGRES_USER=${POSTGRES_USER:-lidifydb}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_DB=${POSTGRES_DB:-lidify}
+      - REDIS_URL=${REDIS_URL:-redis://lidify-redis:6379}
+      - PORT=${PORT:-3006}
+      - NODE_ENV=${NODE_ENV:-production}
+      - SESSION_SECRET=${SESSION_SECRET:-changeme-generate-secure-key}
+      - SETTINGS_ENCRYPTION_KEY=${SETTINGS_ENCRYPTION_KEY:-}
+      - MUSIC_PATH=${MUSIC_PATH:-/music}
+      - TRANSCODE_CACHE_PATH=${TRANSCODE_CACHE_PATH:-/app/cache/transcodes}
+      - TRANSCODE_CACHE_MAX_GB=${TRANSCODE_CACHE_MAX_GB:-10}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:3000,http://localhost:3030}
+      - INTERNAL_API_SECRET=${INTERNAL_API_SECRET:-lidify-internal-secret-change-me}
+      - LIDIFY_CALLBACK_URL=${LIDIFY_CALLBACK_URL:-http://lidify-backend:3006}
+      - PODCAST_DEBUG=${PODCAST_DEBUG:-0}
+    volumes:
+      - ${MUSIC_PATH:-./data}:/music
+      - /portainer/Files/AppData/Config/lidify/backend-cache:/app/cache
+      - /portainer/Files/AppData/Config/lidify/backend-logs:/app/logs
+    depends_on:
+      lidify-postgres:
+        condition: service_healthy
+      lidify-redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - lidify-network
+
+  lidify-frontend:
+    image: chevron7locked/lidify-frontend:latest
+    container_name: lidify_frontend
+    restart: unless-stopped
+    ports:
+      - ${FRONTEND_PORT:-3030}:3030
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      - BACKEND_URL=${BACKEND_URL:-http://lidify-backend:3006}
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-}
+      - NEXT_PUBLIC_BUILD_TYPE=${NEXT_PUBLIC_BUILD_TYPE:-nightly}
+    depends_on:
+      - lidify-backend
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - lidify-network
+
+  lidify-postgres:
+    image: pgvector/pgvector:pg16
+    container_name: lidify_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-lidifydb}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_DB=${POSTGRES_DB:-lidify}
+    volumes:
+      - /portainer/Files/AppData/Config/lidify/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-lidifydb} -d ${POSTGRES_DB:-lidify}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - lidify-network
+
+  lidify-redis:
+    image: redis:7-alpine
+    container_name: lidify_redis
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/lidify/redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - lidify-network
+
+  lidify-audio-analyzer:
+    image: chevron7locked/lidify-audio-analyzer:latest
+    container_name: lidify_audio_analyzer
+    restart: unless-stopped
+    environment:
+      - REDIS_URL=${REDIS_URL:-redis://lidify-redis:6379}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-lidifydb}:${POSTGRES_PASSWORD:-changeme}@lidify-postgres:5432/${POSTGRES_DB:-lidify}
+      - MUSIC_PATH=${MUSIC_PATH:-/music}
+      - BATCH_SIZE=${AUDIO_ANALYSIS_BATCH_SIZE:-10}
+      - SLEEP_INTERVAL=${AUDIO_ANALYSIS_INTERVAL:-5}
+      - BRPOP_TIMEOUT=${AUDIO_BRPOP_TIMEOUT:-30}
+      - MODEL_IDLE_TIMEOUT=${AUDIO_MODEL_IDLE_TIMEOUT:-300}
+      - NUM_WORKERS=${AUDIO_ANALYSIS_WORKERS:-2}
+      - THREADS_PER_WORKER=${AUDIO_ANALYSIS_THREADS_PER_WORKER:-1}
+    volumes:
+      - ${MUSIC_PATH:-./data}:/music:ro
+    depends_on:
+      lidify-postgres:
+        condition: service_healthy
+      lidify-redis:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+          cpus: '4'
+        reservations:
+          memory: 2G
+    healthcheck:
+      test: ["CMD", "pgrep", "-f", "python.*analyzer"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - lidify-network
+
+  lidify-audio-analyzer-clap:
+    image: chevron7locked/lidify-audio-analyzer-clap:latest
+    container_name: lidify_audio_analyzer_clap
+    restart: unless-stopped
+    environment:
+      - REDIS_URL=${REDIS_URL:-redis://lidify-redis:6379}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-lidifydb}:${POSTGRES_PASSWORD:-changeme}@lidify-postgres:5432/${POSTGRES_DB:-lidify}
+      - BACKEND_URL=${BACKEND_URL:-http://lidify-backend:3006}
+      - MUSIC_PATH=${MUSIC_PATH:-/music}
+      - SLEEP_INTERVAL=${CLAP_SLEEP_INTERVAL:-5}
+      - NUM_WORKERS=${CLAP_WORKERS:-2}
+      - THREADS_PER_WORKER=${CLAP_THREADS_PER_WORKER:-1}
+      - MODEL_IDLE_TIMEOUT=${CLAP_MODEL_IDLE_TIMEOUT:-300}
+      - INTERNAL_API_SECRET=${INTERNAL_API_SECRET:-lidify-internal-secret-change-me}
+    volumes:
+      - ${MUSIC_PATH:-./data}:/music:ro
+    depends_on:
+      lidify-postgres:
+        condition: service_healthy
+      lidify-redis:
+        condition: service_healthy
+      lidify-backend:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '4'
+        reservations:
+          memory: 1G
+    networks:
+      - lidify-network
+
+networks:
+  lidify-network:
+    driver: bridge

@@ -1,0 +1,23 @@
+volumes:
+  postgres: {}
+  
+services:
+  homechart:
+    container_name: homechart
+    depends_on:
+      - postgres
+    environment:
+      HOMECHART_POSTGRESQL_HOSTNAME: "${HOMECHART_POSTGRESQL_HOSTNAME:-postgres}"
+      HOMECHART_POSTGRESQL_PASSWORD: "${HOMECHART_POSTGRESQL_PASSWORD:-change-me}"
+      HOMECHART_POSTGRESQL_USERNAME: "${HOMECHART_POSTGRESQL_USERNAME:-postgres}"
+    image: ghcr.io/candiddev/homechart:latest
+    ports:
+      - "3030:3000"
+    restart: always
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-change-me}"
+    image: postgres:14
+    restart: always
+    volumes:
+      - /portainer/Files/AppData/Config/postgres:/var/lib/postgresql/data

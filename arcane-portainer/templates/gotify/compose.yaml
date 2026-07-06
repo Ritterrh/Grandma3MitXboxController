@@ -1,0 +1,13 @@
+services:
+  gotify:
+    image: "gotify/server-arm7:latest"
+    container_name: ${CONTAINER_NAME:-gotify}
+    restart: "unless-stopped"
+    ports:
+      - "9008:80/tcp"
+    environment:
+      - "TZ=${TZ:-America/New_York}"
+      - "GOTIFY_DEFAULTUSER_NAME=${GOTIFY_DEFAULTUSER_NAME:-admin}"
+      - "GOTIFY_DEFAULTUSER_PASS=${GOTIFY_DEFAULTUSER_PASS:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/gotify:/app/data"

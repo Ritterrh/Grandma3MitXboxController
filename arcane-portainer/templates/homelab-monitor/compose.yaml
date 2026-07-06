@@ -1,0 +1,14 @@
+services:
+  homelab-monitor:
+    image: "sikamikaniko123/homelab-monitor:latest"
+    container_name: ${CONTAINER_NAME:-homelab-monitor}
+    restart: "unless-stopped"
+    environment:
+      - "SAMPLE_INTERVAL_SECONDS=${SAMPLE_INTERVAL_SECONDS:-10}"
+      - "HISTORY_DAYS=${HISTORY_DAYS:-180}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "app-data:/app/data"
+
+volumes:
+  app-data:

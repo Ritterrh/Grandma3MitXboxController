@@ -1,0 +1,13 @@
+services:
+  ddclient:
+    image: "linuxserver/ddclient:latest"
+    container_name: ${CONTAINER_NAME:-ddclient}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/ddclient/config:/config"

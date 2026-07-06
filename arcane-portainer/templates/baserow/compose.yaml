@@ -1,0 +1,16 @@
+services:
+  baserow:
+    image: "baserow/baserow:1.22.3"
+    container_name: ${CONTAINER_NAME:-baserow}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    environment:
+      - "BASEROW_PUBLIC_URL=${BASEROW_PUBLIC_URL:-}"
+    volumes:
+      - "/opt/mediadepot/apps/baserow:/baserow/data"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.baserow.loadbalancer.server.port=80"
+      - "traefik.http.routers.baserow.entrypoints=websecure"
+      - "traefik.http.routers.baserow.tls.certresolver=mydnschallenge"

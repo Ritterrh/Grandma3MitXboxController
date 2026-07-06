@@ -1,0 +1,19 @@
+services:
+  contentbox:
+    image: "ortussolutions/contentbox:latest"
+    container_name: ${CONTAINER_NAME:-contentbox}
+    restart: "unless-stopped"
+    ports:
+      - "8080/tcp"
+      - "8443/tcp"
+    environment:
+      - "EXPRESS=${EXPRESS:-true}"
+      - "INSTALL=${INSTALL:-true}"
+      - "CFENGINE=${CFENGINE:-lucee@4.5}"
+    volumes:
+      - "data-contentbox-db:/data/contentbox/db"
+      - "app-includes-shared-media:/app/includes/shared/media"
+
+volumes:
+  data-contentbox-db:
+  app-includes-shared-media:

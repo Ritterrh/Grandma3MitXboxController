@@ -1,0 +1,9 @@
+services:
+  reactive-resume:
+    image: "amruthpillai/reactive-resume:latest"
+    container_name: ${CONTAINER_NAME:-reactive-resume}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/ReactiveResume:/usr/src/app"

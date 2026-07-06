@@ -1,0 +1,19 @@
+services:
+  cloudcmd:
+    image: "coderaiser/cloudcmd"
+    container_name: ${CONTAINER_NAME:-cloudcmd}
+    restart: "unless-stopped"
+    ports:
+      - "8000/tcp"
+    volumes:
+      - "/opt/mediadepot/apps:/media/host/opt/mediadepot"
+      - "/media/storage:/media/host/media/storage"
+      - "/media/temp:/media/host/media/temp"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.cloudcmd.loadbalancer.server.port=8000"
+      - "traefik.http.routers.cloudcmd.entrypoints=websecure"
+      - "traefik.http.routers.cloudcmd.tls.certresolver=mydnschallenge"
+      - "traefik.http.routers.cloudcmd.middlewares=authme"
+      - "traefik.http.middlewares.authme.forwardauth.address=http://authelia:9091/api/verify?rd=https://login.${DEPOT_DOMAIN_NAME}/"
+      - "traefik.http.middlewares.authme.forwardauth.trustforwardheader=true"

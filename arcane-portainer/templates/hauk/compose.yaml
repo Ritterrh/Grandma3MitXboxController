@@ -1,0 +1,12 @@
+services:
+  hauk:
+    image: bilde2910/hauk:latest
+    container_name: Hauk
+    hostname: hauk
+    healthcheck:
+      test: curl -f http://localhost:80/ || exit 1
+    ports:
+      - 7735:80
+    volumes:
+      - /portainer/Files/AppData/Config/hauk:/etc/hauk:rw
+    restart: on-failure

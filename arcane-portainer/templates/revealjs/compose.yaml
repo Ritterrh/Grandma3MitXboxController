@@ -1,0 +1,10 @@
+services:
+  revealjs:
+    image: "cloudogu/reveal.js"
+    container_name: ${CONTAINER_NAME:-revealjs}
+    restart: "always"
+    ports:
+      - "6060:8080/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/revealjs/docs/slides:/reveal/docs/slides"
+      - "/portainer/Files/AppData/Config/revealjs/scripts/test:/resources"

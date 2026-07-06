@@ -1,0 +1,10 @@
+services:
+  alpine-xfce4-novnc:
+    image: "novaspirit/alpine_xfce4_novnc:latest"
+    container_name: ${CONTAINER_NAME:-alpine-xfce4-novnc}
+    restart: "unless-stopped"
+    ports:
+      - "6080:6080/tcp"
+      - "56780:56780/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/alpine-xfce4-novnc/home/alpine/downloads:/home/alpine/downloads"

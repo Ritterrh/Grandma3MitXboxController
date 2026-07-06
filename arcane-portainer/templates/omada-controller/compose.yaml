@@ -1,0 +1,19 @@
+services:
+  omada-controller:
+    image: "mbentley/omada-controller:latest"
+    container_name: ${CONTAINER_NAME:-omada-controller}
+    restart: "unless-stopped"
+    ports:
+      - "8088:8088/tcp"
+      - "8043:8043/tcp"
+      - "27001:27001/udp"
+      - "27002:27002/tcp"
+      - "29810:29810/udp"
+      - "29811:29811/tcp"
+      - "29812:29812/tcp"
+      - "29813:29813/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Omada:/config"

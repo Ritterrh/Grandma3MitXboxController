@@ -1,0 +1,25 @@
+services:
+  silverstripe:
+    image: brettt89/silverstripe-web:8.1-apache
+    volumes:
+       - /portainer/Files/AppData/Config/silverstripe:/var/www/html
+    depends_on:
+       - silverstripe-db
+    environment:
+       - DOCUMENT_ROOT=${DOCUMENT_ROOT:-/var/www/html/public}
+       - SS_TRUSTED_PROXY_IPS=${SS_TRUSTED_PROXY_IPS:-*}
+       - SS_ENVIRONMENT_TYPE=${SS_ENVIRONMENT_TYPE:-dev}
+       - SS_DATABASE_SERVER=${SS_DATABASE_SERVER:-database}
+       - SS_DATABASE_NAME=${SS_DATABASE_NAME:-SS_mysite}
+       - SS_DATABASE_USERNAME=${SS_DATABASE_USERNAME:-root}
+       - SS_DATABASE_PASSWORD=${SS_DATABASE_PASSWORD:-change-me}
+       - SS_DEFAULT_ADMIN_USERNAME=${SS_DEFAULT_ADMIN_USERNAME:-admin}
+       - SS_DEFAULT_ADMIN_PASSWORD=${SS_DEFAULT_ADMIN_PASSWORD:-change-me}
+  silverstripe-db:
+    image: mysql:5.7
+    environment:
+       - MYSQL_ALLOW_EMPTY_PASSWORD=${MYSQL_ALLOW_EMPTY_PASSWORD:-change-me}
+    volumes:
+       - /portainer/Files/AppData/Config/silverstripe/db-data:/var/lib/mysql
+volumes:
+     db-data:

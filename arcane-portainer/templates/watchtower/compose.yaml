@@ -1,0 +1,8 @@
+services:
+  watchtower:
+    image: "containrrr/watchtower:latest"
+    container_name: ${CONTAINER_NAME:-watchtower}
+    command: "--cleanup"
+    restart: "unless-stopped"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"

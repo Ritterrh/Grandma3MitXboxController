@@ -1,0 +1,9 @@
+services:
+  pve-exporter:
+    image: prompve/prometheus-pve-exporter
+    container_name: pve-exporter
+    ports:
+      - 9221:9221
+    volumes:
+      - /portainer/Files/AppData/Config/pve-exporter:/etc/pve.yml
+    restart: always

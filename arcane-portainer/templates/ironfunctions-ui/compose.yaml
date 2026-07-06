@@ -1,0 +1,15 @@
+services:
+  ironfunctions-ui:
+    image: "iron/functions-ui:latest"
+    container_name: ${CONTAINER_NAME:-ironfunctions-ui}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "4000/tcp"
+    environment:
+      - "API_URL=${API_URL:-}"
+    volumes:
+      - "app-data:/app/data"
+
+volumes:
+  app-data:

@@ -1,0 +1,20 @@
+services:
+  piper:
+    image: "linuxserver/piper:latest"
+    container_name: ${CONTAINER_NAME:-piper}
+    restart: "unless-stopped"
+    ports:
+      - "10200:10200/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "PIPER_VOICE=${PIPER_VOICE:-en_US-lessac-medium}"
+      - "LOCAL_ONLY=${LOCAL_ONLY:-}"
+      - "PIPER_LENGTH=${PIPER_LENGTH:-1.0}"
+      - "PIPER_NOISE=${PIPER_NOISE:-0.667}"
+      - "PIPER_NOISEW=${PIPER_NOISEW:-0.333}"
+      - "PIPER_SPEAKER=${PIPER_SPEAKER:-0}"
+      - "NO_STREAMING=${NO_STREAMING:-}"
+    volumes:
+      - "/srv/lsio/piper/config:/config"

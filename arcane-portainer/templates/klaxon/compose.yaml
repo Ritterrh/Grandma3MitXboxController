@@ -1,0 +1,43 @@
+version: "2.1"
+
+services:
+
+  database:
+    image: "postgres:11"
+    volumes:
+      - /opt/mediadepot/apps/klaxon/db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - traefik
+      - klaxon
+  app:
+    image: "mediadepot/klaxon"
+    links:
+      - database
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      RACK_ENV: "${RACK_ENV:-development}"
+      RAILS_ENV: "${RAILS_ENV:-development}"
+      DATABASE_URL: "${DATABASE_URL:-postgres://postgres@database/klaxon}"
+      SECRET_KEY_BASE: "${SECRET_KEY_BASE:-change-me}"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.klaxon.loadbalancer.server.port=3000"
+      - "traefik.http.routers.klaxon.rule=Host(`klaxon.${DEPOT_DOMAIN_NAME:-}`)"
+      - 'traefik.http.routers.klaxon.entrypoints=websecure'
+      - 'traefik.http.routers.klaxon.tls.certresolver=mydnschallenge'
+    volumes:
+      - /opt/mediadepot/apps/klaxon/app:/config
+    networks:
+      - traefik
+      - klaxon
+networks:
+  traefik:
+    external: true
+  klaxon:

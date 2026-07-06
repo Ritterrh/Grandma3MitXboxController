@@ -1,0 +1,12 @@
+services:
+  logzio-logs-collector:
+    image: "logzio/docker-collector-logs"
+    container_name: ${CONTAINER_NAME:-logzio-logs-collector}
+    privileged: true
+    restart: "unless-stopped"
+    environment:
+      - "LOGZIO_TOKEN=${LOGZIO_TOKEN:-change-me}"
+      - "LOGZIO_URL=${LOGZIO_URL:-listener.logz.io:5015}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "/var/lib/docker/containers:/var/lib/docker/containers"

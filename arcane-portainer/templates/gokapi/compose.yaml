@@ -1,0 +1,10 @@
+services:
+  gokapi:
+    container_name: Gokapi
+    image: f0rc3/gokapi:latest
+    ports:
+      - 53842:53842
+    volumes:
+      - /portainer/Files/AppData/Config/gokapi/data:/app/data
+      - /portainer/Files/AppData/Config/gokapi/config:/app/config
+    restart: on-failure:5

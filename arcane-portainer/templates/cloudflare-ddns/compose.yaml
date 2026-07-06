@@ -1,0 +1,9 @@
+services:
+  cloudflare-ddns:
+    image: "favonia/cloudflare-ddns:latest"
+    container_name: ${CONTAINER_NAME:-cloudflare-ddns}
+    restart: "unless-stopped"
+    environment:
+      - "CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN:-change-me}"
+      - "DOMAINS=${DOMAINS:-}"
+      - "PROXIED=${PROXIED:-true}"

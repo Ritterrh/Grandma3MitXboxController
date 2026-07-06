@@ -1,0 +1,12 @@
+services:
+  quassel-core:
+    image: "linuxserver/quassel-core:latest"
+    container_name: ${CONTAINER_NAME:-quassel-core}
+    restart: "unless-stopped"
+    ports:
+      - "4242:4242/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Quassel-core:/config"

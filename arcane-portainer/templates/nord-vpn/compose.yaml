@@ -1,0 +1,18 @@
+services:
+  nord-vpn:
+    image: "azinchen/nordvpn:latest"
+    container_name: ${CONTAINER_NAME:-nord-vpn}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "8080:80/tcp"
+    environment:
+      - "USER=${USER:-user@email.com}"
+      - "PASS=${PASS:-change-me}"
+      - "COUNTRY=${COUNTRY:-Spain;Hong Kong;IE;131}"
+      - "GROUP=${GROUP:-Standard VPN servers}"
+      - "RANDOM_TOP=${RANDOM_TOP:-10}"
+      - "RECREATE_VPN_CRON=${RECREATE_VPN_CRON:-5 */3 * * *}"
+      - "CHECK_CONNECTION_URL=${CHECK_CONNECTION_URL:-https://www.google.com}"
+      - "NETWORK=${NETWORK:-192.168.1.0/24;192.168.2.0/24}"
+      - "OPENVPN_OPTS=${OPENVPN_OPTS:---mute-replay-warnings}"

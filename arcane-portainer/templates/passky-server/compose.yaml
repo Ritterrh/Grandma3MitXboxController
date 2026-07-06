@@ -1,0 +1,12 @@
+services:
+  passky-server:
+    image: "rabbitcompany/passky-server:latest"
+    container_name: ${CONTAINER_NAME:-passky-server}
+    restart: "unless-stopped"
+    ports:
+      - "8080:80/tcp"
+    environment:
+      - "ADMIN_USERNAME=${ADMIN_USERNAME:-admin}"
+      - "ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Passky-Server:/var/www/html/databases"

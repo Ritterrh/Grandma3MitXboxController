@@ -1,0 +1,43 @@
+services:
+  miniflux-db:
+    image: postgres:15
+    container_name: Miniflux-DB
+    hostname: miniflux-db
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "miniflux"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+      start_period: 30s
+    user: 1026:100
+    volumes:
+      - /portainer/Files/AppData/Config/minifluxdb:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-miniflux}
+      - POSTGRES_USER=${POSTGRES_USER:-minifluxuser}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+    restart: always
+
+  miniflux:
+    image: miniflux/miniflux:latest
+    container_name: Miniflux
+    hostname: miniflux
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "/usr/bin/miniflux", "-healthcheck", "auto"]
+    user: 1026:100
+    ports:
+      - 8645:8080
+    environment:
+      - DATABASE_URL=${DATABASE_URL:-postgres://minifluxuser:minifluxpass@miniflux-db/miniflux?sslmode=disable}
+      - RUN_MIGRATIONS=${RUN_MIGRATIONS:-1}
+      - CREATE_ADMIN=${CREATE_ADMIN:-1}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+    restart: always
+    depends_on:
+      miniflux-db:
+        condition: service_healthy

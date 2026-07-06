@@ -1,0 +1,19 @@
+services:
+  pihole-unbound:
+    image: "cbcrowe/pihole-unbound:latest"
+    container_name: ${CONTAINER_NAME:-pihole-unbound}
+    restart: "unless-stopped"
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "1010:80/tcp"
+      - "4443:443/tcp"
+    environment:
+      - "SERVERIP=${SERVERIP:-192.168.0.X}"
+      - "TZ=${TZ:-Europe\\London}"
+      - "DNSSEC=${DNSSEC:-}"
+      - "DNS1=${DNS1:-127.0.0.1#5335}"
+      - "DNS2=${DNS2:-127.0.0.1#5335}"
+    volumes:
+      - "/portainer/Files/AppData/Config/PiHole-Unbound:/etc/pihole"
+      - "/portainer/Files/AppData/Config/PiHole-Unbound/DNS:/etc/dnsmasq.d"

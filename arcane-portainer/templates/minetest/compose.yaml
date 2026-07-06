@@ -1,0 +1,15 @@
+services:
+  minetest:
+    image: "linuxserver/minetest:latest"
+    container_name: ${CONTAINER_NAME:-minetest}
+    restart: "unless-stopped"
+    ports:
+      - "30000:30000/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "config-minetest:/config/.minetest"
+
+volumes:
+  config-minetest:

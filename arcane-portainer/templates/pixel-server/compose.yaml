@@ -1,0 +1,16 @@
+services:
+  pixel-server:
+    image: "macley/pixel-server:latest"
+    container_name: ${CONTAINER_NAME:-pixel-server}
+    privileged: true
+    restart: "unless-stopped"
+    ports:
+      - "85:80/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/pixel-server/auth.cfg:/opt/pixel-server/auth.cfg"
+      - "/portainer/Files/AppData/Config/pixel-server/pixelserver.cfg:/opt/pixel-server/pixelserver.cfg"
+      - "/portainer/Files/AppData/Config/pixel-server/users.cfg:/opt/pixel-server/users.cfg"
+      - "etc-crontabs:/etc/crontabs/"
+
+volumes:
+  etc-crontabs:

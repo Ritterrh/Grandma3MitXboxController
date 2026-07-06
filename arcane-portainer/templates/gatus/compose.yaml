@@ -1,0 +1,12 @@
+services:
+  gatus:
+    image: "twinproduction/gatus:latest"
+    container_name: ${CONTAINER_NAME:-gatus}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+    volumes:
+      - "config:/config"
+
+volumes:
+  config:

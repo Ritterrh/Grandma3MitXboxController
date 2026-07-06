@@ -1,0 +1,16 @@
+services:
+  lazylibrarian:
+    image: "linuxserver/lazylibrarian:latest"
+    container_name: ${CONTAINER_NAME:-lazylibrarian}
+    restart: "unless-stopped"
+    ports:
+      - "5299:5299/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "DOCKER_MODS=${DOCKER_MODS:-linuxserver/mods:universal-calibre|linuxserver/mods:lazylibrarian-ffmpeg}"
+    volumes:
+      - "/srv/lsio/lazylibrarian/config:/config"
+      - "/srv/lsio/lazylibrarian/downloads:/downloads"
+      - "/srv/lsio/lazylibrarian/books:/books"

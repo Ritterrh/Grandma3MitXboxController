@@ -1,0 +1,6 @@
+services:
+  ubuntu:
+    image: "ubuntu:latest"
+    container_name: ${CONTAINER_NAME:-ubuntu}
+    command: "/bin/bash"
+    restart: "unless-stopped"

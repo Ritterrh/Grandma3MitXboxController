@@ -1,0 +1,9 @@
+services:
+  flame-dashboard:
+    image: "pawelmalak/flame"
+    container_name: ${CONTAINER_NAME:-flame-dashboard}
+    restart: "unless-stopped"
+    ports:
+      - "5005:5005/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/flame-dashboard:/app/data"

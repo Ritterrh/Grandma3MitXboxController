@@ -1,0 +1,36 @@
+services:
+  vikunjadb:
+    image: mariadb:10
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-change-me}"
+      MYSQL_USER: "${MYSQL_USER:-vikunja}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:-change-me}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE:-vikunja}"
+    volumes:
+      - ./db:/var/lib/mysql
+    restart: unless-stopped
+  api:
+    image: vikunja/api
+    environment:
+      VIKUNJA_DATABASE_HOST: "${VIKUNJA_DATABASE_HOST:-vikunjadb}"
+      VIKUNJA_DATABASE_PASSWORD: "${VIKUNJA_DATABASE_PASSWORD:-change-me}"
+      VIKUNJA_DATABASE_TYPE: "${VIKUNJA_DATABASE_TYPE:-mysql}"
+      VIKUNJA_DATABASE_USER: "${VIKUNJA_DATABASE_USER:-vikunja}"
+      VIKUNJA_DATABASE_DATABASE: "${VIKUNJA_DATABASE_DATABASE:-vikunja}"
+      VIKUNJA_SERVICE_JWTSECRET: "${VIKUNJA_SERVICE_JWTSECRET:-change-me}"
+      VIKUNJA_SERVICE_FRONTENDURL: "${VIKUNJA_SERVICE_FRONTENDURL:-http://10.11.11.128:1180/api/v1/}"
+    ports:
+      - 3456:3456
+    volumes:
+      - ./files:/app/vikunja/files
+    depends_on:
+      - vikunjadb
+    restart: unless-stopped
+  frontend:
+    image: vikunja/frontend
+    ports:
+      - 1180:80
+    environment:
+      VIKUNJA_API_URL: "${VIKUNJA_API_URL:-http://10.11.11.128:3456/api/v1}"
+    restart: unless-stopped

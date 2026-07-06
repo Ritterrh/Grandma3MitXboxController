@@ -1,0 +1,20 @@
+services:
+  netbootxyz:
+    image: "linuxserver/netbootxyz:latest"
+    container_name: ${CONTAINER_NAME:-netbootxyz}
+    restart: "unless-stopped"
+    ports:
+      - "3000/tcp"
+      - "69/udp"
+    environment:
+      - "PGID=${PGID:-15000}"
+      - "PUID=${PUID:-15000}"
+    volumes:
+      - "/opt/mediadepot/apps/netbootxyz:/config"
+      - "/media/storage/software/netbootxyz:/assets"
+      - "/etc/localtime:/etc/localtime:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.netbootxyz.loadbalancer.server.port=3000"
+      - "traefik.http.routers.netbootxyz.entrypoints=websecure"
+      - "traefik.http.routers.netbootxyz.tls.certresolver=mydnschallenge"

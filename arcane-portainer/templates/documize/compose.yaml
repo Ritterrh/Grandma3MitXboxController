@@ -1,0 +1,33 @@
+services:
+  documize-db:
+    image: postgres:12
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-documize}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-change-me}"
+      POSTGRES_DB: "${POSTGRES_DB:-documize}"
+    volumes:
+       - /portainer/Files/AppData/Config/documize/db-data:/var/lib/postgresql/data
+    networks:
+       - documizenet
+
+  documize-app:
+    image: debian:latest
+    command: /bin/sh -c "apt-get -qq update && apt-get -qq install -y wget && wget https://community-downloads.s3.us-east-2.amazonaws.com/documize-community-plus-linux-amd64 && chmod 777 ./documize-community-plus-linux-amd64 && ./documize-community-plus-linux-amd64"
+    depends_on:
+      - documize-db
+    ports:
+      - 5001:5001
+    environment:
+      DOCUMIZEPORT: "${DOCUMIZEPORT:-5001}"
+      DOCUMIZEDB: "${DOCUMIZEDB:-host=db port=5432 dbname=documize user=documize password=Passw0rd sslmode=disable}"
+      DOCUMIZEDBTYPE: "${DOCUMIZEDBTYPE:-postgresql}"
+      DOCUMIZESALT: "${DOCUMIZESALT:-hsk3Acndky8cdTNx3}"
+      DOCUMIZELOCATION: "${DOCUMIZELOCATION:-selfhost}"
+    networks:
+      - documizenet
+
+networks:
+  documizenet:

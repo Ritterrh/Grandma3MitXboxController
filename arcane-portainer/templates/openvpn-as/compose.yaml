@@ -1,0 +1,15 @@
+services:
+  openvpn-as:
+    image: "linuxserver/openvpn-as:latest"
+    container_name: ${CONTAINER_NAME:-openvpn-as}
+    restart: "unless-stopped"
+    ports:
+      - "943:943/tcp"
+      - "9443:9443/tcp"
+      - "1194:1194/udp"
+    environment:
+      - "INTERFACE=${INTERFACE:-eth0}"
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/OpenVPN-AS:/config"

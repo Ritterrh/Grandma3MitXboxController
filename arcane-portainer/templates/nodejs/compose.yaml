@@ -1,0 +1,6 @@
+services:
+  nodejs:
+    image: "node:latest"
+    container_name: ${CONTAINER_NAME:-nodejs}
+    command: "/bin/bash"
+    restart: "unless-stopped"

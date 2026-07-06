@@ -1,0 +1,7 @@
+services:
+  gotenberg:
+    image: "gotenberg/gotenberg:8"
+    container_name: ${CONTAINER_NAME:-gotenberg}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"

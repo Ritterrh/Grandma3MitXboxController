@@ -1,0 +1,12 @@
+services:
+  registry:
+    image: "registry:latest"
+    container_name: ${CONTAINER_NAME:-registry}
+    restart: "unless-stopped"
+    ports:
+      - "5000/tcp"
+    volumes:
+      - "var-lib-registry:/var/lib/registry"
+
+volumes:
+  var-lib-registry:

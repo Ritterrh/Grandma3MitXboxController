@@ -1,0 +1,17 @@
+services:
+  airsonic:
+    image: lscr.io/linuxserver/airsonic
+    container_name: airsonic
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+    volumes:
+      - /portainer/Files/AppData/Config/airsonic:/config
+      - /portainer/multimedia/music/:/music
+      - /portainer/multimedia/music/playlists:/playlists
+      - /portainer/multimedia/podcasts:/podcasts
+      - /portainer/multimedia/music/othermedia:/media #optional
+    ports:
+      - 4040:4040
+    restart: unless-stopped

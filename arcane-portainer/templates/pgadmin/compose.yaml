@@ -1,0 +1,15 @@
+services:
+  pgadmin:
+    image: "dpage/pgadmin4:latest"
+    container_name: ${CONTAINER_NAME:-pgadmin}
+    restart: "unless-stopped"
+    ports:
+      - "5050:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL:-}"
+      - "PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD:-change-me}"
+      - "TZ=${TZ:-America/New_York}"
+    volumes:
+      - "/portainer/Files/AppData/Config/pgadmin:/var/lib/pgadmin"

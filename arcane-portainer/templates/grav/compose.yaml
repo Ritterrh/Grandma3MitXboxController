@@ -1,0 +1,13 @@
+services:
+  grav:
+    image: "linuxserver/grav:latest"
+    container_name: ${CONTAINER_NAME:-grav}
+    restart: "unless-stopped"
+    ports:
+      - "80:80/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/grav/config:/config"

@@ -1,0 +1,21 @@
+services:
+  syncserver:
+    image: "mozilla/syncserver:latest"
+    container_name: ${CONTAINER_NAME:-syncserver}
+    restart: "unless-stopped"
+    ports:
+      - "5000/tcp"
+    environment:
+      - "SYNCSERVER_PUBLIC_URL=${SYNCSERVER_PUBLIC_URL:-https://syncserver.depot.lan}"
+      - "SYNCSERVER_SECRET_FILE=${SYNCSERVER_SECRET_FILE:-change-me}"
+      - "SYNCSERVER_SQLURI=${SYNCSERVER_SQLURI:-sqlite:////data/syncserver.db}"
+      - "SYNCSERVER_BATCH_UPLOAD_ENABLED=${SYNCSERVER_BATCH_UPLOAD_ENABLED:-true}"
+      - "SYNCSERVER_FORCE_WSGI_ENVIRON=${SYNCSERVER_FORCE_WSGI_ENVIRON:-false}"
+      - "PORT=${PORT:-5000}"
+    volumes:
+      - "/opt/mediadepot/apps/syncserver:/data"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.syncservere.loadbalancer.server.port=5000"
+      - "traefik.http.routers.syncserver.entrypoints=websecure"
+      - "traefik.http.routers.syncserver.tls.certresolver=mydnschallenge"

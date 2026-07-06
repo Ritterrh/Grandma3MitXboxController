@@ -1,0 +1,14 @@
+services:
+  wps-office:
+    image: "linuxserver/wps-office:latest"
+    container_name: ${CONTAINER_NAME:-wps-office}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/wps-office/config:/config"

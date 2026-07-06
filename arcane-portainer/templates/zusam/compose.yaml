@@ -1,0 +1,12 @@
+services:
+  zusam:
+    image: "zusam/zusam"
+    container_name: ${CONTAINER_NAME:-zusam}
+    restart: "unless-stopped"
+    ports:
+      - "4180:8080/tcp"
+    environment:
+      - "INIT_USER=${INIT_USER:-email@domain.example}"
+      - "INIT_PASSWORD=${INIT_PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Zusam:/zusam/data"

@@ -1,0 +1,10 @@
+services:
+  iperf3:
+    restart: unless-stopped
+    container_name: iperf3-server
+    ports:
+      - '5201:5201'
+    image: networkstatic/iperf3
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: -s

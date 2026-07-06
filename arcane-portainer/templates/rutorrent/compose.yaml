@@ -1,0 +1,22 @@
+services:
+  rutorrent:
+    image: "crazymax/rtorrent-rutorrent:latest"
+    container_name: ${CONTAINER_NAME:-rutorrent}
+    restart: "unless-stopped"
+    ports:
+      - "6881:6881/udp"
+      - "8000:8000/tcp"
+      - "8080:8080/tcp"
+      - "9001:9000/tcp"
+      - "50000:50000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-America/New_York}"
+      - "MAX_FILE_UPLOADS=${MAX_FILE_UPLOADS:-50}"
+      - "RT_LOG_LEVEL=${RT_LOG_LEVEL:-info}"
+      - "RU_REMOVE_CORE_PLUGINS=${RU_REMOVE_CORE_PLUGINS:-erasedata,httprpc}"
+    volumes:
+      - "/portainer/Files/AppData/Config/ruTorrent/config:/config"
+      - "/portainer/Downloads:/downloads"
+      - "/portainer/Files/AppData/Config/ruTorrent/passwd:/passwd"

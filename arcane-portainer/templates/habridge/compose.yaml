@@ -1,0 +1,15 @@
+services:
+  habridge:
+    image: "linuxserver/habridge:latest"
+    container_name: ${CONTAINER_NAME:-habridge}
+    restart: "unless-stopped"
+    ports:
+      - "8080:8080/tcp"
+      - "50000:50000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "SEC_KEY=${SEC_KEY:-}"
+    volumes:
+      - "/srv/lsio/habridge/config:/config"

@@ -1,0 +1,11 @@
+services:
+  filebrowser-latest:
+    image: "filebrowser/filebrowser:latest"
+    container_name: ${CONTAINER_NAME:-filebrowser-latest}
+    restart: "unless-stopped"
+    ports:
+      - "8082:80/tcp"
+    volumes:
+      - "/portainer/Downloads:/srv"
+      - "/portainer/Files/AppData/Config/filebrowser/filebrowser.db:/database/filebrowser.db"
+      - "/portainer/Files/AppData/Config/filebrowser/settings.json:/config/settings.json"

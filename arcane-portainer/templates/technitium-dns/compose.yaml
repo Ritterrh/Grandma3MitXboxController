@@ -1,0 +1,16 @@
+services:
+  technitium-dns:
+    image: "technitium/dns-server:latest"
+    container_name: ${CONTAINER_NAME:-technitium-dns}
+    restart: "unless-stopped"
+    ports:
+      - "5380:5380/tcp"
+      - "53:53/tcp"
+      - "53:53/udp"
+    environment:
+      - "DNS_SERVER_DOMAIN=${DNS_SERVER_DOMAIN:-dns-server}"
+    volumes:
+      - "etc-dns:/etc/dns"
+
+volumes:
+  etc-dns:

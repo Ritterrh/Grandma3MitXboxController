@@ -1,0 +1,22 @@
+services:
+  wireguard:
+    image: "linuxserver/wireguard:latest"
+    container_name: ${CONTAINER_NAME:-wireguard}
+    restart: "unless-stopped"
+    ports:
+      - "51820:51820/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "SERVERURL=${SERVERURL:-wireguard.domain.com}"
+      - "SERVERPORT=${SERVERPORT:-51820}"
+      - "PEERS=${PEERS:-1}"
+      - "PEERDNS=${PEERDNS:-auto}"
+      - "INTERNAL_SUBNET=${INTERNAL_SUBNET:-10.13.13.0}"
+      - "ALLOWEDIPS=${ALLOWEDIPS:-0.0.0.0/0}"
+      - "PERSISTENTKEEPALIVE_PEERS=${PERSISTENTKEEPALIVE_PEERS:-}"
+      - "LOG_CONFS=${LOG_CONFS:-true}"
+    volumes:
+      - "/srv/lsio/wireguard/config:/config"
+      - "/lib/modules:/lib/modules"

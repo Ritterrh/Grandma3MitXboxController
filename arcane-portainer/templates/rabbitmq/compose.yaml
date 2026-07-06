@@ -1,0 +1,13 @@
+services:
+  rabbitmq:
+    image: "rabbitmq:latest"
+    container_name: ${CONTAINER_NAME:-rabbitmq}
+    restart: "unless-stopped"
+    ports:
+      - "5671/tcp"
+      - "5672/tcp"
+    volumes:
+      - "var-lib-rabbitmq:/var/lib/rabbitmq"
+
+volumes:
+  var-lib-rabbitmq:

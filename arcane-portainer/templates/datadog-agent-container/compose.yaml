@@ -1,0 +1,11 @@
+services:
+  datadog-agent-container:
+    image: "datadog/agent:latest"
+    container_name: ${CONTAINER_NAME:-datadog-agent-container}
+    restart: "unless-stopped"
+    environment:
+      - "DD_API_KEY=${DD_API_KEY:-change-me}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "/sys/fs/cgroup:/host/sys/fs/cgroup:ro"
+      - "/proc:/host/proc:ro"

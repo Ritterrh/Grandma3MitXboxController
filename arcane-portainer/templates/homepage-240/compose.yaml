@@ -1,0 +1,9 @@
+services:
+  homepage:
+    image: ghcr.io/benphelps/homepage:latest
+    container_name: homepage
+    ports:
+      - 6006:3000
+    volumes:
+      - /portainer/Files/AppData/Config/homepage:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock

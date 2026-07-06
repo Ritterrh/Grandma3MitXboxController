@@ -1,0 +1,52 @@
+services:
+  activepieces:
+    image: activepieces/activepieces:0.12.2
+    container_name: activepieces
+    restart: unless-stopped
+    ## Enable the following line if you already use AP_EXECUTION_MODE with SANDBOXED or old activepieces, checking the breaking change documentation for more info.
+    ## privileged: true
+    ports:
+      - 38080:80
+    depends_on:
+      - ap-postgres
+      - ap-redis
+    environment:
+    ## It's advisable to consult the documentation and use the tools/deploy.sh to generate the passwords, keys, instead of manually filling them.
+      - AP_ENGINE_EXECUTABLE_PATH=${AP_ENGINE_EXECUTABLE_PATH:-dist/packages/engine/main.js}
+     ## Random Long Password (Optional for community edition)
+      - AP_API_KEY=${AP_API_KEY:-change-me}
+     ## 256 bit encryption key, 32 hex character
+      - AP_ENCRYPTION_KEY=${AP_ENCRYPTION_KEY:-change-me}
+      ## JWT Secret
+      - AP_JWT_SECRET=${AP_JWT_SECRET:-change-me}
+      - AP_ENVIRONMENT=${AP_ENVIRONMENT:-prod}
+      - AP_FRONTEND_URL=${AP_FRONTEND_URL:-http://localhost:38080}
+      - AP_WEBHOOK_TIMEOUT_SECONDS=${AP_WEBHOOK_TIMEOUT_SECONDS:-30}
+      - AP_TRIGGER_DEFAULT_POLL_INTERVAL=${AP_TRIGGER_DEFAULT_POLL_INTERVAL:-5}
+      - AP_POSTGRES_DATABASE=${AP_POSTGRES_DATABASE:-activepieces}
+      - AP_POSTGRES_HOST=${AP_POSTGRES_HOST:-postgres}
+      - AP_POSTGRES_PORT=${AP_POSTGRES_PORT:-5432}
+      - AP_POSTGRES_USERNAME=${AP_POSTGRES_USERNAME:-postgres}
+      - AP_POSTGRES_PASSWORD=${AP_POSTGRES_PASSWORD:-change-me}
+      - AP_EXECUTION_MODE=${AP_EXECUTION_MODE:-UNSANDBOXED}
+      - AP_REDIS_HOST=${AP_REDIS_HOST:-redis}
+      - AP_REDIS_PORT=${AP_REDIS_PORT:-6379}
+      - AP_SANDBOX_RUN_TIME_SECONDS=${AP_SANDBOX_RUN_TIME_SECONDS:-600}
+      - AP_TELEMETRY_ENABLED=${AP_TELEMETRY_ENABLED:-false}
+      - AP_TEMPLATES_SOURCE_URL=${AP_TEMPLATES_SOURCE_URL:-https://cloud.activepieces.com/api/v1/flow-templates}
+  ap-postgres:
+    image: postgres:14.4
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-activepieces}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+    volumes:
+      - /portainer/Files/AppData/Config/activepieces/postgres_data:/var/lib/postgresql/data
+  ap-redis:
+    image: redis:7.0.7
+    container_name: redis
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/activepieces/redis_data:/data

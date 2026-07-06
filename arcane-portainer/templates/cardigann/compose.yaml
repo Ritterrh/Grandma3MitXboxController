@@ -1,0 +1,12 @@
+services:
+  cardigann:
+    image: "linuxserver/cardigann:latest"
+    container_name: ${CONTAINER_NAME:-cardigann}
+    restart: "unless-stopped"
+    ports:
+      - "5060:5060/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Cardigann:/config"

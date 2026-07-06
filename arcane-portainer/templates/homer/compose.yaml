@@ -1,0 +1,13 @@
+services:
+  homer:
+    image: "b4bz/homer:latest"
+    container_name: ${CONTAINER_NAME:-homer}
+    restart: "unless-stopped"
+    ports:
+      - "8902:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Homer/assets:/www/assets"
+      - "/portainer/Files/AppData/Config/Homer:/www/config.yml"

@@ -1,0 +1,15 @@
+services:
+  ntfy:
+    image: "binwiederhier/ntfy:latest"
+    container_name: ${CONTAINER_NAME:-ntfy}
+    command: "serve --cache-file /var/cache/ntfy/cache.db"
+    restart: "unless-stopped"
+    ports:
+      - "8080:80/tcp"
+    volumes:
+      - "var-cache-ntfy:/var/cache/ntfy"
+      - "etc-ntfy:/etc/ntfy"
+
+volumes:
+  var-cache-ntfy:
+  etc-ntfy:

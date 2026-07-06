@@ -1,0 +1,12 @@
+services:
+  flame:
+    image: "pawelmalak/flame:multiarch"
+    container_name: ${CONTAINER_NAME:-flame}
+    restart: "unless-stopped"
+    ports:
+      - "5005:5005/tcp"
+    environment:
+      - "PASSWORD=${PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Flame/data:/app/data"
+      - "/var/run/docker.sock:/var/run/docker.sock"

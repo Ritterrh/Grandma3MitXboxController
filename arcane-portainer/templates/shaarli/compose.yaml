@@ -1,0 +1,14 @@
+services:
+  shaarli:
+    container_name: Shaarli
+    image: ghcr.io/shaarli/shaarli:latest
+    restart: on-failure
+    ports:
+      - 7755:80
+    volumes:
+      - /portainer/Files/AppData/Config/shaarli/cache:/var/www/shaarli/cache:rw
+      - /portainer/Files/AppData/Config/shaarli/data:/var/www/shaarli/data:rw
+    environment:
+      PUID: "${PUID:-1026}"
+      PGID: "${PGID:-100}"
+      TZ: "${TZ:-Europe/Athens}"

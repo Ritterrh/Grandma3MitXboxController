@@ -1,0 +1,13 @@
+services:
+  youtubedl-material:
+    image: "tzahi12345/youtubedl-material:latest"
+    container_name: ${CONTAINER_NAME:-youtubedl-material}
+    restart: "unless-stopped"
+    ports:
+      - "17442:17442/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/YTDLM:/app/appdata"
+      - "/portainer/Files/AppData/Youtube/Video:/app/video"
+      - "/portainer/Files/AppData/Youtube/Subscriptions:/app/subscriptions"
+      - "/portainer/Files/AppData/Youtube/Users:/app/users"
+      - "/portainer/Files/AppData/Youtube/Audio:/app/audio"

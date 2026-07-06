@@ -1,0 +1,9 @@
+services:
+  snibox:
+    image: "snowmean/snibox-sqlite:latest"
+    container_name: ${CONTAINER_NAME:-snibox}
+    restart: "unless-stopped"
+    ports:
+      - "3010:3000/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Snibox:/app/db/database"

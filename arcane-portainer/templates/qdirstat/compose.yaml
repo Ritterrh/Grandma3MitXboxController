@@ -1,0 +1,15 @@
+services:
+  qdirstat:
+    image: "linuxserver/qdirstat:latest"
+    container_name: ${CONTAINER_NAME:-qdirstat}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/qdirstat/config:/config"
+      - "/srv/lsio/qdirstat/data:/data"

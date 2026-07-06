@@ -1,0 +1,12 @@
+services:
+  maloja:
+    image: "krateng/maloja:latest"
+    container_name: ${CONTAINER_NAME:-maloja}
+    restart: "unless-stopped"
+    ports:
+      - "42010:42010/tcp"
+    environment:
+      - "MALOJA_FORCE_PASSWORD=${MALOJA_FORCE_PASSWORD:-change-me}"
+      - "MALOJA_DATA_DIRECTORY=${MALOJA_DATA_DIRECTORY:-/data}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Maloja/Data:/data"

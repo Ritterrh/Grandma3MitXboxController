@@ -1,0 +1,14 @@
+services:
+  pihole-doh-dot:
+    image: "oijkn/pihole-doh-dot:latest"
+    container_name: ${CONTAINER_NAME:-pihole-doh-dot}
+    restart: "unless-stopped"
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "1010:80/tcp"
+      - "4443:443/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/PiHole_DoH-DoT:/etc/pihole"
+      - "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS:/etc/dnsmasq.d"

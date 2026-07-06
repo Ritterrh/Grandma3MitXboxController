@@ -1,0 +1,12 @@
+services:
+  eufy-security-ws:
+    image: "bropat/eufy-security-ws:latest"
+    container_name: ${CONTAINER_NAME:-eufy-security-ws}
+    restart: "unless-stopped"
+    ports:
+      - "3993:3000/tcp"
+    environment:
+      - "USERNAME=${USERNAME:-InputUSER-email}"
+      - "PASSWORD=${PASSWORD:-change-me}"
+    volumes:
+      - "/portainer/Files/AppData/Config/eufy-security-ws:/data"

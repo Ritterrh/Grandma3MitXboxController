@@ -1,0 +1,14 @@
+services:
+  homarr:
+    image: "ghcr.io/ajnart/homarr:latest"
+    container_name: ${CONTAINER_NAME:-homarr}
+    restart: "unless-stopped"
+    ports:
+      - "7575:7575/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/portainer/Files/AppData/Config/Homarr/configs:/app/data/configs"
+      - "/portainer/Files/AppData/Config/Homarr/icons:/app/public/icons"

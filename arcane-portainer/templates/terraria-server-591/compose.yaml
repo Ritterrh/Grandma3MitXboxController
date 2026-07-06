@@ -1,0 +1,13 @@
+services:
+  terraria-server-591:
+    image: "passivelemon/terraria-docker:latest"
+    container_name: ${CONTAINER_NAME:-terraria-server-591}
+    restart: "unless-stopped"
+    ports:
+      - "7777:7777/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "WORLD=${WORLD:-dockerworld}"
+    volumes:
+      - "/portainer/Files/AppData/Libraries/StirlingPDF/tessdata:/usr/share/tesseract-ocr/5/tessdata"

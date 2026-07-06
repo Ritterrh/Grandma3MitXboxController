@@ -1,0 +1,18 @@
+services:
+  airsonic:
+    image: "linuxserver/airsonic:latest"
+    container_name: ${CONTAINER_NAME:-airsonic}
+    restart: "unless-stopped"
+    ports:
+      - "4040:4040/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-100}"
+      - "CONTEXT_PATH=${CONTEXT_PATH:-airsonic}"
+      - "JAVA_OPTS=${JAVA_OPTS:--Xms256m -Xmx512m}"
+    volumes:
+      - "/portainer/Music:/music"
+      - "/portainer/Files/AppData/Airsonic/Playlists:/playlists"
+      - "/portainer/Podcasts:/podcasts"
+      - "/portainer/Files/AppData/Airsonic/Media:/media"
+      - "/portainer/Files/AppData/Config/Airsonic/:/config"

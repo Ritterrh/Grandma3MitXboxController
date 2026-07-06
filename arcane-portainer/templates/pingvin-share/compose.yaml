@@ -1,0 +1,18 @@
+services:
+  pingvin-share:
+    image: stonith404/pingvin-share
+    restart: unless-stopped
+    ports:
+      - 3123:3000
+    volumes:
+      - /portainer/Files/AppData/Config/pingvin:/opt/app/backend/data
+      - /portainer/Files/AppData/Config/pingvin/images:/opt/app/frontend/public/img
+# Optional: If you add ClamAV, uncomment the following to have ClamAV start first.
+#    depends_on:
+#      clamav:
+#        condition: service_healthy
+# Optional: Add ClamAV (see README.md)  
+# ClamAV is currently only available for AMD64 see https://github.com/Cisco-Talos/clamav/issues/482
+#  clamav:
+#    restart: unless-stopped
+#    image: clamav/clamav

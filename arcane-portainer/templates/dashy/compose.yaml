@@ -1,0 +1,12 @@
+services:
+  dashy:
+    image: "lissy93/dashy:latest"
+    container_name: ${CONTAINER_NAME:-dashy}
+    restart: "unless-stopped"
+    ports:
+      - "9100:8080/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+    volumes:
+      - "/portainer/Files/AppData/Config/Dashy/local-conf.yml:/app/public/conf.yml"

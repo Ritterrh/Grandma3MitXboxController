@@ -1,0 +1,14 @@
+services:
+  get_iplayer:
+    image: ghcr.io/thespad/whisparr:latest
+    container_name: whisparr
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Europe/Athens}
+    volumes:
+      - /portainer/Files/AppData/Config/whisparr:/config
+      - /portainer/Files/AppData/Config/whisparr/downloads:/downloads
+    ports:
+      - 6969:6969
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+services:
+    kapowarr:
+        container_name: kapowarr
+        volumes:
+            - /portainer/Files/AppData/Config/kapowarr-db:/app/db
+            - /portainer/comics/downloads:/app/temp_downloads
+            - /portainer/comics/kapowarr:/content
+        ports:
+            - 5656:5656
+        image: mrcas/kapowarr:latest

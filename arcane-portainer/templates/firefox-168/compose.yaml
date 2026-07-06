@@ -1,0 +1,17 @@
+volumes:
+  firefox:
+
+services:
+  firefox:
+    image: ghcr.io/linuxserver/firefox
+    container_name: firefox
+    environment:
+      - PUID=${PUID:-1026}
+      - PGID=${PGID:-100}
+      - TZ=${TZ:-Europe/Athens}
+    volumes:
+      - /portainer/Files/AppData/Config/firefox:/config
+    ports:
+      - 3456:3000
+    shm_size: "1gb"
+    restart: unless-stopped

@@ -1,0 +1,9 @@
+services:
+  bitwardenrs:
+    image: "bitwardenrs/server:latest"
+    container_name: ${CONTAINER_NAME:-bitwardenrs}
+    restart: "unless-stopped"
+    ports:
+      - "80/tcp"
+    volumes:
+      - "/portainer/Files/AppData/Config/Bitwarden-rs:/config"

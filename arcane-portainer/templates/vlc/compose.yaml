@@ -1,0 +1,15 @@
+services:
+  vlc:
+    image: "linuxserver/vlc:latest"
+    container_name: ${CONTAINER_NAME:-vlc}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "VLC_CLI=${VLC_CLI:---no-qt-minimal-view}"
+    volumes:
+      - "/srv/lsio/vlc/config:/config"

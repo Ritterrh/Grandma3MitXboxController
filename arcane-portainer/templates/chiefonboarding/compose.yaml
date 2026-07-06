@@ -1,0 +1,42 @@
+services:
+  cob-db:
+    restart: always
+    image: postgres:latest
+    expose:
+      - "5432"
+    volumes:
+      - /portainer/Files/AppData/Config/chiefonboarding/pgdata:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-change-me}
+    networks:
+      - global
+
+  cob-web:
+    restart: always
+    build:
+      dockerfile: ./Dockerfile-dev
+      context: ./back/
+    ports:
+      - "127.0.0.1:8111:8000"
+    environment:
+      - DEBUG=${DEBUG:-True}
+      - SECRET_KEY=${SECRET_KEY:-change-me}
+      - BASE_URL=${BASE_URL:-http://0.0.0.0:3111}
+      - DATABASE_URL=${DATABASE_URL:-postgres://postgres:postgres@db:5432/postgres}
+      - DEFAULT_FROM_EMAIL=${DEFAULT_FROM_EMAIL:-hello@chiefonboarding.com}
+      - ACCOUNT_EMAIL=${ACCOUNT_EMAIL:-admin@example.com}
+      - ACCOUNT_PASSWORD=${ACCOUNT_PASSWORD:-change-me}
+    volumes:
+      - /portainer/Files/AppData/Config/chiefonboarding/back:/app
+    depends_on:
+      - cob-db
+    networks:
+      - global
+
+volumes:
+  pgdata:
+
+networks:
+  global:

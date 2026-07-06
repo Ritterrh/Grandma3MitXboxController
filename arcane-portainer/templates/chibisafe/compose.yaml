@@ -1,0 +1,15 @@
+services:
+  chibisafe:
+    image: chibisafe/chibisafe:latest
+    container_name: Chibisafe
+    mem_limit: 8g
+    cpu_shares: 2048
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /portainer/Files/AppData/Config/chibisafe/db:/home/node/chibisafe/database:rw
+      - /portainer/Files/AppData/Config/chibisafe/uploads:/home/node/chibisafe/uploads:rw
+      - /portainer/Files/AppData/Config/chibisafe/logs:/home/node/chibisafe/logs:rw
+    ports:
+      - 2425:8000
+    restart: on-failure:5

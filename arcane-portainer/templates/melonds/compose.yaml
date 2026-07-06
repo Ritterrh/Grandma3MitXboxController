@@ -1,0 +1,14 @@
+services:
+  melonds:
+    image: "linuxserver/melonds:latest"
+    container_name: ${CONTAINER_NAME:-melonds}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+      - "3001:3001/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+    volumes:
+      - "/srv/lsio/melonds/config:/config"

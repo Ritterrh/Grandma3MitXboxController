@@ -1,0 +1,16 @@
+services:
+  minisatip:
+    image: "linuxserver/minisatip:latest"
+    container_name: ${CONTAINER_NAME:-minisatip}
+    restart: "unless-stopped"
+    ports:
+      - "8875:8875/tcp"
+      - "554:554/tcp"
+      - "1900:1900/udp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "RUN_OPTS=${RUN_OPTS:-}"
+    volumes:
+      - "/srv/lsio/minisatip/config:/config"

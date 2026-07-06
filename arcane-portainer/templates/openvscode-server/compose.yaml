@@ -1,0 +1,17 @@
+services:
+  openvscode-server:
+    image: "linuxserver/openvscode-server:latest"
+    container_name: ${CONTAINER_NAME:-openvscode-server}
+    restart: "unless-stopped"
+    ports:
+      - "3000:3000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "CONNECTION_TOKEN=${CONNECTION_TOKEN:-change-me}"
+      - "CONNECTION_SECRET=${CONNECTION_SECRET:-change-me}"
+      - "SUDO_PASSWORD=${SUDO_PASSWORD:-change-me}"
+      - "SUDO_PASSWORD_HASH=${SUDO_PASSWORD_HASH:-change-me}"
+    volumes:
+      - "/srv/lsio/openvscode-server/config:/config"

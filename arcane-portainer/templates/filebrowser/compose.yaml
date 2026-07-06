@@ -1,0 +1,27 @@
+services:
+  filebrowser:
+    image: "mediadepot/filebrowser:latest"
+    container_name: ${CONTAINER_NAME:-filebrowser}
+    command: "-d /config/filebrowser.db -p 8080"
+    restart: "unless-stopped"
+    ports:
+      - "8080/tcp"
+    environment:
+      - "TZ=${TZ:-America/Los_Angeles}"
+    volumes:
+      - "/media/storage/tvshows:/srv/tvshows"
+      - "/media/storage/movies:/srv/movies"
+      - "/media/storage/music:/srv/music"
+      - "/media/storage/photos:/srv/photos"
+      - "/media/storage/ebooks:/srv/ebooks"
+      - "/media/storage/documents:/srv/documents"
+      - "/media/storage/software:/srv/software"
+      - "/media/storage/downloads:/srv/downloads"
+      - "/media/temp/blackhole:/srv/blackhole"
+      - "/media/temp/processing:/srv/processing"
+      - "/opt/mediadepot/apps/filebrowser:/config"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.filebrowser.loadbalancer.server.port=8080"
+      - "traefik.http.routers.filebrowser.entrypoints=websecure"
+      - "traefik.http.routers.filebrowser.tls.certresolver=mydnschallenge"

@@ -1,0 +1,15 @@
+services:
+  nut-server:
+    image: "instantlinux/nut-upsd:latest"
+    container_name: ${CONTAINER_NAME:-nut-server}
+    restart: "unless-stopped"
+    ports:
+      - "3493:3493/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "SERIAL=${SERIAL:-none}"
+      - "NAME=${NAME:-none}"
+      - "VENDOR_ID=${VENDOR_ID:-none}"
+      - "API_PASSWORD=${API_PASSWORD:-change-me}"
+      - "DESCRIPTION=${DESCRIPTION:-none}"

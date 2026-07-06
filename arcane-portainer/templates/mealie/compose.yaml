@@ -1,0 +1,21 @@
+services:
+  mealie:
+    image: "hkotel/mealie:v0.4.3"
+    container_name: ${CONTAINER_NAME:-mealie}
+    restart: "unless-stopped"
+    ports:
+      - "9925:9000/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-America/New_York}"
+      - "WEB_CONCURRENCY=${WEB_CONCURRENCY:-2}"
+      - "MAX_WORKERS=${MAX_WORKERS:-8}"
+      - "RECIPE_PUBLIC=${RECIPE_PUBLIC:-true}"
+      - "RECIPE_SHOW_NUTRITION=${RECIPE_SHOW_NUTRITION:-true}"
+      - "RECIPE_SHOW_ASSETS=${RECIPE_SHOW_ASSETS:-true}"
+      - "RECIPE_LANDSCAPE_VIEW=${RECIPE_LANDSCAPE_VIEW:-true}"
+      - "RECIPE_DISABLE_COMMENTS=${RECIPE_DISABLE_COMMENTS:-false}"
+      - "RECIPE_DISABLE_AMOUNT=${RECIPE_DISABLE_AMOUNT:-false}"
+    volumes:
+      - "/portainer/Files/AppData/Config/mealie:/app/data"

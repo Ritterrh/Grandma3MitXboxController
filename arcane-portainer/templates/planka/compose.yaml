@@ -1,0 +1,22 @@
+services:
+  planka:
+    image: "linuxserver/planka:latest"
+    container_name: ${CONTAINER_NAME:-planka}
+    restart: "unless-stopped"
+    ports:
+      - "1337:1337/tcp"
+    environment:
+      - "PUID=${PUID:-1000}"
+      - "PGID=${PGID:-1000}"
+      - "TZ=${TZ:-Etc/UTC}"
+      - "BASE_URL=${BASE_URL:-https://planka.example.com}"
+      - "DATABASE_URL=${DATABASE_URL:-postgresql://user:password@planka-db:5432/planka}"
+      - "DEFAULT_ADMIN_EMAIL=${DEFAULT_ADMIN_EMAIL:-demo@demo.demo}"
+      - "DEFAULT_ADMIN_USERNAME=${DEFAULT_ADMIN_USERNAME:-demo}"
+      - "DEFAULT_ADMIN_PASSWORD=${DEFAULT_ADMIN_PASSWORD:-change-me}"
+      - "DEFAULT_ADMIN_NAME=${DEFAULT_ADMIN_NAME:-Demo User}"
+      - "SECRET_KEY=${SECRET_KEY:-change-me}"
+      - "TRUST_PROXY=${TRUST_PROXY:-false}"
+      - "DEFAULT_LANGUAGE=${DEFAULT_LANGUAGE:-en-US}"
+    volumes:
+      - "/srv/lsio/planka/config:/config"

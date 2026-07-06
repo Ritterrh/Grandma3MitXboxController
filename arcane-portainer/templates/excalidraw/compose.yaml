@@ -1,0 +1,20 @@
+services:
+  excalidraw:
+    build:
+      context: .
+      args:
+        - NODE_ENV=development
+    container_name: excalidraw
+    ports:
+      - "3111:80"
+    restart: on-failure
+    stdin_open: true
+    healthcheck:
+      disable: true
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+    volumes:
+      - /portainer/Files/AppData/Config/excalidraw/:/opt/node_app/app:delegated
+      - /portainer/Files/AppData/Config/excalidraw/package.json:/opt/node_app/package.json
+      - /portainer/Files/AppData/Config/excalidraw/yarn.lock:/opt/node_app/yarn.lock
+      - /portainer/Files/AppData/Config/excalidraw/notused:/opt/node_app/app/node_modules
